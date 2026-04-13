@@ -1,105 +1,91 @@
 ---
 name: context-compressor
-description: "Compresses file content before context injection. Strips boilerplate on medium files, summarizes large files. Annotates savings. Prevents runaway token burn on vault/Brain reads."
-risk: low
-source: maeve-custom
-date_added: "2026-04-12"
-preferred_model: haiku
+description: "Wraps file reads to compress content BEFORE it enters context. Use read_and_compress(path) as the primary entrypoint for any file read that will be injected into context. Handles code files (skeleton extraction), markdown/prose (heading/table/bullet preservation, prose dropped), and config files (comment stripping). Three tiers: passthrough <200 tokens, strip 200-1000 tokens, summarize >1000 tokens. Logs all compression events to Brain DB. Use instead of raw file reads for vault docs, skill files, project context, SESSION_STATE, and any large file reads."
+metadata:
+  version: 2.0.0
+  source: maeve-custom
+  date_built: "2026-04-12"
+  preferred_model: haiku
 ---
 
-# Context Compressor
+# Context Compressor v2
 
-## Purpose
+Intercepts file reads and compresses content before it enters context.
+This is the architectural fix: compression wraps the read, not the other way around.
 
-Intercept file reads before they enter context. Reduce token consumption without losing meaning. Annotate what was done so nothing is silently dropped.
+---
+
+## Primary Entrypoint
+
+```python
+from compressor import read_and_compress
+
+# Always use this instead of Path(path).read_text()
+content = read_and_compress("/path/to/file.md")
+```
 
 ---
 
 ## Compression Tiers
 
-| File Size (tokens) | Action | Output |
-|---|---|---|
-| Under 500 | Pass through unchanged | Raw content |
-| 500 to 2,000 | Strip mode: remove comments, blank lines, boilerplate headers | Stripped content + annotation |
-| Over 2,000 | Summarize mode: structured summary of key content | Summary + `[COMPRESSED]` annotation |
+| File Size (tokens) | Action |
+|---|---|
+| < 200 | Passthrough unchanged |
+| 200 to 1,000 | Strip: remove comments, blanks, boilerplate |
+| > 1,000 | Summarize: type-aware extraction |
 
 ---
 
-## Usage
+## File Type Routing
 
-### Direct invocation
-```
-compress_file(path, mode="auto")
-```
-
-Modes:
-- `auto` — applies tier logic based on token estimate
-- `strip` — force strip regardless of size
-- `summarize` — force summarize regardless of size
-- `full` — bypass compressor, return raw content
-
-### In a skill or session
-Before reading any file into context, route through compressor:
-```python
-from context_compressor import compress_file
-content = compress_file("/home/derek/vault/Projects/SomeProject/large_file.py")
-```
+| Type | Extensions | Summarize Strategy |
+|---|---|---|
+| Code | .py .js .ts .go .rs .sh | Skeleton: imports, def/class, constants, returns |
+| Markdown | .md .mdx .txt .rst | Extract: headings, tables, bullets, code signatures, frontmatter |
+| Config | .json .yaml .yml .toml | Strip comments, preserve structure |
+| Unknown | anything else | Markdown heuristic fallback |
 
 ---
 
 ## Output Format
 
-Every compressed result includes a header annotation:
-
 ```
-[COMPRESSOR: strip | original ~1,240 tokens → ~380 tokens | saved ~860 tokens]
-<content here>
-```
-
-For summarize mode:
-```
-[COMPRESSOR: summarize | original ~4,800 tokens → ~420 tokens | saved ~4,380 tokens]
-## Summary
-<structured summary here>
-## Key Identifiers
-<functions, classes, config keys found>
-## Omitted
-<what was removed and why>
+[COMPRESSOR: summarize | markdown | ~2,654 → ~1,652 tokens | saved ~1,002]
+<compressed content>
 ```
 
 ---
 
-## Rules
+## Modes
 
-1. Never silently drop content. Always annotate what was compressed and why.
-2. Summarize mode preserves: function signatures, class names, config keys, error messages, return values.
-3. Summarize mode drops: docstrings over 3 lines, inline comments, example blocks, license headers.
-4. Pass-through mode (`full`) is available when raw content is genuinely needed.
-5. Log every compression to Brain DB `compression_log` table (session, path, tokens_saved).
+- `auto` — applies tier logic (default, always use this)
+- `strip` — force strip regardless of size
+- `summarize` — force summarize regardless of size
+- `full` — bypass compressor, return raw content
 
 ---
 
 ## Integration Points
 
-- Vault reads: apply before injecting any file over 500 tokens
-- Brain DB queries returning large text fields: apply summarize
-- GitHub file reads via MCP: apply strip mode
-- SESSION_STATE.md: always pass-through (small, structured, must be exact)
+- Vault reads: always use read_and_compress
+- Skill file reads: always use read_and_compress
+- SESSION_STATE.md: use `full` mode (small, must be exact)
+- Brain DB large text fields: use summarize mode
+- GitHub file reads via MCP: use strip mode
+
+---
+
+## Brain Logging
+
+Every compression event logged to `compression_log` table:
+session_date, file_path, mode, file_type, tokens_before, tokens_after, tokens_saved
 
 ---
 
 ## Verification
 
-After install, run:
 ```bash
 python3 ~/.claude/skills/context-compressor/compressor.py --test
 ```
 
-Expected output:
-```
-[TEST] Small file (< 500 tokens): PASS - passed through
-[TEST] Medium file (500-2000 tokens): PASS - stripped
-[TEST] Large file (> 2000 tokens): PASS - summarized
-[TEST] Brain log write: PASS
-All tests passed.
-```
+Expected: 6/6 PASS
