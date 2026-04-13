@@ -112,7 +112,13 @@ def summarize_markdown(text: str, path: str) -> str:
     frontmatter_done = False
     in_code_block = False
     code_block_lines = 0
-    CODE_BLOCK_PREVIEW = 3  # show first N lines of each code block
+    CODE_BLOCK_PREVIEW = 2  # show first N lines of each code block (lever 2: reduced from 3)
+    keep_next_prose = False  # lever 1: preserve first line after heading
+    table_row_counts = {}    # lever 3: track rows per table section
+    current_table_id = 0
+    in_table = False
+    table_rows_seen = 0
+    TABLE_ROW_LIMIT = 8      # lever 3: max rows per table
 
     for i, line in enumerate(lines):
         stripped = line.strip()
@@ -147,15 +153,40 @@ def summarize_markdown(text: str, path: str) -> str:
                 extracted.append("    ... [code block truncated]")
             continue
 
-        # Headings — always keep
+        # Headings — always keep, flag next line for preservation
         if re.match(r'^#{1,4}\s', stripped):
             extracted.append(line)
+            keep_next_prose = True
             continue
 
-        # Table rows — keep first 6 rows per table, then summarize
-        if stripped.startswith('|'):
-            extracted.append(line)
+        # First non-blank line after a heading — keep regardless of type
+        if keep_next_prose and stripped:
+            keep_next_prose = False
+            if len(stripped) <= 200:
+                extracted.append(line)
+            else:
+                extracted.append(line[:200] + '…')
             continue
+        elif keep_next_prose and not stripped:
+            pass  # blank line after heading, keep waiting
+        else:
+            keep_next_prose = False
+
+        # Table rows — keep up to TABLE_ROW_LIMIT rows, then truncate
+        if stripped.startswith('|'):
+            if not in_table:
+                in_table = True
+                table_rows_seen = 0
+            table_rows_seen += 1
+            if table_rows_seen <= TABLE_ROW_LIMIT:
+                extracted.append(line)
+            elif table_rows_seen == TABLE_ROW_LIMIT + 1:
+                extracted.append(f"| ... [{table_rows_seen - TABLE_ROW_LIMIT}+ more rows truncated] |")
+            continue
+        else:
+            if in_table:
+                in_table = False
+                table_rows_seen = 0
 
         # Bullet points — keep first line only
         if re.match(r'^[-*+]\s', stripped) or re.match(r'^\d+\.\s', stripped):
