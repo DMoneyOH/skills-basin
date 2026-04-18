@@ -1,9 +1,31 @@
 ---
 name: skill-creator
-description: Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.
+description: "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better t"
+triggers:
+  - "defaultazurecredential"
+  - "evaluation" and "benchmark" are borderline, but ok
+  - "hardcoded"
+  - "i'll just mark it complete and come back later" - fix issues now
+  - "it's good enough" - if there are major issues, it's not good enough
+  - "myclient"
+  - "nice to have" improvements — consider cost-benefit before implementing
+  - "the reviewer is being too strict" - the quality bar exists for a reason
+  - "what errors do developers commonly encounter?"
+  - "what sdk operations should this skill cover?"
+  - "what triggers should activate this skill?"
+  - # azure ai example sdk
+  - # my new skill
+  - # skill creator
+  - # skill developer guide
+merged_from:
+  - skill-creator-ms
+  - skill-developer
+  - skill-writer
+  - skill-improver
+merged_at: 2026-04-18T17:20:54.606046
 ---
 
-# Skill Creator
+# skill-creator
 
 A skill for creating new skills and iteratively improving them.
 
@@ -483,3 +505,1302 @@ Repeating one more time the core loop here for emphasis:
 Please add steps to your TodoList, if you have such a thing, to make sure you don't forget. If you're in Cowork, please specifically put "Create evals JSON and run `eval-viewer/generate_review.py` so human can review test cases" in your TodoList to make sure it happens.
 
 Good luck!
+
+---
+
+<!-- skill-creator-ms -->
+Guide for creating skills that extend AI agent capabilities, with emphasis on Azure SDKs and Microsoft Foundry.
+
+> **Required Context:** When creating SDK or API skills, users MUST provide the SDK package name, documentation URL, or repository reference for the skill to be based on.
+
+## About Skills
+
+Skills are modular knowledge packages that transform general-purpose agents into specialized experts:
+
+1. **Procedural knowledge** — Multi-step workflows for specific domains
+2. **SDK expertise** — API patterns, authentication, error handling for Azure services
+3. **Domain context** — Schemas, business logic, company-specific patterns
+4. **Bundled resources** — Scripts, references, templates for complex tasks
+
+---
+
+## Core Principles
+
+### 1. Concise is Key
+
+The context window is a shared resource. Challenge each piece: "Does this justify its token cost?"
+
+**Default assumption: Agents are already capable.** Only add what they don't already know.
+
+### 2. Fresh Documentation First
+
+**Azure SDKs change constantly.** Skills should instruct agents to verify documentation:
+
+```markdown
+## Before Implementation
+
+Search `microsoft-docs` MCP for current API patterns:
+- Query: "[SDK name] [operation] python"
+- Verify: Parameters match your installed SDK version
+```
+
+### 3. Degrees of Freedom
+
+Match specificity to task fragility:
+
+| Freedom | When | Example |
+|---------|------|---------|
+| **High** | Multiple valid approaches | Text guidelines |
+| **Medium** | Preferred pattern with variation | Pseudocode |
+| **Low** | Must be exact | Specific scripts |
+
+### 4. Progressive Disclosure
+
+Skills load in three levels:
+
+1. **Metadata** (~100 words) — Always in context
+2. **SKILL.md body** (<5k words) — When skill triggers
+3. **References** (unlimited) — As needed
+
+**Keep SKILL.md under 500 lines.** Split into reference files when approaching this limit.
+
+---
+
+## Skill Structure
+
+```
+skill-name/
+├── SKILL.md (required)
+│   ├── YAML frontmatter (name, description)
+│   └── Markdown instructions
+└── Bundled Resources (optional)
+    ├── scripts/      — Executable code
+    ├── references/   — Documentation loaded as needed
+    └── assets/       — Output resources (templates, images)
+```
+
+### SKILL.md
+
+- **Frontmatter**: `name` and `description`. The description is the trigger mechanism.
+- **Body**: Instructions loaded only after triggering.
+
+### Bundled Resources
+
+| Type | Purpose | When to Include |
+|------|---------|-----------------|
+| `scripts/` | Deterministic operations | Same code rewritten repeatedly |
+| `references/` | Detailed patterns | API docs, schemas, detailed guides |
+| `assets/` | Output resources | Templates, images, boilerplate |
+
+**Don't include**: README.md, CHANGELOG.md, installation guides.
+
+---
+
+## Creating Azure SDK Skills
+
+When creating skills for Azure SDKs, follow these patterns consistently.
+
+### Skill Section Order
+
+Follow this structure (based on existing Azure SDK skills):
+
+1. **Title** — `# SDK Name`
+2. **Installation** — `pip install`, `npm install`, etc.
+3. **Environment Variables** — Required configuration
+4. **Authentication** — Always `DefaultAzureCredential`
+5. **Core Workflow** — Minimal viable example
+6. **Feature Tables** — Clients, methods, tools
+7. **Best Practices** — Numbered list
+8. **Reference Links** — Table linking to `/references/*.md`
+
+### Authentication Pattern (All Languages)
+
+Always use `DefaultAzureCredential`:
+
+```python
+# Python
+from azure.identity import DefaultAzureCredential
+credential = DefaultAzureCredential()
+client = ServiceClient(endpoint, credential)
+```
+
+```csharp
+// C#
+var credential = new DefaultAzureCredential();
+var client = new ServiceClient(new Uri(endpoint), credential);
+```
+
+```java
+// Java
+TokenCredential credential = new DefaultAzureCredentialBuilder().build();
+ServiceClient client = new ServiceClientBuilder()
+    .endpoint(endpoint)
+    .credential(credential)
+    .buildClient();
+```
+
+```typescript
+// TypeScript
+import { DefaultAzureCredential } from "@azure/identity";
+const credential = new DefaultAzureCredential();
+const client = new ServiceClient(endpoint, credential);
+```
+
+**Never hardcode credentials. Use environment variables.**
+
+### Standard Verb Patterns
+
+Azure SDKs use consistent verbs across all languages:
+
+| Verb | Behavior |
+|------|----------|
+| `create` | Create new; fail if exists |
+| `upsert` | Create or update |
+| `get` | Retrieve; error if missing |
+| `list` | Return collection |
+| `delete` | Succeed even if missing |
+| `begin` | Start long-running operation |
+
+### Language-Specific Patterns
+
+See `references/azure-sdk-patterns.md` for detailed patterns including:
+
+- **Python**: `ItemPaged`, `LROPoller`, context managers, Sphinx docstrings
+- **.NET**: `Response<T>`, `Pageable<T>`, `Operation<T>`, mocking support
+- **Java**: Builder pattern, `PagedIterable`/`PagedFlux`, Reactor types
+- **TypeScript**: `PagedAsyncIterableIterator`, `AbortSignal`, browser considerations
+
+### Example: Azure SDK Skill Structure
+
+```markdown
+---
+name: skill-creator
+description: |
+  Azure AI Example SDK for Python. Use for [specific service features].
+  Triggers: "example service", "create example", "list examples".
+---
+
+# Azure AI Example SDK
+
+## Installation
+
+\`\`\`bash
+pip install azure-ai-example
+\`\`\`
+
+## Environment Variables
+
+\`\`\`bash
+AZURE_EXAMPLE_ENDPOINT=https://<resource>.example.azure.com
+\`\`\`
+
+## Authentication
+
+\`\`\`python
+from azure.identity import DefaultAzureCredential
+from azure.ai.example import ExampleClient
+
+credential = DefaultAzureCredential()
+client = ExampleClient(
+    endpoint=os.environ["AZURE_EXAMPLE_ENDPOINT"],
+    credential=credential
+)
+\`\`\`
+
+## Core Workflow
+
+\`\`\`python
+# Create
+item = client.create_item(name="example", data={...})
+
+# List (pagination handled automatically)
+for item in client.list_items():
+    print(item.name)
+
+# Long-running operation
+poller = client.begin_process(item_id)
+result = poller.result()
+
+# Cleanup
+client.delete_item(item_id)
+\`\`\`
+
+## Reference Files
+
+| File | Contents |
+|------|----------|
+| references/tools.md | Tool integrations |
+| references/streaming.md | Event streaming patterns |
+```
+
+---
+
+## Skill Creation Process
+
+1. **Gather SDK Context** — User provides SDK/API reference (REQUIRED)
+2. **Understand** — Research SDK patterns from official docs
+3. **Plan** — Identify reusable resources and product area category
+4. **Create** — Write SKILL.md in `.github/skills/<skill-name>/`
+5. **Categorize** — Create symlink in `skills/<language>/<category>/`
+6. **Test** — Create acceptance criteria and test scenarios
+7. **Document** — Update README.md skill catalog
+8. **Iterate** — Refine based on real usage
+
+### Step 1: Gather SDK Context (REQUIRED)
+
+**Before creating any SDK skill, the user MUST provide:**
+
+| Required | Example | Purpose |
+|----------|---------|---------|
+| **SDK Package** | `azure-ai-agents`, `Azure.AI.OpenAI` | Identifies the exact SDK |
+| **Documentation URL** | `https://learn.microsoft.com/en-us/azure/ai-services/...` | Primary source of truth |
+| **Repository** (optional) | `Azure/azure-sdk-for-python` | For code patterns |
+
+**Prompt the user if not provided:**
+```
+To create this skill, I need:
+1. The SDK package name (e.g., azure-ai-projects)
+2. The Microsoft Learn documentation URL or GitHub repo
+3. The target language (py/dotnet/ts/java)
+```
+
+**Search official docs first:**
+```bash
+# Use microsoft-docs MCP to get current API patterns
+# Query: "[SDK name] [operation] [language]"
+# Verify: Parameters match the latest SDK version
+```
+
+### Step 2: Understand the Skill
+
+Gather concrete examples:
+
+- "What SDK operations should this skill cover?"
+- "What triggers should activate this skill?"
+- "What errors do developers commonly encounter?"
+
+| Example Task | Reusable Resource |
+|--------------|-------------------|
+| Same auth code each time | Code example in SKILL.md |
+| Complex streaming patterns | `references/streaming.md` |
+| Tool configurations | `references/tools.md` |
+| Error handling patterns | `references/error-handling.md` |
+
+### Step 3: Plan Product Area Category
+
+Skills are organized by **language** and **product area** in the `skills/` directory via symlinks.
+
+**Product Area Categories:**
+
+| Category | Description | Examples |
+|----------|-------------|----------|
+| `foundry` | AI Foundry, agents, projects, inference | `azure-ai-agents-py`, `azure-ai-projects-py` |
+| `data` | Storage, Cosmos DB, Tables, Data Lake | `azure-cosmos-py`, `azure-storage-blob-py` |
+| `messaging` | Event Hubs, Service Bus, Event Grid | `azure-eventhub-py`, `azure-servicebus-py` |
+| `monitoring` | OpenTelemetry, App Insights, Query | `azure-monitor-opentelemetry-py` |
+| `identity` | Authentication, DefaultAzureCredential | `azure-identity-py` |
+| `security` | Key Vault, secrets, keys, certificates | `azure-keyvault-py` |
+| `integration` | API Management, App Configuration | `azure-appconfiguration-py` |
+| `compute` | Batch, ML compute | `azure-compute-batch-java` |
+| `container` | Container Registry, ACR | `azure-containerregistry-py` |
+
+**Determine the category** based on:
+1. Azure service family (Storage → `data`, Event Hubs → `messaging`)
+2. Primary use case (AI agents → `foundry`)
+3. Existing skills in the same service area
+
+### Step 4: Create the Skill
+
+**Location:** `.github/skills/<skill-name>/SKILL.md`
+
+**Naming convention:**
+- `azure-<service>-<subservice>-<language>`
+- Examples: `azure-ai-agents-py`, `azure-cosmos-java`, `azure-storage-blob-ts`
+
+**For Azure SDK skills:**
+
+1. Search `microsoft-docs` MCP for current API patterns
+2. Verify against installed SDK version
+3. Follow the section order above
+4. Include cleanup code in examples
+5. Add feature comparison tables
+
+**Write bundled resources first**, then SKILL.md.
+
+**Frontmatter:**
+
+```yaml
+---
+name: skill-name-py
+description: |
+  Azure Service SDK for Python. Use for [specific features].
+  Triggers: "service name", "create resource", "specific operation".
+---
+```
+
+### Step 5: Categorize with Symlinks
+
+After creating the skill in `.github/skills/`, create a symlink in the appropriate category:
+
+```bash
+# Pattern: skills/<language>/<category>/<short-name> -> ../../../.github/skills/<full-skill-name>
+
+# Example for azure-ai-agents-py in python/foundry:
+cd skills/python/foundry
+ln -s ../../../.github/skills/azure-ai-agents-py agents
+
+# Example for azure-cosmos-db-py in python/data:
+cd skills/python/data
+ln -s ../../../.github/skills/azure-cosmos-db-py cosmos-db
+```
+
+**Symlink naming:**
+- Use short, descriptive names (e.g., `agents`, `cosmos`, `blob`)
+- Remove the `azure-` prefix and language suffix
+- Match existing patterns in the category
+
+**Verify the symlink:**
+```bash
+ls -la skills/python/foundry/agents
+# Should show: agents -> ../../../.github/skills/azure-ai-agents-py
+```
+
+### Step 6: Create Tests
+
+**Every skill MUST have acceptance criteria and test scenarios.**
+
+#### 6.1 Create Acceptance Criteria
+
+**Location:** `.github/skills/<skill-name>/references/acceptance-criteria.md`
+
+**Source materials** (in priority order):
+1. Official Microsoft Learn docs (via `microsoft-docs` MCP)
+2. SDK source code from the repository
+3. Existing reference files in the skill
+
+**Format:**
+```markdown
+# Acceptance Criteria: <skill-name>
+
+**SDK**: `package-name`
+**Repository**: https://github.com/Azure/azure-sdk-for-<language>
+**Purpose**: Skill testing acceptance criteria
+
+---
+
+## 1. Correct Import Patterns
+
+### 1.1 Client Imports
+
+#### ✅ CORRECT: Main Client
+\`\`\`python
+from azure.ai.mymodule import MyClient
+from azure.identity import DefaultAzureCredential
+\`\`\`
+
+#### ❌ INCORRECT: Wrong Module Path
+\`\`\`python
+from azure.ai.mymodule.models import MyClient  # Wrong - Client is not in models
+\`\`\`
+
+## 2. Authentication Patterns
+
+#### ✅ CORRECT: DefaultAzureCredential
+\`\`\`python
+credential = DefaultAzureCredential()
+client = MyClient(endpoint, credential)
+\`\`\`
+
+#### ❌ INCORRECT: Hardcoded Credentials
+\`\`\`python
+client = MyClient(endpoint, api_key="hardcoded")  # Security risk
+\`\`\`
+```
+
+**Critical patterns to document:**
+- Import paths (these vary significantly between Azure SDKs)
+- Authentication patterns
+- Client initialization
+- Async variants (`.aio` modules)
+- Common anti-patterns
+
+#### 6.2 Create Test Scenarios
+
+**Location:** `tests/scenarios/<skill-name>/scenarios.yaml`
+
+```yaml
+config:
+  model: gpt-4
+  max_tokens: 2000
+  temperature: 0.3
+
+scenarios:
+  - name: basic_client_creation
+    prompt: |
+      Create a basic example using the Azure SDK.
+      Include proper authentication and client initialization.
+    expected_patterns:
+      - "DefaultAzureCredential"
+      - "MyClient"
+    forbidden_patterns:
+      - "api_key="
+      - "hardcoded"
+    tags:
+      - basic
+      - authentication
+    mock_response: |
+      import os
+      from azure.identity import DefaultAzureCredential
+      from azure.ai.mymodule import MyClient
+      
+      credential = DefaultAzureCredential()
+      client = MyClient(
+          endpoint=os.environ["AZURE_ENDPOINT"],
+          credential=credential
+      )
+      # ... rest of working example
+```
+
+**Scenario design principles:**
+- Each scenario tests ONE specific pattern or feature
+- `expected_patterns` — patterns that MUST appear
+- `forbidden_patterns` — common mistakes that must NOT appear
+- `mock_response` — complete, working code that passes all checks
+- `tags` — for filtering (`basic`, `async`, `streaming`, `tools`)
+
+#### 6.3 Run Tests
+
+```bash
+cd tests
+pnpm install
+
+# Check skill is discovered
+pnpm harness --list
+
+# Run in mock mode (fast, deterministic)
+pnpm harness <skill-name> --mock --verbose
+
+# Run with Ralph Loop (iterative improvement)
+pnpm harness <skill-name> --ralph --mock --max-iterations 5 --threshold 85
+```
+
+**Success criteria:**
+- All scenarios pass (100% pass rate)
+- No false positives (mock responses always pass)
+- Patterns catch real mistakes
+
+### Step 7: Update Documentation
+
+After creating the skill:
+
+1. **Update README.md** — Add the skill to the appropriate language section in the Skill Catalog
+   - Update total skill count (line ~73: `> N skills in...`)
+   - Update Skill Explorer link count (line ~15: `Browse all N skills`)
+   - Update language count table (lines ~77-83)
+   - Update language section count (e.g., `> N skills • suffix: -py`)
+   - Update category count (e.g., `<summary><strong>Foundry & AI</strong> (N skills)</summary>`)
+   - Add skill row in alphabetical order within its category
+   - Update test coverage summary (line ~622: `**N skills with N test scenarios**`)
+   - Update test coverage table — update skill count, scenario count, and top skills for the language
+
+2. **Regenerate GitHub Pages data** — Run the extraction script to update the docs site
+   ```bash
+   cd docs-site && npx tsx scripts/extract-skills.ts
+   ```
+   This updates `docs-site/src/data/skills.json` which feeds the Astro-based docs site.
+   Then rebuild the docs site:
+   ```bash
+   cd docs-site && npm run build
+   ```
+   This outputs to `docs/` which is served by GitHub Pages.
+
+3. **Verify AGENTS.md** — Ensure the skill count is accurate
+
+---
+
+## Progressive Disclosure Patterns
+
+### Pattern 1: High-Level Guide with References
+
+```markdown
+# SDK Name
+
+## Quick Start
+[Minimal example]
+
+## Advanced Features
+- **Streaming**: See references/streaming.md
+- **Tools**: See references/tools.md
+```
+
+### Pattern 2: Language Variants
+
+```
+azure-service-skill/
+├── SKILL.md (overview + language selection)
+└── references/
+    ├── python.md
+    ├── dotnet.md
+    ├── java.md
+    └── typescript.md
+```
+
+### Pattern 3: Feature Organization
+
+```
+azure-ai-agents/
+├── SKILL.md (core workflow)
+└── references/
+    ├── tools.md
+    ├── streaming.md
+    ├── async-patterns.md
+    └── error-handling.md
+```
+
+---
+
+## Design Pattern References
+
+| Reference | Contents |
+|-----------|----------|
+| `references/workflows.md` | Sequential and conditional workflows |
+| `references/output-patterns.md` | Templates and examples |
+| `references/azure-sdk-patterns.md` | Language-specific Azure SDK patterns |
+
+---
+
+## Anti-Patterns
+
+| Don't | Why |
+|-------|-----|
+| Create skill without SDK context | Users must provide package name/docs URL |
+| Put "when to use" in body | Body loads AFTER triggering |
+| Hardcode credentials | Security risk |
+| Skip authentication section | Agents will improvise poorly |
+| Use outdated SDK patterns | APIs change; search docs first |
+| Include README.md | Agents don't need meta-docs |
+| Deeply nest references | Keep one level deep |
+| Skip acceptance criteria | Skills without tests can't be validated |
+| Skip symlink categorization | Skills won't be discoverable by category |
+| Use wrong import paths | Azure SDKs have specific module structures |
+
+---
+
+## Checklist
+
+Before completing a skill:
+
+**Prerequisites:**
+- [ ] User provided SDK package name or documentation URL
+- [ ] Verified SDK patterns via `microsoft-docs` MCP
+
+**Skill Creation:**
+- [ ] Description includes what AND when (trigger phrases)
+- [ ] SKILL.md under 500 lines
+- [ ] Authentication uses `DefaultAzureCredential`
+- [ ] Includes cleanup/delete in examples
+- [ ] References organized by feature
+
+**Categorization:**
+- [ ] Skill created in `.github/skills/<skill-name>/`
+- [ ] Symlink created in `skills/<language>/<category>/<short-name>`
+- [ ] Symlink points to `../../../.github/skills/<skill-name>`
+
+**Testing:**
+- [ ] `references/acceptance-criteria.md` created with correct/incorrect patterns
+- [ ] `tests/scenarios/<skill-name>/scenarios.yaml` created
+- [ ] All scenarios pass (`pnpm harness <skill> --mock`)
+- [ ] Import paths documented precisely
+
+**Documentation:**
+- [ ] README.md skill catalog updated
+- [ ] Instructs to search `microsoft-docs` MCP for current APIs
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.
+
+
+<!-- MERGED INTO: skill-creator on 2026-04-18 -->
+<!-- Use `skill-creator` instead. -->
+
+---
+
+<!-- skill-developer -->
+## Purpose
+
+Comprehensive guide for creating and managing skills in Claude Code with auto-activation system, following Anthropic's official best practices including the 500-line rule and progressive disclosure pattern.
+
+## When to Use This Skill
+
+Automatically activates when you mention:
+- Creating or adding skills
+- Modifying skill triggers or rules
+- Understanding how skill activation works
+- Debugging skill activation issues
+- Working with skill-rules.json
+- Hook system mechanics
+- Claude Code best practices
+- Progressive disclosure
+- YAML frontmatter
+- 500-line rule
+
+---
+
+## System Overview
+
+### Two-Hook Architecture
+
+**1. UserPromptSubmit Hook** (Proactive Suggestions)
+- **File**: `.claude/hooks/skill-activation-prompt.ts`
+- **Trigger**: BEFORE Claude sees user's prompt
+- **Purpose**: Suggest relevant skills based on keywords + intent patterns
+- **Method**: Injects formatted reminder as context (stdout → Claude's input)
+- **Use Cases**: Topic-based skills, implicit work detection
+
+**2. Stop Hook - Error Handling Reminder** (Gentle Reminders)
+- **File**: `.claude/hooks/error-handling-reminder.ts`
+- **Trigger**: AFTER Claude finishes responding
+- **Purpose**: Gentle reminder to self-assess error handling in code written
+- **Method**: Analyzes edited files for risky patterns, displays reminder if needed
+- **Use Cases**: Error handling awareness without blocking friction
+
+**Philosophy Change (2025-10-27):** We moved away from blocking PreToolUse for Sentry/error handling. Instead, use gentle post-response reminders that don't block workflow but maintain code quality awareness.
+
+### Configuration File
+
+**Location**: `.claude/skills/skill-rules.json`
+
+Defines:
+- All skills and their trigger conditions
+- Enforcement levels (block, suggest, warn)
+- File path patterns (glob)
+- Content detection patterns (regex)
+- Skip conditions (session tracking, file markers, env vars)
+
+---
+
+## Skill Types
+
+### 1. Guardrail Skills
+
+**Purpose:** Enforce critical best practices that prevent errors
+
+**Characteristics:**
+- Type: `"guardrail"`
+- Enforcement: `"block"`
+- Priority: `"critical"` or `"high"`
+- Block file edits until skill used
+- Prevent common mistakes (column names, critical errors)
+- Session-aware (don't repeat nag in same session)
+
+**Examples:**
+- `database-verification` - Verify table/column names before Prisma queries
+- `frontend-dev-guidelines` - Enforce React/TypeScript patterns
+
+**When to Use:**
+- Mistakes that cause runtime errors
+- Data integrity concerns
+- Critical compatibility issues
+
+### 2. Domain Skills
+
+**Purpose:** Provide comprehensive guidance for specific areas
+
+**Characteristics:**
+- Type: `"domain"`
+- Enforcement: `"suggest"`
+- Priority: `"high"` or `"medium"`
+- Advisory, not mandatory
+- Topic or domain-specific
+- Comprehensive documentation
+
+**Examples:**
+- `backend-dev-guidelines` - Node.js/Express/TypeScript patterns
+- `frontend-dev-guidelines` - React/TypeScript best practices
+- `error-tracking` - Sentry integration guidance
+
+**When to Use:**
+- Complex systems requiring deep knowledge
+- Best practices documentation
+- Architectural patterns
+- How-to guides
+
+---
+
+## Quick Start: Creating a New Skill
+
+### Step 1: Create Skill File
+
+**Location:** `.claude/skills/{skill-name}/SKILL.md`
+
+**Template:**
+```markdown
+---
+name: my-new-skill
+description: Brief description including keywords that trigger this skill. Mention topics, file types, and use cases. Be explicit about trigger terms.
+---
+
+# My New Skill
+
+## Purpose
+What this skill helps with
+
+## When to Use
+Specific scenarios and conditions
+
+## Key Information
+The actual guidance, documentation, patterns, examples
+```
+
+**Best Practices:**
+- ✅ **Name**: Lowercase, hyphens, gerund form (verb + -ing) preferred
+- ✅ **Description**: Include ALL trigger keywords/phrases (max 1024 chars)
+- ✅ **Content**: Under 500 lines - use reference files for details
+- ✅ **Examples**: Real code examples
+- ✅ **Structure**: Clear headings, lists, code blocks
+
+### Step 2: Add to skill-rules.json
+
+See [SKILL_RULES_REFERENCE.md](SKILL_RULES_REFERENCE.md) for complete schema.
+
+**Basic Template:**
+```json
+{
+  "my-new-skill": {
+    "type": "domain",
+    "enforcement": "suggest",
+    "priority": "medium",
+    "promptTriggers": {
+      "keywords": ["keyword1", "keyword2"],
+      "intentPatterns": ["(create|add).*?something"]
+    }
+  }
+}
+```
+
+### Step 3: Test Triggers
+
+**Test UserPromptSubmit:**
+```bash
+echo '{"session_id":"test","prompt":"your test prompt"}' | \
+  npx tsx .claude/hooks/skill-activation-prompt.ts
+```
+
+**Test PreToolUse:**
+```bash
+cat <<'EOF' | npx tsx .claude/hooks/skill-verification-guard.ts
+{"session_id":"test","tool_name":"Edit","tool_input":{"file_path":"test.ts"}}
+EOF
+```
+
+### Step 4: Refine Patterns
+
+Based on testing:
+- Add missing keywords
+- Refine intent patterns to reduce false positives
+- Adjust file path patterns
+- Test content patterns against actual files
+
+### Step 5: Follow Anthropic Best Practices
+
+✅ Keep SKILL.md under 500 lines
+✅ Use progressive disclosure with reference files
+✅ Add table of contents to reference files > 100 lines
+✅ Write detailed description with trigger keywords
+✅ Test with 3+ real scenarios before documenting
+✅ Iterate based on actual usage
+
+---
+
+## Enforcement Levels
+
+### BLOCK (Critical Guardrails)
+
+- Physically prevents Edit/Write tool execution
+- Exit code 2 from hook, stderr → Claude
+- Claude sees message and must use skill to proceed
+- **Use For**: Critical mistakes, data integrity, security issues
+
+**Example:** Database column name verification
+
+### SUGGEST (Recommended)
+
+- Reminder injected before Claude sees prompt
+- Claude is aware of relevant skills
+- Not enforced, just advisory
+- **Use For**: Domain guidance, best practices, how-to guides
+
+**Example:** Frontend development guidelines
+
+### WARN (Optional)
+
+- Low priority suggestions
+- Advisory only, minimal enforcement
+- **Use For**: Nice-to-have suggestions, informational reminders
+
+**Rarely used** - most skills are either BLOCK or SUGGEST.
+
+---
+
+## Skip Conditions & User Control
+
+### 1. Session Tracking
+
+**Purpose:** Don't nag repeatedly in same session
+
+**How it works:**
+- First edit → Hook blocks, updates session state
+- Second edit (same session) → Hook allows
+- Different session → Blocks again
+
+**State File:** `.claude/hooks/state/skills-used-{session_id}.json`
+
+### 2. File Markers
+
+**Purpose:** Permanent skip for verified files
+
+**Marker:** `// @skip-validation`
+
+**Usage:**
+```typescript
+// @skip-validation
+import { PrismaService } from './prisma';
+// This file has been manually verified
+```
+
+**NOTE:** Use sparingly - defeats the purpose if overused
+
+### 3. Environment Variables
+
+**Purpose:** Emergency disable, temporary override
+
+**Global disable:**
+```bash
+export SKIP_SKILL_GUARDRAILS=true  # Disables ALL PreToolUse blocks
+```
+
+**Skill-specific:**
+```bash
+export SKIP_DB_VERIFICATION=true
+export SKIP_ERROR_REMINDER=true
+```
+
+---
+
+## Testing Checklist
+
+When creating a new skill, verify:
+
+- [ ] Skill file created in `.claude/skills/{name}/SKILL.md`
+- [ ] Proper frontmatter with name and description
+- [ ] Entry added to `skill-rules.json`
+- [ ] Keywords tested with real prompts
+- [ ] Intent patterns tested with variations
+- [ ] File path patterns tested with actual files
+- [ ] Content patterns tested against file contents
+- [ ] Block message is clear and actionable (if guardrail)
+- [ ] Skip conditions configured appropriately
+- [ ] Priority level matches importance
+- [ ] No false positives in testing
+- [ ] No false negatives in testing
+- [ ] Performance is acceptable (<100ms or <200ms)
+- [ ] JSON syntax validated: `jq . skill-rules.json`
+- [ ] **SKILL.md under 500 lines** ⭐
+- [ ] Reference files created if needed
+- [ ] Table of contents added to files > 100 lines
+
+---
+
+## Reference Files
+
+For detailed information on specific topics, see:
+
+### [TRIGGER_TYPES.md](TRIGGER_TYPES.md)
+Complete guide to all trigger types:
+- Keyword triggers (explicit topic matching)
+- Intent patterns (implicit action detection)
+- File path triggers (glob patterns)
+- Content patterns (regex in files)
+- Best practices and examples for each
+- Common pitfalls and testing strategies
+
+### [SKILL_RULES_REFERENCE.md](SKILL_RULES_REFERENCE.md)
+Complete skill-rules.json schema:
+- Full TypeScript interface definitions
+- Field-by-field explanations
+- Complete guardrail skill example
+- Complete domain skill example
+- Validation guide and common errors
+
+### [HOOK_MECHANISMS.md](HOOK_MECHANISMS.md)
+Deep dive into hook internals:
+- UserPromptSubmit flow (detailed)
+- PreToolUse flow (detailed)
+- Exit code behavior table (CRITICAL)
+- Session state management
+- Performance considerations
+
+### [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
+Comprehensive debugging guide:
+- Skill not triggering (UserPromptSubmit)
+- PreToolUse not blocking
+- False positives (too many triggers)
+- Hook not executing at all
+- Performance issues
+
+### [PATTERNS_LIBRARY.md](PATTERNS_LIBRARY.md)
+Ready-to-use pattern collection:
+- Intent pattern library (regex)
+- File path pattern library (glob)
+- Content pattern library (regex)
+- Organized by use case
+- Copy-paste ready
+
+### [ADVANCED.md](ADVANCED.md)
+Future enhancements and ideas:
+- Dynamic rule updates
+- Skill dependencies
+- Conditional enforcement
+- Skill analytics
+- Skill versioning
+
+---
+
+## Quick Reference Summary
+
+### Create New Skill (5 Steps)
+
+1. Create `.claude/skills/{name}/SKILL.md` with frontmatter
+2. Add entry to `.claude/skills/skill-rules.json`
+3. Test with `npx tsx` commands
+4. Refine patterns based on testing
+5. Keep SKILL.md under 500 lines
+
+### Trigger Types
+
+- **Keywords**: Explicit topic mentions
+- **Intent**: Implicit action detection
+- **File Paths**: Location-based activation
+- **Content**: Technology-specific detection
+
+See [TRIGGER_TYPES.md](TRIGGER_TYPES.md) for complete details.
+
+### Enforcement
+
+- **BLOCK**: Exit code 2, critical only
+- **SUGGEST**: Inject context, most common
+- **WARN**: Advisory, rarely used
+
+### Skip Conditions
+
+- **Session tracking**: Automatic (prevents repeated nags)
+- **File markers**: `// @skip-validation` (permanent skip)
+- **Env vars**: `SKIP_SKILL_GUARDRAILS` (emergency disable)
+
+### Anthropic Best Practices
+
+✅ **500-line rule**: Keep SKILL.md under 500 lines
+✅ **Progressive disclosure**: Use reference files for details
+✅ **Table of contents**: Add to reference files > 100 lines
+✅ **One level deep**: Don't nest references deeply
+✅ **Rich descriptions**: Include all trigger keywords (max 1024 chars)
+✅ **Test first**: Build 3+ evaluations before extensive documentation
+✅ **Gerund naming**: Prefer verb + -ing (e.g., "processing-pdfs")
+
+### Troubleshoot
+
+Test hooks manually:
+```bash
+# UserPromptSubmit
+echo '{"prompt":"test"}' | npx tsx .claude/hooks/skill-activation-prompt.ts
+
+# PreToolUse
+cat <<'EOF' | npx tsx .claude/hooks/skill-verification-guard.ts
+{"tool_name":"Edit","tool_input":{"file_path":"test.ts"}}
+EOF
+```
+
+See [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for complete debugging guide.
+
+---
+
+## Related Files
+
+**Configuration:**
+- `.claude/skills/skill-rules.json` - Master configuration
+- `.claude/hooks/state/` - Session tracking
+- `.claude/settings.json` - Hook registration
+
+**Hooks:**
+- `.claude/hooks/skill-activation-prompt.ts` - UserPromptSubmit
+- `.claude/hooks/error-handling-reminder.ts` - Stop event (gentle reminders)
+
+**All Skills:**
+- `.claude/skills/*/SKILL.md` - Skill content files
+
+---
+
+**Skill Status**: COMPLETE - Restructured following Anthropic best practices ✅
+**Line Count**: < 500 (following 500-line rule) ✅
+**Progressive Disclosure**: Reference files for detailed information ✅
+
+**Next**: Create more skills, refine patterns based on usage
+
+
+<!-- MERGED INTO: skill-creator on 2026-04-18 -->
+<!-- Use `skill-creator` instead. -->
+
+---
+
+<!-- skill-writer -->
+Use this as the single canonical workflow for skill creation and improvement.
+Primary success condition: maximize high-value input coverage before authoring so the resulting skill has minimal blind spots.
+
+Load only the path(s) required for the task:
+
+| Task | Read |
+|------|------|
+| Set skill class and required dimensions | `references/mode-selection.md` |
+| Apply writing constraints for depth vs concision | `references/design-principles.md` |
+| Select structure pattern for this skill | `references/skill-patterns.md` |
+| Select workflow orchestration pattern for process-heavy skills | `references/workflow-patterns.md` |
+| Select output format pattern for deterministic quality | `references/output-patterns.md` |
+| Choose workflow path and required outputs | `references/mode-selection.md` |
+| Load representative synthesis examples by skill type | `references/examples/*.md` |
+| Synthesize external/local sources with depth gates | `references/synthesis-path.md` |
+| Author or update SKILL.md and supporting files | `references/authoring-path.md` |
+| Optimize skill description and trigger precision | `references/description-optimization.md` |
+| Iterate using positive/negative/fix examples | `references/iteration-path.md` |
+| Evaluate behavior and compare baseline vs with-skill (opt-in quantitative) | `references/evaluation-path.md` |
+| Register and validate skill changes | `references/registration-validation.md` |
+
+## Step 1: Resolve target and path
+
+1. Resolve target skill path and intended operation (`create`, `update`, `synthesize`, `iterate`).
+2. Read `references/mode-selection.md` and select the required path(s).
+3. Classify the skill (`workflow-process`, `integration-documentation`, `security-review`, `skill-authoring`, `generic`).
+4. Ask one direct question if class or depth requirements are ambiguous; otherwise state explicit assumptions.
+
+## Step 2: Run synthesis when needed
+
+Read `references/synthesis-path.md`.
+
+1. Collect and score relevant sources with provenance.
+2. Apply trust and safety rules when ingesting external content.
+3. Produce source-backed decisions and coverage/gap status.
+4. Load one or more profiles from `references/examples/*.md` when the skill is hybrid.
+5. Enforce baseline source pack for skill-authoring workflows.
+6. Enforce depth gates before moving to authoring.
+
+## Step 3: Run iteration first when improving from outcomes/examples
+
+Read `references/iteration-path.md` first when selected path includes `iteration` (for example operation `iterate`).
+
+1. Capture and anonymize examples with provenance.
+2. Re-evaluate skill behavior against working and holdout slices.
+3. Propose improvements from positive/negative/fix evidence.
+4. Carry concrete behavior deltas into authoring.
+
+Skip this step when selected path does not include `iteration`.
+
+## Step 4: Author or update skill artifacts
+
+Read `references/authoring-path.md`.
+
+1. Write or update `SKILL.md` in imperative voice with trigger-rich description.
+2. Create focused reference files and scripts only when justified.
+3. Follow `references/skill-patterns.md`, `references/workflow-patterns.md`, and
+   `references/output-patterns.md` for structure and output determinism.
+4. For authoring/generator skills, include transformed examples in references:
+   - happy-path
+   - secure/robust variant
+   - anti-pattern + corrected version
+
+## Step 5: Optimize description quality
+
+Read `references/description-optimization.md`.
+
+1. Validate should-trigger and should-not-trigger query sets.
+2. Reduce false positives and false negatives with targeted description edits.
+3. Keep trigger language generic across Codex and Claude.
+
+## Step 6: Evaluate outcomes
+
+Read `references/evaluation-path.md`.
+
+1. Run a lightweight qualitative check by default (recommended).
+2. For integration/documentation and skill-authoring skills, include the concise depth rubric from `references/evaluation-path.md`.
+3. Run deeper eval playbook and quantitative baseline-vs-with-skill only when requested or risk warrants it.
+4. Record outcomes and unresolved risks.
+
+## Step 7: Register and validate
+
+Read `references/registration-validation.md`.
+
+1. Apply repository registration steps.
+2. Run quick validation with strict depth gates.
+3. Reject shallow outputs that fail depth gates or required artifact checks.
+
+## Output format
+
+Return:
+
+1. `Summary`
+2. `Changes Made`
+3. `Validation Results`
+4. `Open Gaps`
+
+
+## When to Use
+
+Use this skill when tackling tasks related to its primary domain or functionality as described above.
+
+
+<!-- MERGED INTO: skill-creator on 2026-04-18 -->
+<!-- Use `skill-creator` instead. -->
+
+---
+
+<!-- skill-improver -->
+Iteratively improve a Claude Code skill using the skill-reviewer agent until it meets quality standards.
+
+## Prerequisites
+
+Requires the `plugin-dev` plugin which provides the `skill-reviewer` agent.
+
+Verify it's enabled: run `/plugins` — `plugin-dev` should appear in the list. If missing, install from the Trail of Bits plugin repository.
+
+## Core Loop
+
+1. **Review** - Call skill-reviewer on the target skill
+2. **Categorize** - Parse issues by severity
+3. **Fix** - Address critical and major issues
+4. **Evaluate** - Check minor issues for validity before fixing
+5. **Repeat** - Continue until quality bar is met
+
+## When to Use
+
+- Improving a skill with multiple quality issues
+- Iterating on a new skill until it meets standards
+- Automated fix-review cycles instead of manual editing
+- Consistent quality enforcement across skills
+
+## When NOT to Use
+
+- **One-time review**: Use `/skill-reviewer` directly instead
+- **Quick single fixes**: Edit the file directly
+- **Non-skill files**: Only works on SKILL.md files
+- **Experimental skills**: Manual iteration gives more control during exploration
+
+## Issue Categorization
+
+### Critical Issues (MUST fix immediately)
+
+These block skill loading or cause runtime failures:
+
+- Missing required frontmatter fields (name, description) — Claude cannot index or trigger the skill
+- Invalid YAML frontmatter syntax — Parsing fails, skill won't load
+- Referenced files that don't exist — Runtime errors when Claude follows links
+- Broken file paths — Same as above, leads to tool failures
+
+### Major Issues (MUST fix)
+
+These significantly degrade skill effectiveness:
+
+- Weak or vague trigger descriptions — Claude may not recognize when to use the skill
+- Wrong writing voice (second person "you" instead of imperative) — Inconsistent with Claude's execution model
+- SKILL.md exceeds 500 lines without using references/ — Overloads context, reduces comprehension
+- Missing "When to Use" or "When NOT to Use" sections — Required by project quality standards
+- Description doesn't specify when to trigger — Skill may never be selected
+
+### Minor Issues (Evaluate before fixing)
+
+These are polish items that may or may not improve the skill:
+
+- Subjective style preferences — Reviewer may have different taste than author
+- Optional enhancements — May add complexity without proportional value
+- "Nice to have" improvements — Consider cost-benefit before implementing
+- Formatting suggestions — Often valid but low impact
+
+## Minor Issue Evaluation
+
+Before implementing any minor issue fix, evaluate:
+
+1. **Is this a genuine improvement?** - Does it add real value or just satisfy a preference?
+2. **Could this be a false positive?** - Is the reviewer misunderstanding context?
+3. **Would this actually help Claude use the skill?** - Focus on functional improvements
+
+Only implement minor fixes that are clearly beneficial. Skill-reviewer may produce false positives.
+
+## Invoking skill-reviewer
+
+Use the skill-reviewer agent from the plugin-dev plugin. Request a review by asking Claude to:
+
+> Review the skill at [SKILL_PATH] using the plugin-dev:skill-reviewer agent. Provide a detailed quality assessment with issues categorized by severity.
+
+Replace `[SKILL_PATH]` with the absolute path to the skill directory (e.g., `/path/to/plugins/my-plugin/skills/my-skill`).
+
+## Example Fix Cycle
+
+**Iteration 1 — skill-reviewer output:**
+```text
+Critical: SKILL.md:1 - Missing required 'name' field in frontmatter
+Major: SKILL.md:3 - Description uses second person ("you should use")
+Major: Missing "When NOT to Use" section
+Minor: Line 45 is verbose
+```
+
+**Fixes applied:**
+- Added name field to frontmatter
+- Rewrote description in third person
+- Added "When NOT to Use" section
+
+**Iteration 2 — run skill-reviewer again to verify fixes:**
+```text
+Minor: Line 45 is verbose
+```
+
+**Minor issue evaluation:**
+Line 45 communicates effectively as-is. The verbosity provides useful context. Skip.
+
+**All critical/major issues resolved. Output the completion marker:**
+```
+<skill-improvement-complete>
+```
+
+Note: The marker MUST appear in the output. Statements like "quality bar met" or "looks good" will NOT stop the loop.
+
+## Completion Criteria
+
+**CRITICAL**: The stop hook ONLY checks for the explicit marker below. No other signal will terminate the loop.
+
+Output this marker when done:
+
+```
+<skill-improvement-complete>
+```
+
+**When to output the marker:**
+
+1. **skill-reviewer reports "Pass"** or **no issues found** → output marker immediately
+2. **All critical and major issues are fixed** AND you've verified the fixes → output marker
+3. **Remaining issues are only minor** AND you've evaluated them as false positives or not worth fixing → output marker
+
+**When NOT to output the marker:**
+
+- Any critical issue remains unfixed
+- Any major issue remains unfixed
+- You haven't run skill-reviewer to verify your fixes worked
+
+The marker is the ONLY way to complete the loop. Natural language like "looks good" or "quality bar met" will NOT stop the loop.
+
+## Rationalizations to Reject
+
+- "I'll just mark it complete and come back later" - Fix issues now
+- "This minor issue seems wrong, I'll skip all of them" - Evaluate each one individually
+- "The reviewer is being too strict" - The quality bar exists for a reason
+- "It's good enough" - If there are major issues, it's not good enough
+
+
+<!-- MERGED INTO: skill-creator on 2026-04-18 -->
+<!-- Use `skill-creator` instead. -->

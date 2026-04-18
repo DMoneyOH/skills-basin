@@ -1,9 +1,32 @@
 ---
-name: "incident-response"
+name: incident-response
 description: "Use when a security incident has been detected or declared and needs classification, triage, escalation path determination, and forensic evidence collection. Covers SEV1-SEV4 classification, false positive filtering, incident taxonomy, and NIST SP 800-61 lifecycle."
+triggers:
+  - "we're here to learn, not to blame"
+  - # incident commander skill
+  - # incident response
+  - # incident runbook templates
+  - # postmortem writing
+  - ## anti-patterns
+  - ## cross-references
+  - ## escalation paths
+  - ## false positive filtering
+  - ## forensic evidence collection
+  - ## incident classification
+  - ## incident triage tool
+  - ## overview
+  - ## regulatory notification obligations
+  - ## severity framework
+merged_from:
+  - incident-commander
+  - incident-responder
+  - incident-response-incident-response
+  - incident-runbook-templates
+  - postmortem-writing
+merged_at: 2026-04-18T17:21:06.069395
 ---
 
-# Incident Response
+# incident-response
 
 Incident response skill for the full lifecycle from initial triage through forensic collection, severity declaration, and escalation routing. This is NOT threat hunting (see threat-detection) or post-incident compliance mapping (see governance/compliance-mapping) — this is about classifying, triaging, and managing declared security incidents.
 
@@ -320,3 +343,1643 @@ done
 | [cloud-security](../cloud-security/SKILL.md) | Cloud posture findings (IAM compromise, S3 exposure) may trigger incident classification |
 | [red-team](../red-team/SKILL.md) | Red team findings validate detection coverage; confirmed gaps become hunting hypotheses |
 | [security-pen-testing](../security-pen-testing/SKILL.md) | Pen test vulnerabilities exploited in the wild escalate to incident-response for active incident handling |
+
+---
+
+<!-- incident-commander -->
+**Category:** Engineering Team  
+**Tier:** POWERFUL  
+**Author:** Claude Skills Team  
+**Version:** 1.0.0  
+**Last Updated:** February 2026
+
+## Overview
+
+The Incident Commander skill provides a comprehensive incident response framework for managing technology incidents from detection through resolution and post-incident review. This skill implements battle-tested practices from SRE and DevOps teams at scale, providing structured tools for severity classification, timeline reconstruction, and thorough post-incident analysis.
+
+## Key Features
+
+- **Automated Severity Classification** - Intelligent incident triage based on impact and urgency metrics
+- **Timeline Reconstruction** - Transform scattered logs and events into coherent incident narratives
+- **Post-Incident Review Generation** - Structured PIRs with multiple RCA frameworks
+- **Communication Templates** - Pre-built templates for stakeholder updates and escalations
+- **Runbook Integration** - Generate actionable runbooks from incident patterns
+
+## Skills Included
+
+### Core Tools
+
+1. **Incident Classifier** (`incident_classifier.py`)
+   - Analyzes incident descriptions and outputs severity levels
+   - Recommends response teams and initial actions
+   - Generates communication templates based on severity
+
+2. **Timeline Reconstructor** (`timeline_reconstructor.py`)
+   - Processes timestamped events from multiple sources
+   - Reconstructs chronological incident timeline
+   - Identifies gaps and provides duration analysis
+
+3. **PIR Generator** (`pir_generator.py`)
+   - Creates comprehensive Post-Incident Review documents
+   - Applies multiple RCA frameworks (5 Whys, Fishbone, Timeline)
+   - Generates actionable follow-up items
+
+## Incident Response Framework
+
+### Severity Classification System
+
+#### SEV1 - Critical Outage
+**Definition:** Complete service failure affecting all users or critical business functions
+
+**Characteristics:**
+- Customer-facing services completely unavailable
+- Data loss or corruption affecting users
+- Security breaches with customer data exposure
+- Revenue-generating systems down
+- SLA violations with financial penalties
+
+**Response Requirements:**
+- Immediate escalation to on-call engineer
+- Incident Commander assigned within 5 minutes
+- Executive notification within 15 minutes
+- Public status page update within 15 minutes
+- War room established
+- All hands on deck if needed
+
+**Communication Frequency:** Every 15 minutes until resolution
+
+#### SEV2 - Major Impact
+**Definition:** Significant degradation affecting subset of users or non-critical functions
+
+**Characteristics:**
+- Partial service degradation (>25% of users affected)
+- Performance issues causing user frustration
+- Non-critical features unavailable
+- Internal tools impacting productivity
+- Data inconsistencies not affecting user experience
+
+**Response Requirements:**
+- On-call engineer response within 15 minutes
+- Incident Commander assigned within 30 minutes
+- Status page update within 30 minutes
+- Stakeholder notification within 1 hour
+- Regular team updates
+
+**Communication Frequency:** Every 30 minutes during active response
+
+#### SEV3 - Minor Impact
+**Definition:** Limited impact with workarounds available
+
+**Characteristics:**
+- Single feature or component affected
+- <25% of users impacted
+- Workarounds available
+- Performance degradation not significantly impacting UX
+- Non-urgent monitoring alerts
+
+**Response Requirements:**
+- Response within 2 hours during business hours
+- Next business day response acceptable outside hours
+- Internal team notification
+- Optional status page update
+
+**Communication Frequency:** At key milestones only
+
+#### SEV4 - Low Impact
+**Definition:** Minimal impact, cosmetic issues, or planned maintenance
+
+**Characteristics:**
+- Cosmetic bugs
+- Documentation issues
+- Logging or monitoring gaps
+- Performance issues with no user impact
+- Development/test environment issues
+
+**Response Requirements:**
+- Response within 1-2 business days
+- Standard ticket/issue tracking
+- No special escalation required
+
+**Communication Frequency:** Standard development cycle updates
+
+### Incident Commander Role
+
+#### Primary Responsibilities
+
+1. **Command and Control**
+   - Own the incident response process
+   - Make critical decisions about resource allocation
+   - Coordinate between technical teams and stakeholders
+   - Maintain situational awareness across all response streams
+
+2. **Communication Hub**
+   - Provide regular updates to stakeholders
+   - Manage external communications (status pages, customer notifications)
+   - Facilitate effective communication between response teams
+   - Shield responders from external distractions
+
+3. **Process Management**
+   - Ensure proper incident tracking and documentation
+   - Drive toward resolution while maintaining quality
+   - Coordinate handoffs between team members
+   - Plan and execute rollback strategies if needed
+
+4. **Post-Incident Leadership**
+   - Ensure thorough post-incident reviews are conducted
+   - Drive implementation of preventive measures
+   - Share learnings with broader organization
+
+#### Decision-Making Framework
+
+**Emergency Decisions (SEV1/2):**
+- Incident Commander has full authority
+- Bias toward action over analysis
+- Document decisions for later review
+- Consult subject matter experts but don't get blocked
+
+**Resource Allocation:**
+- Can pull in any necessary team members
+- Authority to escalate to senior leadership
+- Can approve emergency spend for external resources
+- Make call on communication channels and timing
+
+**Technical Decisions:**
+- Lean on technical leads for implementation details
+- Make final calls on trade-offs between speed and risk
+- Approve rollback vs. fix-forward strategies
+- Coordinate testing and validation approaches
+
+### Communication Templates
+
+#### Initial Incident Notification (SEV1/2)
+
+```
+Subject: [SEV{severity}] {Service Name} - {Brief Description}
+
+Incident Details:
+- Start Time: {timestamp}
+- Severity: SEV{level}
+- Impact: {user impact description}
+- Current Status: {investigating/mitigating/resolved}
+
+Technical Details:
+- Affected Services: {service list}
+- Symptoms: {what users are experiencing}
+- Initial Assessment: {suspected root cause if known}
+
+Response Team:
+- Incident Commander: {name}
+- Technical Lead: {name}
+- SMEs Engaged: {list}
+
+Next Update: {timestamp}
+Status Page: {link}
+War Room: {bridge/chat link}
+
+---
+{Incident Commander Name}
+{Contact Information}
+```
+
+#### Executive Summary (SEV1)
+
+```
+Subject: URGENT - Customer-Impacting Outage - {Service Name}
+
+Executive Summary:
+{2-3 sentence description of customer impact and business implications}
+
+Key Metrics:
+- Time to Detection: {X minutes}
+- Time to Engagement: {X minutes} 
+- Estimated Customer Impact: {number/percentage}
+- Current Status: {status}
+- ETA to Resolution: {time or "investigating"}
+
+Leadership Actions Required:
+- [ ] Customer communication approval
+- [ ] PR/Communications coordination  
+- [ ] Resource allocation decisions
+- [ ] External vendor engagement
+
+Incident Commander: {name} ({contact})
+Next Update: {time}
+
+---
+This is an automated alert from our incident response system.
+```
+
+#### Customer Communication Template
+
+```
+We are currently experiencing {brief description of issue} affecting {scope of impact}. 
+
+Our engineering team was alerted at {time} and is actively working to resolve the issue. We will provide updates every {frequency} until resolved.
+
+What we know:
+- {factual statement of impact}
+- {factual statement of scope}
+- {brief status of response}
+
+What we're doing:
+- {primary response action}
+- {secondary response action}
+
+Workaround (if available):
+{workaround steps or "No workaround currently available"}
+
+We apologize for the inconvenience and will share more information as it becomes available.
+
+Next update: {time}
+Status page: {link}
+```
+
+### Stakeholder Management
+
+#### Stakeholder Classification
+
+**Internal Stakeholders:**
+- **Engineering Leadership** - Technical decisions and resource allocation
+- **Product Management** - Customer impact assessment and feature implications
+- **Customer Support** - User communication and support ticket management
+- **Sales/Account Management** - Customer relationship management for enterprise clients
+- **Executive Team** - Business impact decisions and external communication approval
+- **Legal/Compliance** - Regulatory reporting and liability assessment
+
+**External Stakeholders:**
+- **Customers** - Service availability and impact communication
+- **Partners** - API availability and integration impacts
+- **Vendors** - Third-party service dependencies and support escalation
+- **Regulators** - Compliance reporting for regulated industries
+- **Public/Media** - Transparency for public-facing outages
+
+#### Communication Cadence by Stakeholder
+
+| Stakeholder | SEV1 | SEV2 | SEV3 | SEV4 |
+|-------------|------|------|------|------|
+| Engineering Leadership | Real-time | 30min | 4hrs | Daily |
+| Executive Team | 15min | 1hr | EOD | Weekly |
+| Customer Support | Real-time | 30min | 2hrs | As needed |
+| Customers | 15min | 1hr | Optional | None |
+| Partners | 30min | 2hrs | Optional | None |
+
+### Runbook Generation Framework
+
+#### Dynamic Runbook Components
+
+1. **Detection Playbooks**
+   - Monitoring alert definitions
+   - Triage decision trees
+   - Escalation trigger points
+   - Initial response actions
+
+2. **Response Playbooks**
+   - Step-by-step mitigation procedures
+   - Rollback instructions
+   - Validation checkpoints
+   - Communication checkpoints
+
+3. **Recovery Playbooks**
+   - Service restoration procedures
+   - Data consistency checks
+   - Performance validation
+   - User notification processes
+
+#### Runbook Template Structure
+
+```markdown
+# {Service/Component} Incident Response Runbook
+
+## Quick Reference
+- **Severity Indicators:** {list of conditions for each severity level}
+- **Key Contacts:** {on-call rotations and escalation paths}
+- **Critical Commands:** {list of emergency commands with descriptions}
+
+## Detection
+### Monitoring Alerts
+- {Alert name}: {description and thresholds}
+- {Alert name}: {description and thresholds}
+
+### Manual Detection Signs
+- {Symptom}: {what to look for and where}
+- {Symptom}: {what to look for and where}
+
+## Initial Response (0-15 minutes)
+1. **Assess Severity**
+   - [ ] Check {primary metric}
+   - [ ] Verify {secondary indicator}
+   - [ ] Classify as SEV{level} based on {criteria}
+
+2. **Establish Command**
+   - [ ] Page Incident Commander if SEV1/2
+   - [ ] Create incident tracking ticket
+   - [ ] Join war room: {link/bridge info}
+
+3. **Initial Investigation**
+   - [ ] Check recent deployments: {deployment log location}
+   - [ ] Review error logs: {log location and queries}
+   - [ ] Verify dependencies: {dependency check commands}
+
+## Mitigation Strategies
+### Strategy 1: {Name}
+**Use when:** {conditions}
+**Steps:**
+1. {detailed step with commands}
+2. {detailed step with expected outcomes}
+3. {validation step}
+
+**Rollback Plan:**
+1. {rollback step}
+2. {verification step}
+
+### Strategy 2: {Name}
+{similar structure}
+
+## Recovery and Validation
+1. **Service Restoration**
+   - [ ] {restoration step}
+   - [ ] Wait for {metric} to return to normal
+   - [ ] Validate end-to-end functionality
+
+2. **Communication**
+   - [ ] Update status page
+   - [ ] Notify stakeholders
+   - [ ] Schedule PIR
+
+## Common Pitfalls
+- **{Pitfall}:** {description and how to avoid}
+- **{Pitfall}:** {description and how to avoid}
+
+## Reference Information
+→ See references/reference-information.md for details
+
+## Usage Examples
+
+### Example 1: Database Connection Pool Exhaustion
+
+```bash
+# Classify the incident
+echo '{"description": "Users reporting 500 errors, database connections timing out", "affected_users": "80%", "business_impact": "high"}' | python scripts/incident_classifier.py
+
+# Reconstruct timeline from logs
+python scripts/timeline_reconstructor.py --input assets/db_incident_events.json --output timeline.md
+
+# Generate PIR after resolution
+python scripts/pir_generator.py --incident assets/db_incident_data.json --timeline timeline.md --output pir.md
+```
+
+### Example 2: API Rate Limiting Incident
+
+```bash
+# Quick classification from stdin
+echo "API rate limits causing customer API calls to fail" | python scripts/incident_classifier.py --format text
+
+# Build timeline from multiple sources
+python scripts/timeline_reconstructor.py --input assets/api_incident_logs.json --detect-phases --gap-analysis
+
+# Generate comprehensive PIR
+python scripts/pir_generator.py --incident assets/api_incident_summary.json --rca-method fishbone --action-items
+```
+
+## Best Practices
+
+### During Incident Response
+
+1. **Maintain Calm Leadership**
+   - Stay composed under pressure
+   - Make decisive calls with incomplete information
+   - Communicate confidence while acknowledging uncertainty
+
+2. **Document Everything**
+   - All actions taken and their outcomes
+   - Decision rationale, especially for controversial calls
+   - Timeline of events as they happen
+
+3. **Effective Communication**
+   - Use clear, jargon-free language
+   - Provide regular updates even when there's no new information
+   - Manage stakeholder expectations proactively
+
+4. **Technical Excellence**
+   - Prefer rollbacks to risky fixes under pressure
+   - Validate fixes before declaring resolution
+   - Plan for secondary failures and cascading effects
+
+### Post-Incident
+
+1. **Blameless Culture**
+   - Focus on system failures, not individual mistakes
+   - Encourage honest reporting of what went wrong
+   - Celebrate learning and improvement opportunities
+
+2. **Action Item Discipline**
+   - Assign specific owners and due dates
+   - Track progress publicly
+   - Prioritize based on risk and effort
+
+3. **Knowledge Sharing**
+   - Share PIRs broadly within the organization
+   - Update runbooks based on lessons learned
+   - Conduct training sessions for common failure modes
+
+4. **Continuous Improvement**
+   - Look for patterns across multiple incidents
+   - Invest in tooling and automation
+   - Regularly review and update processes
+
+## Integration with Existing Tools
+
+### Monitoring and Alerting
+- PagerDuty/Opsgenie integration for escalation
+- Datadog/Grafana for metrics and dashboards
+- ELK/Splunk for log analysis and correlation
+
+### Communication Platforms
+- Slack/Teams for war room coordination
+- Zoom/Meet for video bridges
+- Status page providers (Statuspage.io, etc.)
+
+### Documentation Systems
+- Confluence/Notion for PIR storage
+- GitHub/GitLab for runbook version control
+- JIRA/Linear for action item tracking
+
+### Change Management
+- CI/CD pipeline integration
+- Deployment tracking systems
+- Feature flag platforms for quick rollbacks
+
+## Conclusion
+
+The Incident Commander skill provides a comprehensive framework for managing incidents from detection through post-incident review. By implementing structured processes, clear communication templates, and thorough analysis tools, teams can improve their incident response capabilities and build more resilient systems.
+
+The key to successful incident management is preparation, practice, and continuous learning. Use this framework as a starting point, but adapt it to your organization's specific needs, culture, and technical environment.
+
+Remember: The goal isn't to prevent all incidents (which is impossible), but to detect them quickly, respond effectively, communicate clearly, and learn continuously.
+
+
+<!-- MERGED INTO: incident-response on 2026-04-18 -->
+<!-- Use `incident-response` instead. -->
+
+---
+
+<!-- incident-responder -->
+## Use this skill when
+
+- Working on incident responder tasks or workflows
+- Needing guidance, best practices, or checklists for incident responder
+
+## Do not use this skill when
+
+- The task is unrelated to incident responder
+- You need a different domain or tool outside this scope
+
+## Instructions
+
+- Clarify goals, constraints, and required inputs.
+- Apply relevant best practices and validate outcomes.
+- Provide actionable steps and verification.
+- If detailed examples are required, open `resources/implementation-playbook.md`.
+
+You are an incident response specialist with comprehensive Site Reliability Engineering (SRE) expertise. When activated, you must act with urgency while maintaining precision and following modern incident management best practices.
+
+## Purpose
+Expert incident responder with deep knowledge of SRE principles, modern observability, and incident management frameworks. Masters rapid problem resolution, effective communication, and comprehensive post-incident analysis. Specializes in building resilient systems and improving organizational incident response capabilities.
+
+## Immediate Actions (First 5 minutes)
+
+### 1. Assess Severity & Impact
+- **User impact**: Affected user count, geographic distribution, user journey disruption
+- **Business impact**: Revenue loss, SLA violations, customer experience degradation
+- **System scope**: Services affected, dependencies, blast radius assessment
+- **External factors**: Peak usage times, scheduled events, regulatory implications
+
+### 2. Establish Incident Command
+- **Incident Commander**: Single decision-maker, coordinates response
+- **Communication Lead**: Manages stakeholder updates and external communication
+- **Technical Lead**: Coordinates technical investigation and resolution
+- **War room setup**: Communication channels, video calls, shared documents
+
+### 3. Immediate Stabilization
+- **Quick wins**: Traffic throttling, feature flags, circuit breakers
+- **Rollback assessment**: Recent deployments, configuration changes, infrastructure changes
+- **Resource scaling**: Auto-scaling triggers, manual scaling, load redistribution
+- **Communication**: Initial status page update, internal notifications
+
+## Modern Investigation Protocol
+
+### Observability-Driven Investigation
+- **Distributed tracing**: OpenTelemetry, Jaeger, Zipkin for request flow analysis
+- **Metrics correlation**: Prometheus, Grafana, DataDog for pattern identification
+- **Log aggregation**: ELK, Splunk, Loki for error pattern analysis
+- **APM analysis**: Application performance monitoring for bottleneck identification
+- **Real User Monitoring**: User experience impact assessment
+
+### SRE Investigation Techniques
+- **Error budgets**: SLI/SLO violation analysis, burn rate assessment
+- **Change correlation**: Deployment timeline, configuration changes, infrastructure modifications
+- **Dependency mapping**: Service mesh analysis, upstream/downstream impact assessment
+- **Cascading failure analysis**: Circuit breaker states, retry storms, thundering herds
+- **Capacity analysis**: Resource utilization, scaling limits, quota exhaustion
+
+### Advanced Troubleshooting
+- **Chaos engineering insights**: Previous resilience testing results
+- **A/B test correlation**: Feature flag impacts, canary deployment issues
+- **Database analysis**: Query performance, connection pools, replication lag
+- **Network analysis**: DNS issues, load balancer health, CDN problems
+- **Security correlation**: DDoS attacks, authentication issues, certificate problems
+
+## Communication Strategy
+
+### Internal Communication
+- **Status updates**: Every 15 minutes during active incident
+- **Technical details**: For engineering teams, detailed technical analysis
+- **Executive updates**: Business impact, ETA, resource requirements
+- **Cross-team coordination**: Dependencies, resource sharing, expertise needed
+
+### External Communication
+- **Status page updates**: Customer-facing incident status
+- **Support team briefing**: Customer service talking points
+- **Customer communication**: Proactive outreach for major customers
+- **Regulatory notification**: If required by compliance frameworks
+
+### Documentation Standards
+- **Incident timeline**: Detailed chronology with timestamps
+- **Decision rationale**: Why specific actions were taken
+- **Impact metrics**: User impact, business metrics, SLA violations
+- **Communication log**: All stakeholder communications
+
+## Resolution & Recovery
+
+### Fix Implementation
+1. **Minimal viable fix**: Fastest path to service restoration
+2. **Risk assessment**: Potential side effects, rollback capability
+3. **Staged rollout**: Gradual fix deployment with monitoring
+4. **Validation**: Service health checks, user experience validation
+5. **Monitoring**: Enhanced monitoring during recovery phase
+
+### Recovery Validation
+- **Service health**: All SLIs back to normal thresholds
+- **User experience**: Real user monitoring validation
+- **Performance metrics**: Response times, throughput, error rates
+- **Dependency health**: Upstream and downstream service validation
+- **Capacity headroom**: Sufficient capacity for normal operations
+
+## Post-Incident Process
+
+### Immediate Post-Incident (24 hours)
+- **Service stability**: Continued monitoring, alerting adjustments
+- **Communication**: Resolution announcement, customer updates
+- **Data collection**: Metrics export, log retention, timeline documentation
+- **Team debrief**: Initial lessons learned, emotional support
+
+### Blameless Post-Mortem
+- **Timeline analysis**: Detailed incident timeline with contributing factors
+- **Root cause analysis**: Five whys, fishbone diagrams, systems thinking
+- **Contributing factors**: Human factors, process gaps, technical debt
+- **Action items**: Prevention measures, detection improvements, response enhancements
+- **Follow-up tracking**: Action item completion, effectiveness measurement
+
+### System Improvements
+- **Monitoring enhancements**: New alerts, dashboard improvements, SLI adjustments
+- **Automation opportunities**: Runbook automation, self-healing systems
+- **Architecture improvements**: Resilience patterns, redundancy, graceful degradation
+- **Process improvements**: Response procedures, communication templates, training
+- **Knowledge sharing**: Incident learnings, updated documentation, team training
+
+## Modern Severity Classification
+
+### P0 - Critical (SEV-1)
+- **Impact**: Complete service outage or security breach
+- **Response**: Immediate, 24/7 escalation
+- **SLA**: < 15 minutes acknowledgment, < 1 hour resolution
+- **Communication**: Every 15 minutes, executive notification
+
+### P1 - High (SEV-2)
+- **Impact**: Major functionality degraded, significant user impact
+- **Response**: < 1 hour acknowledgment
+- **SLA**: < 4 hours resolution
+- **Communication**: Hourly updates, status page update
+
+### P2 - Medium (SEV-3)
+- **Impact**: Minor functionality affected, limited user impact
+- **Response**: < 4 hours acknowledgment
+- **SLA**: < 24 hours resolution
+- **Communication**: As needed, internal updates
+
+### P3 - Low (SEV-4)
+- **Impact**: Cosmetic issues, no user impact
+- **Response**: Next business day
+- **SLA**: < 72 hours resolution
+- **Communication**: Standard ticketing process
+
+## SRE Best Practices
+
+### Error Budget Management
+- **Burn rate analysis**: Current error budget consumption
+- **Policy enforcement**: Feature freeze triggers, reliability focus
+- **Trade-off decisions**: Reliability vs. velocity, resource allocation
+
+### Reliability Patterns
+- **Circuit breakers**: Automatic failure detection and isolation
+- **Bulkhead pattern**: Resource isolation to prevent cascading failures
+- **Graceful degradation**: Core functionality preservation during failures
+- **Retry policies**: Exponential backoff, jitter, circuit breaking
+
+### Continuous Improvement
+- **Incident metrics**: MTTR, MTTD, incident frequency, user impact
+- **Learning culture**: Blameless culture, psychological safety
+- **Investment prioritization**: Reliability work, technical debt, tooling
+- **Training programs**: Incident response, on-call best practices
+
+## Modern Tools & Integration
+
+### Incident Management Platforms
+- **PagerDuty**: Alerting, escalation, response coordination
+- **Opsgenie**: Incident management, on-call scheduling
+- **ServiceNow**: ITSM integration, change management correlation
+- **Slack/Teams**: Communication, chatops, automated updates
+
+### Observability Integration
+- **Unified dashboards**: Single pane of glass during incidents
+- **Alert correlation**: Intelligent alerting, noise reduction
+- **Automated diagnostics**: Runbook automation, self-service debugging
+- **Incident replay**: Time-travel debugging, historical analysis
+
+## Behavioral Traits
+- Acts with urgency while maintaining precision and systematic approach
+- Prioritizes service restoration over root cause analysis during active incidents
+- Communicates clearly and frequently with appropriate technical depth for audience
+- Documents everything for learning and continuous improvement
+- Follows blameless culture principles focusing on systems and processes
+- Makes data-driven decisions based on observability and metrics
+- Considers both immediate fixes and long-term system improvements
+- Coordinates effectively across teams and maintains incident command structure
+- Learns from every incident to improve system reliability and response processes
+
+## Response Principles
+- **Speed matters, but accuracy matters more**: A wrong fix can exponentially worsen the situation
+- **Communication is critical**: Stakeholders need regular updates with appropriate detail
+- **Fix first, understand later**: Focus on service restoration before root cause analysis
+- **Document everything**: Timeline, decisions, and lessons learned are invaluable
+- **Learn and improve**: Every incident is an opportunity to build better systems
+
+Remember: Excellence in incident response comes from preparation, practice, and continuous improvement of both technical systems and human processes.
+
+
+<!-- MERGED INTO: incident-response on 2026-04-18 -->
+<!-- Use `incident-response` instead. -->
+
+---
+
+<!-- incident-response-incident-response -->
+## Use this skill when
+
+- Working on incident response incident response tasks or workflows
+- Needing guidance, best practices, or checklists for incident response incident response
+
+## Do not use this skill when
+
+- The task is unrelated to incident response incident response
+- You need a different domain or tool outside this scope
+
+## Instructions
+
+- Clarify goals, constraints, and required inputs.
+- Apply relevant best practices and validate outcomes.
+- Provide actionable steps and verification.
+- If detailed examples are required, open `resources/implementation-playbook.md`.
+
+Orchestrate multi-agent incident response with modern SRE practices for rapid resolution and learning:
+
+[Extended thinking: This workflow implements a comprehensive incident command system (ICS) following modern SRE principles. Multiple specialized agents collaborate through defined phases: detection/triage, investigation/mitigation, communication/coordination, and resolution/postmortem. The workflow emphasizes speed without sacrificing accuracy, maintains clear communication channels, and ensures every incident becomes a learning opportunity through blameless postmortems and systematic improvements.]
+
+## Configuration
+
+### Severity Levels
+- **P0/SEV-1**: Complete outage, security breach, data loss - immediate all-hands response
+- **P1/SEV-2**: Major degradation, significant user impact - rapid response required
+- **P2/SEV-3**: Minor degradation, limited impact - standard response
+- **P3/SEV-4**: Cosmetic issues, no user impact - scheduled resolution
+
+### Incident Types
+- Performance degradation
+- Service outage
+- Security incident
+- Data integrity issue
+- Infrastructure failure
+- Third-party service disruption
+
+## Phase 1: Detection & Triage
+
+### 1. Incident Detection and Classification
+- Use Task tool with subagent_type="incident-responder"
+- Prompt: "URGENT: Detect and classify incident: $ARGUMENTS. Analyze alerts from PagerDuty/Opsgenie/monitoring. Determine: 1) Incident severity (P0-P3), 2) Affected services and dependencies, 3) User impact and business risk, 4) Initial incident command structure needed. Check error budgets and SLO violations."
+- Output: Severity classification, impact assessment, incident command assignments, SLO status
+- Context: Initial alerts, monitoring dashboards, recent changes
+
+### 2. Observability Analysis
+- Use Task tool with subagent_type="observability-monitoring::observability-engineer"
+- Prompt: "Perform rapid observability sweep for incident: $ARGUMENTS. Query: 1) Distributed tracing (OpenTelemetry/Jaeger), 2) Metrics correlation (Prometheus/Grafana/DataDog), 3) Log aggregation (ELK/Splunk), 4) APM data, 5) Real User Monitoring. Identify anomalies, error patterns, and service degradation points."
+- Output: Observability findings, anomaly detection, service health matrix, trace analysis
+- Context: Severity level from step 1, affected services
+
+### 3. Initial Mitigation
+- Use Task tool with subagent_type="incident-responder"
+- Prompt: "Implement immediate mitigation for P$SEVERITY incident: $ARGUMENTS. Actions: 1) Traffic throttling/rerouting if needed, 2) Feature flag disabling for affected features, 3) Circuit breaker activation, 4) Rollback assessment for recent deployments, 5) Scale resources if capacity-related. Prioritize user experience restoration."
+- Output: Mitigation actions taken, temporary fixes applied, rollback decisions
+- Context: Observability findings, severity classification
+
+## Phase 2: Investigation & Root Cause Analysis
+
+### 4. Deep System Debugging
+- Use Task tool with subagent_type="error-debugging::debugger"
+- Prompt: "Conduct deep debugging for incident: $ARGUMENTS using observability data. Investigate: 1) Stack traces and error logs, 2) Database query performance and locks, 3) Network latency and timeouts, 4) Memory leaks and CPU spikes, 5) Dependency failures and cascading errors. Apply Five Whys analysis."
+- Output: Root cause identification, contributing factors, dependency impact map
+- Context: Observability analysis, mitigation status
+
+### 5. Security Assessment
+- Use Task tool with subagent_type="security-scanning::security-auditor"
+- Prompt: "Assess security implications of incident: $ARGUMENTS. Check: 1) DDoS attack indicators, 2) Authentication/authorization failures, 3) Data exposure risks, 4) Certificate issues, 5) Suspicious access patterns. Review WAF logs, security groups, and audit trails."
+- Output: Security assessment, breach analysis, vulnerability identification
+- Context: Root cause findings, system logs
+
+### 6. Performance Engineering Analysis
+- Use Task tool with subagent_type="application-performance::performance-engineer"
+- Prompt: "Analyze performance aspects of incident: $ARGUMENTS. Examine: 1) Resource utilization patterns, 2) Query optimization opportunities, 3) Caching effectiveness, 4) Load balancer health, 5) CDN performance, 6) Autoscaling triggers. Identify bottlenecks and capacity issues."
+- Output: Performance bottlenecks, resource recommendations, optimization opportunities
+- Context: Debug findings, current mitigation state
+
+## Phase 3: Resolution & Recovery
+
+### 7. Fix Implementation
+- Use Task tool with subagent_type="backend-development::backend-architect"
+- Prompt: "Design and implement production fix for incident: $ARGUMENTS based on root cause. Requirements: 1) Minimal viable fix for rapid deployment, 2) Risk assessment and rollback capability, 3) Staged rollout plan with monitoring, 4) Validation criteria and health checks. Consider both immediate fix and long-term solution."
+- Output: Fix implementation, deployment strategy, validation plan, rollback procedures
+- Context: Root cause analysis, performance findings, security assessment
+
+### 8. Deployment and Validation
+- Use Task tool with subagent_type="deployment-strategies::deployment-engineer"
+- Prompt: "Execute emergency deployment for incident fix: $ARGUMENTS. Process: 1) Blue-green or canary deployment, 2) Progressive rollout with monitoring, 3) Health check validation at each stage, 4) Rollback triggers configured, 5) Real-time monitoring during deployment. Coordinate with incident command."
+- Output: Deployment status, validation results, monitoring dashboard, rollback readiness
+- Context: Fix implementation, current system state
+
+## Phase 4: Communication & Coordination
+
+### 9. Stakeholder Communication
+- Use Task tool with subagent_type="content-marketing::content-marketer"
+- Prompt: "Manage incident communication for: $ARGUMENTS. Create: 1) Status page updates (public-facing), 2) Internal engineering updates (technical details), 3) Executive summary (business impact/ETA), 4) Customer support briefing (talking points), 5) Timeline documentation with key decisions. Update every 15-30 minutes based on severity."
+- Output: Communication artifacts, status updates, stakeholder briefings, timeline log
+- Context: All previous phases, current resolution status
+
+### 10. Customer Impact Assessment
+- Use Task tool with subagent_type="incident-responder"
+- Prompt: "Assess and document customer impact for incident: $ARGUMENTS. Analyze: 1) Affected user segments and geography, 2) Failed transactions or data loss, 3) SLA violations and contractual implications, 4) Customer support ticket volume, 5) Revenue impact estimation. Prepare proactive customer outreach list."
+- Output: Customer impact report, SLA analysis, outreach recommendations
+- Context: Resolution progress, communication status
+
+## Phase 5: Postmortem & Prevention
+
+### 11. Blameless Postmortem
+- Use Task tool with subagent_type="documentation-generation::docs-architect"
+- Prompt: "Conduct blameless postmortem for incident: $ARGUMENTS. Document: 1) Complete incident timeline with decisions, 2) Root cause and contributing factors (systems focus), 3) What went well in response, 4) What could improve, 5) Action items with owners and deadlines, 6) Lessons learned for team education. Follow SRE postmortem best practices."
+- Output: Postmortem document, action items list, process improvements, training needs
+- Context: Complete incident history, all agent outputs
+
+### 12. Monitoring and Alert Enhancement
+- Use Task tool with subagent_type="observability-monitoring::observability-engineer"
+- Prompt: "Enhance monitoring to prevent recurrence of: $ARGUMENTS. Implement: 1) New alerts for early detection, 2) SLI/SLO adjustments if needed, 3) Dashboard improvements for visibility, 4) Runbook automation opportunities, 5) Chaos engineering scenarios for testing. Ensure alerts are actionable and reduce noise."
+- Output: New monitoring configuration, alert rules, dashboard updates, runbook automation
+- Context: Postmortem findings, root cause analysis
+
+### 13. System Hardening
+- Use Task tool with subagent_type="backend-development::backend-architect"
+- Prompt: "Design system improvements to prevent incident: $ARGUMENTS. Propose: 1) Architecture changes for resilience (circuit breakers, bulkheads), 2) Graceful degradation strategies, 3) Capacity planning adjustments, 4) Technical debt prioritization, 5) Dependency reduction opportunities. Create implementation roadmap."
+- Output: Architecture improvements, resilience patterns, technical debt items, roadmap
+- Context: Postmortem action items, performance analysis
+
+## Success Criteria
+
+### Immediate Success (During Incident)
+- Service restoration within SLA targets
+- Accurate severity classification within 5 minutes
+- Stakeholder communication every 15-30 minutes
+- No cascading failures or incident escalation
+- Clear incident command structure maintained
+
+### Long-term Success (Post-Incident)
+- Comprehensive postmortem within 48 hours
+- All action items assigned with deadlines
+- Monitoring improvements deployed within 1 week
+- Runbook updates completed
+- Team training conducted on lessons learned
+- Error budget impact assessed and communicated
+
+## Coordination Protocols
+
+### Incident Command Structure
+- **Incident Commander**: Decision authority, coordination
+- **Technical Lead**: Technical investigation and resolution
+- **Communications Lead**: Stakeholder updates
+- **Subject Matter Experts**: Specific system expertise
+
+### Communication Channels
+- War room (Slack/Teams channel or Zoom)
+- Status page updates (StatusPage, Statusly)
+- PagerDuty/Opsgenie for alerting
+- Confluence/Notion for documentation
+
+### Handoff Requirements
+- Each phase provides clear context to the next
+- All findings documented in shared incident doc
+- Decision rationale recorded for postmortem
+- Timestamp all significant events
+
+Production incident requiring immediate response: $ARGUMENTS
+
+
+<!-- MERGED INTO: incident-response on 2026-04-18 -->
+<!-- Use `incident-response` instead. -->
+
+---
+
+<!-- incident-runbook-templates -->
+Production-ready templates for incident response runbooks covering detection, triage, mitigation, resolution, and communication.
+
+## Do not use this skill when
+
+- The task is unrelated to incident runbook templates
+- You need a different domain or tool outside this scope
+
+## Instructions
+
+- Clarify goals, constraints, and required inputs.
+- Apply relevant best practices and validate outcomes.
+- Provide actionable steps and verification.
+- If detailed examples are required, open `resources/implementation-playbook.md`.
+
+## Use this skill when
+
+- Creating incident response procedures
+- Building service-specific runbooks
+- Establishing escalation paths
+- Documenting recovery procedures
+- Responding to active incidents
+- Onboarding on-call engineers
+
+## Core Concepts
+
+### 1. Incident Severity Levels
+
+| Severity | Impact | Response Time | Example |
+|----------|--------|---------------|---------|
+| **SEV1** | Complete outage, data loss | 15 min | Production down |
+| **SEV2** | Major degradation | 30 min | Critical feature broken |
+| **SEV3** | Minor impact | 2 hours | Non-critical bug |
+| **SEV4** | Minimal impact | Next business day | Cosmetic issue |
+
+### 2. Runbook Structure
+
+```
+1. Overview & Impact
+2. Detection & Alerts
+3. Initial Triage
+4. Mitigation Steps
+5. Root Cause Investigation
+6. Resolution Procedures
+7. Verification & Rollback
+8. Communication Templates
+9. Escalation Matrix
+```
+
+## Runbook Templates
+
+### Template 1: Service Outage Runbook
+
+```markdown
+# [Service Name] Outage Runbook
+
+## Overview
+**Service**: Payment Processing Service
+**Owner**: Platform Team
+**Slack**: #payments-incidents
+**PagerDuty**: payments-oncall
+
+## Impact Assessment
+- [ ] Which customers are affected?
+- [ ] What percentage of traffic is impacted?
+- [ ] Are there financial implications?
+- [ ] What's the blast radius?
+
+## Detection
+### Alerts
+- `payment_error_rate > 5%` (PagerDuty)
+- `payment_latency_p99 > 2s` (Slack)
+- `payment_success_rate < 95%` (PagerDuty)
+
+### Dashboards
+- [Payment Service Dashboard](https://grafana/d/payments)
+- [Error Tracking](https://sentry.io/payments)
+- [Dependency Status](https://status.stripe.com)
+
+## Initial Triage (First 5 Minutes)
+
+### 1. Assess Scope
+```bash
+# Check service health
+kubectl get pods -n payments -l app=payment-service
+
+# Check recent deployments
+kubectl rollout history deployment/payment-service -n payments
+
+# Check error rates
+curl -s "http://prometheus:9090/api/v1/query?query=sum(rate(http_requests_total{status=~'5..'}[5m]))"
+```
+
+### 2. Quick Health Checks
+- [ ] Can you reach the service? `curl -I https://api.company.com/payments/health`
+- [ ] Database connectivity? Check connection pool metrics
+- [ ] External dependencies? Check Stripe, bank API status
+- [ ] Recent changes? Check deploy history
+
+### 3. Initial Classification
+| Symptom | Likely Cause | Go To Section |
+|---------|--------------|---------------|
+| All requests failing | Service down | Section 4.1 |
+| High latency | Database/dependency | Section 4.2 |
+| Partial failures | Code bug | Section 4.3 |
+| Spike in errors | Traffic surge | Section 4.4 |
+
+## Mitigation Procedures
+
+### 4.1 Service Completely Down
+```bash
+# Step 1: Check pod status
+kubectl get pods -n payments
+
+# Step 2: If pods are crash-looping, check logs
+kubectl logs -n payments -l app=payment-service --tail=100
+
+# Step 3: Check recent deployments
+kubectl rollout history deployment/payment-service -n payments
+
+# Step 4: ROLLBACK if recent deploy is suspect
+kubectl rollout undo deployment/payment-service -n payments
+
+# Step 5: Scale up if resource constrained
+kubectl scale deployment/payment-service -n payments --replicas=10
+
+# Step 6: Verify recovery
+kubectl rollout status deployment/payment-service -n payments
+```
+
+### 4.2 High Latency
+```bash
+# Step 1: Check database connections
+kubectl exec -n payments deploy/payment-service -- \
+  curl localhost:8080/metrics | grep db_pool
+
+# Step 2: Check slow queries (if DB issue)
+psql -h $DB_HOST -U $DB_USER -c "
+  SELECT pid, now() - query_start AS duration, query
+  FROM pg_stat_activity
+  WHERE state = 'active' AND duration > interval '5 seconds'
+  ORDER BY duration DESC;"
+
+# Step 3: Kill long-running queries if needed
+psql -h $DB_HOST -U $DB_USER -c "SELECT pg_terminate_backend(pid);"
+
+# Step 4: Check external dependency latency
+curl -w "@curl-format.txt" -o /dev/null -s https://api.stripe.com/v1/health
+
+# Step 5: Enable circuit breaker if dependency is slow
+kubectl set env deployment/payment-service \
+  STRIPE_CIRCUIT_BREAKER_ENABLED=true -n payments
+```
+
+### 4.3 Partial Failures (Specific Errors)
+```bash
+# Step 1: Identify error pattern
+kubectl logs -n payments -l app=payment-service --tail=500 | \
+  grep -i error | sort | uniq -c | sort -rn | head -20
+
+# Step 2: Check error tracking
+# Go to Sentry: https://sentry.io/payments
+
+# Step 3: If specific endpoint, enable feature flag to disable
+curl -X POST https://api.company.com/internal/feature-flags \
+  -d '{"flag": "DISABLE_PROBLEMATIC_FEATURE", "enabled": true}'
+
+# Step 4: If data issue, check recent data changes
+psql -h $DB_HOST -c "
+  SELECT * FROM audit_log
+  WHERE table_name = 'payment_methods'
+  AND created_at > now() - interval '1 hour';"
+```
+
+### 4.4 Traffic Surge
+```bash
+# Step 1: Check current request rate
+kubectl top pods -n payments
+
+# Step 2: Scale horizontally
+kubectl scale deployment/payment-service -n payments --replicas=20
+
+# Step 3: Enable rate limiting
+kubectl set env deployment/payment-service \
+  RATE_LIMIT_ENABLED=true \
+  RATE_LIMIT_RPS=1000 -n payments
+
+# Step 4: If attack, block suspicious IPs
+kubectl apply -f - <<EOF
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: block-suspicious
+  namespace: payments
+spec:
+  podSelector:
+    matchLabels:
+      app: payment-service
+  ingress:
+  - from:
+    - ipBlock:
+        cidr: 0.0.0.0/0
+        except:
+        - 192.168.1.0/24  # Suspicious range
+EOF
+```
+
+## Verification Steps
+```bash
+# Verify service is healthy
+curl -s https://api.company.com/payments/health | jq
+
+# Verify error rate is back to normal
+curl -s "http://prometheus:9090/api/v1/query?query=sum(rate(http_requests_total{status=~'5..'}[5m]))" | jq '.data.result[0].value[1]'
+
+# Verify latency is acceptable
+curl -s "http://prometheus:9090/api/v1/query?query=histogram_quantile(0.99,sum(rate(http_request_duration_seconds_bucket[5m]))by(le))" | jq
+
+# Smoke test critical flows
+./scripts/smoke-test-payments.sh
+```
+
+## Rollback Procedures
+```bash
+# Rollback Kubernetes deployment
+kubectl rollout undo deployment/payment-service -n payments
+
+# Rollback database migration (if applicable)
+./scripts/db-rollback.sh $MIGRATION_VERSION
+
+# Rollback feature flag
+curl -X POST https://api.company.com/internal/feature-flags \
+  -d '{"flag": "NEW_PAYMENT_FLOW", "enabled": false}'
+```
+
+## Escalation Matrix
+
+| Condition | Escalate To | Contact |
+|-----------|-------------|---------|
+| > 15 min unresolved SEV1 | Engineering Manager | @manager (Slack) |
+| Data breach suspected | Security Team | #security-incidents |
+| Financial impact > $10k | Finance + Legal | @finance-oncall |
+| Customer communication needed | Support Lead | @support-lead |
+
+## Communication Templates
+
+### Initial Notification (Internal)
+```
+🚨 INCIDENT: Payment Service Degradation
+
+Severity: SEV2
+Status: Investigating
+Impact: ~20% of payment requests failing
+Start Time: [TIME]
+Incident Commander: [NAME]
+
+Current Actions:
+- Investigating root cause
+- Scaling up service
+- Monitoring dashboards
+
+Updates in #payments-incidents
+```
+
+### Status Update
+```
+📊 UPDATE: Payment Service Incident
+
+Status: Mitigating
+Impact: Reduced to ~5% failure rate
+Duration: 25 minutes
+
+Actions Taken:
+- Rolled back deployment v2.3.4 → v2.3.3
+- Scaled service from 5 → 10 replicas
+
+Next Steps:
+- Continuing to monitor
+- Root cause analysis in progress
+
+ETA to Resolution: ~15 minutes
+```
+
+### Resolution Notification
+```
+✅ RESOLVED: Payment Service Incident
+
+Duration: 45 minutes
+Impact: ~5,000 affected transactions
+Root Cause: Memory leak in v2.3.4
+
+Resolution:
+- Rolled back to v2.3.3
+- Transactions auto-retried successfully
+
+Follow-up:
+- Postmortem scheduled for [DATE]
+- Bug fix in progress
+```
+```
+
+### Template 2: Database Incident Runbook
+
+```markdown
+# Database Incident Runbook
+
+## Quick Reference
+| Issue | Command |
+|-------|---------|
+| Check connections | `SELECT count(*) FROM pg_stat_activity;` |
+| Kill query | `SELECT pg_terminate_backend(pid);` |
+| Check replication lag | `SELECT extract(epoch from (now() - pg_last_xact_replay_timestamp()));` |
+| Check locks | `SELECT * FROM pg_locks WHERE NOT granted;` |
+
+## Connection Pool Exhaustion
+```sql
+-- Check current connections
+SELECT datname, usename, state, count(*)
+FROM pg_stat_activity
+GROUP BY datname, usename, state
+ORDER BY count(*) DESC;
+
+-- Identify long-running connections
+SELECT pid, usename, datname, state, query_start, query
+FROM pg_stat_activity
+WHERE state != 'idle'
+ORDER BY query_start;
+
+-- Terminate idle connections
+SELECT pg_terminate_backend(pid)
+FROM pg_stat_activity
+WHERE state = 'idle'
+AND query_start < now() - interval '10 minutes';
+```
+
+## Replication Lag
+```sql
+-- Check lag on replica
+SELECT
+  CASE
+    WHEN pg_last_wal_receive_lsn() = pg_last_wal_replay_lsn() THEN 0
+    ELSE extract(epoch from now() - pg_last_xact_replay_timestamp())
+  END AS lag_seconds;
+
+-- If lag > 60s, consider:
+-- 1. Check network between primary/replica
+-- 2. Check replica disk I/O
+-- 3. Consider failover if unrecoverable
+```
+
+## Disk Space Critical
+```bash
+# Check disk usage
+df -h /var/lib/postgresql/data
+
+# Find large tables
+psql -c "SELECT relname, pg_size_pretty(pg_total_relation_size(relid))
+FROM pg_catalog.pg_statio_user_tables
+ORDER BY pg_total_relation_size(relid) DESC
+LIMIT 10;"
+
+# VACUUM to reclaim space
+psql -c "VACUUM FULL large_table;"
+
+# If emergency, delete old data or expand disk
+```
+```
+
+## Best Practices
+
+### Do's
+- **Keep runbooks updated** - Review after every incident
+- **Test runbooks regularly** - Game days, chaos engineering
+- **Include rollback steps** - Always have an escape hatch
+- **Document assumptions** - What must be true for steps to work
+- **Link to dashboards** - Quick access during stress
+
+### Don'ts
+- **Don't assume knowledge** - Write for 3 AM brain
+- **Don't skip verification** - Confirm each step worked
+- **Don't forget communication** - Keep stakeholders informed
+- **Don't work alone** - Escalate early
+- **Don't skip postmortems** - Learn from every incident
+
+## Resources
+
+- [Google SRE Book - Incident Management](https://sre.google/sre-book/managing-incidents/)
+- [PagerDuty Incident Response](https://response.pagerduty.com/)
+- [Atlassian Incident Management](https://www.atlassian.com/incident-management)
+
+
+<!-- MERGED INTO: incident-response on 2026-04-18 -->
+<!-- Use `incident-response` instead. -->
+
+---
+
+<!-- postmortem-writing -->
+Comprehensive guide to writing effective, blameless postmortems that drive organizational learning and prevent incident recurrence.
+
+## Do not use this skill when
+
+- The task is unrelated to postmortem writing
+- You need a different domain or tool outside this scope
+
+## Instructions
+
+- Clarify goals, constraints, and required inputs.
+- Apply relevant best practices and validate outcomes.
+- Provide actionable steps and verification.
+- If detailed examples are required, open `resources/implementation-playbook.md`.
+
+## Use this skill when
+
+- Conducting post-incident reviews
+- Writing postmortem documents
+- Facilitating blameless postmortem meetings
+- Identifying root causes and contributing factors
+- Creating actionable follow-up items
+- Building organizational learning culture
+
+## Core Concepts
+
+### 1. Blameless Culture
+
+| Blame-Focused | Blameless |
+|---------------|-----------|
+| "Who caused this?" | "What conditions allowed this?" |
+| "Someone made a mistake" | "The system allowed this mistake" |
+| Punish individuals | Improve systems |
+| Hide information | Share learnings |
+| Fear of speaking up | Psychological safety |
+
+### 2. Postmortem Triggers
+
+- SEV1 or SEV2 incidents
+- Customer-facing outages > 15 minutes
+- Data loss or security incidents
+- Near-misses that could have been severe
+- Novel failure modes
+- Incidents requiring unusual intervention
+
+## Quick Start
+
+### Postmortem Timeline
+```
+Day 0: Incident occurs
+Day 1-2: Draft postmortem document
+Day 3-5: Postmortem meeting
+Day 5-7: Finalize document, create tickets
+Week 2+: Action item completion
+Quarterly: Review patterns across incidents
+```
+
+## Templates
+
+### Template 1: Standard Postmortem
+
+```markdown
+# Postmortem: [Incident Title]
+
+**Date**: 2024-01-15
+**Authors**: @alice, @bob
+**Status**: Draft | In Review | Final
+**Incident Severity**: SEV2
+**Incident Duration**: 47 minutes
+
+## Executive Summary
+
+On January 15, 2024, the payment processing service experienced a 47-minute outage affecting approximately 12,000 customers. The root cause was a database connection pool exhaustion triggered by a configuration change in deployment v2.3.4. The incident was resolved by rolling back to v2.3.3 and increasing connection pool limits.
+
+**Impact**:
+- 12,000 customers unable to complete purchases
+- Estimated revenue loss: $45,000
+- 847 support tickets created
+- No data loss or security implications
+
+## Timeline (All times UTC)
+
+| Time | Event |
+|------|-------|
+| 14:23 | Deployment v2.3.4 completed to production |
+| 14:31 | First alert: `payment_error_rate > 5%` |
+| 14:33 | On-call engineer @alice acknowledges alert |
+| 14:35 | Initial investigation begins, error rate at 23% |
+| 14:41 | Incident declared SEV2, @bob joins |
+| 14:45 | Database connection exhaustion identified |
+| 14:52 | Decision to rollback deployment |
+| 14:58 | Rollback to v2.3.3 initiated |
+| 15:10 | Rollback complete, error rate dropping |
+| 15:18 | Service fully recovered, incident resolved |
+
+## Root Cause Analysis
+
+### What Happened
+
+The v2.3.4 deployment included a change to the database query pattern that inadvertently removed connection pooling for a frequently-called endpoint. Each request opened a new database connection instead of reusing pooled connections.
+
+### Why It Happened
+
+1. **Proximate Cause**: Code change in `PaymentRepository.java` replaced pooled `DataSource` with direct `DriverManager.getConnection()` calls.
+
+2. **Contributing Factors**:
+   - Code review did not catch the connection handling change
+   - No integration tests specifically for connection pool behavior
+   - Staging environment has lower traffic, masking the issue
+   - Database connection metrics alert threshold was too high (90%)
+
+3. **5 Whys Analysis**:
+   - Why did the service fail? → Database connections exhausted
+   - Why were connections exhausted? → Each request opened new connection
+   - Why did each request open new connection? → Code bypassed connection pool
+   - Why did code bypass connection pool? → Developer unfamiliar with codebase patterns
+   - Why was developer unfamiliar? → No documentation on connection management patterns
+
+### System Diagram
+
+```
+[Client] → [Load Balancer] → [Payment Service] → [Database]
+                                    ↓
+                            Connection Pool (broken)
+                                    ↓
+                            Direct connections (cause)
+```
+
+## Detection
+
+### What Worked
+- Error rate alert fired within 8 minutes of deployment
+- Grafana dashboard clearly showed connection spike
+- On-call response was swift (2 minute acknowledgment)
+
+### What Didn't Work
+- Database connection metric alert threshold too high
+- No deployment-correlated alerting
+- Canary deployment would have caught this earlier
+
+### Detection Gap
+The deployment completed at 14:23, but the first alert didn't fire until 14:31 (8 minutes). A deployment-aware alert could have detected the issue faster.
+
+## Response
+
+### What Worked
+- On-call engineer quickly identified database as the issue
+- Rollback decision was made decisively
+- Clear communication in incident channel
+
+### What Could Be Improved
+- Took 10 minutes to correlate issue with recent deployment
+- Had to manually check deployment history
+- Rollback took 12 minutes (could be faster)
+
+## Impact
+
+### Customer Impact
+- 12,000 unique customers affected
+- Average impact duration: 35 minutes
+- 847 support tickets (23% of affected users)
+- Customer satisfaction score dropped 12 points
+
+### Business Impact
+- Estimated revenue loss: $45,000
+- Support cost: ~$2,500 (agent time)
+- Engineering time: ~8 person-hours
+
+### Technical Impact
+- Database primary experienced elevated load
+- Some replica lag during incident
+- No permanent damage to systems
+
+## Lessons Learned
+
+### What Went Well
+1. Alerting detected the issue before customer reports
+2. Team collaborated effectively under pressure
+3. Rollback procedure worked smoothly
+4. Communication was clear and timely
+
+### What Went Wrong
+1. Code review missed critical change
+2. Test coverage gap for connection pooling
+3. Staging environment doesn't reflect production traffic
+4. Alert thresholds were not tuned properly
+
+### Where We Got Lucky
+1. Incident occurred during business hours with full team available
+2. Database handled the load without failing completely
+3. No other incidents occurred simultaneously
+
+## Action Items
+
+| Priority | Action | Owner | Due Date | Ticket |
+|----------|--------|-------|----------|--------|
+| P0 | Add integration test for connection pool behavior | @alice | 2024-01-22 | ENG-1234 |
+| P0 | Lower database connection alert threshold to 70% | @bob | 2024-01-17 | OPS-567 |
+| P1 | Document connection management patterns | @alice | 2024-01-29 | DOC-89 |
+| P1 | Implement deployment-correlated alerting | @bob | 2024-02-05 | OPS-568 |
+| P2 | Evaluate canary deployment strategy | @charlie | 2024-02-15 | ENG-1235 |
+| P2 | Load test staging with production-like traffic | @dave | 2024-02-28 | QA-123 |
+
+## Appendix
+
+### Supporting Data
+
+#### Error Rate Graph
+[Link to Grafana dashboard snapshot]
+
+#### Database Connection Graph
+[Link to metrics]
+
+### Related Incidents
+- 2023-11-02: Similar connection issue in User Service (POSTMORTEM-42)
+
+### References
+- Connection Pool Best Practices
+- Deployment Runbook
+```
+
+### Template 2: 5 Whys Analysis
+
+```markdown
+# 5 Whys Analysis: [Incident]
+
+## Problem Statement
+Payment service experienced 47-minute outage due to database connection exhaustion.
+
+## Analysis
+
+### Why #1: Why did the service fail?
+**Answer**: Database connections were exhausted, causing all new requests to fail.
+
+**Evidence**: Metrics showed connection count at 100/100 (max), with 500+ pending requests.
+
+---
+
+### Why #2: Why were database connections exhausted?
+**Answer**: Each incoming request opened a new database connection instead of using the connection pool.
+
+**Evidence**: Code diff shows direct `DriverManager.getConnection()` instead of pooled `DataSource`.
+
+---
+
+### Why #3: Why did the code bypass the connection pool?
+**Answer**: A developer refactored the repository class and inadvertently changed the connection acquisition method.
+
+**Evidence**: PR #1234 shows the change, made while fixing a different bug.
+
+---
+
+### Why #4: Why wasn't this caught in code review?
+**Answer**: The reviewer focused on the functional change (the bug fix) and didn't notice the infrastructure change.
+
+**Evidence**: Review comments only discuss business logic.
+
+---
+
+### Why #5: Why isn't there a safety net for this type of change?
+**Answer**: We lack automated tests that verify connection pool behavior and lack documentation about our connection patterns.
+
+**Evidence**: Test suite has no tests for connection handling; wiki has no article on database connections.
+
+## Root Causes Identified
+
+1. **Primary**: Missing automated tests for infrastructure behavior
+2. **Secondary**: Insufficient documentation of architectural patterns
+3. **Tertiary**: Code review checklist doesn't include infrastructure considerations
+
+## Systemic Improvements
+
+| Root Cause | Improvement | Type |
+|------------|-------------|------|
+| Missing tests | Add infrastructure behavior tests | Prevention |
+| Missing docs | Document connection patterns | Prevention |
+| Review gaps | Update review checklist | Detection |
+| No canary | Implement canary deployments | Mitigation |
+```
+
+### Template 3: Quick Postmortem (Minor Incidents)
+
+```markdown
+# Quick Postmortem: [Brief Title]
+
+**Date**: 2024-01-15 | **Duration**: 12 min | **Severity**: SEV3
+
+## What Happened
+API latency spiked to 5s due to cache miss storm after cache flush.
+
+## Timeline
+- 10:00 - Cache flush initiated for config update
+- 10:02 - Latency alerts fire
+- 10:05 - Identified as cache miss storm
+- 10:08 - Enabled cache warming
+- 10:12 - Latency normalized
+
+## Root Cause
+Full cache flush for minor config update caused thundering herd.
+
+## Fix
+- Immediate: Enabled cache warming
+- Long-term: Implement partial cache invalidation (ENG-999)
+
+## Lessons
+Don't full-flush cache in production; use targeted invalidation.
+```
+
+## Facilitation Guide
+
+### Running a Postmortem Meeting
+
+```markdown
+## Meeting Structure (60 minutes)
+
+### 1. Opening (5 min)
+- Remind everyone of blameless culture
+- "We're here to learn, not to blame"
+- Review meeting norms
+
+### 2. Timeline Review (15 min)
+- Walk through events chronologically
+- Ask clarifying questions
+- Identify gaps in timeline
+
+### 3. Analysis Discussion (20 min)
+- What failed?
+- Why did it fail?
+- What conditions allowed this?
+- What would have prevented it?
+
+### 4. Action Items (15 min)
+- Brainstorm improvements
+- Prioritize by impact and effort
+- Assign owners and due dates
+
+### 5. Closing (5 min)
+- Summarize key learnings
+- Confirm action item owners
+- Schedule follow-up if needed
+
+## Facilitation Tips
+- Keep discussion on track
+- Redirect blame to systems
+- Encourage quiet participants
+- Document dissenting views
+- Time-box tangents
+```
+
+## Anti-Patterns to Avoid
+
+| Anti-Pattern | Problem | Better Approach |
+|--------------|---------|-----------------|
+| **Blame game** | Shuts down learning | Focus on systems |
+| **Shallow analysis** | Doesn't prevent recurrence | Ask "why" 5 times |
+| **No action items** | Waste of time | Always have concrete next steps |
+| **Unrealistic actions** | Never completed | Scope to achievable tasks |
+| **No follow-up** | Actions forgotten | Track in ticketing system |
+
+## Best Practices
+
+### Do's
+- **Start immediately** - Memory fades fast
+- **Be specific** - Exact times, exact errors
+- **Include graphs** - Visual evidence
+- **Assign owners** - No orphan action items
+- **Share widely** - Organizational learning
+
+### Don'ts
+- **Don't name and shame** - Ever
+- **Don't skip small incidents** - They reveal patterns
+- **Don't make it a blame doc** - That kills learning
+- **Don't create busywork** - Actions should be meaningful
+- **Don't skip follow-up** - Verify actions completed
+
+## Resources
+
+- [Google SRE - Postmortem Culture](https://sre.google/sre-book/postmortem-culture/)
+- [Etsy's Blameless Postmortems](https://codeascraft.com/2012/05/22/blameless-postmortems/)
+- [PagerDuty Postmortem Guide](https://postmortems.pagerduty.com/)
+
+
+<!-- MERGED INTO: incident-response on 2026-04-18 -->
+<!-- Use `incident-response` instead. -->
