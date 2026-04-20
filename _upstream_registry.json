@@ -1,0 +1,2657 @@
+{
+  "algorithmic-art": {
+    "remote": "upstream-anthropic",
+    "url": "https://github.com/anthropics/skills",
+    "path": "skills/algorithmic-art/SKILL.md"
+  },
+  "brand-guidelines": {
+    "remote": "upstream-anthropic",
+    "url": "https://github.com/anthropics/skills",
+    "path": "skills/brand-guidelines/SKILL.md"
+  },
+  "canvas-design": {
+    "remote": "upstream-anthropic",
+    "url": "https://github.com/anthropics/skills",
+    "path": "skills/canvas-design/SKILL.md"
+  },
+  "claude-api": {
+    "remote": "upstream-anthropic",
+    "url": "https://github.com/anthropics/skills",
+    "path": "skills/claude-api/SKILL.md"
+  },
+  "doc-coauthoring": {
+    "remote": "upstream-anthropic",
+    "url": "https://github.com/anthropics/skills",
+    "path": "skills/doc-coauthoring/SKILL.md"
+  },
+  "docx": {
+    "remote": "upstream-anthropic",
+    "url": "https://github.com/anthropics/skills",
+    "path": "skills/docx/SKILL.md"
+  },
+  "frontend-design": {
+    "remote": "upstream-anthropic",
+    "url": "https://github.com/anthropics/skills",
+    "path": "skills/frontend-design/SKILL.md"
+  },
+  "internal-comms": {
+    "remote": "upstream-anthropic",
+    "url": "https://github.com/anthropics/skills",
+    "path": "skills/internal-comms/SKILL.md"
+  },
+  "mcp-builder": {
+    "remote": "upstream-anthropic",
+    "url": "https://github.com/anthropics/skills",
+    "path": "skills/mcp-builder/SKILL.md"
+  },
+  "pdf": {
+    "remote": "upstream-anthropic",
+    "url": "https://github.com/anthropics/skills",
+    "path": "skills/pdf/SKILL.md"
+  },
+  "pptx": {
+    "remote": "upstream-anthropic",
+    "url": "https://github.com/anthropics/skills",
+    "path": "skills/pptx/SKILL.md"
+  },
+  "skill-creator": {
+    "remote": "upstream-anthropic",
+    "url": "https://github.com/anthropics/skills",
+    "path": "skills/skill-creator/SKILL.md"
+  },
+  "slack-gif-creator": {
+    "remote": "upstream-anthropic",
+    "url": "https://github.com/anthropics/skills",
+    "path": "skills/slack-gif-creator/SKILL.md"
+  },
+  "theme-factory": {
+    "remote": "upstream-anthropic",
+    "url": "https://github.com/anthropics/skills",
+    "path": "skills/theme-factory/SKILL.md"
+  },
+  "web-artifacts-builder": {
+    "remote": "upstream-anthropic",
+    "url": "https://github.com/anthropics/skills",
+    "path": "skills/web-artifacts-builder/SKILL.md"
+  },
+  "webapp-testing": {
+    "remote": "upstream-anthropic",
+    "url": "https://github.com/anthropics/skills",
+    "path": "skills/webapp-testing/SKILL.md"
+  },
+  "xlsx": {
+    "remote": "upstream-anthropic",
+    "url": "https://github.com/anthropics/skills",
+    "path": "skills/xlsx/SKILL.md"
+  },
+  "agents-md": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/agents-md/SKILL.md"
+  },
+  "blog-writing-guide": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/blog-writing-guide/SKILL.md"
+  },
+  "claude-settings-audit": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/claude-settings-audit/SKILL.md"
+  },
+  "code-review": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/code-review/SKILL.md"
+  },
+  "code-simplifier": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/code-simplifier/SKILL.md"
+  },
+  "commit": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/commit/SKILL.md"
+  },
+  "create-branch": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/create-branch/SKILL.md"
+  },
+  "django-access-review": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/django-access-review/SKILL.md"
+  },
+  "django-perf-review": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/django-perf-review/SKILL.md"
+  },
+  "find-bugs": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/find-bugs/SKILL.md"
+  },
+  "gh-review-requests": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/gh-review-requests/SKILL.md"
+  },
+  "gha-security-review": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/gha-security-review/SKILL.md"
+  },
+  "iterate-pr": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/iterate-pr/SKILL.md"
+  },
+  "pr-writer": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/pr-writer/SKILL.md"
+  },
+  "presentation-creator": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/presentation-creator/SKILL.md"
+  },
+  "prompt-optimizer": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/prompt-optimizer/SKILL.md"
+  },
+  "security-review": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/security-review/SKILL.md"
+  },
+  "skill-scanner": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/skill-scanner/SKILL.md"
+  },
+  "skill-writer": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/skill-writer/SKILL.md"
+  },
+  "sred-project-organizer": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/sred-project-organizer/SKILL.md"
+  },
+  "sred-work-summary": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/sred-work-summary/SKILL.md"
+  },
+  "typing-exclusion-worker": {
+    "remote": "upstream-sentry",
+    "url": "https://github.com/getsentry/skills",
+    "path": "skills/typing-exclusion-worker/SKILL.md"
+  },
+  "building-native-ui": {
+    "remote": "upstream-expo",
+    "url": "https://github.com/expo/skills",
+    "path": "plugins/expo/skills/building-native-ui/SKILL.md"
+  },
+  "expo-api-routes": {
+    "remote": "upstream-expo",
+    "url": "https://github.com/expo/skills",
+    "path": "plugins/expo/skills/expo-api-routes/SKILL.md"
+  },
+  "expo-cicd-workflows": {
+    "remote": "upstream-expo",
+    "url": "https://github.com/expo/skills",
+    "path": "plugins/expo/skills/expo-cicd-workflows/SKILL.md"
+  },
+  "expo-deployment": {
+    "remote": "upstream-expo",
+    "url": "https://github.com/expo/skills",
+    "path": "plugins/expo/skills/expo-deployment/SKILL.md"
+  },
+  "expo-dev-client": {
+    "remote": "upstream-expo",
+    "url": "https://github.com/expo/skills",
+    "path": "plugins/expo/skills/expo-dev-client/SKILL.md"
+  },
+  "expo-module": {
+    "remote": "upstream-expo",
+    "url": "https://github.com/expo/skills",
+    "path": "plugins/expo/skills/expo-module/SKILL.md"
+  },
+  "expo-tailwind-setup": {
+    "remote": "upstream-expo",
+    "url": "https://github.com/expo/skills",
+    "path": "plugins/expo/skills/expo-tailwind-setup/SKILL.md"
+  },
+  "expo-ui-jetpack-compose": {
+    "remote": "upstream-expo",
+    "url": "https://github.com/expo/skills",
+    "path": "plugins/expo/skills/expo-ui-jetpack-compose/SKILL.md"
+  },
+  "expo-ui-swift-ui": {
+    "remote": "upstream-expo",
+    "url": "https://github.com/expo/skills",
+    "path": "plugins/expo/skills/expo-ui-swift-ui/SKILL.md"
+  },
+  "native-data-fetching": {
+    "remote": "upstream-expo",
+    "url": "https://github.com/expo/skills",
+    "path": "plugins/expo/skills/native-data-fetching/SKILL.md"
+  },
+  "upgrading-expo": {
+    "remote": "upstream-expo",
+    "url": "https://github.com/expo/skills",
+    "path": "plugins/expo/skills/upgrading-expo/SKILL.md"
+  },
+  "use-dom": {
+    "remote": "upstream-expo",
+    "url": "https://github.com/expo/skills",
+    "path": "plugins/expo/skills/use-dom/SKILL.md"
+  },
+  "score-eval": {
+    "remote": "upstream-neon",
+    "url": "https://github.com/neondatabase/agent-skills",
+    "path": "evals/neon-postgres-egress-optimizer/.claude/skills/score-eval/SKILL.md"
+  },
+  "claimable-postgres": {
+    "remote": "upstream-neon",
+    "url": "https://github.com/neondatabase/agent-skills",
+    "path": "skills/claimable-postgres/SKILL.md"
+  },
+  "neon-postgres-egress-optimizer": {
+    "remote": "upstream-neon",
+    "url": "https://github.com/neondatabase/agent-skills",
+    "path": "skills/neon-postgres-egress-optimizer/SKILL.md"
+  },
+  "neon-postgres": {
+    "remote": "upstream-neon",
+    "url": "https://github.com/neondatabase/agent-skills",
+    "path": "skills/neon-postgres/SKILL.md"
+  },
+  "hf-mcp": {
+    "remote": "upstream-huggingface",
+    "url": "https://github.com/huggingface/skills",
+    "path": "hf-mcp/skills/hf-mcp/SKILL.md"
+  },
+  "hf-cli": {
+    "remote": "upstream-huggingface",
+    "url": "https://github.com/huggingface/skills",
+    "path": "skills/hf-cli/SKILL.md"
+  },
+  "huggingface-community-evals": {
+    "remote": "upstream-huggingface",
+    "url": "https://github.com/huggingface/skills",
+    "path": "skills/huggingface-community-evals/SKILL.md"
+  },
+  "huggingface-datasets": {
+    "remote": "upstream-huggingface",
+    "url": "https://github.com/huggingface/skills",
+    "path": "skills/huggingface-datasets/SKILL.md"
+  },
+  "huggingface-gradio": {
+    "remote": "upstream-huggingface",
+    "url": "https://github.com/huggingface/skills",
+    "path": "skills/huggingface-gradio/SKILL.md"
+  },
+  "huggingface-llm-trainer": {
+    "remote": "upstream-huggingface",
+    "url": "https://github.com/huggingface/skills",
+    "path": "skills/huggingface-llm-trainer/SKILL.md"
+  },
+  "huggingface-paper-publisher": {
+    "remote": "upstream-huggingface",
+    "url": "https://github.com/huggingface/skills",
+    "path": "skills/huggingface-paper-publisher/SKILL.md"
+  },
+  "huggingface-papers": {
+    "remote": "upstream-huggingface",
+    "url": "https://github.com/huggingface/skills",
+    "path": "skills/huggingface-papers/SKILL.md"
+  },
+  "huggingface-tool-builder": {
+    "remote": "upstream-huggingface",
+    "url": "https://github.com/huggingface/skills",
+    "path": "skills/huggingface-tool-builder/SKILL.md"
+  },
+  "huggingface-trackio": {
+    "remote": "upstream-huggingface",
+    "url": "https://github.com/huggingface/skills",
+    "path": "skills/huggingface-trackio/SKILL.md"
+  },
+  "huggingface-vision-trainer": {
+    "remote": "upstream-huggingface",
+    "url": "https://github.com/huggingface/skills",
+    "path": "skills/huggingface-vision-trainer/SKILL.md"
+  },
+  "transformers-js": {
+    "remote": "upstream-huggingface",
+    "url": "https://github.com/huggingface/skills",
+    "path": "skills/transformers-js/SKILL.md"
+  },
+  "agentic-actions-auditor": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/agentic-actions-auditor/skills/agentic-actions-auditor/SKILL.md"
+  },
+  "ask-questions-if-underspecified": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/ask-questions-if-underspecified/skills/ask-questions-if-underspecified/SKILL.md"
+  },
+  "audit-context-building": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/audit-context-building/skills/audit-context-building/SKILL.md"
+  },
+  "algorand-vulnerability-scanner": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/building-secure-contracts/skills/algorand-vulnerability-scanner/SKILL.md"
+  },
+  "audit-prep-assistant": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/building-secure-contracts/skills/audit-prep-assistant/SKILL.md"
+  },
+  "cairo-vulnerability-scanner": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/building-secure-contracts/skills/cairo-vulnerability-scanner/SKILL.md"
+  },
+  "code-maturity-assessor": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/building-secure-contracts/skills/code-maturity-assessor/SKILL.md"
+  },
+  "cosmos-vulnerability-scanner": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/building-secure-contracts/skills/cosmos-vulnerability-scanner/SKILL.md"
+  },
+  "guidelines-advisor": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/building-secure-contracts/skills/guidelines-advisor/SKILL.md"
+  },
+  "secure-workflow-guide": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/building-secure-contracts/skills/secure-workflow-guide/SKILL.md"
+  },
+  "solana-vulnerability-scanner": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/building-secure-contracts/skills/solana-vulnerability-scanner/SKILL.md"
+  },
+  "substrate-vulnerability-scanner": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/building-secure-contracts/skills/substrate-vulnerability-scanner/SKILL.md"
+  },
+  "token-integration-analyzer": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/building-secure-contracts/skills/token-integration-analyzer/SKILL.md"
+  },
+  "ton-vulnerability-scanner": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/building-secure-contracts/skills/ton-vulnerability-scanner/SKILL.md"
+  },
+  "burpsuite-project-parser": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/burpsuite-project-parser/skills/burpsuite-project-parser/SKILL.md"
+  },
+  "claude-in-chrome-troubleshooting": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/claude-in-chrome-troubleshooting/skills/claude-in-chrome-troubleshooting/SKILL.md"
+  },
+  "constant-time-analysis": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/constant-time-analysis/skills/constant-time-analysis/SKILL.md"
+  },
+  "interpreting-culture-index": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/culture-index/skills/interpreting-culture-index/SKILL.md"
+  },
+  "debug-buttercup": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/debug-buttercup/skills/debug-buttercup/SKILL.md"
+  },
+  "devcontainer-setup": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/devcontainer-setup/skills/devcontainer-setup/SKILL.md"
+  },
+  "differential-review": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/differential-review/skills/differential-review/SKILL.md"
+  },
+  "dimensional-analysis": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/dimensional-analysis/skills/dimensional-analysis/SKILL.md"
+  },
+  "dwarf-expert": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/dwarf-expert/skills/dwarf-expert/SKILL.md"
+  },
+  "entry-point-analyzer": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/entry-point-analyzer/skills/entry-point-analyzer/SKILL.md"
+  },
+  "firebase-apk-scanner": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/firebase-apk-scanner/skills/firebase-apk-scanner/SKILL.md"
+  },
+  "fp-check": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/fp-check/skills/fp-check/SKILL.md"
+  },
+  "git-cleanup": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/git-cleanup/skills/git-cleanup/SKILL.md"
+  },
+  "insecure-defaults": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/insecure-defaults/skills/insecure-defaults/SKILL.md"
+  },
+  "let-fate-decide": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/let-fate-decide/skills/let-fate-decide/SKILL.md"
+  },
+  "modern-python": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/modern-python/skills/modern-python/SKILL.md"
+  },
+  "mutation-testing": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/mutation-testing/skills/mutation-testing/SKILL.md"
+  },
+  "property-based-testing": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/property-based-testing/skills/property-based-testing/SKILL.md"
+  },
+  "seatbelt-sandboxer": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/seatbelt-sandboxer/skills/seatbelt-sandboxer/SKILL.md"
+  },
+  "second-opinion": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/second-opinion/skills/second-opinion/SKILL.md"
+  },
+  "semgrep-rule-creator": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/semgrep-rule-creator/skills/semgrep-rule-creator/SKILL.md"
+  },
+  "semgrep-rule-variant-creator": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/semgrep-rule-variant-creator/skills/semgrep-rule-variant-creator/SKILL.md"
+  },
+  "sharp-edges": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/sharp-edges/skills/sharp-edges/SKILL.md"
+  },
+  "skill-improver": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/skill-improver/skills/skill-improver/SKILL.md"
+  },
+  "spec-to-code-compliance": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/spec-to-code-compliance/skills/spec-to-code-compliance/SKILL.md"
+  },
+  "codeql": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/static-analysis/skills/codeql/SKILL.md"
+  },
+  "sarif-parsing": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/static-analysis/skills/sarif-parsing/SKILL.md"
+  },
+  "semgrep": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/static-analysis/skills/semgrep/SKILL.md"
+  },
+  "supply-chain-risk-auditor": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor/SKILL.md"
+  },
+  "address-sanitizer": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/testing-handbook-skills/skills/address-sanitizer/SKILL.md"
+  },
+  "aflpp": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/testing-handbook-skills/skills/aflpp/SKILL.md"
+  },
+  "atheris": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/testing-handbook-skills/skills/atheris/SKILL.md"
+  },
+  "cargo-fuzz": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/testing-handbook-skills/skills/cargo-fuzz/SKILL.md"
+  },
+  "constant-time-testing": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/testing-handbook-skills/skills/constant-time-testing/SKILL.md"
+  },
+  "coverage-analysis": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/testing-handbook-skills/skills/coverage-analysis/SKILL.md"
+  },
+  "fuzzing-dictionary": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/testing-handbook-skills/skills/fuzzing-dictionary/SKILL.md"
+  },
+  "fuzzing-obstacles": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/testing-handbook-skills/skills/fuzzing-obstacles/SKILL.md"
+  },
+  "harness-writing": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/testing-handbook-skills/skills/harness-writing/SKILL.md"
+  },
+  "libafl": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/testing-handbook-skills/skills/libafl/SKILL.md"
+  },
+  "libfuzzer": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/testing-handbook-skills/skills/libfuzzer/SKILL.md"
+  },
+  "ossfuzz": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/testing-handbook-skills/skills/ossfuzz/SKILL.md"
+  },
+  "ruzzy": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/testing-handbook-skills/skills/ruzzy/SKILL.md"
+  },
+  "testing-handbook-generator": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/testing-handbook-skills/skills/testing-handbook-generator/SKILL.md"
+  },
+  "wycheproof": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/testing-handbook-skills/skills/wycheproof/SKILL.md"
+  },
+  "audit-augmentation": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/trailmark/skills/audit-augmentation/SKILL.md"
+  },
+  "crypto-protocol-diagram": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/trailmark/skills/crypto-protocol-diagram/SKILL.md"
+  },
+  "diagramming-code": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/trailmark/skills/diagramming-code/SKILL.md"
+  },
+  "genotoxic": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/trailmark/skills/genotoxic/SKILL.md"
+  },
+  "graph-evolution": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/trailmark/skills/graph-evolution/SKILL.md"
+  },
+  "mermaid-to-proverif": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/trailmark/skills/mermaid-to-proverif/SKILL.md"
+  },
+  "trailmark-structural": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/trailmark/skills/trailmark-structural/SKILL.md"
+  },
+  "trailmark-summary": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/trailmark/skills/trailmark-summary/SKILL.md"
+  },
+  "trailmark": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/trailmark/skills/trailmark/SKILL.md"
+  },
+  "vector-forge": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/trailmark/skills/vector-forge/SKILL.md"
+  },
+  "variant-analysis": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/variant-analysis/skills/variant-analysis/SKILL.md"
+  },
+  "designing-workflow-skills": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/workflow-skill-design/skills/designing-workflow-skills/SKILL.md"
+  },
+  "yara-rule-authoring": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/yara-authoring/skills/yara-rule-authoring/SKILL.md"
+  },
+  "zeroize-audit": {
+    "remote": "upstream-trailofbits",
+    "url": "https://github.com/trailofbits/skills",
+    "path": "plugins/zeroize-audit/skills/zeroize-audit/SKILL.md"
+  },
+  "brainstorming": {
+    "remote": "upstream-superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "path": "skills/brainstorming/SKILL.md"
+  },
+  "dispatching-parallel-agents": {
+    "remote": "upstream-superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "path": "skills/dispatching-parallel-agents/SKILL.md"
+  },
+  "executing-plans": {
+    "remote": "upstream-superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "path": "skills/executing-plans/SKILL.md"
+  },
+  "finishing-a-development-branch": {
+    "remote": "upstream-superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "path": "skills/finishing-a-development-branch/SKILL.md"
+  },
+  "receiving-code-review": {
+    "remote": "upstream-superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "path": "skills/receiving-code-review/SKILL.md"
+  },
+  "requesting-code-review": {
+    "remote": "upstream-superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "path": "skills/requesting-code-review/SKILL.md"
+  },
+  "subagent-driven-development": {
+    "remote": "upstream-superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "path": "skills/subagent-driven-development/SKILL.md"
+  },
+  "systematic-debugging": {
+    "remote": "upstream-superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "path": "skills/systematic-debugging/SKILL.md"
+  },
+  "test-driven-development": {
+    "remote": "upstream-superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "path": "skills/test-driven-development/SKILL.md"
+  },
+  "using-git-worktrees": {
+    "remote": "upstream-superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "path": "skills/using-git-worktrees/SKILL.md"
+  },
+  "using-superpowers": {
+    "remote": "upstream-superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "path": "skills/using-superpowers/SKILL.md"
+  },
+  "verification-before-completion": {
+    "remote": "upstream-superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "path": "skills/verification-before-completion/SKILL.md"
+  },
+  "writing-plans": {
+    "remote": "upstream-superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "path": "skills/writing-plans/SKILL.md"
+  },
+  "writing-skills": {
+    "remote": "upstream-superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "path": "skills/writing-skills/SKILL.md"
+  },
+  "azure-ai-agents-persistent-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-ai-agents-persistent-dotnet/SKILL.md"
+  },
+  "azure-ai-document-intelligence-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-ai-document-intelligence-dotnet/SKILL.md"
+  },
+  "azure-ai-openai-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-ai-openai-dotnet/SKILL.md"
+  },
+  "azure-ai-projects-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-ai-projects-dotnet/SKILL.md"
+  },
+  "azure-ai-voicelive-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-ai-voicelive-dotnet/SKILL.md"
+  },
+  "azure-eventgrid-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-eventgrid-dotnet/SKILL.md"
+  },
+  "azure-eventhub-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-eventhub-dotnet/SKILL.md"
+  },
+  "azure-identity-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-identity-dotnet/SKILL.md"
+  },
+  "azure-maps-search-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-maps-search-dotnet/SKILL.md"
+  },
+  "azure-mgmt-apicenter-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-apicenter-dotnet/SKILL.md"
+  },
+  "azure-mgmt-apimanagement-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-apimanagement-dotnet/SKILL.md"
+  },
+  "azure-mgmt-applicationinsights-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-applicationinsights-dotnet/SKILL.md"
+  },
+  "azure-mgmt-arizeaiobservabilityeval-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-arizeaiobservabilityeval-dotnet/SKILL.md"
+  },
+  "azure-mgmt-botservice-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-botservice-dotnet/SKILL.md"
+  },
+  "azure-mgmt-fabric-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-fabric-dotnet/SKILL.md"
+  },
+  "azure-mgmt-mongodbatlas-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-mongodbatlas-dotnet/SKILL.md"
+  },
+  "azure-mgmt-weightsandbiases-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-weightsandbiases-dotnet/SKILL.md"
+  },
+  "azure-resource-manager-cosmosdb-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-cosmosdb-dotnet/SKILL.md"
+  },
+  "azure-resource-manager-durabletask-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-durabletask-dotnet/SKILL.md"
+  },
+  "azure-resource-manager-mysql-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-mysql-dotnet/SKILL.md"
+  },
+  "azure-resource-manager-playwright-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-playwright-dotnet/SKILL.md"
+  },
+  "azure-resource-manager-postgresql-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-postgresql-dotnet/SKILL.md"
+  },
+  "azure-resource-manager-redis-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-redis-dotnet/SKILL.md"
+  },
+  "azure-resource-manager-sql-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-sql-dotnet/SKILL.md"
+  },
+  "azure-search-documents-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-search-documents-dotnet/SKILL.md"
+  },
+  "azure-security-keyvault-keys-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-security-keyvault-keys-dotnet/SKILL.md"
+  },
+  "azure-servicebus-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/azure-servicebus-dotnet/SKILL.md"
+  },
+  "m365-agents-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/m365-agents-dotnet/SKILL.md"
+  },
+  "microsoft-azure-webjobs-extensions-authentication-events-dotnet": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-dotnet/skills/microsoft-azure-webjobs-extensions-authentication-events-dotnet/SKILL.md"
+  },
+  "azure-ai-agents-persistent-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-ai-agents-persistent-java/SKILL.md"
+  },
+  "azure-ai-anomalydetector-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-ai-anomalydetector-java/SKILL.md"
+  },
+  "azure-ai-contentsafety-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-ai-contentsafety-java/SKILL.md"
+  },
+  "azure-ai-formrecognizer-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-ai-formrecognizer-java/SKILL.md"
+  },
+  "azure-ai-projects-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-ai-projects-java/SKILL.md"
+  },
+  "azure-ai-vision-imageanalysis-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-ai-vision-imageanalysis-java/SKILL.md"
+  },
+  "azure-ai-voicelive-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-ai-voicelive-java/SKILL.md"
+  },
+  "azure-appconfiguration-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-appconfiguration-java/SKILL.md"
+  },
+  "azure-communication-callautomation-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-communication-callautomation-java/SKILL.md"
+  },
+  "azure-communication-callingserver-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-communication-callingserver-java/SKILL.md"
+  },
+  "azure-communication-chat-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-communication-chat-java/SKILL.md"
+  },
+  "azure-communication-common-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-communication-common-java/SKILL.md"
+  },
+  "azure-communication-sms-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-communication-sms-java/SKILL.md"
+  },
+  "azure-compute-batch-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-compute-batch-java/SKILL.md"
+  },
+  "azure-cosmos-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-cosmos-java/SKILL.md"
+  },
+  "azure-data-tables-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-data-tables-java/SKILL.md"
+  },
+  "azure-eventgrid-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-eventgrid-java/SKILL.md"
+  },
+  "azure-eventhub-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-eventhub-java/SKILL.md"
+  },
+  "azure-identity-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-identity-java/SKILL.md"
+  },
+  "azure-messaging-webpubsub-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-messaging-webpubsub-java/SKILL.md"
+  },
+  "azure-monitor-ingestion-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-monitor-ingestion-java/SKILL.md"
+  },
+  "azure-monitor-opentelemetry-exporter-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-monitor-opentelemetry-exporter-java/SKILL.md"
+  },
+  "azure-monitor-query-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-monitor-query-java/SKILL.md"
+  },
+  "azure-security-keyvault-keys-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-security-keyvault-keys-java/SKILL.md"
+  },
+  "azure-security-keyvault-secrets-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-security-keyvault-secrets-java/SKILL.md"
+  },
+  "azure-storage-blob-java": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-java/skills/azure-storage-blob-java/SKILL.md"
+  },
+  "agent-framework-azure-ai-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/agent-framework-azure-ai-py/SKILL.md"
+  },
+  "agents-v2-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/agents-v2-py/SKILL.md"
+  },
+  "azure-ai-contentsafety-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-ai-contentsafety-py/SKILL.md"
+  },
+  "azure-ai-contentunderstanding-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-ai-contentunderstanding-py/SKILL.md"
+  },
+  "azure-ai-language-conversations-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-ai-language-conversations-py/SKILL.md"
+  },
+  "azure-ai-ml-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-ai-ml-py/SKILL.md"
+  },
+  "azure-ai-projects-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-ai-projects-py/SKILL.md"
+  },
+  "azure-ai-textanalytics-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-ai-textanalytics-py/SKILL.md"
+  },
+  "azure-ai-transcription-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-ai-transcription-py/SKILL.md"
+  },
+  "azure-ai-translation-document-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-ai-translation-document-py/SKILL.md"
+  },
+  "azure-ai-translation-text-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-ai-translation-text-py/SKILL.md"
+  },
+  "azure-ai-vision-imageanalysis-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-ai-vision-imageanalysis-py/SKILL.md"
+  },
+  "azure-ai-voicelive-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-ai-voicelive-py/SKILL.md"
+  },
+  "azure-appconfiguration-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-appconfiguration-py/SKILL.md"
+  },
+  "azure-containerregistry-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-containerregistry-py/SKILL.md"
+  },
+  "azure-cosmos-db-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-cosmos-db-py/SKILL.md"
+  },
+  "azure-cosmos-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-cosmos-py/SKILL.md"
+  },
+  "azure-data-tables-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-data-tables-py/SKILL.md"
+  },
+  "azure-eventgrid-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-eventgrid-py/SKILL.md"
+  },
+  "azure-eventhub-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-eventhub-py/SKILL.md"
+  },
+  "azure-identity-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-identity-py/SKILL.md"
+  },
+  "azure-keyvault-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-keyvault-py/SKILL.md"
+  },
+  "azure-messaging-webpubsubservice-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-messaging-webpubsubservice-py/SKILL.md"
+  },
+  "azure-mgmt-apicenter-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-mgmt-apicenter-py/SKILL.md"
+  },
+  "azure-mgmt-apimanagement-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-mgmt-apimanagement-py/SKILL.md"
+  },
+  "azure-mgmt-botservice-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-mgmt-botservice-py/SKILL.md"
+  },
+  "azure-mgmt-fabric-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-mgmt-fabric-py/SKILL.md"
+  },
+  "azure-monitor-ingestion-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-monitor-ingestion-py/SKILL.md"
+  },
+  "azure-monitor-opentelemetry-exporter-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-monitor-opentelemetry-exporter-py/SKILL.md"
+  },
+  "azure-monitor-opentelemetry-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-monitor-opentelemetry-py/SKILL.md"
+  },
+  "azure-monitor-query-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-monitor-query-py/SKILL.md"
+  },
+  "azure-search-documents-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-search-documents-py/SKILL.md"
+  },
+  "azure-servicebus-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-servicebus-py/SKILL.md"
+  },
+  "azure-speech-to-text-rest-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-speech-to-text-rest-py/SKILL.md"
+  },
+  "azure-storage-blob-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-storage-blob-py/SKILL.md"
+  },
+  "azure-storage-file-datalake-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-storage-file-datalake-py/SKILL.md"
+  },
+  "azure-storage-file-share-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-storage-file-share-py/SKILL.md"
+  },
+  "azure-storage-queue-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/azure-storage-queue-py/SKILL.md"
+  },
+  "fastapi-router-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/fastapi-router-py/SKILL.md"
+  },
+  "hosted-agents-v2-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/hosted-agents-v2-py/SKILL.md"
+  },
+  "m365-agents-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/m365-agents-py/SKILL.md"
+  },
+  "pydantic-models-py": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-python/skills/pydantic-models-py/SKILL.md"
+  },
+  "azure-cosmos-rust": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-rust/skills/azure-cosmos-rust/SKILL.md"
+  },
+  "azure-eventhub-rust": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-rust/skills/azure-eventhub-rust/SKILL.md"
+  },
+  "azure-identity-rust": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-rust/skills/azure-identity-rust/SKILL.md"
+  },
+  "azure-keyvault-certificates-rust": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-rust/skills/azure-keyvault-certificates-rust/SKILL.md"
+  },
+  "azure-keyvault-keys-rust": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-rust/skills/azure-keyvault-keys-rust/SKILL.md"
+  },
+  "azure-keyvault-secrets-rust": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-rust/skills/azure-keyvault-secrets-rust/SKILL.md"
+  },
+  "azure-storage-blob-rust": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-rust/skills/azure-storage-blob-rust/SKILL.md"
+  },
+  "azure-ai-contentsafety-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/azure-ai-contentsafety-ts/SKILL.md"
+  },
+  "azure-ai-document-intelligence-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/azure-ai-document-intelligence-ts/SKILL.md"
+  },
+  "azure-ai-projects-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/azure-ai-projects-ts/SKILL.md"
+  },
+  "azure-ai-translation-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/azure-ai-translation-ts/SKILL.md"
+  },
+  "azure-ai-voicelive-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/azure-ai-voicelive-ts/SKILL.md"
+  },
+  "azure-appconfiguration-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/azure-appconfiguration-ts/SKILL.md"
+  },
+  "azure-cosmos-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/azure-cosmos-ts/SKILL.md"
+  },
+  "azure-eventhub-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/azure-eventhub-ts/SKILL.md"
+  },
+  "azure-identity-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/azure-identity-ts/SKILL.md"
+  },
+  "azure-keyvault-keys-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/azure-keyvault-keys-ts/SKILL.md"
+  },
+  "azure-keyvault-secrets-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/azure-keyvault-secrets-ts/SKILL.md"
+  },
+  "azure-microsoft-playwright-testing-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/azure-microsoft-playwright-testing-ts/SKILL.md"
+  },
+  "azure-monitor-opentelemetry-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/azure-monitor-opentelemetry-ts/SKILL.md"
+  },
+  "azure-postgres-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/azure-postgres-ts/SKILL.md"
+  },
+  "azure-search-documents-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/azure-search-documents-ts/SKILL.md"
+  },
+  "azure-servicebus-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/azure-servicebus-ts/SKILL.md"
+  },
+  "azure-storage-blob-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/azure-storage-blob-ts/SKILL.md"
+  },
+  "azure-storage-file-share-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/azure-storage-file-share-ts/SKILL.md"
+  },
+  "azure-storage-queue-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/azure-storage-queue-ts/SKILL.md"
+  },
+  "azure-web-pubsub-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/azure-web-pubsub-ts/SKILL.md"
+  },
+  "frontend-ui-dark-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/frontend-ui-dark-ts/SKILL.md"
+  },
+  "m365-agents-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/m365-agents-ts/SKILL.md"
+  },
+  "react-flow-node-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/react-flow-node-ts/SKILL.md"
+  },
+  "zustand-store-ts": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-sdk-typescript/skills/zustand-store-ts/SKILL.md"
+  },
+  "appinsights-instrumentation": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/appinsights-instrumentation/SKILL.md"
+  },
+  "azure-ai": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/azure-ai/SKILL.md"
+  },
+  "azure-aigateway": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/azure-aigateway/SKILL.md"
+  },
+  "azure-cloud-migrate": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/azure-cloud-migrate/SKILL.md"
+  },
+  "azure-compliance": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/azure-compliance/SKILL.md"
+  },
+  "azure-compute": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/azure-compute/SKILL.md"
+  },
+  "azure-cost": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/azure-cost/SKILL.md"
+  },
+  "azure-deploy": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/azure-deploy/SKILL.md"
+  },
+  "azure-diagnostics": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/azure-diagnostics/SKILL.md"
+  },
+  "azure-enterprise-infra-planner": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/azure-enterprise-infra-planner/SKILL.md"
+  },
+  "azure-hosted-copilot-sdk": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/azure-hosted-copilot-sdk/SKILL.md"
+  },
+  "azure-kubernetes": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/azure-kubernetes/SKILL.md"
+  },
+  "azure-kusto": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/azure-kusto/SKILL.md"
+  },
+  "azure-messaging": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/azure-messaging/SKILL.md"
+  },
+  "azure-prepare": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/azure-prepare/SKILL.md"
+  },
+  "azure-quotas": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/azure-quotas/SKILL.md"
+  },
+  "azure-rbac": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/azure-rbac/SKILL.md"
+  },
+  "azure-resource-lookup": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/azure-resource-lookup/SKILL.md"
+  },
+  "azure-resource-visualizer": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/azure-resource-visualizer/SKILL.md"
+  },
+  "azure-storage": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/azure-storage/SKILL.md"
+  },
+  "azure-upgrade": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/azure-upgrade/SKILL.md"
+  },
+  "azure-validate": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/azure-validate/SKILL.md"
+  },
+  "entra-app-registration": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/entra-app-registration/SKILL.md"
+  },
+  "microsoft-foundry": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/azure-skills/skills/microsoft-foundry/SKILL.md"
+  },
+  "wiki-ado-convert": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/deep-wiki/skills/wiki-ado-convert/SKILL.md"
+  },
+  "wiki-agents-md": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/deep-wiki/skills/wiki-agents-md/SKILL.md"
+  },
+  "wiki-architect": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/deep-wiki/skills/wiki-architect/SKILL.md"
+  },
+  "wiki-changelog": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/deep-wiki/skills/wiki-changelog/SKILL.md"
+  },
+  "wiki-llms-txt": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/deep-wiki/skills/wiki-llms-txt/SKILL.md"
+  },
+  "wiki-onboarding": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/deep-wiki/skills/wiki-onboarding/SKILL.md"
+  },
+  "wiki-page-writer": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/deep-wiki/skills/wiki-page-writer/SKILL.md"
+  },
+  "wiki-qa": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/deep-wiki/skills/wiki-qa/SKILL.md"
+  },
+  "wiki-researcher": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/deep-wiki/skills/wiki-researcher/SKILL.md"
+  },
+  "wiki-vitepress": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/plugins/deep-wiki/skills/wiki-vitepress/SKILL.md"
+  },
+  "cloud-solution-architect": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/skills/cloud-solution-architect/SKILL.md"
+  },
+  "continual-learning": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/skills/continual-learning/SKILL.md"
+  },
+  "copilot-sdk": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/skills/copilot-sdk/SKILL.md"
+  },
+  "entra-agent-id": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/skills/entra-agent-id/SKILL.md"
+  },
+  "frontend-design-review": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/skills/frontend-design-review/SKILL.md"
+  },
+  "github-issue-creator": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/skills/github-issue-creator/SKILL.md"
+  },
+  "kql": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/skills/kql/SKILL.md"
+  },
+  "microsoft-docs": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/skills/microsoft-docs/SKILL.md"
+  },
+  "podcast-generation": {
+    "remote": "upstream-microsoft",
+    "url": "https://github.com/microsoft/skills",
+    "path": ".github/skills/podcast-generation/SKILL.md"
+  },
+  "azure-active-directory-b2c": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-active-directory-b2c/SKILL.md"
+  },
+  "azure-advisor": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-advisor/SKILL.md"
+  },
+  "azure-ai-vision": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-ai-vision/SKILL.md"
+  },
+  "azure-aks-edge-essentials": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-aks-edge-essentials/SKILL.md"
+  },
+  "azure-analysis-services": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-analysis-services/SKILL.md"
+  },
+  "azure-anomaly-detector": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-anomaly-detector/SKILL.md"
+  },
+  "azure-api-center": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-api-center/SKILL.md"
+  },
+  "azure-api-management": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-api-management/SKILL.md"
+  },
+  "azure-app-configuration": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-app-configuration/SKILL.md"
+  },
+  "azure-app-service": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-app-service/SKILL.md"
+  },
+  "azure-app-testing": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-app-testing/SKILL.md"
+  },
+  "azure-application-gateway": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-application-gateway/SKILL.md"
+  },
+  "azure-arc": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-arc/SKILL.md"
+  },
+  "azure-architecture": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-architecture/SKILL.md"
+  },
+  "azure-artifact-signing": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-artifact-signing/SKILL.md"
+  },
+  "azure-artifacts": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-artifacts/SKILL.md"
+  },
+  "azure-attestation": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-attestation/SKILL.md"
+  },
+  "azure-automation": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-automation/SKILL.md"
+  },
+  "azure-backup": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-backup/SKILL.md"
+  },
+  "azure-baremetal-infrastructure": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-baremetal-infrastructure/SKILL.md"
+  },
+  "azure-bastion": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-bastion/SKILL.md"
+  },
+  "azure-batch": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-batch/SKILL.md"
+  },
+  "azure-blob-storage": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-blob-storage/SKILL.md"
+  },
+  "azure-blueprints": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-blueprints/SKILL.md"
+  },
+  "azure-boards": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-boards/SKILL.md"
+  },
+  "azure-bot-service": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-bot-service/SKILL.md"
+  },
+  "azure-business-process-tracking": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-business-process-tracking/SKILL.md"
+  },
+  "azure-cache-redis": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-cache-redis/SKILL.md"
+  },
+  "azure-carbon-optimization": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-carbon-optimization/SKILL.md"
+  },
+  "azure-chaos-studio": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-chaos-studio/SKILL.md"
+  },
+  "azure-cloud-adoption-framework": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-cloud-adoption-framework/SKILL.md"
+  },
+  "azure-cloud-hsm": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-cloud-hsm/SKILL.md"
+  },
+  "azure-cloud-services": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-cloud-services/SKILL.md"
+  },
+  "azure-cloud-shell": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-cloud-shell/SKILL.md"
+  },
+  "azure-cognitive-search": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-cognitive-search/SKILL.md"
+  },
+  "azure-communication-services": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-communication-services/SKILL.md"
+  },
+  "azure-confidential-computing": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-confidential-computing/SKILL.md"
+  },
+  "azure-confidential-ledger": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-confidential-ledger/SKILL.md"
+  },
+  "azure-container-apps": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-container-apps/SKILL.md"
+  },
+  "azure-container-instances": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-container-instances/SKILL.md"
+  },
+  "azure-container-registry": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-container-registry/SKILL.md"
+  },
+  "azure-container-storage": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-container-storage/SKILL.md"
+  },
+  "azure-content-safety": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-content-safety/SKILL.md"
+  },
+  "azure-copilot": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-copilot/SKILL.md"
+  },
+  "azure-cosmos-db": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-cosmos-db/SKILL.md"
+  },
+  "azure-cost-management": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-cost-management/SKILL.md"
+  },
+  "azure-custom-vision": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-custom-vision/SKILL.md"
+  },
+  "azure-cyclecloud": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-cyclecloud/SKILL.md"
+  },
+  "azure-data-api-builder": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-data-api-builder/SKILL.md"
+  },
+  "azure-data-box-family": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-data-box-family/SKILL.md"
+  },
+  "azure-data-explorer": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-data-explorer/SKILL.md"
+  },
+  "azure-data-factory": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-data-factory/SKILL.md"
+  },
+  "azure-data-manager-for-agri": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-data-manager-for-agri/SKILL.md"
+  },
+  "azure-data-science-vm": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-data-science-vm/SKILL.md"
+  },
+  "azure-data-share": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-data-share/SKILL.md"
+  },
+  "azure-database-migration": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-database-migration/SKILL.md"
+  },
+  "azure-database-mysql": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-database-mysql/SKILL.md"
+  },
+  "azure-database-postgresql": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-database-postgresql/SKILL.md"
+  },
+  "azure-databricks": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-databricks/SKILL.md"
+  },
+  "azure-ddos-protection": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-ddos-protection/SKILL.md"
+  },
+  "azure-dedicated-hsm": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-dedicated-hsm/SKILL.md"
+  },
+  "azure-defender-for-cloud": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-defender-for-cloud/SKILL.md"
+  },
+  "azure-defender-for-iot": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-defender-for-iot/SKILL.md"
+  },
+  "azure-deployment-environments": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-deployment-environments/SKILL.md"
+  },
+  "azure-dev-box": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-dev-box/SKILL.md"
+  },
+  "azure-devops": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-devops/SKILL.md"
+  },
+  "azure-devtest-labs": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-devtest-labs/SKILL.md"
+  },
+  "azure-digital-twins": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-digital-twins/SKILL.md"
+  },
+  "azure-dns": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-dns/SKILL.md"
+  },
+  "azure-document-intelligence": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-document-intelligence/SKILL.md"
+  },
+  "azure-education-hub": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-education-hub/SKILL.md"
+  },
+  "azure-elastic-san": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-elastic-san/SKILL.md"
+  },
+  "azure-energy-data-services": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-energy-data-services/SKILL.md"
+  },
+  "azure-event-grid": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-event-grid/SKILL.md"
+  },
+  "azure-event-hubs": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-event-hubs/SKILL.md"
+  },
+  "azure-expressroute": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-expressroute/SKILL.md"
+  },
+  "azure-extended-zones": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-extended-zones/SKILL.md"
+  },
+  "azure-external-attack-surface-management": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-external-attack-surface-management/SKILL.md"
+  },
+  "azure-files": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-files/SKILL.md"
+  },
+  "azure-firewall-manager": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-firewall-manager/SKILL.md"
+  },
+  "azure-firewall": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-firewall/SKILL.md"
+  },
+  "azure-firmware-analysis": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-firmware-analysis/SKILL.md"
+  },
+  "azure-fluid-relay": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-fluid-relay/SKILL.md"
+  },
+  "azure-front-door": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-front-door/SKILL.md"
+  },
+  "azure-functions": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-functions/SKILL.md"
+  },
+  "azure-hdinsight": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-hdinsight/SKILL.md"
+  },
+  "azure-health-bot": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-health-bot/SKILL.md"
+  },
+  "azure-health-data-services": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-health-data-services/SKILL.md"
+  },
+  "azure-hpc-cache": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-hpc-cache/SKILL.md"
+  },
+  "azure-immersive-reader": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-immersive-reader/SKILL.md"
+  },
+  "azure-impact-reporting": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-impact-reporting/SKILL.md"
+  },
+  "azure-import-export": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-import-export/SKILL.md"
+  },
+  "azure-information-protection": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-information-protection/SKILL.md"
+  },
+  "azure-internet-peering": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-internet-peering/SKILL.md"
+  },
+  "azure-iot-central": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-iot-central/SKILL.md"
+  },
+  "azure-iot-edge": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-iot-edge/SKILL.md"
+  },
+  "azure-iot-hub": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-iot-hub/SKILL.md"
+  },
+  "azure-iot-operations": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-iot-operations/SKILL.md"
+  },
+  "azure-iot": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-iot/SKILL.md"
+  },
+  "azure-key-vault": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-key-vault/SKILL.md"
+  },
+  "azure-kubernetes-service": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-kubernetes-service/SKILL.md"
+  },
+  "azure-lab-services": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-lab-services/SKILL.md"
+  },
+  "azure-language-service": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-language-service/SKILL.md"
+  },
+  "azure-large-instances": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-large-instances/SKILL.md"
+  },
+  "azure-lighthouse": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-lighthouse/SKILL.md"
+  },
+  "azure-load-balancer": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-load-balancer/SKILL.md"
+  },
+  "azure-local": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-local/SKILL.md"
+  },
+  "azure-logic-apps": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-logic-apps/SKILL.md"
+  },
+  "azure-machine-learning": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-machine-learning/SKILL.md"
+  },
+  "azure-managed-applications": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-managed-applications/SKILL.md"
+  },
+  "azure-managed-grafana": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-managed-grafana/SKILL.md"
+  },
+  "azure-managed-lustre": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-managed-lustre/SKILL.md"
+  },
+  "azure-managed-redis": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-managed-redis/SKILL.md"
+  },
+  "azure-maps": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-maps/SKILL.md"
+  },
+  "azure-metrics-advisor": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-metrics-advisor/SKILL.md"
+  },
+  "azure-migrate": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-migrate/SKILL.md"
+  },
+  "azure-monitor": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-monitor/SKILL.md"
+  },
+  "azure-nat-gateway": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-nat-gateway/SKILL.md"
+  },
+  "azure-netapp-files": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-netapp-files/SKILL.md"
+  },
+  "azure-network-function-manager": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-network-function-manager/SKILL.md"
+  },
+  "azure-network-watcher": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-network-watcher/SKILL.md"
+  },
+  "azure-networking": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-networking/SKILL.md"
+  },
+  "azure-notification-hubs": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-notification-hubs/SKILL.md"
+  },
+  "azure-open-datasets": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-open-datasets/SKILL.md"
+  },
+  "azure-operator-nexus": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-operator-nexus/SKILL.md"
+  },
+  "azure-operator-service-manager": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-operator-service-manager/SKILL.md"
+  },
+  "azure-oracle": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-oracle/SKILL.md"
+  },
+  "azure-osconfig": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-osconfig/SKILL.md"
+  },
+  "azure-partner-solutions": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-partner-solutions/SKILL.md"
+  },
+  "azure-payment-hsm": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-payment-hsm/SKILL.md"
+  },
+  "azure-peering-service": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-peering-service/SKILL.md"
+  },
+  "azure-personalizer": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-personalizer/SKILL.md"
+  },
+  "azure-pipelines": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-pipelines/SKILL.md"
+  },
+  "azure-planetary-computer-pro": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-planetary-computer-pro/SKILL.md"
+  },
+  "azure-playwright-workspaces": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-playwright-workspaces/SKILL.md"
+  },
+  "azure-policy": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-policy/SKILL.md"
+  },
+  "azure-portal": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-portal/SKILL.md"
+  },
+  "azure-private-link": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-private-link/SKILL.md"
+  },
+  "azure-quantum": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-quantum/SKILL.md"
+  },
+  "azure-queue-storage": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-queue-storage/SKILL.md"
+  },
+  "azure-redhat-openshift": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-redhat-openshift/SKILL.md"
+  },
+  "azure-relay": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-relay/SKILL.md"
+  },
+  "azure-reliability": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-reliability/SKILL.md"
+  },
+  "azure-repos": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-repos/SKILL.md"
+  },
+  "azure-resiliency": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-resiliency/SKILL.md"
+  },
+  "azure-resource-graph": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-resource-graph/SKILL.md"
+  },
+  "azure-resource-manager": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-resource-manager/SKILL.md"
+  },
+  "azure-route-server": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-route-server/SKILL.md"
+  },
+  "azure-sap": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-sap/SKILL.md"
+  },
+  "azure-security": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-security/SKILL.md"
+  },
+  "azure-sentinel": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-sentinel/SKILL.md"
+  },
+  "azure-service-bus": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-service-bus/SKILL.md"
+  },
+  "azure-service-connector": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-service-connector/SKILL.md"
+  },
+  "azure-service-fabric": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-service-fabric/SKILL.md"
+  },
+  "azure-service-health": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-service-health/SKILL.md"
+  },
+  "azure-signalr-service": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-signalr-service/SKILL.md"
+  },
+  "azure-site-recovery": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-site-recovery/SKILL.md"
+  },
+  "azure-sovereign-us": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-sovereign-us/SKILL.md"
+  },
+  "azure-speech": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-speech/SKILL.md"
+  },
+  "azure-spring-apps": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-spring-apps/SKILL.md"
+  },
+  "azure-sql-database": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-sql-database/SKILL.md"
+  },
+  "azure-sql-managed-instance": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-sql-managed-instance/SKILL.md"
+  },
+  "azure-sql-virtual-machines": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-sql-virtual-machines/SKILL.md"
+  },
+  "azure-sre-agent": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-sre-agent/SKILL.md"
+  },
+  "azure-stack-edge": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-stack-edge/SKILL.md"
+  },
+  "azure-static-web-apps": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-static-web-apps/SKILL.md"
+  },
+  "azure-stream-analytics": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-stream-analytics/SKILL.md"
+  },
+  "azure-synapse-analytics": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-synapse-analytics/SKILL.md"
+  },
+  "azure-table-storage": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-table-storage/SKILL.md"
+  },
+  "azure-test-plans": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-test-plans/SKILL.md"
+  },
+  "azure-traffic-manager": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-traffic-manager/SKILL.md"
+  },
+  "azure-translator": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-translator/SKILL.md"
+  },
+  "azure-update-manager": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-update-manager/SKILL.md"
+  },
+  "azure-video-indexer": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-video-indexer/SKILL.md"
+  },
+  "azure-virtual-desktop": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-virtual-desktop/SKILL.md"
+  },
+  "azure-virtual-machines": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-virtual-machines/SKILL.md"
+  },
+  "azure-virtual-network-manager": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-virtual-network-manager/SKILL.md"
+  },
+  "azure-virtual-network": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-virtual-network/SKILL.md"
+  },
+  "azure-virtual-wan": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-virtual-wan/SKILL.md"
+  },
+  "azure-vm-scalesets": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-vm-scalesets/SKILL.md"
+  },
+  "azure-vmware-solution": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-vmware-solution/SKILL.md"
+  },
+  "azure-vpn-gateway": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-vpn-gateway/SKILL.md"
+  },
+  "azure-web-application-firewall": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-web-application-firewall/SKILL.md"
+  },
+  "azure-web-pubsub": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-web-pubsub/SKILL.md"
+  },
+  "azure-well-architected": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/azure-well-architected/SKILL.md"
+  },
+  "microsoft-foundry-classic": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/microsoft-foundry-classic/SKILL.md"
+  },
+  "microsoft-foundry-local": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/microsoft-foundry-local/SKILL.md"
+  },
+  "microsoft-foundry-tools": {
+    "remote": "upstream-microsoft-docs",
+    "url": "https://github.com/MicrosoftDocs/Agent-Skills",
+    "path": "skills/microsoft-foundry-tools/SKILL.md"
+  },
+  "apify-actor-development": {
+    "remote": "upstream-apify",
+    "url": "https://github.com/apify/agent-skills",
+    "path": "skills/apify-actor-development/SKILL.md"
+  },
+  "apify-actorization": {
+    "remote": "upstream-apify",
+    "url": "https://github.com/apify/agent-skills",
+    "path": "skills/apify-actorization/SKILL.md"
+  },
+  "apify-generate-output-schema": {
+    "remote": "upstream-apify",
+    "url": "https://github.com/apify/agent-skills",
+    "path": "skills/apify-generate-output-schema/SKILL.md"
+  },
+  "apify-ultimate-scraper": {
+    "remote": "upstream-apify",
+    "url": "https://github.com/apify/agent-skills",
+    "path": "skills/apify-ultimate-scraper/SKILL.md"
+  },
+  "fal-3d": {
+    "remote": "upstream-fal",
+    "url": "https://github.com/fal-ai-community/skills",
+    "path": "skills/claude.ai/fal-3d/SKILL.md"
+  },
+  "fal-audio": {
+    "remote": "upstream-fal",
+    "url": "https://github.com/fal-ai-community/skills",
+    "path": "skills/claude.ai/fal-audio/SKILL.md"
+  },
+  "fal-generate": {
+    "remote": "upstream-fal",
+    "url": "https://github.com/fal-ai-community/skills",
+    "path": "skills/claude.ai/fal-generate/SKILL.md"
+  },
+  "fal-image-edit": {
+    "remote": "upstream-fal",
+    "url": "https://github.com/fal-ai-community/skills",
+    "path": "skills/claude.ai/fal-image-edit/SKILL.md"
+  },
+  "fal-kling-o3": {
+    "remote": "upstream-fal",
+    "url": "https://github.com/fal-ai-community/skills",
+    "path": "skills/claude.ai/fal-kling-o3/SKILL.md"
+  },
+  "fal-lip-sync": {
+    "remote": "upstream-fal",
+    "url": "https://github.com/fal-ai-community/skills",
+    "path": "skills/claude.ai/fal-lip-sync/SKILL.md"
+  },
+  "fal-platform": {
+    "remote": "upstream-fal",
+    "url": "https://github.com/fal-ai-community/skills",
+    "path": "skills/claude.ai/fal-platform/SKILL.md"
+  },
+  "fal-realtime": {
+    "remote": "upstream-fal",
+    "url": "https://github.com/fal-ai-community/skills",
+    "path": "skills/claude.ai/fal-realtime/SKILL.md"
+  },
+  "fal-restore": {
+    "remote": "upstream-fal",
+    "url": "https://github.com/fal-ai-community/skills",
+    "path": "skills/claude.ai/fal-restore/SKILL.md"
+  },
+  "fal-train": {
+    "remote": "upstream-fal",
+    "url": "https://github.com/fal-ai-community/skills",
+    "path": "skills/claude.ai/fal-train/SKILL.md"
+  },
+  "fal-tryon": {
+    "remote": "upstream-fal",
+    "url": "https://github.com/fal-ai-community/skills",
+    "path": "skills/claude.ai/fal-tryon/SKILL.md"
+  },
+  "fal-upscale": {
+    "remote": "upstream-fal",
+    "url": "https://github.com/fal-ai-community/skills",
+    "path": "skills/claude.ai/fal-upscale/SKILL.md"
+  },
+  "fal-video-edit": {
+    "remote": "upstream-fal",
+    "url": "https://github.com/fal-ai-community/skills",
+    "path": "skills/claude.ai/fal-video-edit/SKILL.md"
+  },
+  "fal-vision": {
+    "remote": "upstream-fal",
+    "url": "https://github.com/fal-ai-community/skills",
+    "path": "skills/claude.ai/fal-vision/SKILL.md"
+  },
+  "fal-workflow": {
+    "remote": "upstream-fal",
+    "url": "https://github.com/fal-ai-community/skills",
+    "path": "skills/claude.ai/fal-workflow/SKILL.md"
+  }
+}
