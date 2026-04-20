@@ -1,0 +1,7 @@
+Moved: 2026-04-18T17:10:47.717966
+Source: community (unattributed)
+Risk: unknown
+Version: 2.35.0
+Notes: Full SDLC autonomous orchestration. Requires --dangerously-skip-permissions.
+       Conflicts with Maeve approval-first governance. Keep as reference/deliberate invocation only.
+       Good Loki candidate tasks should be flagged via maeve_brain.db loki_candidates table.

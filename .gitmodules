@@ -1,0 +1,3 @@
+[submodule "tradermonty"]
+	path = tradermonty
+	url = https://github.com/tradermonty/claude-trading-skills.git
