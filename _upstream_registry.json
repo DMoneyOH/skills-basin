@@ -1,4 +1,14 @@
 {
+  "ab-test-setup": {
+    "path": "skills/ab-test-setup/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
+  "ad-creative": {
+    "path": "skills/ad-creative/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
   "address-sanitizer": {
     "path": "plugins/testing-handbook-skills/skills/address-sanitizer/SKILL.md",
     "remote": "upstream-trailofbits",
@@ -44,6 +54,11 @@
     "remote": "upstream-anthropic",
     "url": "https://github.com/anthropics/skills"
   },
+  "analytics-tracking": {
+    "path": "skills/analytics-tracking/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
   "apify-actor-development": {
     "path": "skills/apify-actor-development/SKILL.md",
     "remote": "upstream-apify",
@@ -73,6 +88,11 @@
     "path": "plugins/ask-questions-if-underspecified/skills/ask-questions-if-underspecified/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "aso-audit": {
+    "path": "skills/aso-audit/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
   },
   "atheris": {
     "path": "plugins/testing-handbook-skills/skills/atheris/SKILL.md",
@@ -1704,6 +1724,11 @@
     "remote": "upstream-microsoft-docs",
     "url": "https://github.com/MicrosoftDocs/Agent-Skills"
   },
+  "backtest-expert": {
+    "path": "skills/backtest-expert/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
   "blog-writing-guide": {
     "path": "skills/blog-writing-guide/SKILL.md",
     "remote": "upstream-sentry",
@@ -1718,6 +1743,16 @@
     "path": "skills/brand-guidelines/SKILL.md",
     "remote": "upstream-anthropic",
     "url": "https://github.com/anthropics/skills"
+  },
+  "breadth-chart-analyst": {
+    "path": "skills/breadth-chart-analyst/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "breakout-trade-planner": {
+    "path": "skills/breakout-trade-planner/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
   },
   "building-native-ui": {
     "path": "plugins/expo/skills/building-native-ui/SKILL.md",
@@ -1734,6 +1769,11 @@
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "canslim-screener": {
+    "path": "skills/canslim-screener/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
   "canvas-design": {
     "path": "skills/canvas-design/SKILL.md",
     "remote": "upstream-anthropic",
@@ -1743,6 +1783,11 @@
     "path": "plugins/testing-handbook-skills/skills/cargo-fuzz/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "churn-prevention": {
+    "path": "skills/churn-prevention/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
   },
   "claimable-postgres": {
     "path": "skills/claimable-postgres/SKILL.md",
@@ -1789,10 +1834,25 @@
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "cold-email": {
+    "path": "skills/cold-email/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
   "commit": {
     "path": "skills/commit/SKILL.md",
     "remote": "upstream-sentry",
     "url": "https://github.com/getsentry/skills"
+  },
+  "community-marketing": {
+    "path": "skills/community-marketing/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
+  "competitor-alternatives": {
+    "path": "skills/competitor-alternatives/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
   },
   "constant-time-analysis": {
     "path": "plugins/constant-time-analysis/skills/constant-time-analysis/SKILL.md",
@@ -1849,6 +1909,16 @@
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "customer-research": {
+    "path": "skills/customer-research/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
+  "data-quality-checker": {
+    "path": "skills/data-quality-checker/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
   "debug-buttercup": {
     "path": "plugins/debug-buttercup/skills/debug-buttercup/SKILL.md",
     "remote": "upstream-trailofbits",
@@ -1884,6 +1954,11 @@
     "remote": "upstream-superpowers",
     "url": "https://github.com/obra/superpowers"
   },
+  "dividend-growth-pullback-screener": {
+    "path": "skills/dividend-growth-pullback-screener/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
   "django-access-review": {
     "path": "skills/django-access-review/SKILL.md",
     "remote": "upstream-sentry",
@@ -1904,10 +1979,75 @@
     "remote": "upstream-anthropic",
     "url": "https://github.com/anthropics/skills"
   },
+  "downtrend-duration-analyzer": {
+    "path": "skills/downtrend-duration-analyzer/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "dual-axis-skill-reviewer": {
+    "path": "skills/dual-axis-skill-reviewer/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
   "dwarf-expert": {
     "path": "plugins/dwarf-expert/skills/dwarf-expert/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "earnings-calendar": {
+    "path": "skills/earnings-calendar/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "earnings-trade-analyzer": {
+    "path": "skills/earnings-trade-analyzer/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "economic-calendar-fetcher": {
+    "path": "skills/economic-calendar-fetcher/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "edge-candidate-agent": {
+    "path": "skills/edge-candidate-agent/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "edge-concept-synthesizer": {
+    "path": "skills/edge-concept-synthesizer/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "edge-hint-extractor": {
+    "path": "skills/edge-hint-extractor/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "edge-pipeline-orchestrator": {
+    "path": "skills/edge-pipeline-orchestrator/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "edge-signal-aggregator": {
+    "path": "skills/edge-signal-aggregator/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "edge-strategy-designer": {
+    "path": "skills/edge-strategy-designer/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "edge-strategy-reviewer": {
+    "path": "skills/edge-strategy-reviewer/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "email-sequence": {
+    "path": "skills/email-sequence/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
   },
   "entra-agent-id": {
     "path": ".github/skills/entra-agent-id/SKILL.md",
@@ -1968,6 +2108,11 @@
     "path": "plugins/expo/skills/expo-ui-swift-ui/SKILL.md",
     "remote": "upstream-expo",
     "url": "https://github.com/expo/skills"
+  },
+  "exposure-coach": {
+    "path": "skills/exposure-coach/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
   },
   "fal-3d": {
     "path": "skills/claude.ai/fal-3d/SKILL.md",
@@ -2059,15 +2204,30 @@
     "remote": "upstream-superpowers",
     "url": "https://github.com/obra/superpowers"
   },
+  "finviz-screener": {
+    "path": "skills/finviz-screener/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
   "firebase-apk-scanner": {
     "path": "plugins/firebase-apk-scanner/skills/firebase-apk-scanner/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "form-cro": {
+    "path": "skills/form-cro/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
   "fp-check": {
     "path": "plugins/fp-check/skills/fp-check/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "free-tool-strategy": {
+    "path": "skills/free-tool-strategy/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
   },
   "frontend-design": {
     "path": "skills/frontend-design/SKILL.md",
@@ -2083,6 +2243,11 @@
     "path": ".github/plugins/azure-sdk-typescript/skills/frontend-ui-dark-ts/SKILL.md",
     "remote": "upstream-microsoft",
     "url": "https://github.com/microsoft/skills"
+  },
+  "ftd-detector": {
+    "path": "skills/ftd-detector/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
   },
   "fuzzing-dictionary": {
     "path": "plugins/testing-handbook-skills/skills/fuzzing-dictionary/SKILL.md",
@@ -2199,6 +2364,11 @@
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "institutional-flow-tracker": {
+    "path": "skills/institutional-flow-tracker/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
   "internal-comms": {
     "path": "skills/internal-comms/SKILL.md",
     "remote": "upstream-anthropic",
@@ -2214,10 +2384,35 @@
     "remote": "upstream-sentry",
     "url": "https://github.com/getsentry/skills"
   },
+  "kanchi-dividend-review-monitor": {
+    "path": "skills/kanchi-dividend-review-monitor/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "kanchi-dividend-sop": {
+    "path": "skills/kanchi-dividend-sop/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "kanchi-dividend-us-tax-accounting": {
+    "path": "skills/kanchi-dividend-us-tax-accounting/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
   "kql": {
     "path": ".github/skills/kql/SKILL.md",
     "remote": "upstream-microsoft",
     "url": "https://github.com/microsoft/skills"
+  },
+  "launch-strategy": {
+    "path": "skills/launch-strategy/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
+  "lead-magnets": {
+    "path": "skills/lead-magnets/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
   },
   "let-fate-decide": {
     "path": "plugins/let-fate-decide/skills/let-fate-decide/SKILL.md",
@@ -2248,6 +2443,41 @@
     "path": ".github/plugins/azure-sdk-typescript/skills/m365-agents-ts/SKILL.md",
     "remote": "upstream-microsoft",
     "url": "https://github.com/microsoft/skills"
+  },
+  "macro-regime-detector": {
+    "path": "skills/macro-regime-detector/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "market-breadth-analyzer": {
+    "path": "skills/market-breadth-analyzer/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "market-environment-analysis": {
+    "path": "skills/market-environment-analysis/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "market-news-analyst": {
+    "path": "skills/market-news-analyst/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "market-top-detector": {
+    "path": "skills/market-top-detector/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "marketing-ideas": {
+    "path": "skills/marketing-ideas/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
+  "marketing-psychology": {
+    "path": "skills/marketing-psychology/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
   },
   "mcp-builder": {
     "path": "skills/mcp-builder/SKILL.md",
@@ -2314,6 +2544,16 @@
     "remote": "upstream-neon",
     "url": "https://github.com/neondatabase/agent-skills"
   },
+  "onboarding-cro": {
+    "path": "skills/onboarding-cro/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
+  "options-strategy-advisor": {
+    "path": "skills/options-strategy-advisor/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
   "ossfuzz": {
     "path": "plugins/testing-handbook-skills/skills/ossfuzz/SKILL.md",
     "remote": "upstream-trailofbits",
@@ -2324,15 +2564,50 @@
     "remote": "upstream-coreyhaines31",
     "url": "https://github.com/coreyhaines31/marketingskills"
   },
+  "paid-ads": {
+    "path": "skills/paid-ads/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
+  "pair-trade-screener": {
+    "path": "skills/pair-trade-screener/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "paywall-upgrade-cro": {
+    "path": "skills/paywall-upgrade-cro/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
   "pdf": {
     "path": "skills/pdf/SKILL.md",
     "remote": "upstream-anthropic",
     "url": "https://github.com/anthropics/skills"
   },
+  "pead-screener": {
+    "path": "skills/pead-screener/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
   "podcast-generation": {
     "path": ".github/skills/podcast-generation/SKILL.md",
     "remote": "upstream-microsoft",
     "url": "https://github.com/microsoft/skills"
+  },
+  "popup-cro": {
+    "path": "skills/popup-cro/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
+  "portfolio-manager": {
+    "path": "skills/portfolio-manager/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "position-sizer": {
+    "path": "skills/position-sizer/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
   },
   "pptx": {
     "path": "skills/pptx/SKILL.md",
@@ -2348,6 +2623,21 @@
     "path": "skills/presentation-creator/SKILL.md",
     "remote": "upstream-sentry",
     "url": "https://github.com/getsentry/skills"
+  },
+  "pricing-strategy": {
+    "path": "skills/pricing-strategy/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
+  "product-marketing-context": {
+    "path": "skills/product-marketing-context/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
+  "programmatic-seo": {
+    "path": "skills/programmatic-seo/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
   },
   "prompt-optimizer": {
     "path": "skills/prompt-optimizer/SKILL.md",
@@ -2374,20 +2664,45 @@
     "remote": "upstream-superpowers",
     "url": "https://github.com/obra/superpowers"
   },
+  "referral-program": {
+    "path": "skills/referral-program/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
   "requesting-code-review": {
     "path": "skills/requesting-code-review/SKILL.md",
     "remote": "upstream-superpowers",
     "url": "https://github.com/obra/superpowers"
+  },
+  "revops": {
+    "path": "skills/revops/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
   },
   "ruzzy": {
     "path": "plugins/testing-handbook-skills/skills/ruzzy/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "sales-enablement": {
+    "path": "skills/sales-enablement/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
   "sarif-parsing": {
     "path": "plugins/static-analysis/skills/sarif-parsing/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "scenario-analyzer": {
+    "path": "skills/scenario-analyzer/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "schema-markup": {
+    "path": "skills/schema-markup/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
   },
   "score-eval": {
     "path": "evals/neon-postgres-egress-optimizer/.claude/skills/score-eval/SKILL.md",
@@ -2403,6 +2718,11 @@
     "path": "plugins/second-opinion/skills/second-opinion/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "sector-analyst": {
+    "path": "skills/sector-analyst/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
   },
   "secure-workflow-guide": {
     "path": "plugins/building-secure-contracts/skills/secure-workflow-guide/SKILL.md",
@@ -2439,15 +2759,45 @@
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "signal-postmortem": {
+    "path": "skills/signal-postmortem/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "signup-flow-cro": {
+    "path": "skills/signup-flow-cro/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
+  "site-architecture": {
+    "path": "skills/site-architecture/SKILL.md",
+    "remote": "upstream-coreyhaines31",
+    "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
   "skill-creator": {
     "path": "skills/skill-creator/SKILL.md",
     "remote": "upstream-anthropic",
     "url": "https://github.com/anthropics/skills"
   },
+  "skill-designer": {
+    "path": "skills/skill-designer/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "skill-idea-miner": {
+    "path": "skills/skill-idea-miner/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
   "skill-improver": {
     "path": "plugins/skill-improver/skills/skill-improver/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "skill-integration-tester": {
+    "path": "skills/skill-integration-tester/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
   },
   "skill-scanner": {
     "path": "skills/skill-scanner/SKILL.md",
@@ -2489,6 +2839,16 @@
     "remote": "upstream-sentry",
     "url": "https://github.com/getsentry/skills"
   },
+  "stanley-druckenmiller-investment": {
+    "path": "skills/stanley-druckenmiller-investment/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "strategy-pivot-designer": {
+    "path": "skills/strategy-pivot-designer/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
   "subagent-driven-development": {
     "path": "skills/subagent-driven-development/SKILL.md",
     "remote": "upstream-superpowers",
@@ -2509,6 +2869,11 @@
     "remote": "upstream-superpowers",
     "url": "https://github.com/obra/superpowers"
   },
+  "technical-analyst": {
+    "path": "skills/technical-analyst/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
   "test-driven-development": {
     "path": "skills/test-driven-development/SKILL.md",
     "remote": "upstream-superpowers",
@@ -2518,6 +2883,11 @@
     "path": "plugins/testing-handbook-skills/skills/testing-handbook-generator/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "theme-detector": {
+    "path": "skills/theme-detector/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
   },
   "theme-factory": {
     "path": "skills/theme-factory/SKILL.md",
@@ -2533,6 +2903,16 @@
     "path": "plugins/building-secure-contracts/skills/ton-vulnerability-scanner/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "trade-hypothesis-ideator": {
+    "path": "skills/trade-hypothesis-ideator/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "trader-memory-core": {
+    "path": "skills/trader-memory-core/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
   },
   "trailmark": {
     "path": "plugins/trailmark/skills/trailmark/SKILL.md",
@@ -2564,6 +2944,21 @@
     "remote": "upstream-expo",
     "url": "https://github.com/expo/skills"
   },
+  "uptrend-analyzer": {
+    "path": "skills/uptrend-analyzer/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "us-market-bubble-detector": {
+    "path": "skills/us-market-bubble-detector/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "us-stock-analysis": {
+    "path": "skills/us-stock-analysis/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
   "use-dom": {
     "path": "plugins/expo/skills/use-dom/SKILL.md",
     "remote": "upstream-expo",
@@ -2579,10 +2974,20 @@
     "remote": "upstream-superpowers",
     "url": "https://github.com/obra/superpowers"
   },
+  "value-dividend-screener": {
+    "path": "skills/value-dividend-screener/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
   "variant-analysis": {
     "path": "plugins/variant-analysis/skills/variant-analysis/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "vcp-screener": {
+    "path": "skills/vcp-screener/SKILL.md",
+    "remote": "upstream-tradermonty",
+    "url": "https://github.com/tradermonty/claude-trading-skills.git"
   },
   "vector-forge": {
     "path": "plugins/trailmark/skills/vector-forge/SKILL.md",
