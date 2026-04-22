@@ -1,0 +1,135 @@
+---
+name: "fbmp-listing-seo"
+description: "Use when generating Facebook Marketplace listing titles, descriptions, search tags, or pricing suggestions for resale items. Applies FB Marketplace SEO, pricing psychology, and Derek's proven listing style guide. Always load this skill before generating any FB Marketplace listing content."
+license: private
+metadata:
+  version: 1.0.0
+  author: Derek Epperson / Maeve
+  category: resale, marketing, seo
+  updated: 2026-04-22
+---
+
+# FB Marketplace Listing SEO Skill
+
+You are generating a Facebook Marketplace listing for Derek Epperson, a reseller in Grove City, OH. Apply all rules in this skill every time. This is not a template — it is a set of enforced standards.
+
+---
+
+## Style Guide (Baseline: Hobbit Audiobook Listing)
+
+All listings follow this format. Tune over time based on conversion results.
+
+### Title
+- 1 clean, specific, keyword-rich title
+- Lead with the most searchable noun (brand, product type, model)
+- Include condition shorthand if space allows: "Like New", "New in Box"
+- No ALL CAPS. No punctuation gimmicks. No filler words ("Amazing!", "Must See")
+- 80 chars max (mirrors eBay discipline)
+
+### Description
+- Flush-left bullets only — no indentation, no nested lists
+- Open with 1 punchy sentence: what it is, why it is worth buying
+- Bullet the key facts: brand, model, condition, what is included, notable details
+- Honest tone — flag any flaws directly. Buyers trust specificity over polish
+- Energetic but not hype. Confident but not pushy
+- Condition detail: always match Derek's stated condition (New / Like New / Good) and describe what that means for this specific item
+- End with a pickup line before tags
+
+### Pickup Line
+Single line before tags. Format:
+"Pickup in Grove City (southwest Columbus). Cash or Venmo."
+
+### Search Tags
+- 5 to 8 tags
+- Mix: broad category + specific model/brand + use-case terms
+- Hashtag style, inline at bottom of listing
+- Examples: #vintage #audiobook #cassette #tolkien #collectible #booksOnTape #hobbit #giftidea
+
+### Listing Format (assembled)
+
+[Punchy opener sentence.]
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+- Bullet 4 (condition detail, be specific)
+- Bullet 5 (what is included / what is not)
+
+Pickup in Grove City (southwest Columbus). Cash or Venmo.
+
+#tag1 #tag2 #tag3 #tag4 #tag5
+
+---
+
+## Title SEO Rules
+
+| Rule | Detail |
+|---|---|
+| Lead noun first | "Dewalt 20V Drill" not "Drill by Dewalt" |
+| Brand always included | Even if obvious from category |
+| Model number if known | Dramatically improves search matching |
+| Condition in title | Only if it is a selling point (New, Like New) |
+| Size/capacity where relevant | "65-inch", "12qt", "XL" |
+| Avoid filler | No "Beautiful", "Awesome", "Rare" unless objectively true and searchable |
+
+---
+
+## Tag Strategy
+
+- Always include the item category tag (broad)
+- Always include the brand tag
+- Include at least 1 use-case or gift-angle tag (#giftidea, #homeoffice, #outdoors)
+- Include condition tag only if New or Like New (#newWithoutBox, #likeNew)
+- For vintage/collectible items: add era tag (#vintage, #retro, #90s)
+- For electronics: add compatibility tags (#apple, #android, #pcGaming)
+
+---
+
+## Pricing Psychology
+
+Apply these principles when suggesting or evaluating a price:
+
+- Charm pricing: end in 5 or 9 ($24, $49, $75). Avoid round numbers unless item is high-ticket.
+- Anchor high, land fair: if Derek gives a price, validate against comp market. If suggesting, anchor slightly above fair value to leave negotiation room (FB buyers lowball by default).
+- Condition premium: Like New commands 60-75% of retail. Good commands 35-50%. New in box commands 80-90%.
+- Bundle signal: if multiple items, suggest slight bundle discount framing in copy ("both for $X").
+- Comp check: when possible, reference what similar items are listed for on FB Marketplace in the Columbus area. Maeve does not have live data — flag for Derek to spot-check if price confidence is low.
+
+---
+
+## Condition Language
+
+| Condition | Description to use in listing |
+|---|---|
+| New | Never opened / unused. Original packaging intact (or note if missing). |
+| Like New | Used briefly or once. No visible wear. All original parts included. |
+| Good | Shows normal use. Fully functional. Note any specific cosmetic flaws honestly. |
+
+---
+
+## Pushback Protocol
+
+Maeve should push back (politely, once) if:
+- Stated condition does not match what is visible in photos
+- Suggested price is significantly below likely market value (leaving money on the table)
+- Title is missing a high-value search term clearly visible in photos (brand, model)
+- Photos show a flaw Derek has not mentioned — flag it for honest disclosure
+
+After one pushback, defer to Derek's call.
+
+---
+
+## Performance Tracking
+
+Reference file: references/performance-log.md
+
+Log each listing outcome when Derek reports results:
+- Item, condition, asking price, days to sell, final price, notes
+- Use this data over time to tune tag strategy, pricing formula, and title patterns
+
+---
+
+## References
+
+- references/performance-log.md — Listing outcome history
+- references/comp-notes.md — Category-specific pricing observations
