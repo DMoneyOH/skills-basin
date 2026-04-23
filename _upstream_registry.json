@@ -3093,5 +3093,135 @@
     "path": ".github/plugins/azure-sdk-typescript/skills/zustand-store-ts/SKILL.md",
     "remote": "upstream-microsoft",
     "url": "https://github.com/microsoft/skills"
+  },
+  "app-store-optimization": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "marketing-skill/app-store-optimization"
+  },
+  "campaign-analytics": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "marketing-skill/campaign-analytics"
+  },
+  "content-creator": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "marketing-skill/content-creator"
+  },
+  "content-production": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "marketing-skill/content-production"
+  },
+  "marketing-context": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "marketing-skill/marketing-context"
+  },
+  "marketing-demand-acquisition": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "marketing-skill/marketing-demand-acquisition"
+  },
+  "marketing-ops": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "marketing-skill/marketing-ops"
+  },
+  "marketing-strategy-pmm": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "marketing-skill/marketing-strategy-pmm"
+  },
+  "prompt-engineer-toolkit": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "marketing-skill/prompt-engineer-toolkit"
+  },
+  "social-media-analyzer": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "marketing-skill/social-media-analyzer"
+  },
+  "x-twitter-growth": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "marketing-skill/x-twitter-growth"
+  },
+  "financial-analyst": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "finance/financial-analyst"
+  },
+  "business-investment-advisor": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "finance/business-investment-advisor"
+  },
+  "saas-metrics-coach": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "finance/saas-metrics-coach"
+  },
+  "ceo-advisor": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "c-level-advisor/ceo-advisor"
+  },
+  "cfo-advisor": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "c-level-advisor/cfo-advisor"
+  },
+  "coo-advisor": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "c-level-advisor/coo-advisor"
+  },
+  "cto-advisor": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "c-level-advisor/cto-advisor"
+  },
+  "cmo-advisor": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "c-level-advisor/cmo-advisor"
+  },
+  "ciso-advisor": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "c-level-advisor/ciso-advisor"
+  },
+  "chro-advisor": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "c-level-advisor/chro-advisor"
+  },
+  "chief-of-staff": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "c-level-advisor/chief-of-staff"
+  },
+  "board-deck-builder": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "c-level-advisor/board-deck-builder"
+  },
+  "competitive-intel": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "c-level-advisor/competitive-intel"
+  },
+  "scenario-war-room": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "c-level-advisor/scenario-war-room"
+  },
+  "founder-coach": {
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git",
+    "path": "c-level-advisor/founder-coach"
   }
 }
