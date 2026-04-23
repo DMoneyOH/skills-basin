@@ -1,6 +1,0 @@
-[submodule "tradermonty"]
-	path = tradermonty
-	url = https://github.com/tradermonty/claude-trading-skills.git
-[submodule "marketingskills"]
-	path = marketingskills
-	url = https://github.com/coreyhaines31/marketingskills.git
