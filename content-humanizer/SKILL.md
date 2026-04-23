@@ -1,12 +1,12 @@
 ---
 name: "content-humanizer"
-description: "Makes AI-generated content sound genuinely human — not just cleaned up, but alive. Use when content feels robotic, uses too many AI clichés, lacks personality, or reads like it was written by committee. Triggers: 'this sounds like AI', 'make it more human', 'add personality', 'it feels generic', 'sounds robotic', 'fix AI writing', 'inject our voice'. NOT for initial content creation (use content-production). NOT for SEO optimization (use content-production Mode 3)."
+description: "Makes AI-generated content sound genuinely human — not just cleaned up, but alive. Use when content feels robotic, uses too many AI clichés, lacks personality, or reads like it was written by committee. Triggers: 'this sounds like AI', 'make it more human', 'add personality', 'it feels generic', 'sounds robotic', 'fix AI writing', 'inject our voice', 'humanize this'. NOT for initial content creation (use content-production). NOT for SEO optimization (use content-production Mode 3)."
 license: MIT
 metadata:
-  version: 1.0.0
-  author: Alireza Rezvani
+  version: 2.0.0
+  merged_from: ["content-humanizer v1.0.0", "humaznier v1.0"]
   category: marketing
-  updated: 2026-03-06
+  updated: 2026-04-23
 ---
 
 # Content Humanizer
@@ -30,18 +30,15 @@ Gather what you need before starting:
 
 One question if needed: "Before I rewrite this, give me an example of content you've written or read that felt right. Specific is better than descriptive."
 
+---
+
 ## How This Skill Works
 
 Three modes. Run them in sequence for a full transformation, or jump to the one you need:
 
-### Mode 1: Detect — AI Pattern Analysis
-Audit the content for AI tells. Name what's wrong and why before fixing anything. This is diagnostic — not editorial.
-
-### Mode 2: Humanize — Pattern Removal and Rhythm Fix
-Strip the AI patterns. Fix sentence rhythm. Replace generic with specific. The content starts sounding like a person.
-
-### Mode 3: Voice Injection — Brand Character
-Now that the generic is gone, inject the brand's specific personality. This is where "human" becomes *your brand's* human.
+- **Mode 1: Detect** — AI pattern analysis and audit
+- **Mode 2: Humanize** — pattern removal, rhythm fix, specificity
+- **Mode 3: Voice Injection** — brand character and personality
 
 Run all three in one pass when you have enough context. Split them when the client needs to see the audit before you edit.
 
@@ -51,49 +48,137 @@ Run all three in one pass when you have enough context. Split them when the clie
 
 Scan the content for these categories. Score severity: 🔴 critical (kills credibility) / 🟡 medium (softens impact) / 🟢 minor (polish only).
 
-See [references/ai-tells-checklist.md](references/ai-tells-checklist.md) for the comprehensive detection list.
+### Content Patterns
 
-### The Core AI Tell Categories
+**1. Significance Inflation** 🔴
+Trigger words: stands/serves as, testament, vital/pivotal/key role, underscores, reflects broader, symbolizing, marks a shift, evolving landscape, indelible mark
+Fix: State what the thing actually does. Cut the significance claim.
 
-**1. Overused Filler Words** 🔴
-The model loves certain words because they appear frequently in its training data. Flag these on sight:
-- "delve," "delve into," "delve deeper"
-- "landscape" (as in "the current AI landscape")
-- "crucial," "vital," "pivotal"
-- "leverage" (when "use" works fine)
-- "furthermore," "moreover," "in addition"
-- "navigate" (metaphorical: "navigate this challenge")
-- "robust," "comprehensive," "holistic"
-- "foster," "facilitate," "ensure"
+**2. Notability Padding** 🟡
+Trigger words: independent coverage, local/regional/national media outlets, active social media presence
+Fix: Name the specific outlet and what was said. Drop follower counts.
 
-**2. Hedging Chains** 🔴
-AI hedges constantly. It hedges because it doesn't know if it's right. Humans hedge sometimes — but not in every sentence.
-- "It's important to note that..."
-- "It's worth mentioning that..."
-- "One might argue that..."
-- "In many cases," "In most scenarios,"
-- "It goes without saying..."
-- "Needless to say..."
+**3. Superficial -ing Phrases** 🟡
+Trigger words (tacked onto sentence ends): highlighting, underscoring, emphasizing, ensuring, reflecting, symbolizing, contributing to, cultivating, fostering, showcasing
+Fix: Either make it a new sentence with real content, or cut it.
 
-**3. Em-Dash Overuse** 🟡
-One or two em-dashes in a piece: fine. Em-dash in every other paragraph: AI fingerprint. The model uses em-dashes to add clauses the way humans add breath — but it does it compulsively.
+**4. Promotional Language** 🟡
+Trigger words: boasts, vibrant, rich (figurative), profound, groundbreaking, renowned, breathtaking, must-visit, stunning, nestled, in the heart of
+Fix: Describe what's actually there. Neutral specifics beat adjective stacks.
 
-**4. Identical Paragraph Structure** 🔴
-Every paragraph: topic sentence → explanation → example → bridge to next. AI is remarkably consistent. Remarkably boring. Real writing has short paragraphs. Fragments. Asides. Digressions. Then it snaps back. The structure varies.
+**5. Vague Attributions** 🔴
+Trigger words: Industry reports, Observers have cited, Experts argue, Some critics argue, several sources
+Fix: Name the specific source, study, date.
 
-**5. Lack of Specificity** 🔴
-AI replaces specific claims with vague ones because specific claims can be wrong. Look for:
-- "Many companies" → which companies?
-- "Studies show" → which studies?
-- "Significantly improved" → improved by how much?
-- "Leading brands" → name one
-- "A lot of" → how many?
+**6. Formulaic Challenges Sections** 🟡
+Pattern: "Despite its X, faces challenges typical of... Despite these challenges... Future Outlook"
+Fix: Name the actual challenge with concrete details. Cut the "despite" framing.
 
-**6. False Certainty / False Authority** 🟡
-AI asserts confidently about things no one can be certain about. "Companies that do X are more successful." According to what? This isn't humility — it's laziness dressed as confidence.
+### Language Patterns
 
-**7. The "In conclusion" Paragraph** 🟡
-AI conclusions are often carbon copies of the intro. "In this article, we explored X, Y, and Z. By implementing these strategies, you can achieve..." No human concludes like this. Real conclusions either add something new or nail the exit line.
+**7. AI Vocabulary** 🔴
+Trigger words: Additionally, align with, crucial, delve, emphasizing, enduring, enhance, fostering, garner, highlight (verb), interplay, intricate/intricacies, key (adjective), landscape (abstract), pivotal, showcase, tapestry (abstract), testament, underscore (verb), valuable, vibrant, leverage, robust, comprehensive, holistic, facilitate, navigate (metaphorical), furthermore, moreover
+Fix: Replace with plain words or cut entirely.
+
+**8. Copula Avoidance** 🟡
+Trigger words: serves as, stands as, marks, represents [a], boasts, features, offers [a]
+Fix: Use "is," "are," or "has."
+
+**9. Negative Parallelisms** 🟡
+Pattern: "Not only X but Y / It's not just about X; it's about Y / It's not merely X, it's Y"
+Fix: Pick the most important thing and state it directly.
+
+**10. Rule of Three Overuse** 🟢
+Pattern: Three-item lists everywhere: "innovation, inspiration, and industry insights"
+Fix: Use one or two items when that's all that matters.
+
+**11. Synonym Cycling** 🟡
+Pattern: Same referent called different things paragraph to paragraph: protagonist → main character → central figure → hero
+Fix: Pick one word and stick with it.
+
+**12. False Ranges** 🟢
+Pattern: "from X to Y, from A to B" where X/A and Y/B aren't on a real scale
+Fix: Just list the items without the "from...to" construction.
+
+**13. Hedging Chains** 🔴
+Trigger words: "It's important to note that...", "It's worth mentioning that...", "One might argue that...", "In many cases," "In most scenarios," "It goes without saying...", "Needless to say...", "could potentially possibly be argued that...", "might have some effect"
+Fix: State the claim directly, or say you don't know.
+
+**14. Lack of Specificity** 🔴
+Pattern: "Many companies" → which? "Studies show" → which? "Significantly improved" → by how much? "Leading brands" → name one. "A lot of" → how many?
+Fix: Replace with specific claims, or be honest that you don't have data.
+
+**15. False Certainty / False Authority** 🟡
+Pattern: AI asserts confidently about things no one can be certain about. "Companies that do X are more successful." According to what?
+Fix: Attribute the claim or acknowledge uncertainty.
+
+### Style Patterns
+
+**16. Em Dash Overuse** 🟡
+One or two in a piece: fine. Every other paragraph: AI fingerprint.
+Fix: Replace with comma, period, or parentheses.
+
+**17. Overuse of Boldface** 🟢
+Fix: Remove bold from inline text unless it's a term being defined.
+
+**18. Inline-Header Bullet Lists** 🟢
+Pattern: "- **Speed:** explanation. - **Quality:** explanation."
+Fix: Integrate into prose or use plain bullets without the bold lead.
+
+**19. Title Case in Headings** 🟢
+Fix: Sentence case only.
+
+**20. Emojis in Headings/Bullets** 🟢
+Fix: Remove entirely.
+
+**21. Identical Paragraph Structure** 🔴
+Every paragraph: topic sentence → explanation → example → bridge. Real writing has short paragraphs, fragments, asides, digressions. The structure varies.
+Fix: Vary paragraph length and structure deliberately.
+
+**22. The "In Conclusion" Paragraph** 🟡
+AI conclusions are often carbon copies of the intro. "In this article, we explored X, Y, and Z. By implementing these strategies..."
+Fix: Either add something new or nail a single exit line.
+
+### Communication Patterns
+
+**23. Chatbot Artifacts** 🔴
+Trigger words: I hope this helps, Of course!, Certainly!, Would you like me to, Let me know, Here is a...
+Fix: Cut them all.
+
+**24. Knowledge-Cutoff Disclaimers** 🟡
+Trigger words: as of [date], Up to my last training update, While specific details are limited
+Fix: Find the actual fact or say it's unknown.
+
+**25. Sycophantic Openers** 🔴
+Trigger words: Great question!, You're absolutely right!, That's an excellent point
+Fix: Delete. Start with substance.
+
+### Filler and Hedging
+
+**26. Filler Phrases** 🟢
+- "In order to" → "To"
+- "Due to the fact that" → "Because"
+- "At this point in time" → "Now"
+- "Has the ability to" → "Can"
+- "It is important to note that" → [delete]
+
+---
+
+## Quick Reference: Highest-Signal AI Tells
+
+These alone will flag ~80% of AI writing. Check these first:
+
+- Em dashes appearing more than once
+- tapestry, testament, underscore, pivotal, delve, vibrant, landscape (abstract)
+- Sentence-ending -ing phrases: "...showcasing how X contributes to Y"
+- Three-item lists in every paragraph
+- Opening with "Additionally" or "Furthermore"
+- Any form of "serves as" or "stands as"
+- Bold inline headers in bullets
+- "I hope this helps" / "Let me know if..."
+- Every paragraph the same length and structure
+- No opinions, no uncertainty, no first-person where appropriate
+- No humor, edge, or personality
 
 ---
 
@@ -103,14 +188,14 @@ After identifying what's wrong, fix it systematically.
 
 ### Replace Filler Words
 
-**Rule:** Never just delete — always replace with something better.
+Rule: Never just delete — always replace with something better.
 
 | AI phrase | Human alternative |
 |---|---|
 | "delve into" | "look at," "dig into," "break down," or just: "here's what matters" |
 | "the [X] landscape" | "how [X] works today," "the current state of [X]" |
 | "leverage" | "use," "apply," "put to work" |
-| "crucial" / "vital" | "the part that actually matters," "the one thing," or just state the thing — let it be self-evidently important |
+| "crucial" / "vital" | state the thing — let it be self-evidently important |
 | "furthermore" | nothing (just start the next sentence), or "and," or "also" |
 | "robust" | specific: "handles 10,000 requests/sec," "covers 47 edge cases" |
 | "facilitate" | "help," "make easier," "allow" |
@@ -118,28 +203,27 @@ After identifying what's wrong, fix it systematically.
 
 ### Fix Sentence Rhythm
 
-**The problem:** AI produces uniform sentence length. Every sentence is 18-22 words. The ear goes numb.
+The problem: AI produces uniform sentence length. Every sentence is 18-22 words. The ear goes numb.
 
-**The fix:** Deliberate variation. Read aloud. Then:
+The fix: Deliberate variation. Read aloud. Then:
 - Break long sentences into two
 - Add a short sentence after a long one. Like this.
 - Use fragments where they serve emphasis. Especially for emphasis.
-- Let some sentences run longer when the thought needs to unwind and the reader has the context to follow it
+- Let some sentences run longer when the thought needs to unwind
 
-**Rhythm patterns that feel human:**
+Rhythm patterns that feel human:
 - Long. Short. Long, long. Short.
 - Question? Answer. Proof.
 - Claim. Specific example. So what?
 
 ### Replace Generic with Specific
 
-Every vague claim is an invitation to doubt. Replace:
+Every vague claim is an invitation to doubt.
 
-**Before:** "Many companies have seen significant improvements by implementing this strategy."
+Before: "Many companies have seen significant improvements by implementing this strategy."
+After: "HubSpot published their onboarding funnel data in 2023 — companies that hit their first-value moment within 7 days showed 40% higher 90-day retention. That's not a rounding error."
 
-**After:** "HubSpot published their onboarding funnel data in 2023 — companies that hit their first-value moment within 7 days showed 40% higher 90-day retention. That's not a rounding error."
-
-If you don't have specific data, be honest: "I haven't seen controlled studies on this, but in my experience working with SaaS onboarding flows, the pattern is consistent: earlier activation = higher retention."
+If you don't have specific data, be honest: "I haven't seen controlled studies on this, but in my experience, the pattern is consistent."
 
 Personal experience beats vague authority. Every time.
 
@@ -147,56 +231,63 @@ Personal experience beats vague authority. Every time.
 
 Break the uniform SEEB pattern (Statement → Explanation → Example → Bridge):
 
-- **Single-sentence paragraph:** Use it. Emphasis needs air.
+- **Single-sentence paragraph.** Use it.
 - **Question paragraph:** Pose a question. Then answer it.
 - **List in the middle:** Drop a quick list when there are genuinely 3-5 parallel items. Then return to prose.
-- **Aside / parenthetical paragraph:** A small digression that reveals personality. (Readers actually like these. It's the equivalent of a raised eyebrow mid-sentence.)
+- **Aside:** A small digression that reveals personality. (Readers like these.)
 - **Confession:** "I got this wrong the first time." Instantly human.
 
 ### Add Friction and Imperfection
 
-AI writing is too smooth. Too complete. Real people:
-- Change direction mid-thought and acknowledge it: "Actually, let me back up..."
-- Qualify things they're uncertain about without hiding the uncertainty
+AI writing is too smooth. Real people:
+- Change direction mid-thought: "Actually, let me back up..."
 - Have opinions that might be wrong: "I might be wrong about this, but..."
 - Notice things and say so: "What's interesting here is..."
 - React: "Which, if you've ever tried to debug this, you know is maddening."
+
+### Adding Soul
+
+Sterile writing is still AI writing. Good rewrites have a human behind them.
+
+Signs of soulless writing:
+- Every sentence same length and structure
+- No opinions, just neutral reporting
+- No uncertainty or mixed feelings
+- No first-person when appropriate
+- No humor, edge, or personality
+
+How to inject voice:
+- Have opinions. React to facts, don't just report them.
+- Vary rhythm. Short punchy sentences. Then longer ones that take their time.
+- Acknowledge complexity. "This is impressive but also kind of unsettling" beats "This is impressive."
+- Use "I" when it fits. It's honest, not unprofessional.
+- Let some mess in. Perfect structure feels assembled. Tangents and asides are human.
+- Be specific about feelings. Not "concerning" but "there's something unsettling about..."
 
 ---
 
 ## Mode 3: Voice Injection — Brand Character
 
-Humanizing removes AI. Voice injection makes it *yours*.
+Humanizing removes AI. Voice injection makes it yours.
 
 ### Read the Voice Blueprint First
 
 If `marketing-context.md` is available: read the brand voice section and writing examples. If not, ask for one example of content this brand loves. One. Then extract the patterns from it.
 
-**What to extract from a voice example:**
+What to extract from a voice example:
 - Sentence length preference (short punchy vs. longer flowing?)
 - Formality level (contractions? slang? industry jargon?)
 - Use of humor (dry wit? self-deprecating? none?)
 - Relationship stance (peer-to-peer? expert-to-student? provocateur?)
 - Signature phrases or patterns
 
-See [references/voice-techniques.md](references/voice-techniques.md) for specific techniques for each voice type.
-
 ### Voice Injection Techniques
 
-**1. Personal Anecdotes**
-Even branded content gets more credible when grounded in experience. "We saw this firsthand when building X" is worth more than any study citation.
-
-**2. Direct Address**
-Talk to the reader as "you." Not "users" or "teams" or "organizations." You.
-
-**3. Opinions Without Apology**
-State your position. "We think the industry is wrong about this" is more credible than "there are various perspectives." Take the side.
-
-**4. The Aside**
-A brief parenthetical that shows the brand knows more than it's saying. "This also affects API performance, but that's a separate rabbit hole."
-
-**5. Rhythm Signature**
-Every brand has a rhythm. Some write in short staccato bursts. Some write long, winding sentences that spiral back on themselves. Find the rhythm from the examples and apply it consistently.
+1. **Personal Anecdotes** — "We saw this firsthand when building X" is worth more than any study citation.
+2. **Direct Address** — Talk to the reader as "you." Not "users" or "teams" or "organizations."
+3. **Opinions Without Apology** — "We think the industry is wrong about this" is more credible than "there are various perspectives."
+4. **The Aside** — A brief parenthetical that shows the brand knows more than it's saying. "This also affects API performance, but that's a separate rabbit hole."
+5. **Rhythm Signature** — Find the rhythm from examples and apply it consistently.
 
 ### Before / After Example
 
@@ -210,10 +301,7 @@ Every brand has a rhythm. Some write in short staccato bursts. Some write long, 
 >
 > Nail onboarding first. Everything else is downstream.
 
-What changed:
-- Removed: "crucial," "leverage," "navigate," "robust," "ensure," "significantly," "furthermore"
-- Added: direct address, specific accusation ("what the tool is already showing you"), short-sentence punch at the end
-- Changed: passive recommendations → active point of view
+What changed: removed "crucial," "leverage," "navigate," "robust," "ensure," "significantly," "furthermore." Added direct address, specific accusation, short-sentence punch at the end.
 
 ---
 
@@ -221,11 +309,27 @@ What changed:
 
 Flag these without being asked:
 
-- **AI fingerprint density too high** — If the piece has 10+ AI tells per 500 words, a patch job won't work. Flag that the piece needs a full rewrite, not an edit. Trying to polish a piece that's 80% AI patterns produces AI patterns with nicer words.
-- **Voice context missing** — If `marketing-context.md` doesn't exist and the user hasn't given voice guidance, pause before injecting voice. Ask for one example. Guessing the voice and being wrong wastes everyone's time.
-- **Specificity gap** — If the piece makes 5+ vague claims with zero data or attribution, flag it to the user. You can make the prose flow better, but you can't invent specific proof. They need to provide it.
-- **Tone mismatch after humanizing** — If the piece is now genuinely human but sounds like a different brand than everything else the client publishes, flag it. Consistency matters as much as quality.
-- **Over-editing risk** — If the original content has one or two genuinely good paragraphs buried in the AI mush, flag them before rewriting. Don't accidentally destroy the good parts.
+- **AI fingerprint density too high** — 10+ AI tells per 500 words means a full rewrite, not an edit. Flag it.
+- **Voice context missing** — If no `marketing-context.md` and no voice guidance, ask for one example before injecting voice.
+- **Specificity gap** — 5+ vague claims with zero data. Flag it. You can fix prose; you can't invent proof.
+- **Tone mismatch** — Piece is now human but sounds like a different brand. Flag it.
+- **Over-editing risk** — If there are genuinely good paragraphs buried in the AI mush, flag them before rewriting.
+
+---
+
+## Process (Full Pass)
+
+1. Read the input text
+2. Identify AI patterns using the catalog above
+3. Rewrite problematic sections
+4. Final anti-AI pass: ask internally "What still makes this obviously AI-generated?" and fix remaining tells
+5. Present: Draft → Remaining tells → Final version
+
+Output format:
+- Draft rewrite
+- What still makes it sound AI-generated (brief honest audit)
+- Final version (revised after audit)
+- Brief summary of changes
 
 ---
 
@@ -233,21 +337,19 @@ Flag these without being asked:
 
 | When you ask for... | You get... |
 |---|---|
-| AI audit | Annotated version of the draft with each AI pattern flagged, severity score, and count by category |
-| Humanized draft | Full rewrite with AI patterns removed, rhythm varied, specificity improved |
-| Voice injection | Annotated draft with brand voice applied — specific changes called out so you can learn the pattern |
+| AI audit | Annotated draft with each pattern flagged, severity score, and count by category |
+| Humanized draft | Full rewrite with patterns removed, rhythm varied, specificity improved |
+| Voice injection | Annotated draft with brand voice applied, specific changes called out |
 | Before/after comparison | Side-by-side view of key paragraphs showing what changed and why |
-| Humanity score | Run `scripts/humanizer_scorer.py` — 0-100 score with breakdown by signal type |
 
 ---
 
 ## Communication
 
 All output follows the structured standard:
-- **Bottom line first** — answer before explanation
-- **What + Why + How** — every finding includes all three
-- **Actions have owners and deadlines** — no "you might want to consider"
-- **Confidence tagging** — 🟢 verified pattern / 🟡 medium / 🔴 assumed based on limited voice context
+- Bottom line first — answer before explanation
+- What + Why + How — every finding includes all three
+- Confidence tagging — verified pattern / medium / assumed based on limited voice context
 
 When auditing: name the pattern → explain why it reads as AI → give the specific fix. Not "this sounds robotic." Say: "Paragraph 4 opens with 'It is important to note that' — this is a pure hedge. Cut it. Start with the actual note."
 
@@ -255,7 +357,13 @@ When auditing: name the pattern → explain why it reads as AI → give the spec
 
 ## Related Skills
 
-- **content-production**: Use to produce the initial draft. Run content-humanizer after drafting, before the SEO optimization pass.
-- **copywriting**: Use for conversion copy — landing pages, CTAs, headlines. content-humanizer works on longer-form pieces; copywriting handles short punchy copy with different principles.
-- **content-strategy**: Use when deciding what content to create. NOT for voice or draft execution.
-- **ai-seo**: Use after humanizing, to optimize for AI search citation. Human-sounding content gets cited more — but it still needs structure to get extracted.
+- **content-production**: Use to produce the initial draft. Run content-humanizer after drafting.
+- **copywriting**: Use for conversion copy — landing pages, CTAs, headlines.
+- **content-strategy**: Use when deciding what content to create.
+- **ai-seo**: Use after humanizing, to optimize for AI search citation.
+
+---
+
+## Retired / Merged
+
+This skill supersedes **humaznier v1.0**. The humaznier pattern catalog has been fully integrated into Mode 1 and the Quick Reference section. humaznier is flagged for retirement.
