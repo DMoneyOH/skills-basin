@@ -27,8 +27,8 @@ All listings follow this format. Tune over time based on conversion results.
 - 80 chars max (mirrors eBay discipline)
 
 ### Description
-- Flush-left bullets only — no indentation, no nested lists
-- Open with 1 punchy sentence: what it is, why it is worth buying
+- First line of description = listing title (repeated exactly)
+- Blank line, then the punchy opener sentence
 - Bullet the key facts: brand, model, condition, what is included, notable details
 - Honest tone — flag any flaws directly. Buyers trust specificity over polish
 - Energetic but not hype. Confident but not pushy
@@ -36,28 +36,34 @@ All listings follow this format. Tune over time based on conversion results.
 - End with a pickup line before tags
 
 ### Pickup Line
-Single line before tags. Format:
-"Pickup in Grove City (southwest Columbus). Cash or Venmo."
+Format:
+"Available in Grove City, off 665 (London-Groveport) and Buckeye Parkway."
 
 ### Search Tags
-- 5 to 8 tags
+- 6 to 10 tags
+- Comma-separated, no hashtags, lowercase
 - Mix: broad category + specific model/brand + use-case terms
-- Hashtag style, inline at bottom of listing
-- Examples: #vintage #audiobook #cassette #tolkien #collectible #booksOnTape #hobbit #giftidea
 
 ### Listing Format (assembled)
 
-[Punchy opener sentence.]
+[Title — item name, searchable, specific]
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
-- Bullet 4 (condition detail, be specific)
-- Bullet 5 (what is included / what is not)
+[Strong opening line — what it is + who wants it. 1-2 sentences max.]
 
-Pickup in Grove City (southwest Columbus). Cash or Venmo.
+📦 What's Included:
+- [Item/contents line 1]
+- [Item/contents line 2]
+- [Item/contents line 3]
 
-#tag1 #tag2 #tag3 #tag4 #tag5
+✨ Condition:
+[Condition label] — [Honest specific description. Flag flaws directly. "This is a reader's copy, not a display copy" style honesty wins trust.]
+
+🚚 Local Pickup Only
+Available in Grove City, off 665 (London-Groveport) and Buckeye Parkway. Happy to work with your schedule!
+
+[Short closing line if warranted — persona-appropriate emoji. No "message me" or "happy to work with your schedule" — those are implied.]
+
+[SEO tags — comma-separated, no hashtags, lowercase, 6-10 terms]
 
 ---
 
@@ -99,11 +105,12 @@ Apply these principles when suggesting or evaluating a price:
 
 ## Condition Language
 
-| Condition | Description to use in listing |
-|---|---|
-| New | Never opened / unused. Original packaging intact (or note if missing). |
-| Like New | Used briefly or once. No visible wear. All original parts included. |
-| Good | Shows normal use. Fully functional. Note any specific cosmetic flaws honestly. |
+| Condition | FB Marketplace Label | Description to use in listing |
+|---|---|---|
+| New | New | Never opened / unused. Original packaging intact (or note if missing). |
+| Like New | Used - Like New | Used briefly or once. No visible wear. All original parts included. |
+| Good | Used - Good | Shows normal use. Fully functional. Note any specific cosmetic flaws honestly. |
+| Fair | Used - Fair | Visible wear, aging, or cosmetic damage. Fully functional or usable. Be specific about flaws. |
 
 ---
 
