@@ -3,7 +3,7 @@ name: "fbmp-listing-seo"
 description: "Use when generating Facebook Marketplace listing titles, descriptions, search tags, or pricing suggestions for resale items. Applies FB Marketplace SEO, pricing psychology, and Derek's proven listing style guide. Always load this skill before generating any FB Marketplace listing content."
 license: private
 metadata:
-  version: 1.2.0
+  version: 1.1.0
   author: Derek Epperson / Maeve
   category: resale, marketing, seo
   updated: 2026-04-24
@@ -77,41 +77,6 @@ Available in Grove City, off 665 (London-Groveport) and Buckeye Parkway.
 | Condition in title | Only if it is a selling point (New, Like New) |
 | Size/capacity where relevant | "65-inch", "12qt", "XL" |
 | Avoid filler | No "Beautiful", "Awesome", "Rare" unless objectively true and searchable |
-
----
-
-## FB Marketplace Categories
-
-Always use the exact category name from this list in the payload. No variations or abbreviations.
-
-| Category | Shipping Available |
-|---|---|
-| Tools | Yes |
-| Furniture | Yes |
-| Household | Yes |
-| Garden | Yes |
-| Appliances | Yes |
-| Video Games | Yes |
-| Books, Movies & Music | Yes |
-| Bags & Luggage | Yes |
-| Women's clothing & shoes | Yes |
-| Men's clothing & shoes | Yes |
-| Jewelry & Accessories | Yes |
-| Health & beauty | Yes |
-| Pet Supplies | Yes |
-| Baby & kids | Yes |
-| Toys & Games | Yes |
-| Electronics & computers | Yes |
-| Mobile phones | Yes |
-| Bicycles | No |
-| Arts & Crafts | Yes |
-| Sports & Outdoors | Yes |
-| Auto parts | Yes |
-| Musical Instruments | Yes |
-| Antiques & Collectibles | Yes |
-| Garage Sale | No |
-| Miscellaneous | No |
-| Vehicles | No |
 
 ---
 
