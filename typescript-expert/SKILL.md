@@ -1,26 +1,13 @@
 ---
 name: typescript-expert
-description: "Master TypeScript's advanced type system including generics, conditional types, mapped types, template literals, and utility types for building type-safe applications. Use when implementing complex..."
-triggers:
-  - "cannot find module" despite file existing:
-  - # typescript advanced types
-  - # typescript expert
-  - * avoid watch/serve processes in validation. use one-shot diagnostics only.
-  - *"excessive stack depth comparing types"**
-  - *"the inferred type of x cannot be named"**
-  - *advanced conditional types**
-  - *after detection, adapt approach:**
-  - *branded types for domain modeling**
-  - *build performance patterns**
-  - *javascript to typescript migration**
-  - *missing type declarations**
-  - *module resolution mysteries**
-  - *nx vs turborepo decision matrix**
-  - *path mapping at runtime**
+description: >
+  "Master TypeScript's advanced type system including generics, conditional types, mapped types, template literals, and utility types for building type-safe applications. Use when implementing complex..."
+  Covers: typescript expert, typescript pro, typescript advanced types.
+  Use for any task involving typescript expert, typescript pro, typescript advanced types.
 merged_from:
   - typescript-pro
   - typescript-advanced-types
-merged_at: 2026-04-18T17:20:54.598000
+merged_at: 2026-04-25
 ---
 
 # typescript-expert

@@ -1,31 +1,14 @@
 ---
 name: n8n-expert
-description: "Expert guide for using n8n-mcp MCP tools effectively. Use when searching for nodes, validating configurations, accessing templates, managing workflows, or using any n8n-mcp tool. Provides tool selection guidance, parameter formats, and common patterns."
-triggers:
-  - # javascript code node
-  - # n8n expression syntax
-  - # n8n mcp tools expert
-  - # n8n node configuration
-  - # n8n validation expert
-  - # n8n workflow patterns
-  - ## additional resources
-  - ## advanced patterns
-  - ## auto-sanitization system
-  - ## best practices
-  - ## built-in functions & helpers
-  - ## common error types
-  - ## common gotchas
-  - ## common mistakes
-  - ## common node patterns
+description: >
+  "Expert guide for using n8n-mcp MCP tools effectively. Use when searching for nodes, validating configurations, accessing templates, managing workflows, or using any n8n-mcp tool. Provides tool selection guidance, parameter formats, and common patterns."
+  Covers: n8n expert, n8n code javascript, n8n code python, n8n expression syntax.
+  Use for any task involving n8n expert, n8n code javascript, n8n code python, n8n expression syntax.
 merged_from:
   - n8n-code-javascript
   - n8n-code-python
   - n8n-expression-syntax
-  - n8n-mcp-tools-expert
-  - n8n-node-configuration
-  - n8n-workflow-patterns
-  - n8n-validation-expert
-merged_at: 2026-04-18T17:21:06.032968
+merged_at: 2026-04-25
 ---
 
 # n8n-expert

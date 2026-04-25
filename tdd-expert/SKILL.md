@@ -1,32 +1,14 @@
 ---
 name: tdd-expert
-description: "Test-driven development skill for writing unit tests, generating test fixtures and mocks, analyzing coverage gaps, and guiding red-green-refactor workflows across Jest, Pytest, JUnit, Vitest, and Mocha. Use when the user asks to write tests, improve test coverage, practice TDD, generate mocks or stu"
-triggers:
-  - "already spent x hours, deleting is wasteful"
-  - "i already manually tested it"
-  - "it worked when i tried it" ≠ comprehensive
-  - "it's about spirit not ritual"
-  - "keep as reference" or "adapt existing code"
-  - "tdd is dogmatic, i'm being pragmatic"
-  - "tests after achieve the same purpose"
-  - "this is different because..."
-  - # /tdd
-  - # green phase: simple function
-  - # tdd guide
-  - # tdd workflow
-  - ## 1. the tdd cycle
-  - ## 10. ai-augmented tdd
-  - ## 2. the three laws of tdd
+description: >
+  "Test-driven development skill for writing unit tests, generating test fixtures and mocks, analyzing coverage gaps, and guiding red-green-refactor workflows across Jest, Pytest, JUnit, Vitest, and Mocha. Use when the user asks to write tests, improve test coverage, practice TDD, generate mocks or stu"
+  Covers: tdd expert, tdd, tdd guide, tdd workflow.
+  Use for any task involving tdd expert, tdd, tdd guide, tdd workflow.
 merged_from:
   - tdd
   - tdd-guide
   - tdd-workflow
-  - tdd-workflows-tdd-cycle
-  - tdd-workflows-tdd-green
-  - tdd-workflows-tdd-red
-  - tdd-workflows-tdd-refactor
-  - test-driven-development
-merged_at: 2026-04-18T17:21:06.043050
+merged_at: 2026-04-25
 ---
 
 # tdd-expert

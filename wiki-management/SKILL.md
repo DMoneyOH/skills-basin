@@ -1,32 +1,14 @@
 ---
 name: wiki-management
-description: "Dispatched sub-agent that ingests a new source into an LLM Wiki vault. Reads the source, proposes TL;DR and key claims, identifies which entity/concept/synthesis pages will be touched, flags contradictions with existing pages, and — after user confirmation — writes the source summary, updates cross-"
-triggers:
-  - # /wiki-ingest
-  - # /wiki-init
-  - # /wiki-lint
-  - # /wiki-log
-  - # /wiki-query
-  - # wiki-ingestor
-  - # wiki-librarian
-  - # wiki-linter
-  - * contradictions > broken links > orphans > stale > style issues.
-  - * every claim on an entity/concept page links to a source page.
-  - * every substantive answer — but don't file trivial one-off answers.
-  - * never edit files there. read only.
-  - * on every page you touch.
-  - * suggest a source to ingest instead of inventing content.
-  - * — but only for substantive answers worth keeping.
+description: >
+  "Dispatched sub-agent that ingests a new source into an LLM Wiki vault. Reads the source, proposes TL;DR and key claims, identifies which entity/concept/synthesis pages will be touched, flags contradictions with existing pages, and — after user confirmation — writes the source summary, updates cross-"
+  Covers: wiki management, wiki ingest, wiki init, wiki lint.
+  Use for any task involving wiki management, wiki ingest, wiki init, wiki lint.
 merged_from:
   - wiki-ingest
   - wiki-init
   - wiki-lint
-  - wiki-log
-  - wiki-query
-  - cs-wiki-ingestor
-  - cs-wiki-librarian
-  - cs-wiki-linter
-merged_at: 2026-04-18T17:21:06.027733
+merged_at: 2026-04-25
 ---
 
 # wiki-management

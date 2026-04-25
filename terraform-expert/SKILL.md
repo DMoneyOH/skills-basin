@@ -1,30 +1,14 @@
 ---
 name: terraform-expert
-description: "Terraform infrastructure-as-code agent skill and plugin for Claude Code, Codex, Gemini CLI, Cursor, OpenClaw. Covers module design patterns, state management strategies, provider configuration, security hardening, policy-as-code with Sentinel/OPA, and CI/CD plan/apply workflows. Use when: user wants"
-triggers:
-  - "create enterprise service catalog with approved infrastructure modules"
-  - "design a terraform module for..."
-  - "design multi-cloud terraform architecture with provider abstraction"
-  - "migrate existing terraform codebase to opentofu with minimal disruption"
-  - "module structure best practices"
-  - "multi-region terraform deployment"
-  - "my terraform state is..."
-  - "review this terraform code"
-  - "set up remote state backend"
-  - "terraform ci/cd pipeline"
-  - "terraform security review"
-  - "troubleshoot state corruption and implement recovery procedures"
-  - # terraform infrastructure workflow
-  - # terraform module library
-  - # terraform patterns
+description: >
+  "Terraform infrastructure-as-code agent skill and plugin for Claude Code, Codex, Gemini CLI, Cursor, OpenClaw. Covers module design patterns, state management strategies, provider configuration, security hardening, policy-as-code with Sentinel/OPA, and CI/CD plan/apply workflows. Use when: user wants"
+  Covers: terraform expert, terraform patterns, terraform skill, terraform aws modules.
+  Use for any task involving terraform expert, terraform patterns, terraform skill, terraform aws modules.
 merged_from:
   - terraform-patterns
   - terraform-skill
   - terraform-aws-modules
-  - terraform-module-library
-  - terraform-infrastructure
-  - terraform-specialist
-merged_at: 2026-04-18T17:20:54.584418
+merged_at: 2026-04-25
 ---
 
 # terraform-expert

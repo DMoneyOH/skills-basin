@@ -1,28 +1,14 @@
 ---
 name: odoo-infrastructure
-description: "Expert guide for diagnosing and fixing Odoo performance issues: slow queries, worker configuration, memory limits, PostgreSQL tuning, and profiling tools."
-triggers:
-  - "8069:8069"
-  - "8072:8072"   # longpolling for live chat / bus
-  - # odoo backup strategy
-  - # odoo docker deployment
-  - # odoo migration helper
-  - # odoo performance tuner
-  - * * /opt/scripts/backup_odoo.sh >> /var/log/odoo_backup.log 2>&1
-  - * odoo setup. multi-database instances require looping over all databases.
-  - * optimizations, which are advanced patterns for very high-traffic instances.
-  - * path has additional steps not covered here; refer to odoo.sh documentation.
-  - * skip intermediate versions — go v14→v15→v16→v17 sequentially; never jump.
-  - * traces; javascript rendering performance requires browser devtools.
-  - *: share relevant log lines or config and receive a root cause analysis.
-  - *analyze**: receive a list of breaking changes with before/after code fixes.
-  - *debug**: describe your container error and get a diagnosis with a fix.
+description: >
+  "Expert guide for diagnosing and fixing Odoo performance issues: slow queries, worker configuration, memory limits, PostgreSQL tuning, and profiling tools."
+  Covers: odoo infrastructure, odoo docker deployment, odoo backup strategy, odoo performance tuner.
+  Use for any task involving odoo infrastructure, odoo docker deployment, odoo backup strategy, odoo performance tuner.
 merged_from:
   - odoo-docker-deployment
   - odoo-backup-strategy
   - odoo-performance-tuner
-  - odoo-migration-helper
-merged_at: 2026-04-18T17:21:06.040344
+merged_at: 2026-04-25
 ---
 
 # odoo-infrastructure

@@ -1,31 +1,14 @@
 ---
 name: observability-engineer
-description: "Implement comprehensive observability for service meshes including distributed tracing, metrics, and visualization. Use when setting up mesh monitoring, debugging latency issues, or implementing SL..."
-triggers:
-  - "**"
-  - "9090:9090"
-  - "dashboards/*.json"
-  - # access dashboard
-  - # grafana dashboards
-  - # istio telemetry v2 with otel
-  - # jaeger deployment
-  - # monitoring and observability setup
-  - # prometheus configuration
-  - # service mesh observability
-  - # servicemonitor for prometheus operator
-  - # slo implementation
-  - # slo implementation guide
-  - 'app1.example.com:9090'
-  - 'app2.example.com:9090'
+description: >
+  "Implement comprehensive observability for service meshes including distributed tracing, metrics, and visualization. Use when setting up mesh monitoring, debugging latency issues, or implementing SL..."
+  Covers: observability engineer, observability designer, service mesh observability, observability monitoring monitor setup.
+  Use for any task involving observability engineer, observability designer, service mesh observability, observability monitoring monitor setup.
 merged_from:
   - observability-designer
   - service-mesh-observability
   - observability-monitoring-monitor-setup
-  - observability-monitoring-slo-implement
-  - slo-implementation
-  - grafana-dashboards
-  - prometheus-configuration
-merged_at: 2026-04-18T17:20:54.588631
+merged_at: 2026-04-25
 ---
 
 # observability-engineer

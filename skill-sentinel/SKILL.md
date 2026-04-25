@@ -1,28 +1,14 @@
 ---
 name: skill-sentinel
-description: "Expert security auditor for AI Skills and Bundles. Performs non-intrusive static analysis to identify malicious patterns, data leaks, system stability risks, and obfuscated payloads across Windows, macOS, Linux/Unix, and Mobile (Android/iOS)."
-triggers:
-  - # review playwright tests
-  - # skill security scanner
-  - # skill sentinel
-  - # skill tester
-  - ## description
-  - %m-%d")
-  - * check for platform-specific security issues on all supported platforms
-  - **1-2**: needs rewrite
-  - **3-4**: significant issues, likely flaky
-  - **5-6**: functional but has anti-patterns
-  - **7-8**: good, minor improvements possible
-  - **9-10**: production-ready, follows all golden rules
-  - **api endpoints**: restful api for external integration and automation
-  - **ci/cd pipelines**: automated quality gates in pull request workflows
-  - **clean**: no findings after thorough analysis
+description: >
+  "Expert security auditor for AI Skills and Bundles. Performs non-intrusive static analysis to identify malicious patterns, data leaks, system stability risks, and obfuscated payloads across Windows, macOS, Linux/Unix, and Mobile (Android/iOS)."
+  Covers: skill sentinel, skill scanner, skills review, audit skills.
+  Use for any task involving skill sentinel, skill scanner, skills review, audit skills.
 merged_from:
   - skill-scanner
   - skills-review
   - audit-skills
-  - skill-tester
-merged_at: 2026-04-18T17:20:54.602356
+merged_at: 2026-04-25
 ---
 
 # skill-sentinel

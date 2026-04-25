@@ -1,27 +1,14 @@
 ---
 name: privilege-escalation
-description: "This skill should be used when the user asks to \'escalate privileges on Linux\', \'find privesc vectors on Linux systems\', \'exploit sudo misconfigurations\', \'abuse SUID binaries\', \'ex..."
-triggers:
-  - # linux privilege escalation
-  - # privilege escalation methods
-  - # windows privilege escalation
-  - ## additional resources
-  - ## constraints
-  - ## core techniques
-  - ## examples
-  - ## quick reference
-  - ## troubleshooting
-  - ### active directory attacks
-  - ### credential harvesting
-  - ### windows privilege escalation
-  - * * * * root /opt/scripts/backup.sh
-  - **authorization**: written permission for penetration testing activities
-  - **bloodhound**: active directory attack path mapping
+description: >
+  "This skill should be used when the user asks to \'escalate privileges on Linux\', \'find privesc vectors on Linux systems\', \'exploit sudo misconfigurations\', \'abuse SUID binaries\', \'ex..."
+  Covers: privilege escalation, linux privilege escalation, windows privilege escalation, privilege escalation methods.
+  Use for any task involving privilege escalation, linux privilege escalation, windows privilege escalation, privilege escalation methods.
 merged_from:
   - linux-privilege-escalation
   - windows-privilege-escalation
   - privilege-escalation-methods
-merged_at: 2026-04-18T17:20:40.232997
+merged_at: 2026-04-25
 ---
 
 # privilege-escalation

@@ -1,28 +1,14 @@
 ---
 name: seo-content
-description: "Identifies outdated elements in provided content and suggests updates to maintain freshness. Finds statistics, dates, and examples that need updating. Use PROACTIVELY for older content."
-triggers:
-  - ## use this skill when
-  - *body content:**
-  - *conclusion:**
-  - *content audit report:**
-  - *content calendar format:**
-  - *content outline structure:**
-  - *content outline:**
-  - *content package:**
-  - *content refresh plan:**
-  - *deliverables:**
-  - *e-e-a-t elements:**
-  - *freshness signals:**
-  - *platform implementation:**
-  - *quality standards:**
-  - *refresh tactics:**
+description: >
+  "Identifies outdated elements in provided content and suggests updates to maintain freshness. Finds statistics, dates, and examples that need updating. Use PROACTIVELY for older content."
+  Covers: seo content, seo content auditor, seo content writer, seo content planner.
+  Use for any task involving seo content, seo content auditor, seo content writer, seo content planner.
 merged_from:
   - seo-content-auditor
   - seo-content-writer
   - seo-content-planner
-  - seo-content-refresher
-merged_at: 2026-04-18T17:21:06.076362
+merged_at: 2026-04-25
 ---
 
 # seo-content

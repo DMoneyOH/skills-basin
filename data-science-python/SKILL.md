@@ -1,28 +1,14 @@
 ---
 name: data-science-python
-description: "Fast in-memory DataFrame library for datasets that fit in RAM. Use when pandas is too slow but data still fits in memory. Lazy evaluation, parallel execution, Apache Arrow backend. Best for 1-100GB datasets, ETL pipelines, faster pandas replacement. For larger-than-RAM data use dask or vaex."
-triggers:
-  - # matplotlib
-  - # polars
-  - # seaborn statistical visualization
-  - # statsmodels: statistical modeling and econometrics
-  - * - complete catalog of plot types with code examples and use cases
-  - * - core classes and methods reference
-  - * - detailed styling options, colormaps, and customization
-  - * - troubleshooting guide for common problems
-  - * continuous outcome variable, want inference on coefficients, need diagnostics
-  - * non-normal outcomes, need flexible variance and link specifications
-  - * validating assumptions, detecting problems, ensuring robust inference
-  - **ardl**: autoregressive distributed lag
-  - **arima**: autoregressive integrated moving average
-  - **conditional logit**: choice models with alternative-specific variables
-  - **dynamic factor models**: extract common factors
+description: >
+  "Fast in-memory DataFrame library for datasets that fit in RAM. Use when pandas is too slow but data still fits in memory. Lazy evaluation, parallel execution, Apache Arrow backend. Best for 1-100GB datasets, ETL pipelines, faster pandas replacement. For larger-than-RAM data use dask or vaex."
+  Covers: data science python, matplotlib, seaborn, polars.
+  Use for any task involving data science python, matplotlib, seaborn, polars.
 merged_from:
   - matplotlib
   - seaborn
   - polars
-  - statsmodels
-merged_at: 2026-04-18T17:21:06.079602
+merged_at: 2026-04-25
 ---
 
 # data-science-python

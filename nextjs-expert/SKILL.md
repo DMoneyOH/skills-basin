@@ -1,27 +1,14 @@
 ---
 name: nextjs-expert
-description: "Master Next.js 14+ App Router with Server Components, streaming, parallel routes, and advanced data fetching. Use when building Next.js applications, implementing SSR/SSG, or optimizing React Serve..."
-triggers:
-  - # next.js app router patterns
-  - # next.js best practices
-  - # react/next.js development workflow
-  - ## 1. server vs client components
-  - ## 10. project structure
-  - ## 2. data fetching patterns
-  - ## 3. routing principles
-  - ## 4. api routes
-  - ## 5. performance principles
-  - ## 6. metadata
-  - ## 7. caching strategy
-  - ## 8. server actions
-  - ## 9. anti-patterns
-  - *client** | forms, buttons, interactive ui |
-  - *server** | data fetching, layout, static content |
+description: >
+  "Master Next.js 14+ App Router with Server Components, streaming, parallel routes, and advanced data fetching. Use when building Next.js applications, implementing SSR/SSG, or optimizing React Serve..."
+  Covers: nextjs expert, nextjs best practices, nextjs app router patterns, react nextjs development.
+  Use for any task involving nextjs expert, nextjs best practices, nextjs app router patterns, react nextjs development.
 merged_from:
   - nextjs-best-practices
   - nextjs-app-router-patterns
   - react-nextjs-development
-merged_at: 2026-04-18T17:20:54.596663
+merged_at: 2026-04-25
 ---
 
 # nextjs-expert

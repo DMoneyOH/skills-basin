@@ -1,34 +1,14 @@
 ---
 name: seo-technical
-description: "Analyzes keyword usage in provided content, calculates density, suggests semantic variations and LSI keywords based on the topic. Prevents over-optimization. Use PROACTIVELY for content optimization."
-triggers:
-  - # /seo-auditor
-  - # seo audit
-  - # seo forensic incident response
-  - # seo fundamentals
-  - ## 3. technical seo principles
-  - ## 4. content seo principles
-  - ## 6. ai-assisted content principles
-  - ## 7. relative importance of seo factors
-  - ## 8. measurement & evaluation
-  - ## category scoring rules
-  - ## content quality & e-e-a-t
-  - ## data-driven investigation steps
-  - ## forensic hypothesis building
-  - ## incident classification framework
-  - ## on-page seo audit
+description: >
+  "Analyzes keyword usage in provided content, calculates density, suggests semantic variations and LSI keywords based on the topic. Prevents over-optimization. Use PROACTIVELY for content optimization."
+  Covers: seo technical, seo audit, seo auditor, seo cannibalization detector.
+  Use for any task involving seo technical, seo audit, seo auditor, seo cannibalization detector.
 merged_from:
   - seo-audit
   - seo-auditor
   - seo-cannibalization-detector
-  - seo-forensic-incident-response
-  - seo-structure-architect
-  - seo-authority-builder
-  - seo-snippet-hunter
-  - seo-meta-optimizer
-  - seo-fundamentals
-  - seo-keyword-strategist
-merged_at: 2026-04-18T17:21:06.074026
+merged_at: 2026-04-25
 ---
 
 # seo-technical

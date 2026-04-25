@@ -1,21 +1,17 @@
 ---
 name: apify-research
-description: "Track reviews, ratings, sentiment, and brand mentions across Google Maps, Booking.com, TripAdvisor, Facebook, Instagram, YouTube, and TikTok. Use when user asks to monitor brand reputation, analyze..."
-triggers:
-  - # audience analysis
-  - # brand reputation monitoring
-  - # competitor intelligence
-  - # content analytics
-  - # market research
-  - # trend analysis
-  - **csv** - full export with all fields
-  - **json** - full export in json format
-  - *csv:**
-  - *json:**
-  - *number of results**: based on character of use case
-  - *output format**:
-  - - merged into: apify-research on 2026-04-18 -->
-  - ----------|----------|----------|
+description: >
+  "Track reviews, ratings, sentiment, and brand mentions across Google Maps, Booking.com, TripAdvisor, Facebook, Instagram, YouTube, and TikTok. Use when user asks to monitor brand reputation, analyze..."
+  Covers: apify research, apify audience analysis, apify content analytics, apify brand reputation monitoring.
+  Use for any task involving apify research, apify audience analysis, apify content analytics, apify brand reputation monitoring.
+merged_from:
+  - apify-audience-analysis
+  - apify-content-analytics
+  - apify-brand-reputation-monitoring
+merged_at: 2026-04-25
+---
+
+-------|----------|----------|
   - -actor "actor_id" \
 merged_from:
   - apify-audience-analysis

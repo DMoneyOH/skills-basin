@@ -1,28 +1,15 @@
 ---
 name: threat-modeling
-description: "Expert in threat modeling methodologies, security architecture review, and risk assessment. Masters STRIDE, PASTA, attack trees, and security requirement extraction. Use for security architecture r..."
-triggers:
-  - # attack tree construction
-  - # stride analysis patterns
-  - # threat mitigation mapping
-  - # threat modeling expert
-  - - merged into: threat-modeling on 2026-04-18 -->
-  - 02-27"
-  - analyzing existing system architecture
-  - annotate leaves with cost, skill, time, and detectability.
-  - apply relevant best practices and validate outcomes.
-  - attack tree construction
-  - avoid including sensitive exploit details unless required.
-  - avoid storing sensitive details in threat models without access controls.
-  - by-design systems.
-  - clarify goals, constraints, and required inputs.
-  - communicating risks to stakeholders
+description: >
+  "Expert in threat modeling methodologies, security architecture review, and risk assessment. Masters STRIDE, PASTA, attack trees, and security requirement extraction. Use for security architecture r..."
+  Covers: threat modeling, threat modeling expert, stride analysis patterns, attack tree construction, threat mitigation mapping.
+  Use for any task involving threat modeling, threat modeling expert, stride analysis patterns, attack tree construction, threat mitigation mapping.
 merged_from:
   - threat-modeling-expert
   - stride-analysis-patterns
   - attack-tree-construction
   - threat-mitigation-mapping
-merged_at: 2026-04-18T17:20:40.231376
+merged_at: 2026-04-25
 ---
 
 # threat-modeling

@@ -1,22 +1,17 @@
 ---
 name: javascript-expert
-description: "Comprehensive JavaScript reference covering 33+ essential concepts every developer should know. From fundamentals like primitives and closures to advanced patterns like async/await and functional p..."
-triggers:
-  - # modern javascript patterns
-  - # 🧠 javascript mastery
-  - ## 1. fundamentals
-  - ## 2. scope & closures
-  - ## 3. functions & execution
-  - ## 4. event loop & async
-  - ## 5. functional programming
-  - ## 6. objects & prototypes
-  - ## quick reference card
-  - ## resources
-  - *common use cases**:
-  - *execution order**:
-  - *key points**:
-  - - merged into: javascript-expert on 2026-04-18 -->
-  - ------------ | :-------------------------------- |
+description: >
+  "Comprehensive JavaScript reference covering 33+ essential concepts every developer should know. From fundamentals like primitives and closures to advanced patterns like async/await and functional p..."
+  Covers: javascript expert, javascript mastery, javascript pro, modern javascript patterns.
+  Use for any task involving javascript expert, javascript mastery, javascript pro, modern javascript patterns.
+merged_from:
+  - javascript-mastery
+  - javascript-pro
+  - modern-javascript-patterns
+merged_at: 2026-04-25
+---
+
+--------- | :-------------------------------- |
 merged_from:
   - javascript-mastery
   - javascript-pro

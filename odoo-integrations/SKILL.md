@@ -1,28 +1,14 @@
 ---
 name: odoo-integrations
-description: "Expert on Odoo's external JSON-RPC and XML-RPC APIs. Covers authentication, model calls, record CRUD, and real-world integration examples in Python, JavaScript, and curl."
-triggers:
-  - # odoo edi connector
-  - # odoo rpc api
-  - # odoo ↔ shopify integration
-  - # odoo ↔ woocommerce bridge
-  - * use shopify's **webhook system** for real-time order sync instead of polling.
-  - *997 functional acknowledgment** within 24 hours of receiving a transaction.
-  - *: get code snippets for the shopify webhook receiver and odoo api caller.
-  - *: get python code to parse incoming edi files and create odoo records.
-  - *: receive a complete field mapping table between edi segments and odoo fields.
-  - *build**: receive python integration scripts using the woocommerce rest api.
-  - *debug**: paste an error and get a diagnosis with a corrected call.
-  - *design**: get the field mapping table between woocommerce and odoo objects.
-  - *design**: receive the data flow architecture and field mapping.
-  - *do:** store every raw edi transaction in an audit log table before processing.
-  - *do:** validate shopify webhook hmac signatures before processing any payload.
+description: >
+  "Expert on Odoo's external JSON-RPC and XML-RPC APIs. Covers authentication, model calls, record CRUD, and real-world integration examples in Python, JavaScript, and curl."
+  Covers: odoo integrations, odoo shopify integration, odoo woocommerce bridge, odoo edi connector.
+  Use for any task involving odoo integrations, odoo shopify integration, odoo woocommerce bridge, odoo edi connector.
 merged_from:
   - odoo-shopify-integration
   - odoo-woocommerce-bridge
   - odoo-edi-connector
-  - odoo-rpc-api
-merged_at: 2026-04-18T17:21:06.038325
+merged_at: 2026-04-25
 ---
 
 # odoo-integrations

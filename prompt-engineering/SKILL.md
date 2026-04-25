@@ -1,29 +1,16 @@
 ---
 name: prompt-engineering
-description: "Analyzes and rewrites prompts for better AI output, creates reusable prompt templates for marketing use cases (ad copy, email campaigns, social media), and structures end-to-end AI content workflows. Use when the user wants to improve prompts for AI-assisted marketing, build prompt templates, or opt"
-triggers:
-  - "summarize this article in 3 bullet points, focusing on key findings"
-  - "summarize this article"
-  - # llm prompt optimizer
-  - # prompt engineer toolkit
-  - # prompt engineering patterns
-  - # senior prompt engineer
-  - ## common commands
-  - ## common patterns quick reference
-  - ## prompt engineering workflows
-  - ## purpose
-  - ## quick start
-  - ## reference documentation
-  - ## tools overview
-  - ### 2. rag evaluator
-  - ### 3. agent orchestrator
+description: >
+  "Analyzes and rewrites prompts for better AI output, creates reusable prompt templates for marketing use cases (ad copy, email campaigns, social media), and structures end-to-end AI content workflows. Use when the user wants to improve prompts for AI-assisted marketing, build prompt templates, or opt"
+  Covers: prompt engineering, prompt engineer, prompt engineer toolkit, prompt engineering patterns, llm prompt optimizer, senior prompt engineer.
+  Use for any task involving prompt engineering, prompt engineer, prompt engineer toolkit, prompt engineering patterns, llm prompt optimizer.
 merged_from:
   - prompt-engineer
   - prompt-engineer-toolkit
   - prompt-engineering-patterns
   - llm-prompt-optimizer
   - senior-prompt-engineer
-merged_at: 2026-04-18T17:20:40.185159
+merged_at: 2026-04-25
 ---
 
 # prompt-engineering

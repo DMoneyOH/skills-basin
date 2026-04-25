@@ -1,29 +1,16 @@
 ---
 name: llm-evaluation
-description: "This skill should be used when the user asks to 'implement LLM-as-judge', 'compare model outputs', 'create evaluation rubrics', 'mitigate evaluation bias', or mentions direct scoring, pairwise comparison, position bias, evaluation pipelines, or automated quality assessment."
-triggers:
-  - # /hub:eval — evaluate agent results
-  - # advanced evaluation
-  - # agent evaluation
-  - # llm evaluation
-  - # self-eval: honest work evaluation
-  - ## skill metadata
-  - ## what to evaluate
-  - ## when to use this skill
-  - * - ambiguous situations cause the most evaluation variance
-  - * - calibrate to position consistency and evidence strength
-  - * - chain-of-thought prompting improves reliability by 15-25%
-  - * - don't use 1-10 without detailed level descriptions
-  - * - single-pass comparison is corrupted by position bias
-  - * - track disagreement patterns by criterion, response type, model
-  - * - use direct scoring for objective, pairwise for subjective
+description: >
+  "This skill should be used when the user asks to 'implement LLM-as-judge', 'compare model outputs', 'create evaluation rubrics', 'mitigate evaluation bias', or mentions direct scoring, pairwise comparison, position bias, evaluation pipelines, or automated quality assessment."
+  Covers: llm evaluation, agent evaluation, advanced evaluation, eval, evaluation, self eval.
+  Use for any task involving llm evaluation, agent evaluation, advanced evaluation, eval, evaluation.
 merged_from:
   - agent-evaluation
   - advanced-evaluation
   - eval
   - evaluation
   - self-eval
-merged_at: 2026-04-18T17:20:40.214322
+merged_at: 2026-04-25
 ---
 
 # llm-evaluation
@@ -1526,3 +1513,25 @@ Present your evaluation as:
 
 <!-- MERGED INTO: llm-evaluation on 2026-04-18 -->
 <!-- Use `llm-evaluation` instead. -->
+
+---
+
+## Absorbed Techniques
+
+## Gotchas
+
+1. **Scoring without justification**: Scores lack grounding and are difficult to debug. Always require evidence-based justification before the score.
+
+2. **Single-pass pairwise comparison**: Position bias corrupts results when positions are not swapped. Always evaluate twice with swapped positions and check consistency.
+
+3. **Overloaded criteria**: Criteria that measure multiple things at once produce unreliable scores. Enforce one criterion = one measurable aspect.
+
+4. **Missing edge case guidance**: Evaluators handle ambiguous cases inconsistently without explicit instructions. Include edge cases in rubrics with clear resolution rules.
+
+5. **Ignoring confidence calibration**: High-confidence wrong judgments are worse than low-confidence ones. Calibrate confidence to position consistency and evidence strength.
+
+6. **Rubric drift**: Rubrics become miscalibrated as quality standards evolve or model capabilities improve. Schedule periodic rubric reviews and re-anchor score levels against fresh human-annotated examples.
+
+7. **Evaluation prompt sensitivity**: Minor wording changes in evaluation prompts (e.g., reordering instructions, changing phrasing) can cause 10-20% score swings. Version-control evaluation prompts and run regression tests before deploying prompt changes.
+
+8. **Uncontrolled length bias**: Longer responses systematically score higher even when conciseness is preferred. Add explicit length-neutrality instructions to evaluation prompts and validate with length-controlled test pairs.

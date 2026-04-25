@@ -1,28 +1,14 @@
 ---
 name: content-strategist
-description: "When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions \'content strategy,\' \'what should I write about,\' \'content ideas,\' \'blog strategy,\' \'topic clusters,\' or \'content planning.\' For writing indiv"
-triggers:
-  - "build an automated email nurture sequence for free trial users"
-  - "create a comprehensive content strategy for a saas product launch"
-  - "create a content calendar for black friday and holiday marketing"
-  - "create a multi-platform content distribution plan for thought leadership"
-  - "design a social media campaign for a new e-commerce product line"
-  - "develop a user-generated content campaign with influencer partnerships"
-  - "develop an ai-optimized blog post series targeting enterprise buyers"
-  - "optimize existing content for featured snippets and voice search"
-  - # content creator
-  - # content creator agent
-  - # content strategist
-  - # content strategy
-  - ## communication
-  - ## output artifacts
-  - ## proactive triggers
+description: >
+  "When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions \'content strategy,\' \'what should I write about,\' \'content ideas,\' \'blog strategy,\' \'topic clusters,\' or \'content planning.\' For writing indiv"
+  Covers: content strategist, content creator, content marketer, content strategy.
+  Use for any task involving content strategist, content creator, content marketer, content strategy.
 merged_from:
   - content-creator
   - content-marketer
   - content-strategy
-  - cs-content-creator
-merged_at: 2026-04-18T17:20:54.592384
+merged_at: 2026-04-25
 ---
 
 # content-strategist

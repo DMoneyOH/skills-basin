@@ -1,15 +1,18 @@
 ---
 name: agent-memory
-description: "Memory is the cornerstone of intelligent agents. Without it, every interaction starts from zero. This skill covers the architecture of agent memory: short-term (context window), long-term (vector s..."
-triggers:
-  - # agent memory skill
-  - # agent memory systems
-  - # conversation memory
-  - *clone the repository**:
-  - *install dependencies**:
-  - *start the mcp server**:
-  - - merged into: agent-memory on 2026-04-18 -->
-  - ------|----------|----------|
+description: >
+  "Memory is the cornerstone of intelligent agents. Without it, every interaction starts from zero. This skill covers the architecture of agent memory: short-term (context window), long-term (vector s..."
+  Covers: agent memory, agent memory systems, agent memory mcp, conversation memory, hierarchical agent memory.
+  Use for any task involving agent memory, agent memory systems, agent memory mcp, conversation memory, hierarchical agent memory.
+merged_from:
+  - agent-memory-systems
+  - agent-memory-mcp
+  - conversation-memory
+  - hierarchical-agent-memory
+merged_at: 2026-04-25
+---
+
+---|----------|----------|
   - --|---|
   - .memory/decisions.md
   - .memory/inbox.md
