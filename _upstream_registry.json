@@ -19,6 +19,11 @@
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "agency-docs-updater": {
+    "path": "agency-docs-updater",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
   "agent-framework-azure-ai-py": {
     "path": ".github/plugins/azure-sdk-python/skills/agent-framework-azure-ai-py/SKILL.md",
     "remote": "upstream-microsoft",
@@ -59,6 +64,16 @@
     "remote": "upstream-coreyhaines31",
     "url": "https://github.com/coreyhaines31/marketingskills.git"
   },
+  "angular-architect": {
+    "path": "skills/angular-architect",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "api-designer": {
+    "path": "skills/api-designer",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "apify-actor-development": {
     "path": "skills/apify-actor-development/SKILL.md",
     "remote": "upstream-apify",
@@ -79,10 +94,25 @@
     "remote": "upstream-apify",
     "url": "https://github.com/apify/agent-skills"
   },
+  "app-store-optimization": {
+    "path": "marketing-skill/app-store-optimization",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
+  },
   "appinsights-instrumentation": {
     "path": ".github/plugins/azure-skills/skills/appinsights-instrumentation/SKILL.md",
     "remote": "upstream-microsoft",
     "url": "https://github.com/microsoft/skills"
+  },
+  "architecting-python": {
+    "path": "architecting-python",
+    "remote": "upstream-outcomeeng-python",
+    "source": "https://github.com/outcomeeng/python.git"
+  },
+  "architecture-designer": {
+    "path": "skills/architecture-designer",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
   },
   "ask-questions-if-underspecified": {
     "path": "plugins/ask-questions-if-underspecified/skills/ask-questions-if-underspecified/SKILL.md",
@@ -99,6 +129,11 @@
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "atlassian-mcp": {
+    "path": "skills/atlassian-mcp",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "audit-augmentation": {
     "path": "plugins/trailmark/skills/audit-augmentation/SKILL.md",
     "remote": "upstream-trailofbits",
@@ -113,6 +148,41 @@
     "path": "plugins/building-secure-contracts/skills/audit-prep-assistant/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "auditing-commands": {
+    "path": "auditing-commands",
+    "remote": "upstream-outcomeeng-foundation",
+    "source": "https://github.com/outcomeeng/foundation.git"
+  },
+  "auditing-python": {
+    "path": "auditing-python",
+    "remote": "upstream-outcomeeng-python",
+    "source": "https://github.com/outcomeeng/python.git"
+  },
+  "auditing-python-architecture": {
+    "path": "auditing-python-architecture",
+    "remote": "upstream-outcomeeng-python",
+    "source": "https://github.com/outcomeeng/python.git"
+  },
+  "auditing-python-tests": {
+    "path": "auditing-python-tests",
+    "remote": "upstream-outcomeeng-python",
+    "source": "https://github.com/outcomeeng/python.git"
+  },
+  "auditing-skills": {
+    "path": "auditing-skills",
+    "remote": "upstream-outcomeeng-foundation",
+    "source": "https://github.com/outcomeeng/foundation.git"
+  },
+  "auditing-subagents": {
+    "path": "auditing-subagents",
+    "remote": "upstream-outcomeeng-foundation",
+    "source": "https://github.com/outcomeeng/foundation.git"
+  },
+  "automation-advisor": {
+    "path": "automation-advisor",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
   },
   "azure-active-directory-b2c": {
     "path": "skills/azure-active-directory-b2c/SKILL.md",
@@ -1729,15 +1799,30 @@
     "remote": "upstream-tradermonty",
     "url": "https://github.com/tradermonty/claude-trading-skills.git"
   },
+  "balanced": {
+    "path": "balanced",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
   "blog-writing-guide": {
     "path": "skills/blog-writing-guide/SKILL.md",
     "remote": "upstream-sentry",
     "url": "https://github.com/getsentry/skills"
   },
+  "board-deck-builder": {
+    "path": "c-level-advisor/board-deck-builder",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
+  },
   "brainstorming": {
     "path": "skills/brainstorming/SKILL.md",
     "remote": "upstream-superpowers",
     "url": "https://github.com/obra/superpowers"
+  },
+  "brand-agency": {
+    "path": "brand-agency",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
   },
   "brand-guidelines": {
     "path": "skills/brand-guidelines/SKILL.md",
@@ -1764,10 +1849,20 @@
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "business-investment-advisor": {
+    "path": "finance/business-investment-advisor",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
+  },
   "cairo-vulnerability-scanner": {
     "path": "plugins/building-secure-contracts/skills/cairo-vulnerability-scanner/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "campaign-analytics": {
+    "path": "marketing-skill/campaign-analytics",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
   },
   "canslim-screener": {
     "path": "skills/canslim-screener/SKILL.md",
@@ -1784,10 +1879,45 @@
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "ceo-advisor": {
+    "path": "c-level-advisor/ceo-advisor",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
+  },
+  "cfo-advisor": {
+    "path": "c-level-advisor/cfo-advisor",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
+  },
+  "chaos-engineer": {
+    "path": "skills/chaos-engineer",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "chief-of-staff": {
+    "path": "c-level-advisor/chief-of-staff",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
+  },
+  "chro-advisor": {
+    "path": "c-level-advisor/chro-advisor",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
+  },
+  "chrome-history": {
+    "path": "chrome-history",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
   "churn-prevention": {
     "path": "skills/churn-prevention/SKILL.md",
     "remote": "upstream-coreyhaines31",
     "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
+  "ciso-advisor": {
+    "path": "c-level-advisor/ciso-advisor",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
   },
   "claimable-postgres": {
     "path": "skills/claimable-postgres/SKILL.md",
@@ -1809,10 +1939,30 @@
     "remote": "upstream-sentry",
     "url": "https://github.com/getsentry/skills"
   },
+  "cli-developer": {
+    "path": "skills/cli-developer",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "cloud-architect": {
+    "path": "skills/cloud-architect",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "cloud-solution-architect": {
     "path": ".github/skills/cloud-solution-architect/SKILL.md",
     "remote": "upstream-microsoft",
     "url": "https://github.com/microsoft/skills"
+  },
+  "cmo-advisor": {
+    "path": "c-level-advisor/cmo-advisor",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
+  },
+  "code-documenter": {
+    "path": "skills/code-documenter",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
   },
   "code-maturity-assessor": {
     "path": "plugins/building-secure-contracts/skills/code-maturity-assessor/SKILL.md",
@@ -1824,6 +1974,11 @@
     "remote": "upstream-sentry",
     "url": "https://github.com/getsentry/skills"
   },
+  "code-reviewer": {
+    "path": "skills/code-reviewer",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "code-simplifier": {
     "path": "skills/code-simplifier/SKILL.md",
     "remote": "upstream-sentry",
@@ -1833,6 +1988,11 @@
     "path": "plugins/static-analysis/skills/codeql/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "coding-python": {
+    "path": "coding-python",
+    "remote": "upstream-outcomeeng-python",
+    "source": "https://github.com/outcomeeng/python.git"
   },
   "cold-email": {
     "path": "skills/cold-email/SKILL.md",
@@ -1849,6 +2009,11 @@
     "remote": "upstream-coreyhaines31",
     "url": "https://github.com/coreyhaines31/marketingskills.git"
   },
+  "competitive-intel": {
+    "path": "c-level-advisor/competitive-intel",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
+  },
   "competitor-alternatives": {
     "path": "skills/competitor-alternatives/SKILL.md",
     "remote": "upstream-coreyhaines31",
@@ -1864,15 +2029,35 @@
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "content-creator": {
+    "path": "marketing-skill/content-creator",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
+  },
+  "content-production": {
+    "path": "marketing-skill/content-production",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
+  },
   "content-strategy": {
     "path": "skills/content-strategy/SKILL.md",
     "remote": "upstream-coreyhaines31",
     "url": "https://github.com/coreyhaines31/marketingskills"
   },
+  "context-builder": {
+    "path": "context-builder",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
   "continual-learning": {
     "path": ".github/skills/continual-learning/SKILL.md",
     "remote": "upstream-microsoft",
     "url": "https://github.com/microsoft/skills"
+  },
+  "coo-advisor": {
+    "path": "c-level-advisor/coo-advisor",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
   },
   "copilot-sdk": {
     "path": ".github/skills/copilot-sdk/SKILL.md",
@@ -1899,15 +2084,45 @@
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "cpp-pro": {
+    "path": "skills/cpp-pro",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "create-branch": {
     "path": "skills/create-branch/SKILL.md",
     "remote": "upstream-sentry",
     "url": "https://github.com/getsentry/skills"
   },
+  "creating-commands": {
+    "path": "creating-commands",
+    "remote": "upstream-outcomeeng-foundation",
+    "source": "https://github.com/outcomeeng/foundation.git"
+  },
+  "creating-skills": {
+    "path": "creating-skills",
+    "remote": "upstream-outcomeeng-foundation",
+    "source": "https://github.com/outcomeeng/foundation.git"
+  },
+  "creating-subagents": {
+    "path": "creating-subagents",
+    "remote": "upstream-outcomeeng-foundation",
+    "source": "https://github.com/outcomeeng/foundation.git"
+  },
   "crypto-protocol-diagram": {
     "path": "plugins/trailmark/skills/crypto-protocol-diagram/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "csharp-developer": {
+    "path": "skills/csharp-developer",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "cto-advisor": {
+    "path": "c-level-advisor/cto-advisor",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
   },
   "customer-research": {
     "path": "skills/customer-research/SKILL.md",
@@ -1919,10 +2134,45 @@
     "remote": "upstream-tradermonty",
     "url": "https://github.com/tradermonty/claude-trading-skills.git"
   },
+  "database-optimizer": {
+    "path": "skills/database-optimizer",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "daydream": {
+    "path": "daydream",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
+  "de-ai": {
+    "path": "de-ai",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
   "debug-buttercup": {
     "path": "plugins/debug-buttercup/skills/debug-buttercup/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "debugging-wizard": {
+    "path": "skills/debugging-wizard",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "decision-toolkit": {
+    "path": "decision-toolkit",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
+  "deep-research": {
+    "path": "deep-research",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
+  "designing-frontend": {
+    "path": "designing-frontend",
+    "remote": "upstream-outcomeeng-foundation",
+    "source": "https://github.com/outcomeeng/foundation.git"
   },
   "designing-workflow-skills": {
     "path": "plugins/workflow-skill-design/skills/designing-workflow-skills/SKILL.md",
@@ -1933,6 +2183,11 @@
     "path": "plugins/devcontainer-setup/skills/devcontainer-setup/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "devops-engineer": {
+    "path": "skills/devops-engineer",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
   },
   "diagramming-code": {
     "path": "plugins/trailmark/skills/diagramming-code/SKILL.md",
@@ -1964,6 +2219,11 @@
     "remote": "upstream-sentry",
     "url": "https://github.com/getsentry/skills"
   },
+  "django-expert": {
+    "path": "skills/django-expert",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "django-perf-review": {
     "path": "skills/django-perf-review/SKILL.md",
     "remote": "upstream-sentry",
@@ -1974,10 +2234,20 @@
     "remote": "upstream-anthropic",
     "url": "https://github.com/anthropics/skills"
   },
+  "doctorg": {
+    "path": "doctorg",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
   "docx": {
     "path": "skills/docx/SKILL.md",
     "remote": "upstream-anthropic",
     "url": "https://github.com/anthropics/skills"
+  },
+  "dotnet-core-expert": {
+    "path": "skills/dotnet-core-expert",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
   },
   "downtrend-duration-analyzer": {
     "path": "skills/downtrend-duration-analyzer/SKILL.md",
@@ -2044,10 +2314,20 @@
     "remote": "upstream-tradermonty",
     "url": "https://github.com/tradermonty/claude-trading-skills.git"
   },
+  "elevenlabs-tts": {
+    "path": "elevenlabs-tts",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
   "email-sequence": {
     "path": "skills/email-sequence/SKILL.md",
     "remote": "upstream-coreyhaines31",
     "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
+  "embedded-systems": {
+    "path": "skills/embedded-systems",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
   },
   "entra-agent-id": {
     "path": ".github/skills/entra-agent-id/SKILL.md",
@@ -2189,15 +2469,40 @@
     "remote": "upstream-fal",
     "url": "https://github.com/fal-ai-community/skills"
   },
+  "fastapi-expert": {
+    "path": "skills/fastapi-expert",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "fastapi-router-py": {
     "path": ".github/plugins/azure-sdk-python/skills/fastapi-router-py/SKILL.md",
     "remote": "upstream-microsoft",
     "url": "https://github.com/microsoft/skills"
   },
+  "fathom": {
+    "path": "fathom",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
+  "feature-forge": {
+    "path": "skills/feature-forge",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "financial-analyst": {
+    "path": "finance/financial-analyst",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
+  },
   "find-bugs": {
     "path": "skills/find-bugs/SKILL.md",
     "remote": "upstream-sentry",
     "url": "https://github.com/getsentry/skills"
+  },
+  "fine-tuning-expert": {
+    "path": "skills/fine-tuning-expert",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
   },
   "finishing-a-development-branch": {
     "path": "skills/finishing-a-development-branch/SKILL.md",
@@ -2214,10 +2519,25 @@
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "firecrawl-research": {
+    "path": "firecrawl-research",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
+  "flutter-expert": {
+    "path": "skills/flutter-expert",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "form-cro": {
     "path": "skills/form-cro/SKILL.md",
     "remote": "upstream-coreyhaines31",
     "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
+  "founder-coach": {
+    "path": "c-level-advisor/founder-coach",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
   },
   "fp-check": {
     "path": "plugins/fp-check/skills/fp-check/SKILL.md",
@@ -2249,6 +2569,11 @@
     "remote": "upstream-tradermonty",
     "url": "https://github.com/tradermonty/claude-trading-skills.git"
   },
+  "fullstack-guardian": {
+    "path": "skills/fullstack-guardian",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "fuzzing-dictionary": {
     "path": "plugins/testing-handbook-skills/skills/fuzzing-dictionary/SKILL.md",
     "remote": "upstream-trailofbits",
@@ -2258,6 +2583,11 @@
     "path": "plugins/testing-handbook-skills/skills/fuzzing-obstacles/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "game-developer": {
+    "path": "skills/game-developer",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
   },
   "genotoxic": {
     "path": "plugins/trailmark/skills/genotoxic/SKILL.md",
@@ -2279,25 +2609,70 @@
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "github-gist": {
+    "path": "github-gist",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
   "github-issue-creator": {
     "path": ".github/skills/github-issue-creator/SKILL.md",
     "remote": "upstream-microsoft",
     "url": "https://github.com/microsoft/skills"
+  },
+  "gmail": {
+    "path": "gmail",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
+  "golang-pro": {
+    "path": "skills/golang-pro",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "google-image-search": {
+    "path": "google-image-search",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
+  "gpt-image-2": {
+    "path": "gpt-image-2",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
+  "granola": {
+    "path": "granola",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
   },
   "graph-evolution": {
     "path": "plugins/trailmark/skills/graph-evolution/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "graphql-architect": {
+    "path": "skills/graphql-architect",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "guidelines-advisor": {
     "path": "plugins/building-secure-contracts/skills/guidelines-advisor/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "gws": {
+    "path": "gws",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
   "harness-writing": {
     "path": "plugins/testing-handbook-skills/skills/harness-writing/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "health-data": {
+    "path": "health-data",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
   },
   "hf-cli": {
     "path": "skills/hf-cli/SKILL.md",
@@ -2364,6 +2739,11 @@
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "insight-extractor": {
+    "path": "insight-extractor",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
   "institutional-flow-tracker": {
     "path": "skills/institutional-flow-tracker/SKILL.md",
     "remote": "upstream-tradermonty",
@@ -2384,6 +2764,21 @@
     "remote": "upstream-sentry",
     "url": "https://github.com/getsentry/skills"
   },
+  "java-architect": {
+    "path": "skills/java-architect",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "javascript-pro": {
+    "path": "skills/javascript-pro",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "jtbd": {
+    "path": "jtbd",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
   "kanchi-dividend-review-monitor": {
     "path": "skills/kanchi-dividend-review-monitor/SKILL.md",
     "remote": "upstream-tradermonty",
@@ -2399,10 +2794,30 @@
     "remote": "upstream-tradermonty",
     "url": "https://github.com/tradermonty/claude-trading-skills.git"
   },
+  "kotlin-specialist": {
+    "path": "skills/kotlin-specialist",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "kql": {
     "path": ".github/skills/kql/SKILL.md",
     "remote": "upstream-microsoft",
     "url": "https://github.com/microsoft/skills"
+  },
+  "kubernetes-specialist": {
+    "path": "skills/kubernetes-specialist",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "lab-retro": {
+    "path": "lab-retro",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
+  "laravel-specialist": {
+    "path": "skills/laravel-specialist",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
   },
   "launch-strategy": {
     "path": "skills/launch-strategy/SKILL.md",
@@ -2413,6 +2828,11 @@
     "path": "skills/lead-magnets/SKILL.md",
     "remote": "upstream-coreyhaines31",
     "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
+  "legacy-modernizer": {
+    "path": "skills/legacy-modernizer",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
   },
   "let-fate-decide": {
     "path": "plugins/let-fate-decide/skills/let-fate-decide/SKILL.md",
@@ -2428,6 +2848,16 @@
     "path": "plugins/testing-handbook-skills/skills/libfuzzer/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "linear": {
+    "path": "linear",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
+  "llm-cli": {
+    "path": "llm-cli",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
   },
   "m365-agents-dotnet": {
     "path": ".github/plugins/azure-sdk-dotnet/skills/m365-agents-dotnet/SKILL.md",
@@ -2469,25 +2899,65 @@
     "remote": "upstream-tradermonty",
     "url": "https://github.com/tradermonty/claude-trading-skills.git"
   },
+  "marketing-context": {
+    "path": "marketing-skill/marketing-context",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
+  },
+  "marketing-demand-acquisition": {
+    "path": "marketing-skill/marketing-demand-acquisition",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
+  },
   "marketing-ideas": {
     "path": "skills/marketing-ideas/SKILL.md",
     "remote": "upstream-coreyhaines31",
     "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
+  "marketing-ops": {
+    "path": "marketing-skill/marketing-ops",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
   },
   "marketing-psychology": {
     "path": "skills/marketing-psychology/SKILL.md",
     "remote": "upstream-coreyhaines31",
     "url": "https://github.com/coreyhaines31/marketingskills.git"
   },
+  "marketing-strategy-pmm": {
+    "path": "marketing-skill/marketing-strategy-pmm",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
+  },
   "mcp-builder": {
     "path": "skills/mcp-builder/SKILL.md",
     "remote": "upstream-anthropic",
     "url": "https://github.com/anthropics/skills"
   },
+  "mcp-developer": {
+    "path": "skills/mcp-developer",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "meeting-processor": {
+    "path": "meeting-processor",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
   "mermaid-to-proverif": {
     "path": "plugins/trailmark/skills/mermaid-to-proverif/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "meta": {
+    "path": "meta",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
+  "microservices-architect": {
+    "path": "skills/microservices-architect",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
   },
   "microsoft-azure-webjobs-extensions-authentication-events-dotnet": {
     "path": ".github/plugins/azure-sdk-dotnet/skills/microsoft-azure-webjobs-extensions-authentication-events-dotnet/SKILL.md",
@@ -2519,15 +2989,30 @@
     "remote": "upstream-microsoft-docs",
     "url": "https://github.com/MicrosoftDocs/Agent-Skills"
   },
+  "ml-pipeline": {
+    "path": "skills/ml-pipeline",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "modern-python": {
     "path": "plugins/modern-python/skills/modern-python/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "monitoring-expert": {
+    "path": "skills/monitoring-expert",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "mutation-testing": {
     "path": "plugins/mutation-testing/skills/mutation-testing/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "nano-banana": {
+    "path": "nano-banana",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
   },
   "native-data-fetching": {
     "path": "plugins/expo/skills/native-data-fetching/SKILL.md",
@@ -2543,6 +3028,16 @@
     "path": "skills/neon-postgres-egress-optimizer/SKILL.md",
     "remote": "upstream-neon",
     "url": "https://github.com/neondatabase/agent-skills"
+  },
+  "nestjs-expert": {
+    "path": "skills/nestjs-expert",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "nextjs-developer": {
+    "path": "skills/nextjs-developer",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
   },
   "onboarding-cro": {
     "path": "skills/onboarding-cro/SKILL.md",
@@ -2574,6 +3069,11 @@
     "remote": "upstream-tradermonty",
     "url": "https://github.com/tradermonty/claude-trading-skills.git"
   },
+  "pandas-pro": {
+    "path": "skills/pandas-pro",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "paywall-upgrade-cro": {
     "path": "skills/paywall-upgrade-cro/SKILL.md",
     "remote": "upstream-coreyhaines31",
@@ -2584,10 +3084,25 @@
     "remote": "upstream-anthropic",
     "url": "https://github.com/anthropics/skills"
   },
+  "pdf-generation": {
+    "path": "pdf-generation",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
   "pead-screener": {
     "path": "skills/pead-screener/SKILL.md",
     "remote": "upstream-tradermonty",
     "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "php-pro": {
+    "path": "skills/php-pro",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "playwright-expert": {
+    "path": "skills/playwright-expert",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
   },
   "podcast-generation": {
     "path": ".github/skills/podcast-generation/SKILL.md",
@@ -2609,6 +3124,11 @@
     "remote": "upstream-tradermonty",
     "url": "https://github.com/tradermonty/claude-trading-skills.git"
   },
+  "postgres-pro": {
+    "path": "skills/postgres-pro",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "pptx": {
     "path": "skills/pptx/SKILL.md",
     "remote": "upstream-anthropic",
@@ -2623,6 +3143,11 @@
     "path": "skills/presentation-creator/SKILL.md",
     "remote": "upstream-sentry",
     "url": "https://github.com/getsentry/skills"
+  },
+  "presentation-generator": {
+    "path": "presentation-generator",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
   },
   "pricing-strategy": {
     "path": "skills/pricing-strategy/SKILL.md",
@@ -2639,6 +3164,16 @@
     "remote": "upstream-coreyhaines31",
     "url": "https://github.com/coreyhaines31/marketingskills.git"
   },
+  "prompt-engineer": {
+    "path": "skills/prompt-engineer",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "prompt-engineer-toolkit": {
+    "path": "marketing-skill/prompt-engineer-toolkit",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
+  },
   "prompt-optimizer": {
     "path": "skills/prompt-optimizer/SKILL.md",
     "remote": "upstream-sentry",
@@ -2654,15 +3189,45 @@
     "remote": "upstream-microsoft",
     "url": "https://github.com/microsoft/skills"
   },
+  "python-pro": {
+    "path": "skills/python-pro",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "rag-architect": {
+    "path": "skills/rag-architect",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "rails-expert": {
+    "path": "skills/rails-expert",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "react-expert": {
+    "path": "skills/react-expert",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "react-flow-node-ts": {
     "path": ".github/plugins/azure-sdk-typescript/skills/react-flow-node-ts/SKILL.md",
     "remote": "upstream-microsoft",
     "url": "https://github.com/microsoft/skills"
   },
+  "react-native-expert": {
+    "path": "skills/react-native-expert",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "receiving-code-review": {
     "path": "skills/receiving-code-review/SKILL.md",
     "remote": "upstream-superpowers",
     "url": "https://github.com/obra/superpowers"
+  },
+  "recording": {
+    "path": "recording",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
   },
   "referral-program": {
     "path": "skills/referral-program/SKILL.md",
@@ -2674,20 +3239,45 @@
     "remote": "upstream-superpowers",
     "url": "https://github.com/obra/superpowers"
   },
+  "retrospective": {
+    "path": "retrospective",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
+  "reviewing-prose": {
+    "path": "reviewing-prose",
+    "remote": "upstream-outcomeeng-foundation",
+    "source": "https://github.com/outcomeeng/foundation.git"
+  },
   "revops": {
     "path": "skills/revops/SKILL.md",
     "remote": "upstream-coreyhaines31",
     "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
+  "rust-engineer": {
+    "path": "skills/rust-engineer",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
   },
   "ruzzy": {
     "path": "plugins/testing-handbook-skills/skills/ruzzy/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "saas-metrics-coach": {
+    "path": "finance/saas-metrics-coach",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
+  },
   "sales-enablement": {
     "path": "skills/sales-enablement/SKILL.md",
     "remote": "upstream-coreyhaines31",
     "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
+  "salesforce-developer": {
+    "path": "skills/salesforce-developer",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
   },
   "sarif-parsing": {
     "path": "plugins/static-analysis/skills/sarif-parsing/SKILL.md",
@@ -2698,6 +3288,11 @@
     "path": "skills/scenario-analyzer/SKILL.md",
     "remote": "upstream-tradermonty",
     "url": "https://github.com/tradermonty/claude-trading-skills.git"
+  },
+  "scenario-war-room": {
+    "path": "c-level-advisor/scenario-war-room",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
   },
   "schema-markup": {
     "path": "skills/schema-markup/SKILL.md",
@@ -2724,6 +3319,11 @@
     "remote": "upstream-tradermonty",
     "url": "https://github.com/tradermonty/claude-trading-skills.git"
   },
+  "secure-code-guardian": {
+    "path": "skills/secure-code-guardian",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "secure-workflow-guide": {
     "path": "plugins/building-secure-contracts/skills/secure-workflow-guide/SKILL.md",
     "remote": "upstream-trailofbits",
@@ -2733,6 +3333,11 @@
     "path": "skills/security-review/SKILL.md",
     "remote": "upstream-sentry",
     "url": "https://github.com/getsentry/skills"
+  },
+  "security-reviewer": {
+    "path": "skills/security-reviewer",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
   },
   "semgrep": {
     "path": "plugins/static-analysis/skills/semgrep/SKILL.md",
@@ -2754,10 +3359,20 @@
     "remote": "upstream-coreyhaines31",
     "url": "https://github.com/coreyhaines31/marketingskills"
   },
+  "session-search": {
+    "path": "session-search",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
   "sharp-edges": {
     "path": "plugins/sharp-edges/skills/sharp-edges/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "shopify-expert": {
+    "path": "skills/shopify-expert",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
   },
   "signal-postmortem": {
     "path": "skills/signal-postmortem/SKILL.md",
@@ -2773,6 +3388,11 @@
     "path": "skills/site-architecture/SKILL.md",
     "remote": "upstream-coreyhaines31",
     "url": "https://github.com/coreyhaines31/marketingskills.git"
+  },
+  "sketch": {
+    "path": "sketch",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
   },
   "skill-creator": {
     "path": "skills/skill-creator/SKILL.md",
@@ -2804,6 +3424,11 @@
     "remote": "upstream-sentry",
     "url": "https://github.com/getsentry/skills"
   },
+  "skill-studio": {
+    "path": "skill-studio",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
   "skill-writer": {
     "path": "skills/skill-writer/SKILL.md",
     "remote": "upstream-sentry",
@@ -2819,15 +3444,45 @@
     "remote": "upstream-coreyhaines31",
     "url": "https://github.com/coreyhaines31/marketingskills"
   },
+  "social-media-analyzer": {
+    "path": "marketing-skill/social-media-analyzer",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
+  },
   "solana-vulnerability-scanner": {
     "path": "plugins/building-secure-contracts/skills/solana-vulnerability-scanner/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "spark-engineer": {
+    "path": "skills/spark-engineer",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "spec-miner": {
+    "path": "skills/spec-miner",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "spec-to-code-compliance": {
     "path": "plugins/spec-to-code-compliance/skills/spec-to-code-compliance/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "spring-boot-engineer": {
+    "path": "skills/spring-boot-engineer",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "sql-pro": {
+    "path": "skills/sql-pro",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "sre-engineer": {
+    "path": "skills/sre-engineer",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
   },
   "sred-project-organizer": {
     "path": "skills/sred-project-organizer/SKILL.md",
@@ -2838,6 +3493,36 @@
     "path": "skills/sred-work-summary/SKILL.md",
     "remote": "upstream-sentry",
     "url": "https://github.com/getsentry/skills"
+  },
+  "standardizing-agent-prompts": {
+    "path": "standardizing-agent-prompts",
+    "remote": "upstream-outcomeeng-foundation",
+    "source": "https://github.com/outcomeeng/foundation.git"
+  },
+  "standardizing-prose": {
+    "path": "standardizing-prose",
+    "remote": "upstream-outcomeeng-foundation",
+    "source": "https://github.com/outcomeeng/foundation.git"
+  },
+  "standardizing-python": {
+    "path": "standardizing-python",
+    "remote": "upstream-outcomeeng-python",
+    "source": "https://github.com/outcomeeng/python.git"
+  },
+  "standardizing-python-architecture": {
+    "path": "standardizing-python-architecture",
+    "remote": "upstream-outcomeeng-python",
+    "source": "https://github.com/outcomeeng/python.git"
+  },
+  "standardizing-python-tests": {
+    "path": "standardizing-python-tests",
+    "remote": "upstream-outcomeeng-python",
+    "source": "https://github.com/outcomeeng/python.git"
+  },
+  "standardizing-skills": {
+    "path": "standardizing-skills",
+    "remote": "upstream-outcomeeng-foundation",
+    "source": "https://github.com/outcomeeng/foundation.git"
   },
   "stanley-druckenmiller-investment": {
     "path": "skills/stanley-druckenmiller-investment/SKILL.md",
@@ -2864,25 +3549,75 @@
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "swift-expert": {
+    "path": "skills/swift-expert",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "systematic-debugging": {
     "path": "skills/systematic-debugging/SKILL.md",
     "remote": "upstream-superpowers",
     "url": "https://github.com/obra/superpowers"
+  },
+  "tdd": {
+    "path": "tdd",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
   },
   "technical-analyst": {
     "path": "skills/technical-analyst/SKILL.md",
     "remote": "upstream-tradermonty",
     "url": "https://github.com/tradermonty/claude-trading-skills.git"
   },
+  "telegram": {
+    "path": "telegram",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
+  "telegram-post": {
+    "path": "telegram-post",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
+  "telegram-telethon": {
+    "path": "telegram-telethon",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
+  "temple-generator": {
+    "path": "temple-generator",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
+  "terraform-engineer": {
+    "path": "skills/terraform-engineer",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "test-driven-development": {
     "path": "skills/test-driven-development/SKILL.md",
     "remote": "upstream-superpowers",
     "url": "https://github.com/obra/superpowers"
   },
+  "test-master": {
+    "path": "skills/test-master",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "testing-handbook-generator": {
     "path": "plugins/testing-handbook-skills/skills/testing-handbook-generator/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
+  },
+  "testing-python": {
+    "path": "testing-python",
+    "remote": "upstream-outcomeeng-python",
+    "source": "https://github.com/outcomeeng/python.git"
+  },
+  "the-fool": {
+    "path": "skills/the-fool",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
   },
   "theme-detector": {
     "path": "skills/theme-detector/SKILL.md",
@@ -2893,6 +3628,11 @@
     "path": "skills/theme-factory/SKILL.md",
     "remote": "upstream-anthropic",
     "url": "https://github.com/anthropics/skills"
+  },
+  "thinking-patterns": {
+    "path": "thinking-patterns",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
   },
   "token-integration-analyzer": {
     "path": "plugins/building-secure-contracts/skills/token-integration-analyzer/SKILL.md",
@@ -2929,10 +3669,25 @@
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "transcript-analyzer": {
+    "path": "transcript-analyzer",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
   "transformers-js": {
     "path": "skills/transformers-js/SKILL.md",
     "remote": "upstream-huggingface",
     "url": "https://github.com/huggingface/skills"
+  },
+  "tufte-report": {
+    "path": "tufte-report",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
+  "typescript-pro": {
+    "path": "skills/typescript-pro",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
   },
   "typing-exclusion-worker": {
     "path": "skills/typing-exclusion-worker/SKILL.md",
@@ -2999,6 +3754,21 @@
     "remote": "upstream-superpowers",
     "url": "https://github.com/obra/superpowers"
   },
+  "vision-bench": {
+    "path": "vision-bench",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
+  "vue-expert": {
+    "path": "skills/vue-expert",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
+  "vue-expert-js": {
+    "path": "skills/vue-expert-js",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "web-artifacts-builder": {
     "path": "skills/web-artifacts-builder/SKILL.md",
     "remote": "upstream-anthropic",
@@ -3008,6 +3778,11 @@
     "path": "skills/webapp-testing/SKILL.md",
     "remote": "upstream-anthropic",
     "url": "https://github.com/anthropics/skills"
+  },
+  "websocket-engineer": {
+    "path": "skills/websocket-engineer",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
   },
   "wiki-ado-convert": {
     "path": ".github/plugins/deep-wiki/skills/wiki-ado-convert/SKILL.md",
@@ -3059,10 +3834,25 @@
     "remote": "upstream-microsoft",
     "url": "https://github.com/microsoft/skills"
   },
+  "wispr-analytics": {
+    "path": "wispr-analytics",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
+  "wordpress-pro": {
+    "path": "skills/wordpress-pro",
+    "remote": "upstream-jeffallan",
+    "source": "https://github.com/Jeffallan/claude-skills.git"
+  },
   "writing-plans": {
     "path": "skills/writing-plans/SKILL.md",
     "remote": "upstream-superpowers",
     "url": "https://github.com/obra/superpowers"
+  },
+  "writing-prose": {
+    "path": "writing-prose",
+    "remote": "upstream-outcomeeng-foundation",
+    "source": "https://github.com/outcomeeng/foundation.git"
   },
   "writing-skills": {
     "path": "skills/writing-skills/SKILL.md",
@@ -3074,6 +3864,11 @@
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "x-twitter-growth": {
+    "path": "marketing-skill/x-twitter-growth",
+    "remote": "upstream-alirezarezvani",
+    "source": "https://github.com/alirezarezvani/claude-skills.git"
+  },
   "xlsx": {
     "path": "skills/xlsx/SKILL.md",
     "remote": "upstream-anthropic",
@@ -3084,144 +3879,24 @@
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "youtube-transcript": {
+    "path": "youtube-transcript",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
   "zeroize-audit": {
     "path": "plugins/zeroize-audit/skills/zeroize-audit/SKILL.md",
     "remote": "upstream-trailofbits",
     "url": "https://github.com/trailofbits/skills"
   },
+  "zoom": {
+    "path": "zoom",
+    "remote": "upstream-glebis",
+    "source": "https://github.com/glebis/claude-skills.git"
+  },
   "zustand-store-ts": {
     "path": ".github/plugins/azure-sdk-typescript/skills/zustand-store-ts/SKILL.md",
     "remote": "upstream-microsoft",
     "url": "https://github.com/microsoft/skills"
-  },
-  "app-store-optimization": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "marketing-skill/app-store-optimization"
-  },
-  "campaign-analytics": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "marketing-skill/campaign-analytics"
-  },
-  "content-creator": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "marketing-skill/content-creator"
-  },
-  "content-production": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "marketing-skill/content-production"
-  },
-  "marketing-context": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "marketing-skill/marketing-context"
-  },
-  "marketing-demand-acquisition": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "marketing-skill/marketing-demand-acquisition"
-  },
-  "marketing-ops": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "marketing-skill/marketing-ops"
-  },
-  "marketing-strategy-pmm": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "marketing-skill/marketing-strategy-pmm"
-  },
-  "prompt-engineer-toolkit": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "marketing-skill/prompt-engineer-toolkit"
-  },
-  "social-media-analyzer": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "marketing-skill/social-media-analyzer"
-  },
-  "x-twitter-growth": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "marketing-skill/x-twitter-growth"
-  },
-  "financial-analyst": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "finance/financial-analyst"
-  },
-  "business-investment-advisor": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "finance/business-investment-advisor"
-  },
-  "saas-metrics-coach": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "finance/saas-metrics-coach"
-  },
-  "ceo-advisor": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "c-level-advisor/ceo-advisor"
-  },
-  "cfo-advisor": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "c-level-advisor/cfo-advisor"
-  },
-  "coo-advisor": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "c-level-advisor/coo-advisor"
-  },
-  "cto-advisor": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "c-level-advisor/cto-advisor"
-  },
-  "cmo-advisor": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "c-level-advisor/cmo-advisor"
-  },
-  "ciso-advisor": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "c-level-advisor/ciso-advisor"
-  },
-  "chro-advisor": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "c-level-advisor/chro-advisor"
-  },
-  "chief-of-staff": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "c-level-advisor/chief-of-staff"
-  },
-  "board-deck-builder": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "c-level-advisor/board-deck-builder"
-  },
-  "competitive-intel": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "c-level-advisor/competitive-intel"
-  },
-  "scenario-war-room": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "c-level-advisor/scenario-war-room"
-  },
-  "founder-coach": {
-    "remote": "upstream-alirezarezvani",
-    "source": "https://github.com/alirezarezvani/claude-skills.git",
-    "path": "c-level-advisor/founder-coach"
   }
 }
