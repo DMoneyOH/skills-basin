@@ -1,625 +1,786 @@
 # Upstream Skill Registry
-Generated: 2026-04-20 23:20
-Total mapped: 619
+Generated: 2026-04-27 11:41
+Total mapped: 780 | On disk: 186
 
 | Skill | Remote | Source Repo |
 |---|---|---|
-| ab-test-setup | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| ad-creative | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| address-sanitizer | upstream-trailofbits | https://github.com/trailofbits/skills |
-| aflpp | upstream-trailofbits | https://github.com/trailofbits/skills |
-| agent-framework-azure-ai-py | upstream-microsoft | https://github.com/microsoft/skills |
-| agentic-actions-auditor | upstream-trailofbits | https://github.com/trailofbits/skills |
-| agents-md | upstream-sentry | https://github.com/getsentry/skills |
-| agents-v2-py | upstream-microsoft | https://github.com/microsoft/skills |
-| ai-seo | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills |
-| algorand-vulnerability-scanner | upstream-trailofbits | https://github.com/trailofbits/skills |
-| algorithmic-art | upstream-anthropic | https://github.com/anthropics/skills |
-| analytics-tracking | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| apify-actor-development | upstream-apify | https://github.com/apify/agent-skills |
-| apify-actorization | upstream-apify | https://github.com/apify/agent-skills |
-| apify-generate-output-schema | upstream-apify | https://github.com/apify/agent-skills |
-| apify-ultimate-scraper | upstream-apify | https://github.com/apify/agent-skills |
-| appinsights-instrumentation | upstream-microsoft | https://github.com/microsoft/skills |
-| ask-questions-if-underspecified | upstream-trailofbits | https://github.com/trailofbits/skills |
-| aso-audit | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| atheris | upstream-trailofbits | https://github.com/trailofbits/skills |
-| audit-augmentation | upstream-trailofbits | https://github.com/trailofbits/skills |
-| audit-context-building | upstream-trailofbits | https://github.com/trailofbits/skills |
-| audit-prep-assistant | upstream-trailofbits | https://github.com/trailofbits/skills |
-| azure-active-directory-b2c | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-advisor | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-ai | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-agents-persistent-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-agents-persistent-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-anomalydetector-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-contentsafety-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-contentsafety-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-contentsafety-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-contentunderstanding-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-document-intelligence-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-document-intelligence-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-formrecognizer-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-language-conversations-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-ml-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-openai-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-projects-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-projects-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-projects-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-projects-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-textanalytics-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-transcription-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-translation-document-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-translation-text-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-translation-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-vision | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-ai-vision-imageanalysis-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-vision-imageanalysis-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-voicelive-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-voicelive-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-voicelive-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-ai-voicelive-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-aigateway | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-aks-edge-essentials | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-analysis-services | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-anomaly-detector | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-api-center | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-api-management | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-app-configuration | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-app-service | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-app-testing | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-appconfiguration-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-appconfiguration-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-appconfiguration-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-application-gateway | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-arc | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-architecture | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-artifact-signing | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-artifacts | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-attestation | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-automation | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-backup | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-baremetal-infrastructure | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-bastion | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-batch | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-blob-storage | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-blueprints | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-boards | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-bot-service | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-business-process-tracking | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-cache-redis | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-carbon-optimization | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-chaos-studio | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-cloud-adoption-framework | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-cloud-hsm | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-cloud-migrate | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-cloud-services | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-cloud-shell | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-cognitive-search | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-communication-callautomation-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-communication-callingserver-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-communication-chat-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-communication-common-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-communication-services | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-communication-sms-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-compliance | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-compute | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-compute-batch-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-confidential-computing | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-confidential-ledger | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-container-apps | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-container-instances | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-container-registry | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-container-storage | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-containerregistry-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-content-safety | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-copilot | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-cosmos-db | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-cosmos-db-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-cosmos-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-cosmos-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-cosmos-rust | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-cosmos-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-cost | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-cost-management | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-custom-vision | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-cyclecloud | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-data-api-builder | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-data-box-family | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-data-explorer | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-data-factory | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-data-manager-for-agri | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-data-science-vm | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-data-share | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-data-tables-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-data-tables-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-database-migration | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-database-mysql | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-database-postgresql | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-databricks | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-ddos-protection | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-dedicated-hsm | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-defender-for-cloud | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-defender-for-iot | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-deploy | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-deployment-environments | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-dev-box | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-devops | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-devtest-labs | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-diagnostics | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-digital-twins | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-dns | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-document-intelligence | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-education-hub | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-elastic-san | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-energy-data-services | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-enterprise-infra-planner | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-event-grid | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-event-hubs | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-eventgrid-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-eventgrid-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-eventgrid-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-eventhub-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-eventhub-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-eventhub-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-eventhub-rust | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-eventhub-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-expressroute | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-extended-zones | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-external-attack-surface-management | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-files | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-firewall | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-firewall-manager | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-firmware-analysis | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-fluid-relay | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-front-door | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-functions | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-hdinsight | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-health-bot | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-health-data-services | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-hosted-copilot-sdk | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-hpc-cache | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-identity-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-identity-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-identity-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-identity-rust | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-identity-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-immersive-reader | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-impact-reporting | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-import-export | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-information-protection | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-internet-peering | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-iot | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-iot-central | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-iot-edge | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-iot-hub | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-iot-operations | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-key-vault | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-keyvault-certificates-rust | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-keyvault-keys-rust | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-keyvault-keys-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-keyvault-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-keyvault-secrets-rust | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-keyvault-secrets-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-kubernetes | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-kubernetes-service | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-kusto | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-lab-services | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-language-service | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-large-instances | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-lighthouse | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-load-balancer | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-local | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-logic-apps | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-machine-learning | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-managed-applications | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-managed-grafana | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-managed-lustre | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-managed-redis | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-maps | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-maps-search-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-messaging | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-messaging-webpubsub-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-messaging-webpubsubservice-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-metrics-advisor | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-mgmt-apicenter-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-mgmt-apicenter-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-mgmt-apimanagement-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-mgmt-apimanagement-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-mgmt-applicationinsights-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-mgmt-arizeaiobservabilityeval-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-mgmt-botservice-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-mgmt-botservice-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-mgmt-fabric-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-mgmt-fabric-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-mgmt-mongodbatlas-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-mgmt-weightsandbiases-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-microsoft-playwright-testing-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-migrate | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-monitor | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-monitor-ingestion-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-monitor-ingestion-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-monitor-opentelemetry-exporter-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-monitor-opentelemetry-exporter-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-monitor-opentelemetry-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-monitor-opentelemetry-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-monitor-query-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-monitor-query-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-nat-gateway | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-netapp-files | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-network-function-manager | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-network-watcher | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-networking | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-notification-hubs | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-open-datasets | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-operator-nexus | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-operator-service-manager | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-oracle | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-osconfig | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-partner-solutions | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-payment-hsm | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-peering-service | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-personalizer | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-pipelines | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-planetary-computer-pro | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-playwright-workspaces | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-policy | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-portal | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-postgres-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-prepare | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-private-link | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-quantum | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-queue-storage | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-quotas | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-rbac | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-redhat-openshift | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-relay | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-reliability | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-repos | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-resiliency | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-resource-graph | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-resource-lookup | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-resource-manager | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-resource-manager-cosmosdb-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-resource-manager-durabletask-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-resource-manager-mysql-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-resource-manager-playwright-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-resource-manager-postgresql-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-resource-manager-redis-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-resource-manager-sql-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-resource-visualizer | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-route-server | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-sap | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-search-documents-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-search-documents-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-search-documents-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-security | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-security-keyvault-keys-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-security-keyvault-keys-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-security-keyvault-secrets-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-sentinel | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-service-bus | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-service-connector | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-service-fabric | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-service-health | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-servicebus-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-servicebus-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-servicebus-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-signalr-service | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-site-recovery | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-sovereign-us | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-speech | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-speech-to-text-rest-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-spring-apps | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-sql-database | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-sql-managed-instance | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-sql-virtual-machines | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-sre-agent | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-stack-edge | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-static-web-apps | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-storage | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-storage-blob-java | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-storage-blob-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-storage-blob-rust | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-storage-blob-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-storage-file-datalake-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-storage-file-share-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-storage-file-share-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-storage-queue-py | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-storage-queue-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-stream-analytics | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-synapse-analytics | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-table-storage | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-test-plans | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-traffic-manager | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-translator | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-update-manager | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-upgrade | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-validate | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-video-indexer | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-virtual-desktop | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-virtual-machines | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-virtual-network | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-virtual-network-manager | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-virtual-wan | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-vm-scalesets | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-vmware-solution | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-vpn-gateway | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-web-application-firewall | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-web-pubsub | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| azure-web-pubsub-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| azure-well-architected | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| backtest-expert | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| blog-writing-guide | upstream-sentry | https://github.com/getsentry/skills |
-| brainstorming | upstream-superpowers | https://github.com/obra/superpowers |
-| brand-guidelines | upstream-anthropic | https://github.com/anthropics/skills |
-| breadth-chart-analyst | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| breakout-trade-planner | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| building-native-ui | upstream-expo | https://github.com/expo/skills |
-| burpsuite-project-parser | upstream-trailofbits | https://github.com/trailofbits/skills |
-| cairo-vulnerability-scanner | upstream-trailofbits | https://github.com/trailofbits/skills |
-| canslim-screener | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| canvas-design | upstream-anthropic | https://github.com/anthropics/skills |
-| cargo-fuzz | upstream-trailofbits | https://github.com/trailofbits/skills |
-| churn-prevention | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| claimable-postgres | upstream-neon | https://github.com/neondatabase/agent-skills |
-| claude-api | upstream-anthropic | https://github.com/anthropics/skills |
-| claude-in-chrome-troubleshooting | upstream-trailofbits | https://github.com/trailofbits/skills |
-| claude-settings-audit | upstream-sentry | https://github.com/getsentry/skills |
-| cloud-solution-architect | upstream-microsoft | https://github.com/microsoft/skills |
-| code-maturity-assessor | upstream-trailofbits | https://github.com/trailofbits/skills |
-| code-review | upstream-sentry | https://github.com/getsentry/skills |
-| code-simplifier | upstream-sentry | https://github.com/getsentry/skills |
-| codeql | upstream-trailofbits | https://github.com/trailofbits/skills |
-| cold-email | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| commit | upstream-sentry | https://github.com/getsentry/skills |
-| community-marketing | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| competitor-alternatives | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| constant-time-analysis | upstream-trailofbits | https://github.com/trailofbits/skills |
-| constant-time-testing | upstream-trailofbits | https://github.com/trailofbits/skills |
-| content-strategy | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills |
-| continual-learning | upstream-microsoft | https://github.com/microsoft/skills |
-| copilot-sdk | upstream-microsoft | https://github.com/microsoft/skills |
-| copy-editing | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills |
-| copywriting | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills |
-| cosmos-vulnerability-scanner | upstream-trailofbits | https://github.com/trailofbits/skills |
-| coverage-analysis | upstream-trailofbits | https://github.com/trailofbits/skills |
-| create-branch | upstream-sentry | https://github.com/getsentry/skills |
-| crypto-protocol-diagram | upstream-trailofbits | https://github.com/trailofbits/skills |
-| customer-research | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| data-quality-checker | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| debug-buttercup | upstream-trailofbits | https://github.com/trailofbits/skills |
-| designing-workflow-skills | upstream-trailofbits | https://github.com/trailofbits/skills |
-| devcontainer-setup | upstream-trailofbits | https://github.com/trailofbits/skills |
-| diagramming-code | upstream-trailofbits | https://github.com/trailofbits/skills |
-| differential-review | upstream-trailofbits | https://github.com/trailofbits/skills |
-| dimensional-analysis | upstream-trailofbits | https://github.com/trailofbits/skills |
-| dispatching-parallel-agents | upstream-superpowers | https://github.com/obra/superpowers |
-| dividend-growth-pullback-screener | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| django-access-review | upstream-sentry | https://github.com/getsentry/skills |
-| django-perf-review | upstream-sentry | https://github.com/getsentry/skills |
-| doc-coauthoring | upstream-anthropic | https://github.com/anthropics/skills |
-| docx | upstream-anthropic | https://github.com/anthropics/skills |
-| downtrend-duration-analyzer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| dual-axis-skill-reviewer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| dwarf-expert | upstream-trailofbits | https://github.com/trailofbits/skills |
-| earnings-calendar | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| earnings-trade-analyzer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| economic-calendar-fetcher | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| edge-candidate-agent | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| edge-concept-synthesizer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| edge-hint-extractor | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| edge-pipeline-orchestrator | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| edge-signal-aggregator | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| edge-strategy-designer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| edge-strategy-reviewer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| email-sequence | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| entra-agent-id | upstream-microsoft | https://github.com/microsoft/skills |
-| entra-app-registration | upstream-microsoft | https://github.com/microsoft/skills |
-| entry-point-analyzer | upstream-trailofbits | https://github.com/trailofbits/skills |
-| executing-plans | upstream-superpowers | https://github.com/obra/superpowers |
-| expo-api-routes | upstream-expo | https://github.com/expo/skills |
-| expo-cicd-workflows | upstream-expo | https://github.com/expo/skills |
-| expo-deployment | upstream-expo | https://github.com/expo/skills |
-| expo-dev-client | upstream-expo | https://github.com/expo/skills |
-| expo-module | upstream-expo | https://github.com/expo/skills |
-| expo-tailwind-setup | upstream-expo | https://github.com/expo/skills |
-| expo-ui-jetpack-compose | upstream-expo | https://github.com/expo/skills |
-| expo-ui-swift-ui | upstream-expo | https://github.com/expo/skills |
-| exposure-coach | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| fal-3d | upstream-fal | https://github.com/fal-ai-community/skills |
-| fal-audio | upstream-fal | https://github.com/fal-ai-community/skills |
-| fal-generate | upstream-fal | https://github.com/fal-ai-community/skills |
-| fal-image-edit | upstream-fal | https://github.com/fal-ai-community/skills |
-| fal-kling-o3 | upstream-fal | https://github.com/fal-ai-community/skills |
-| fal-lip-sync | upstream-fal | https://github.com/fal-ai-community/skills |
-| fal-platform | upstream-fal | https://github.com/fal-ai-community/skills |
-| fal-realtime | upstream-fal | https://github.com/fal-ai-community/skills |
-| fal-restore | upstream-fal | https://github.com/fal-ai-community/skills |
-| fal-train | upstream-fal | https://github.com/fal-ai-community/skills |
-| fal-tryon | upstream-fal | https://github.com/fal-ai-community/skills |
-| fal-upscale | upstream-fal | https://github.com/fal-ai-community/skills |
-| fal-video-edit | upstream-fal | https://github.com/fal-ai-community/skills |
-| fal-vision | upstream-fal | https://github.com/fal-ai-community/skills |
-| fal-workflow | upstream-fal | https://github.com/fal-ai-community/skills |
-| fastapi-router-py | upstream-microsoft | https://github.com/microsoft/skills |
-| find-bugs | upstream-sentry | https://github.com/getsentry/skills |
-| finishing-a-development-branch | upstream-superpowers | https://github.com/obra/superpowers |
-| finviz-screener | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| firebase-apk-scanner | upstream-trailofbits | https://github.com/trailofbits/skills |
-| form-cro | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| fp-check | upstream-trailofbits | https://github.com/trailofbits/skills |
-| free-tool-strategy | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| frontend-design | upstream-anthropic | https://github.com/anthropics/skills |
-| frontend-design-review | upstream-microsoft | https://github.com/microsoft/skills |
-| frontend-ui-dark-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| ftd-detector | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| fuzzing-dictionary | upstream-trailofbits | https://github.com/trailofbits/skills |
-| fuzzing-obstacles | upstream-trailofbits | https://github.com/trailofbits/skills |
-| genotoxic | upstream-trailofbits | https://github.com/trailofbits/skills |
-| gh-review-requests | upstream-sentry | https://github.com/getsentry/skills |
-| gha-security-review | upstream-sentry | https://github.com/getsentry/skills |
-| git-cleanup | upstream-trailofbits | https://github.com/trailofbits/skills |
-| github-issue-creator | upstream-microsoft | https://github.com/microsoft/skills |
-| graph-evolution | upstream-trailofbits | https://github.com/trailofbits/skills |
-| guidelines-advisor | upstream-trailofbits | https://github.com/trailofbits/skills |
-| harness-writing | upstream-trailofbits | https://github.com/trailofbits/skills |
-| hf-cli | upstream-huggingface | https://github.com/huggingface/skills |
-| hf-mcp | upstream-huggingface | https://github.com/huggingface/skills |
-| hosted-agents-v2-py | upstream-microsoft | https://github.com/microsoft/skills |
-| huggingface-community-evals | upstream-huggingface | https://github.com/huggingface/skills |
-| huggingface-datasets | upstream-huggingface | https://github.com/huggingface/skills |
-| huggingface-gradio | upstream-huggingface | https://github.com/huggingface/skills |
-| huggingface-llm-trainer | upstream-huggingface | https://github.com/huggingface/skills |
-| huggingface-paper-publisher | upstream-huggingface | https://github.com/huggingface/skills |
-| huggingface-papers | upstream-huggingface | https://github.com/huggingface/skills |
-| huggingface-tool-builder | upstream-huggingface | https://github.com/huggingface/skills |
-| huggingface-trackio | upstream-huggingface | https://github.com/huggingface/skills |
-| huggingface-vision-trainer | upstream-huggingface | https://github.com/huggingface/skills |
-| insecure-defaults | upstream-trailofbits | https://github.com/trailofbits/skills |
-| institutional-flow-tracker | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| internal-comms | upstream-anthropic | https://github.com/anthropics/skills |
-| interpreting-culture-index | upstream-trailofbits | https://github.com/trailofbits/skills |
-| iterate-pr | upstream-sentry | https://github.com/getsentry/skills |
-| kanchi-dividend-review-monitor | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| kanchi-dividend-sop | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| kanchi-dividend-us-tax-accounting | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| kql | upstream-microsoft | https://github.com/microsoft/skills |
-| launch-strategy | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| lead-magnets | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| let-fate-decide | upstream-trailofbits | https://github.com/trailofbits/skills |
-| libafl | upstream-trailofbits | https://github.com/trailofbits/skills |
-| libfuzzer | upstream-trailofbits | https://github.com/trailofbits/skills |
-| m365-agents-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| m365-agents-py | upstream-microsoft | https://github.com/microsoft/skills |
-| m365-agents-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| macro-regime-detector | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| market-breadth-analyzer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| market-environment-analysis | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| market-news-analyst | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| market-top-detector | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| marketing-ideas | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| marketing-psychology | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| mcp-builder | upstream-anthropic | https://github.com/anthropics/skills |
-| mermaid-to-proverif | upstream-trailofbits | https://github.com/trailofbits/skills |
-| microsoft-azure-webjobs-extensions-authentication-events-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
-| microsoft-docs | upstream-microsoft | https://github.com/microsoft/skills |
-| microsoft-foundry | upstream-microsoft | https://github.com/microsoft/skills |
-| microsoft-foundry-classic | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| microsoft-foundry-local | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| microsoft-foundry-tools | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
-| modern-python | upstream-trailofbits | https://github.com/trailofbits/skills |
-| mutation-testing | upstream-trailofbits | https://github.com/trailofbits/skills |
-| native-data-fetching | upstream-expo | https://github.com/expo/skills |
-| neon-postgres | upstream-neon | https://github.com/neondatabase/agent-skills |
-| neon-postgres-egress-optimizer | upstream-neon | https://github.com/neondatabase/agent-skills |
-| onboarding-cro | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| options-strategy-advisor | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| ossfuzz | upstream-trailofbits | https://github.com/trailofbits/skills |
-| page-cro | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills |
-| paid-ads | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| pair-trade-screener | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| paywall-upgrade-cro | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| pdf | upstream-anthropic | https://github.com/anthropics/skills |
-| pead-screener | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| podcast-generation | upstream-microsoft | https://github.com/microsoft/skills |
-| popup-cro | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| portfolio-manager | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| position-sizer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| pptx | upstream-anthropic | https://github.com/anthropics/skills |
-| pr-writer | upstream-sentry | https://github.com/getsentry/skills |
-| presentation-creator | upstream-sentry | https://github.com/getsentry/skills |
-| pricing-strategy | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| product-marketing-context | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| programmatic-seo | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| prompt-optimizer | upstream-sentry | https://github.com/getsentry/skills |
-| property-based-testing | upstream-trailofbits | https://github.com/trailofbits/skills |
-| pydantic-models-py | upstream-microsoft | https://github.com/microsoft/skills |
-| react-flow-node-ts | upstream-microsoft | https://github.com/microsoft/skills |
-| receiving-code-review | upstream-superpowers | https://github.com/obra/superpowers |
-| referral-program | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| requesting-code-review | upstream-superpowers | https://github.com/obra/superpowers |
-| revops | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| ruzzy | upstream-trailofbits | https://github.com/trailofbits/skills |
-| sales-enablement | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| sarif-parsing | upstream-trailofbits | https://github.com/trailofbits/skills |
-| scenario-analyzer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| schema-markup | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| score-eval | upstream-neon | https://github.com/neondatabase/agent-skills |
-| seatbelt-sandboxer | upstream-trailofbits | https://github.com/trailofbits/skills |
-| second-opinion | upstream-trailofbits | https://github.com/trailofbits/skills |
-| sector-analyst | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| secure-workflow-guide | upstream-trailofbits | https://github.com/trailofbits/skills |
-| security-review | upstream-sentry | https://github.com/getsentry/skills |
-| semgrep | upstream-trailofbits | https://github.com/trailofbits/skills |
-| semgrep-rule-creator | upstream-trailofbits | https://github.com/trailofbits/skills |
-| semgrep-rule-variant-creator | upstream-trailofbits | https://github.com/trailofbits/skills |
-| seo-audit | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills |
-| sharp-edges | upstream-trailofbits | https://github.com/trailofbits/skills |
-| signal-postmortem | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| signup-flow-cro | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| site-architecture | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
-| skill-creator | upstream-anthropic | https://github.com/anthropics/skills |
-| skill-designer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| skill-idea-miner | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| skill-improver | upstream-trailofbits | https://github.com/trailofbits/skills |
-| skill-integration-tester | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| skill-scanner | upstream-sentry | https://github.com/getsentry/skills |
-| skill-writer | upstream-sentry | https://github.com/getsentry/skills |
-| slack-gif-creator | upstream-anthropic | https://github.com/anthropics/skills |
-| social-content | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills |
-| solana-vulnerability-scanner | upstream-trailofbits | https://github.com/trailofbits/skills |
-| spec-to-code-compliance | upstream-trailofbits | https://github.com/trailofbits/skills |
-| sred-project-organizer | upstream-sentry | https://github.com/getsentry/skills |
-| sred-work-summary | upstream-sentry | https://github.com/getsentry/skills |
-| stanley-druckenmiller-investment | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| strategy-pivot-designer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| subagent-driven-development | upstream-superpowers | https://github.com/obra/superpowers |
-| substrate-vulnerability-scanner | upstream-trailofbits | https://github.com/trailofbits/skills |
-| supply-chain-risk-auditor | upstream-trailofbits | https://github.com/trailofbits/skills |
-| systematic-debugging | upstream-superpowers | https://github.com/obra/superpowers |
-| technical-analyst | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| test-driven-development | upstream-superpowers | https://github.com/obra/superpowers |
-| testing-handbook-generator | upstream-trailofbits | https://github.com/trailofbits/skills |
-| theme-detector | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| theme-factory | upstream-anthropic | https://github.com/anthropics/skills |
-| token-integration-analyzer | upstream-trailofbits | https://github.com/trailofbits/skills |
-| ton-vulnerability-scanner | upstream-trailofbits | https://github.com/trailofbits/skills |
-| trade-hypothesis-ideator | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| trader-memory-core | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| trailmark | upstream-trailofbits | https://github.com/trailofbits/skills |
-| trailmark-structural | upstream-trailofbits | https://github.com/trailofbits/skills |
-| trailmark-summary | upstream-trailofbits | https://github.com/trailofbits/skills |
-| transformers-js | upstream-huggingface | https://github.com/huggingface/skills |
-| typing-exclusion-worker | upstream-sentry | https://github.com/getsentry/skills |
-| upgrading-expo | upstream-expo | https://github.com/expo/skills |
-| uptrend-analyzer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| us-market-bubble-detector | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| us-stock-analysis | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| use-dom | upstream-expo | https://github.com/expo/skills |
-| using-git-worktrees | upstream-superpowers | https://github.com/obra/superpowers |
-| using-superpowers | upstream-superpowers | https://github.com/obra/superpowers |
-| value-dividend-screener | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| variant-analysis | upstream-trailofbits | https://github.com/trailofbits/skills |
-| vcp-screener | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
-| vector-forge | upstream-trailofbits | https://github.com/trailofbits/skills |
-| verification-before-completion | upstream-superpowers | https://github.com/obra/superpowers |
-| web-artifacts-builder | upstream-anthropic | https://github.com/anthropics/skills |
-| webapp-testing | upstream-anthropic | https://github.com/anthropics/skills |
-| wiki-ado-convert | upstream-microsoft | https://github.com/microsoft/skills |
-| wiki-agents-md | upstream-microsoft | https://github.com/microsoft/skills |
-| wiki-architect | upstream-microsoft | https://github.com/microsoft/skills |
-| wiki-changelog | upstream-microsoft | https://github.com/microsoft/skills |
-| wiki-llms-txt | upstream-microsoft | https://github.com/microsoft/skills |
-| wiki-onboarding | upstream-microsoft | https://github.com/microsoft/skills |
-| wiki-page-writer | upstream-microsoft | https://github.com/microsoft/skills |
-| wiki-qa | upstream-microsoft | https://github.com/microsoft/skills |
-| wiki-researcher | upstream-microsoft | https://github.com/microsoft/skills |
-| wiki-vitepress | upstream-microsoft | https://github.com/microsoft/skills |
-| writing-plans | upstream-superpowers | https://github.com/obra/superpowers |
-| writing-skills | upstream-superpowers | https://github.com/obra/superpowers |
-| wycheproof | upstream-trailofbits | https://github.com/trailofbits/skills |
-| xlsx | upstream-anthropic | https://github.com/anthropics/skills |
-| yara-rule-authoring | upstream-trailofbits | https://github.com/trailofbits/skills |
-| zeroize-audit | upstream-trailofbits | https://github.com/trailofbits/skills |
-| zustand-store-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| ✓ ab-test-setup | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| ✓ ad-creative | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| · address-sanitizer | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · aflpp | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ agency-docs-updater | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · agent-framework-azure-ai-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · agentic-actions-auditor | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · agents-md | upstream-sentry | https://github.com/getsentry/skills |
+| · agents-v2-py | upstream-microsoft | https://github.com/microsoft/skills |
+| ✓ ai-seo | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills |
+| · algorand-vulnerability-scanner | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · algorithmic-art | upstream-anthropic | https://github.com/anthropics/skills |
+| ✓ analytics-tracking | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| ✓ angular-architect | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ api-designer | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · apify-actor-development | upstream-apify | https://github.com/apify/agent-skills |
+| · apify-actorization | upstream-apify | https://github.com/apify/agent-skills |
+| · apify-generate-output-schema | upstream-apify | https://github.com/apify/agent-skills |
+| · apify-ultimate-scraper | upstream-apify | https://github.com/apify/agent-skills |
+| ✓ app-store-optimization | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| · appinsights-instrumentation | upstream-microsoft | https://github.com/microsoft/skills |
+| ✓ architecting-python | upstream-outcomeeng-python | https://github.com/outcomeeng/python.git |
+| ✓ architecture-designer | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · ask-questions-if-underspecified | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · aso-audit | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| · atheris | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ atlassian-mcp | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · audit-augmentation | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · audit-context-building | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · audit-prep-assistant | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ auditing-commands | upstream-outcomeeng-foundation | https://github.com/outcomeeng/foundation.git |
+| ✓ auditing-python | upstream-outcomeeng-python | https://github.com/outcomeeng/python.git |
+| ✓ auditing-python-architecture | upstream-outcomeeng-python | https://github.com/outcomeeng/python.git |
+| ✓ auditing-python-tests | upstream-outcomeeng-python | https://github.com/outcomeeng/python.git |
+| ✓ auditing-skills | upstream-outcomeeng-foundation | https://github.com/outcomeeng/foundation.git |
+| ✓ auditing-subagents | upstream-outcomeeng-foundation | https://github.com/outcomeeng/foundation.git |
+| ✓ automation-advisor | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · azure-active-directory-b2c | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-advisor | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-ai | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-agents-persistent-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-agents-persistent-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-anomalydetector-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-contentsafety-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-contentsafety-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-contentsafety-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-contentunderstanding-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-document-intelligence-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-document-intelligence-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-formrecognizer-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-language-conversations-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-ml-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-openai-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-projects-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-projects-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-projects-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-projects-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-textanalytics-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-transcription-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-translation-document-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-translation-text-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-translation-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-vision | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-ai-vision-imageanalysis-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-vision-imageanalysis-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-voicelive-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-voicelive-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-voicelive-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-ai-voicelive-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-aigateway | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-aks-edge-essentials | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-analysis-services | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-anomaly-detector | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-api-center | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-api-management | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-app-configuration | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-app-service | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-app-testing | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-appconfiguration-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-appconfiguration-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-appconfiguration-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-application-gateway | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-arc | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-architecture | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-artifact-signing | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-artifacts | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-attestation | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-automation | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-backup | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-baremetal-infrastructure | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-bastion | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-batch | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-blob-storage | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-blueprints | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-boards | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-bot-service | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-business-process-tracking | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-cache-redis | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-carbon-optimization | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-chaos-studio | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-cloud-adoption-framework | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-cloud-hsm | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-cloud-migrate | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-cloud-services | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-cloud-shell | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-cognitive-search | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-communication-callautomation-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-communication-callingserver-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-communication-chat-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-communication-common-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-communication-services | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-communication-sms-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-compliance | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-compute | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-compute-batch-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-confidential-computing | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-confidential-ledger | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-container-apps | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-container-instances | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-container-registry | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-container-storage | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-containerregistry-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-content-safety | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-copilot | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-cosmos-db | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-cosmos-db-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-cosmos-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-cosmos-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-cosmos-rust | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-cosmos-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-cost | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-cost-management | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-custom-vision | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-cyclecloud | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-data-api-builder | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-data-box-family | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-data-explorer | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-data-factory | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-data-manager-for-agri | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-data-science-vm | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-data-share | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-data-tables-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-data-tables-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-database-migration | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-database-mysql | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-database-postgresql | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-databricks | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-ddos-protection | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-dedicated-hsm | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-defender-for-cloud | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-defender-for-iot | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-deploy | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-deployment-environments | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-dev-box | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-devops | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-devtest-labs | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-diagnostics | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-digital-twins | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-dns | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-document-intelligence | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-education-hub | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-elastic-san | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-energy-data-services | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-enterprise-infra-planner | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-event-grid | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-event-hubs | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-eventgrid-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-eventgrid-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-eventgrid-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-eventhub-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-eventhub-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-eventhub-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-eventhub-rust | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-eventhub-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-expressroute | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-extended-zones | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-external-attack-surface-management | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-files | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-firewall | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-firewall-manager | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-firmware-analysis | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-fluid-relay | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-front-door | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-functions | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-hdinsight | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-health-bot | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-health-data-services | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-hosted-copilot-sdk | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-hpc-cache | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-identity-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-identity-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-identity-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-identity-rust | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-identity-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-immersive-reader | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-impact-reporting | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-import-export | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-information-protection | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-internet-peering | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-iot | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-iot-central | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-iot-edge | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-iot-hub | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-iot-operations | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-key-vault | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-keyvault-certificates-rust | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-keyvault-keys-rust | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-keyvault-keys-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-keyvault-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-keyvault-secrets-rust | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-keyvault-secrets-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-kubernetes | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-kubernetes-service | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-kusto | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-lab-services | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-language-service | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-large-instances | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-lighthouse | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-load-balancer | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-local | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-logic-apps | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-machine-learning | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-managed-applications | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-managed-grafana | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-managed-lustre | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-managed-redis | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-maps | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-maps-search-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-messaging | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-messaging-webpubsub-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-messaging-webpubsubservice-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-metrics-advisor | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-mgmt-apicenter-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-mgmt-apicenter-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-mgmt-apimanagement-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-mgmt-apimanagement-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-mgmt-applicationinsights-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-mgmt-arizeaiobservabilityeval-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-mgmt-botservice-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-mgmt-botservice-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-mgmt-fabric-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-mgmt-fabric-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-mgmt-mongodbatlas-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-mgmt-weightsandbiases-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-microsoft-playwright-testing-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-migrate | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-monitor | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-monitor-ingestion-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-monitor-ingestion-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-monitor-opentelemetry-exporter-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-monitor-opentelemetry-exporter-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-monitor-opentelemetry-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-monitor-opentelemetry-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-monitor-query-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-monitor-query-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-nat-gateway | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-netapp-files | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-network-function-manager | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-network-watcher | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-networking | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-notification-hubs | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-open-datasets | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-operator-nexus | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-operator-service-manager | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-oracle | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-osconfig | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-partner-solutions | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-payment-hsm | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-peering-service | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-personalizer | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-pipelines | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-planetary-computer-pro | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-playwright-workspaces | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-policy | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-portal | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-postgres-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-prepare | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-private-link | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-quantum | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-queue-storage | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-quotas | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-rbac | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-redhat-openshift | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-relay | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-reliability | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-repos | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-resiliency | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-resource-graph | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-resource-lookup | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-resource-manager | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-resource-manager-cosmosdb-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-resource-manager-durabletask-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-resource-manager-mysql-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-resource-manager-playwright-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-resource-manager-postgresql-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-resource-manager-redis-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-resource-manager-sql-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-resource-visualizer | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-route-server | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-sap | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-search-documents-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-search-documents-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-search-documents-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-security | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-security-keyvault-keys-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-security-keyvault-keys-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-security-keyvault-secrets-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-sentinel | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-service-bus | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-service-connector | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-service-fabric | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-service-health | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-servicebus-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-servicebus-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-servicebus-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-signalr-service | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-site-recovery | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-sovereign-us | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-speech | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-speech-to-text-rest-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-spring-apps | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-sql-database | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-sql-managed-instance | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-sql-virtual-machines | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-sre-agent | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-stack-edge | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-static-web-apps | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-storage | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-storage-blob-java | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-storage-blob-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-storage-blob-rust | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-storage-blob-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-storage-file-datalake-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-storage-file-share-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-storage-file-share-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-storage-queue-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-storage-queue-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-stream-analytics | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-synapse-analytics | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-table-storage | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-test-plans | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-traffic-manager | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-translator | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-update-manager | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-upgrade | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-validate | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-video-indexer | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-virtual-desktop | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-virtual-machines | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-virtual-network | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-virtual-network-manager | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-virtual-wan | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-vm-scalesets | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-vmware-solution | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-vpn-gateway | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-web-application-firewall | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-web-pubsub | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · azure-web-pubsub-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · azure-well-architected | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · backtest-expert | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| ✓ balanced | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · blog-writing-guide | upstream-sentry | https://github.com/getsentry/skills |
+| ✓ board-deck-builder | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| · brainstorming | upstream-superpowers | https://github.com/obra/superpowers |
+| ✓ brand-agency | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · brand-guidelines | upstream-anthropic | https://github.com/anthropics/skills |
+| · breadth-chart-analyst | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · breakout-trade-planner | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · building-native-ui | upstream-expo | https://github.com/expo/skills |
+| · burpsuite-project-parser | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ business-investment-advisor | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| · cairo-vulnerability-scanner | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ campaign-analytics | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| · canslim-screener | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · canvas-design | upstream-anthropic | https://github.com/anthropics/skills |
+| · cargo-fuzz | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ ceo-advisor | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| ✓ cfo-advisor | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| ✓ chaos-engineer | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ chief-of-staff | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| ✓ chro-advisor | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| ✓ chrome-history | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ churn-prevention | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| ✓ ciso-advisor | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| · claimable-postgres | upstream-neon | https://github.com/neondatabase/agent-skills |
+| · claude-api | upstream-anthropic | https://github.com/anthropics/skills |
+| · claude-in-chrome-troubleshooting | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · claude-settings-audit | upstream-sentry | https://github.com/getsentry/skills |
+| ✓ cli-developer | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ cloud-architect | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · cloud-solution-architect | upstream-microsoft | https://github.com/microsoft/skills |
+| ✓ cmo-advisor | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| ✓ code-documenter | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · code-maturity-assessor | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · code-review | upstream-sentry | https://github.com/getsentry/skills |
+| ✓ code-reviewer | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · code-simplifier | upstream-sentry | https://github.com/getsentry/skills |
+| · codeql | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ coding-python | upstream-outcomeeng-python | https://github.com/outcomeeng/python.git |
+| ✓ cold-email | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| · commit | upstream-sentry | https://github.com/getsentry/skills |
+| · community-marketing | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| ✓ competitive-intel | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| ✓ competitor-alternatives | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| · constant-time-analysis | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · constant-time-testing | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · content-creator | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| ✓ content-production | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| · content-strategy | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills |
+| ✓ context-builder | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · continual-learning | upstream-microsoft | https://github.com/microsoft/skills |
+| ✓ coo-advisor | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| · copilot-sdk | upstream-microsoft | https://github.com/microsoft/skills |
+| ✓ copy-editing | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills |
+| ✓ copywriting | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills |
+| · cosmos-vulnerability-scanner | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · coverage-analysis | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ cpp-pro | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · create-branch | upstream-sentry | https://github.com/getsentry/skills |
+| ✓ creating-commands | upstream-outcomeeng-foundation | https://github.com/outcomeeng/foundation.git |
+| ✓ creating-skills | upstream-outcomeeng-foundation | https://github.com/outcomeeng/foundation.git |
+| ✓ creating-subagents | upstream-outcomeeng-foundation | https://github.com/outcomeeng/foundation.git |
+| · crypto-protocol-diagram | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ csharp-developer | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · cto-advisor | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| · customer-research | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| · data-quality-checker | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| ✓ database-optimizer | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ daydream | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ de-ai | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · debug-buttercup | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ debugging-wizard | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ decision-toolkit | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ deep-research | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ designing-frontend | upstream-outcomeeng-foundation | https://github.com/outcomeeng/foundation.git |
+| · designing-workflow-skills | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · devcontainer-setup | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ devops-engineer | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · diagramming-code | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · differential-review | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · dimensional-analysis | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · dispatching-parallel-agents | upstream-superpowers | https://github.com/obra/superpowers |
+| · dividend-growth-pullback-screener | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · django-access-review | upstream-sentry | https://github.com/getsentry/skills |
+| ✓ django-expert | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · django-perf-review | upstream-sentry | https://github.com/getsentry/skills |
+| · doc-coauthoring | upstream-anthropic | https://github.com/anthropics/skills |
+| ✓ doctorg | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · docx | upstream-anthropic | https://github.com/anthropics/skills |
+| ✓ dotnet-core-expert | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · downtrend-duration-analyzer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · dual-axis-skill-reviewer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · dwarf-expert | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · earnings-calendar | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · earnings-trade-analyzer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · economic-calendar-fetcher | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · edge-candidate-agent | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · edge-concept-synthesizer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · edge-hint-extractor | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · edge-pipeline-orchestrator | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · edge-signal-aggregator | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · edge-strategy-designer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · edge-strategy-reviewer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| ✓ elevenlabs-tts | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ email-sequence | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| ✓ embedded-systems | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · entra-agent-id | upstream-microsoft | https://github.com/microsoft/skills |
+| · entra-app-registration | upstream-microsoft | https://github.com/microsoft/skills |
+| · entry-point-analyzer | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · executing-plans | upstream-superpowers | https://github.com/obra/superpowers |
+| · expo-api-routes | upstream-expo | https://github.com/expo/skills |
+| · expo-cicd-workflows | upstream-expo | https://github.com/expo/skills |
+| · expo-deployment | upstream-expo | https://github.com/expo/skills |
+| · expo-dev-client | upstream-expo | https://github.com/expo/skills |
+| · expo-module | upstream-expo | https://github.com/expo/skills |
+| · expo-tailwind-setup | upstream-expo | https://github.com/expo/skills |
+| · expo-ui-jetpack-compose | upstream-expo | https://github.com/expo/skills |
+| · expo-ui-swift-ui | upstream-expo | https://github.com/expo/skills |
+| · exposure-coach | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · fal-3d | upstream-fal | https://github.com/fal-ai-community/skills |
+| · fal-audio | upstream-fal | https://github.com/fal-ai-community/skills |
+| · fal-generate | upstream-fal | https://github.com/fal-ai-community/skills |
+| · fal-image-edit | upstream-fal | https://github.com/fal-ai-community/skills |
+| · fal-kling-o3 | upstream-fal | https://github.com/fal-ai-community/skills |
+| · fal-lip-sync | upstream-fal | https://github.com/fal-ai-community/skills |
+| · fal-platform | upstream-fal | https://github.com/fal-ai-community/skills |
+| · fal-realtime | upstream-fal | https://github.com/fal-ai-community/skills |
+| · fal-restore | upstream-fal | https://github.com/fal-ai-community/skills |
+| · fal-train | upstream-fal | https://github.com/fal-ai-community/skills |
+| · fal-tryon | upstream-fal | https://github.com/fal-ai-community/skills |
+| · fal-upscale | upstream-fal | https://github.com/fal-ai-community/skills |
+| · fal-video-edit | upstream-fal | https://github.com/fal-ai-community/skills |
+| · fal-vision | upstream-fal | https://github.com/fal-ai-community/skills |
+| · fal-workflow | upstream-fal | https://github.com/fal-ai-community/skills |
+| ✓ fastapi-expert | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · fastapi-router-py | upstream-microsoft | https://github.com/microsoft/skills |
+| ✓ fathom | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ feature-forge | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · financial-analyst | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| · find-bugs | upstream-sentry | https://github.com/getsentry/skills |
+| ✓ fine-tuning-expert | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · finishing-a-development-branch | upstream-superpowers | https://github.com/obra/superpowers |
+| · finviz-screener | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · firebase-apk-scanner | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ firecrawl-research | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ flutter-expert | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ form-cro | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| ✓ founder-coach | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| · fp-check | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ free-tool-strategy | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| · frontend-design | upstream-anthropic | https://github.com/anthropics/skills |
+| · frontend-design-review | upstream-microsoft | https://github.com/microsoft/skills |
+| · frontend-ui-dark-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · ftd-detector | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| ✓ fullstack-guardian | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · fuzzing-dictionary | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · fuzzing-obstacles | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ game-developer | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · genotoxic | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ gh-review-requests | upstream-sentry | https://github.com/getsentry/skills |
+| · gha-security-review | upstream-sentry | https://github.com/getsentry/skills |
+| · git-cleanup | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ github-gist | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · github-issue-creator | upstream-microsoft | https://github.com/microsoft/skills |
+| ✓ gmail | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ golang-pro | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ google-image-search | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ gpt-image-2 | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ granola | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · graph-evolution | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ graphql-architect | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · guidelines-advisor | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ gws | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · harness-writing | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ health-data | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · hf-cli | upstream-huggingface | https://github.com/huggingface/skills |
+| · hf-mcp | upstream-huggingface | https://github.com/huggingface/skills |
+| · hosted-agents-v2-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · huggingface-community-evals | upstream-huggingface | https://github.com/huggingface/skills |
+| · huggingface-datasets | upstream-huggingface | https://github.com/huggingface/skills |
+| · huggingface-gradio | upstream-huggingface | https://github.com/huggingface/skills |
+| · huggingface-llm-trainer | upstream-huggingface | https://github.com/huggingface/skills |
+| · huggingface-paper-publisher | upstream-huggingface | https://github.com/huggingface/skills |
+| · huggingface-papers | upstream-huggingface | https://github.com/huggingface/skills |
+| · huggingface-tool-builder | upstream-huggingface | https://github.com/huggingface/skills |
+| · huggingface-trackio | upstream-huggingface | https://github.com/huggingface/skills |
+| · huggingface-vision-trainer | upstream-huggingface | https://github.com/huggingface/skills |
+| · insecure-defaults | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ insight-extractor | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · institutional-flow-tracker | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · internal-comms | upstream-anthropic | https://github.com/anthropics/skills |
+| · interpreting-culture-index | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · iterate-pr | upstream-sentry | https://github.com/getsentry/skills |
+| ✓ java-architect | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ javascript-pro | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ jtbd | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · kanchi-dividend-review-monitor | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · kanchi-dividend-sop | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · kanchi-dividend-us-tax-accounting | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| ✓ kotlin-specialist | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · kql | upstream-microsoft | https://github.com/microsoft/skills |
+| ✓ kubernetes-specialist | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ lab-retro | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ laravel-specialist | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ launch-strategy | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| · lead-magnets | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| ✓ legacy-modernizer | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · let-fate-decide | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · libafl | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · libfuzzer | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ linear | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ llm-cli | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · m365-agents-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · m365-agents-py | upstream-microsoft | https://github.com/microsoft/skills |
+| · m365-agents-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| · macro-regime-detector | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · market-breadth-analyzer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · market-environment-analysis | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · market-news-analyst | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · market-top-detector | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| ✓ marketing-context | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| ✓ marketing-demand-acquisition | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| ✓ marketing-ideas | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| ✓ marketing-ops | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| ✓ marketing-psychology | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| ✓ marketing-strategy-pmm | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| · mcp-builder | upstream-anthropic | https://github.com/anthropics/skills |
+| ✓ mcp-developer | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ meeting-processor | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · mermaid-to-proverif | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ meta | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ microservices-architect | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · microsoft-azure-webjobs-extensions-authentication-events-dotnet | upstream-microsoft | https://github.com/microsoft/skills |
+| · microsoft-docs | upstream-microsoft | https://github.com/microsoft/skills |
+| · microsoft-foundry | upstream-microsoft | https://github.com/microsoft/skills |
+| · microsoft-foundry-classic | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · microsoft-foundry-local | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| · microsoft-foundry-tools | upstream-microsoft-docs | https://github.com/MicrosoftDocs/Agent-Skills |
+| ✓ ml-pipeline | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · modern-python | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ monitoring-expert | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · mutation-testing | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ nano-banana | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · native-data-fetching | upstream-expo | https://github.com/expo/skills |
+| · neon-postgres | upstream-neon | https://github.com/neondatabase/agent-skills |
+| · neon-postgres-egress-optimizer | upstream-neon | https://github.com/neondatabase/agent-skills |
+| ✓ nestjs-expert | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ nextjs-developer | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ onboarding-cro | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| · options-strategy-advisor | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · ossfuzz | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ page-cro | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills |
+| ✓ paid-ads | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| · pair-trade-screener | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| ✓ pandas-pro | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ paywall-upgrade-cro | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| · pdf | upstream-anthropic | https://github.com/anthropics/skills |
+| ✓ pdf-generation | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · pead-screener | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| ✓ php-pro | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ playwright-expert | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · podcast-generation | upstream-microsoft | https://github.com/microsoft/skills |
+| ✓ popup-cro | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| · portfolio-manager | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · position-sizer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| ✓ postgres-pro | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · pptx | upstream-anthropic | https://github.com/anthropics/skills |
+| · pr-writer | upstream-sentry | https://github.com/getsentry/skills |
+| · presentation-creator | upstream-sentry | https://github.com/getsentry/skills |
+| ✓ presentation-generator | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ pricing-strategy | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| · product-marketing-context | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| ✓ programmatic-seo | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| ✓ prompt-engineer | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · prompt-engineer-toolkit | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| · prompt-optimizer | upstream-sentry | https://github.com/getsentry/skills |
+| · property-based-testing | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · pydantic-models-py | upstream-microsoft | https://github.com/microsoft/skills |
+| ✓ python-pro | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ rag-architect | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ rails-expert | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ react-expert | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · react-flow-node-ts | upstream-microsoft | https://github.com/microsoft/skills |
+| ✓ react-native-expert | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · receiving-code-review | upstream-superpowers | https://github.com/obra/superpowers |
+| ✓ recording | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ referral-program | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| · requesting-code-review | upstream-superpowers | https://github.com/obra/superpowers |
+| ✓ retrospective | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ reviewing-prose | upstream-outcomeeng-foundation | https://github.com/outcomeeng/foundation.git |
+| · revops | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| ✓ rust-engineer | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · ruzzy | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ saas-metrics-coach | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| · sales-enablement | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| ✓ salesforce-developer | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · sarif-parsing | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · scenario-analyzer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| ✓ scenario-war-room | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| ✓ schema-markup | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| · score-eval | upstream-neon | https://github.com/neondatabase/agent-skills |
+| · seatbelt-sandboxer | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · second-opinion | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · sector-analyst | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| ✓ secure-code-guardian | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · secure-workflow-guide | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · security-review | upstream-sentry | https://github.com/getsentry/skills |
+| ✓ security-reviewer | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · semgrep | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · semgrep-rule-creator | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · semgrep-rule-variant-creator | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · seo-audit | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills |
+| ✓ session-search | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · sharp-edges | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ shopify-expert | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · signal-postmortem | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| ✓ signup-flow-cro | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| ✓ site-architecture | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills.git |
+| ✓ sketch | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ skill-creator | upstream-anthropic | https://github.com/anthropics/skills |
+| · skill-designer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · skill-idea-miner | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · skill-improver | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · skill-integration-tester | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · skill-scanner | upstream-sentry | https://github.com/getsentry/skills |
+| ✓ skill-studio | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · skill-writer | upstream-sentry | https://github.com/getsentry/skills |
+| · slack-gif-creator | upstream-anthropic | https://github.com/anthropics/skills |
+| ✓ social-content | upstream-coreyhaines31 | https://github.com/coreyhaines31/marketingskills |
+| ✓ social-media-analyzer | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| · solana-vulnerability-scanner | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ spark-engineer | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ spec-miner | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · spec-to-code-compliance | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ spring-boot-engineer | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ sql-pro | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ sre-engineer | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · sred-project-organizer | upstream-sentry | https://github.com/getsentry/skills |
+| · sred-work-summary | upstream-sentry | https://github.com/getsentry/skills |
+| ✓ standardizing-agent-prompts | upstream-outcomeeng-foundation | https://github.com/outcomeeng/foundation.git |
+| ✓ standardizing-prose | upstream-outcomeeng-foundation | https://github.com/outcomeeng/foundation.git |
+| ✓ standardizing-python | upstream-outcomeeng-python | https://github.com/outcomeeng/python.git |
+| ✓ standardizing-python-architecture | upstream-outcomeeng-python | https://github.com/outcomeeng/python.git |
+| ✓ standardizing-python-tests | upstream-outcomeeng-python | https://github.com/outcomeeng/python.git |
+| ✓ standardizing-skills | upstream-outcomeeng-foundation | https://github.com/outcomeeng/foundation.git |
+| · stanley-druckenmiller-investment | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · strategy-pivot-designer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · subagent-driven-development | upstream-superpowers | https://github.com/obra/superpowers |
+| · substrate-vulnerability-scanner | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · supply-chain-risk-auditor | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ swift-expert | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · systematic-debugging | upstream-superpowers | https://github.com/obra/superpowers |
+| ✓ tdd | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · technical-analyst | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| ✓ telegram | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ telegram-post | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ telegram-telethon | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ temple-generator | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ terraform-engineer | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · test-driven-development | upstream-superpowers | https://github.com/obra/superpowers |
+| ✓ test-master | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · testing-handbook-generator | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ testing-python | upstream-outcomeeng-python | https://github.com/outcomeeng/python.git |
+| ✓ the-fool | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · theme-detector | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · theme-factory | upstream-anthropic | https://github.com/anthropics/skills |
+| ✓ thinking-patterns | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · token-integration-analyzer | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · ton-vulnerability-scanner | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · trade-hypothesis-ideator | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · trader-memory-core | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · trailmark | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · trailmark-structural | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · trailmark-summary | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ transcript-analyzer | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · transformers-js | upstream-huggingface | https://github.com/huggingface/skills |
+| ✓ tufte-report | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ typescript-pro | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · typing-exclusion-worker | upstream-sentry | https://github.com/getsentry/skills |
+| · upgrading-expo | upstream-expo | https://github.com/expo/skills |
+| · uptrend-analyzer | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · us-market-bubble-detector | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · us-stock-analysis | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · use-dom | upstream-expo | https://github.com/expo/skills |
+| · using-git-worktrees | upstream-superpowers | https://github.com/obra/superpowers |
+| · using-superpowers | upstream-superpowers | https://github.com/obra/superpowers |
+| · value-dividend-screener | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · variant-analysis | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · vcp-screener | upstream-tradermonty | https://github.com/tradermonty/claude-trading-skills.git |
+| · vector-forge | upstream-trailofbits | https://github.com/trailofbits/skills |
+| · verification-before-completion | upstream-superpowers | https://github.com/obra/superpowers |
+| ✓ vision-bench | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ vue-expert | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| ✓ vue-expert-js | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · web-artifacts-builder | upstream-anthropic | https://github.com/anthropics/skills |
+| · webapp-testing | upstream-anthropic | https://github.com/anthropics/skills |
+| ✓ websocket-engineer | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · wiki-ado-convert | upstream-microsoft | https://github.com/microsoft/skills |
+| · wiki-agents-md | upstream-microsoft | https://github.com/microsoft/skills |
+| · wiki-architect | upstream-microsoft | https://github.com/microsoft/skills |
+| · wiki-changelog | upstream-microsoft | https://github.com/microsoft/skills |
+| · wiki-llms-txt | upstream-microsoft | https://github.com/microsoft/skills |
+| · wiki-onboarding | upstream-microsoft | https://github.com/microsoft/skills |
+| · wiki-page-writer | upstream-microsoft | https://github.com/microsoft/skills |
+| · wiki-qa | upstream-microsoft | https://github.com/microsoft/skills |
+| · wiki-researcher | upstream-microsoft | https://github.com/microsoft/skills |
+| · wiki-vitepress | upstream-microsoft | https://github.com/microsoft/skills |
+| ✓ wispr-analytics | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| ✓ wordpress-pro | upstream-jeffallan | https://github.com/Jeffallan/claude-skills.git |
+| · writing-plans | upstream-superpowers | https://github.com/obra/superpowers |
+| ✓ writing-prose | upstream-outcomeeng-foundation | https://github.com/outcomeeng/foundation.git |
+| · writing-skills | upstream-superpowers | https://github.com/obra/superpowers |
+| · wycheproof | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ x-twitter-growth | upstream-alirezarezvani | https://github.com/alirezarezvani/claude-skills.git |
+| · xlsx | upstream-anthropic | https://github.com/anthropics/skills |
+| · yara-rule-authoring | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ youtube-transcript | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · zeroize-audit | upstream-trailofbits | https://github.com/trailofbits/skills |
+| ✓ zoom | upstream-glebis | https://github.com/glebis/claude-skills.git |
+| · zustand-store-ts | upstream-microsoft | https://github.com/microsoft/skills |
