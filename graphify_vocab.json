@@ -1,0 +1,258 @@
+{
+  "cloud": [
+    "azure",
+    "aws",
+    "gcp",
+    "cloud",
+    "terraform",
+    "serverless",
+    "hybrid-cloud",
+    "multi-cloud"
+  ],
+  "devops": [
+    "devops",
+    "ci-cd",
+    "docker",
+    "kubernetes",
+    "helm",
+    "deployment",
+    "gitops",
+    "pipeline"
+  ],
+  "security": [
+    "security",
+    "pentest",
+    "vulnerability",
+    "compliance",
+    "audit",
+    "sast",
+    "threat-modeling",
+    "red-team"
+  ],
+  "data": [
+    "data",
+    "sql",
+    "database",
+    "analytics",
+    "etl",
+    "dbt",
+    "spark",
+    "airflow",
+    "postgresql",
+    "nosql"
+  ],
+  "ai-agents": [
+    "agent",
+    "llm",
+    "prompt",
+    "rag",
+    "langchain",
+    "langgraph",
+    "crewai",
+    "memory",
+    "orchestration"
+  ],
+  "frontend": [
+    "react",
+    "nextjs",
+    "angular",
+    "tailwind",
+    "ui",
+    "css",
+    "shadcn",
+    "svelte",
+    "vue"
+  ],
+  "backend": [
+    "api",
+    "fastapi",
+    "django",
+    "nodejs",
+    "graphql",
+    "grpc",
+    "microservices",
+    "rest"
+  ],
+  "mobile": [
+    "ios",
+    "android",
+    "flutter",
+    "react-native",
+    "swiftui",
+    "kotlin",
+    "expo"
+  ],
+  "testing": [
+    "testing",
+    "tdd",
+    "playwright",
+    "e2e",
+    "unit-test",
+    "qa",
+    "evaluation"
+  ],
+  "python": [
+    "python",
+    "fastapi",
+    "django",
+    "pandas",
+    "numpy",
+    "scikit",
+    "asyncio"
+  ],
+  "typescript": [
+    "typescript",
+    "javascript",
+    "nodejs",
+    "bun",
+    "deno"
+  ],
+  "rust": [
+    "rust",
+    "cargo",
+    "bevy",
+    "robius",
+    "makepad",
+    "wasm"
+  ],
+  "dotnet": [
+    "dotnet",
+    "csharp",
+    "asp-net",
+    "blazor",
+    "avalonia"
+  ],
+  "java": [
+    "java",
+    "spring",
+    "kotlin",
+    "gradle",
+    "maven"
+  ],
+  "golang": [
+    "golang",
+    "go-lang",
+    "grpc",
+    "temporal"
+  ],
+  "trading": [
+    "trading",
+    "stocks",
+    "market",
+    "canslim",
+    "vcp",
+    "dividend",
+    "backtesting",
+    "quant"
+  ],
+  "marketing": [
+    "marketing",
+    "seo",
+    "content",
+    "email",
+    "social",
+    "cro",
+    "growth"
+  ],
+  "product": [
+    "product",
+    "prd",
+    "roadmap",
+    "okr",
+    "sprint",
+    "agile",
+    "user-story"
+  ],
+  "architecture": [
+    "architecture",
+    "ddd",
+    "cqrs",
+    "event-sourcing",
+    "saga",
+    "monorepo",
+    "microservices"
+  ],
+  "monitoring": [
+    "monitoring",
+    "observability",
+    "logging",
+    "tracing",
+    "datadog",
+    "sentry",
+    "pagerduty"
+  ],
+  "automation": [
+    "automation",
+    "rpa",
+    "power-automate",
+    "zapier",
+    "make",
+    "n8n",
+    "workflow"
+  ],
+  "blockchain": [
+    "blockchain",
+    "web3",
+    "solidity",
+    "defi",
+    "nft",
+    "crypto",
+    "lightning"
+  ],
+  "ml": [
+    "machine-learning",
+    "mlops",
+    "fine-tuning",
+    "embedding",
+    "vector",
+    "huggingface",
+    "pytorch"
+  ],
+  "maeve": [
+    "maeve",
+    "brain",
+    "vault",
+    "session",
+    "skill-basin",
+    "graphify",
+    "claude"
+  ],
+  "tools": [
+    "github",
+    "jira",
+    "notion",
+    "slack",
+    "linear",
+    "asana",
+    "confluence"
+  ],
+  "health": [
+    "health",
+    "medical",
+    "fitness",
+    "nutrition",
+    "mental-health",
+    "analyzer"
+  ],
+  "game": [
+    "game",
+    "unity",
+    "unreal",
+    "godot",
+    "gamedev"
+  ],
+  "documentation": [
+    "documentation",
+    "readme",
+    "changelog",
+    "wiki",
+    "technical-writing"
+  ],
+  "performance": [
+    "performance",
+    "optimization",
+    "profiling",
+    "caching",
+    "cdn"
+  ]
+}
