@@ -1,6 +1,6 @@
 # GRAPH_REPORT.md
-Generated: 2026-05-03 02:03 ET
-Corpus: 2080 skills | 384269 edges | 0 isolated
+Generated: 2026-05-03 02:16 ET
+Corpus: 2079 skills | 384009 edges | 0 isolated
 
 ---
 
@@ -9,47 +9,47 @@ Skills connected to the most other skills -- foundational hubs.
 
 | Rank | Skill | Centrality | Connections | Tags |
 |------|-------|------------|-------------|------|
-| 1 | mcp-developer | 0.4892 | 1017 | cloud,devops,ai-agents,automation |
-| 2 | Ci Cd Pipeline Builder ( Tier2 Pre Loki Snapshot) | 0.4844 | 1007 | devops,ai-agents,frontend,automation |
-| 3 | Ms365 Tenant Manager | 0.4781 | 994 | automation,cloud,security,tools |
-| 4 | langfuse | 0.4382 | 911 | data,ai-agents,monitoring,automation |
-| 5 | Atlassian Templates (Project Management) | 0.4329 | 900 | frontend,marketing,automation,tools |
-| 6 | skill-idea-miner | 0.4315 | 897 | devops,ai-agents,product,automation |
-| 7 | data-engineer | 0.4305 | 895 | data,cloud,automation |
-| 8 | env-secrets-manager | 0.4281 | 890 | cloud,security,automation |
-| 9 | azure-firmware-analysis | 0.4281 | 890 | cloud,security,automation |
-| 10 | deployment-procedures | 0.4266 | 887 | devops,data,product,automation |
-| 11 | insight-extractor | 0.4252 | 884 | ai-agents,frontend,automation |
-| 12 | magic-ui-generator | 0.4252 | 884 | ai-agents,frontend,automation |
-| 13 | wiki-ado-convert | 0.4242 | 882 | automation,backend,cloud,documentation |
-| 14 | robius-app-architecture | 0.4218 | 877 | frontend,product,architecture,automation |
-| 15 | code-review-ai-ai-review | 0.4214 | 876 | devops,ai-agents,automation,tools |
-| 16 | git-pr-workflows-git-workflow | 0.4209 | 875 | devops,ai-agents,testing,automation |
-| 17 | threat-modeling | 0.4175 | 868 | security,data,frontend,architecture |
-| 18 | Deployment Pipeline Design ( Tier2 Pre Loki Snapshot) | 0.4175 | 868 | devops,security,architecture,automation |
-| 19 | telegram-bot-builder | 0.4170 | 867 | frontend,backend,architecture,automation |
-| 20 | c-github | 0.4156 | 864 | frontend,backend,automation,tools |
+| 1 | mcp-developer | 0.4894 | 1017 | cloud,devops,ai-agents,automation |
+| 2 | Ci Cd Pipeline Builder ( Tier2 Pre Loki Snapshot) | 0.4846 | 1007 | devops,ai-agents,frontend,automation |
+| 3 | Ms365 Tenant Manager | 0.4779 | 993 | automation,cloud,security,tools |
+| 4 | langfuse | 0.4384 | 911 | data,ai-agents,monitoring,automation |
+| 5 | Atlassian Templates (Project Management) | 0.4331 | 900 | frontend,marketing,automation,tools |
+| 6 | skill-idea-miner | 0.4317 | 897 | devops,ai-agents,product,automation |
+| 7 | data-engineer | 0.4307 | 895 | data,cloud,automation |
+| 8 | env-secrets-manager | 0.4278 | 889 | cloud,security,automation |
+| 9 | azure-firmware-analysis | 0.4278 | 889 | cloud,security,automation |
+| 10 | deployment-procedures | 0.4269 | 887 | devops,data,product,automation |
+| 11 | insight-extractor | 0.4254 | 884 | ai-agents,frontend,automation |
+| 12 | magic-ui-generator | 0.4254 | 884 | ai-agents,frontend,automation |
+| 13 | wiki-ado-convert | 0.4244 | 882 | automation,backend,cloud,documentation |
+| 14 | robius-app-architecture | 0.4220 | 877 | frontend,product,architecture,automation |
+| 15 | code-review-ai-ai-review | 0.4216 | 876 | devops,ai-agents,automation,tools |
+| 16 | git-pr-workflows-git-workflow | 0.4211 | 875 | devops,ai-agents,testing,automation |
+| 17 | threat-modeling | 0.4172 | 867 | security,data,frontend,architecture |
+| 18 | Deployment Pipeline Design ( Tier2 Pre Loki Snapshot) | 0.4172 | 867 | devops,security,architecture,automation |
+| 19 | telegram-bot-builder | 0.4172 | 867 | frontend,backend,architecture,automation |
+| 20 | c-github | 0.4158 | 864 | frontend,backend,automation,tools |
 
 ## Bridge Skills (Top 15 by Betweenness Centrality)
 Skills connecting distinct clusters.
 
 | Rank | Skill | Betweenness | Tags |
 |------|-------|-------------|------|
-| 1 | using-neon | 0.0068 | cloud,data,frontend |
-| 2 | Atlassian Admin (Project Management) | 0.0063 | cloud,product,security,tools |
-| 3 | Ms365 Tenant Manager | 0.0052 | automation,cloud,security,tools |
-| 4 | azure-devtest-labs | 0.0043 | cloud,documentation,security,tools |
-| 5 | Atlassian Templates (Project Management) | 0.0040 | frontend,marketing,automation,tools |
-| 6 | business-growth | 0.0038 | ai-agents,devops,python,tools |
-| 7 | notion-template-business | 0.0035 | frontend,trading,product,tools |
-| 8 | google-workspace-cli | 0.0034 | automation,cloud,tools |
-| 9 | Google Workspace Cli | 0.0034 | automation,cloud,tools |
-| 10 | c-github | 0.0033 | frontend,backend,automation,tools |
-| 11 | threat-modeling | 0.0032 | security,data,frontend,architecture |
-| 12 | code-review-ai-ai-review | 0.0032 | devops,ai-agents,automation,tools |
-| 13 | deployment-procedures | 0.0031 | devops,data,product,automation |
-| 14 | mcp-developer | 0.0030 | cloud,devops,ai-agents,automation |
-| 15 | wiki-ado-convert | 0.0030 | automation,backend,cloud,documentation |
+| 1 | using-neon | 0.0075 | cloud,data,frontend |
+| 2 | Atlassian Admin (Project Management) | 0.0068 | cloud,product,security,tools |
+| 3 | Ms365 Tenant Manager | 0.0056 | automation,cloud,security,tools |
+| 4 | azure-devtest-labs | 0.0049 | cloud,documentation,security,tools |
+| 5 | wiki-ado-convert | 0.0041 | automation,backend,cloud,documentation |
+| 6 | Google Workspace Cli | 0.0037 | automation,cloud,tools |
+| 7 | google-workspace | 0.0037 | automation,cloud,tools |
+| 8 | unity-developer | 0.0036 | cloud,devops,game,performance |
+| 9 | deployment-procedures | 0.0034 | devops,data,product,automation |
+| 10 | odoo-infrastructure | 0.0033 | cloud,data,devops,performance |
+| 11 | Atlassian Templates (Project Management) | 0.0032 | frontend,marketing,automation,tools |
+| 12 | business-growth | 0.0032 | ai-agents,devops,python,tools |
+| 13 | threat-modeling | 0.0032 | security,data,frontend,architecture |
+| 14 | mcp-developer | 0.0032 | cloud,devops,ai-agents,automation |
+| 15 | c-github | 0.0031 | frontend,backend,automation,tools |
 
 ## Tag Clusters
 | Tag | Total Skills | Top 5 Members |
@@ -58,7 +58,7 @@ Skills connecting distinct clusters.
 | cloud | 314 | 00-andruia-consultant, aws-skills, azure-keyvault-secrets-java, c-files, ai-engineer +309 more |
 | frontend | 309 | nextjs-app-router-patterns, workflow-orchestration-patterns, seo-content-writer, jekyll-affiliate, social-content +304 more |
 | ai-agents | 290 | tdd, maeve-github-devops, context-compression, avoid-ai-writing, vibe-code-auditor +285 more |
-| security | 261 | maeve-github-devops, engineering-craft, seo-content, vibe-code-auditor, schema-markup +256 more |
+| security | 260 | maeve-github-devops, engineering-craft, seo-content, vibe-code-auditor, schema-markup +255 more |
 | data | 250 | deployment-procedures, schema-markup, analytics-tracking, pdf, xlsx +245 more |
 | devops | 204 | docker-development, deployment-procedures, maeve-github-devops, jekyll-affiliate, power-automate-pro +199 more |
 | marketing | 193 | programmatic-seo, senior-architect, seo-content-writer, seo-content, jekyll-affiliate +188 more |
@@ -95,7 +95,7 @@ Skills with no graph connections -- review for tagging gaps.
 | cloud | 314 |
 | frontend | 309 |
 | ai-agents | 290 |
-| security | 261 |
+| security | 260 |
 | data | 250 |
 | devops | 204 |
 | marketing | 193 |
