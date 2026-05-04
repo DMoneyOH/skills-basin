@@ -1,6 +1,7 @@
 # GRAPH_REPORT.md
-Generated: 2026-05-04 09:11 ET
-Corpus: 1865 skills | 307583 edges | 0 isolated
+Generated: 2026-05-04 15:00 ET
+Corpus: 1916 skills | 284047 edges | 0 isolated
+Vocabulary: v2.2 (34 tags -- retired automation/cloud/frontend)
 
 ---
 
@@ -9,80 +10,85 @@ Skills connected to the most other skills -- foundational hubs.
 
 | Rank | Skill | Centrality | Connections | Tags |
 |------|-------|------------|-------------|------|
-| 1 | Ms365 Tenant Manager | 0.4920 | 917 | automation,cloud,security,tools |
-| 2 | mcp-developer | 0.4866 | 907 | cloud,devops,ai-agents,automation |
-| 3 | data-engineer | 0.4415 | 823 | data,cloud,automation |
-| 4 | azure-firmware-analysis | 0.4415 | 823 | cloud,security,automation |
-| 5 | wiki-ado-convert | 0.4405 | 821 | automation,backend,cloud,documentation |
-| 6 | Atlassian Templates (Project Management) | 0.4335 | 808 | frontend,marketing,automation,tools |
-| 7 | robius-app-architecture | 0.4292 | 800 | frontend,product,architecture,automation |
-| 8 | telegram-bot-builder | 0.4286 | 799 | frontend,backend,architecture,automation |
-| 9 | langfuse | 0.4276 | 797 | data,ai-agents,monitoring,automation |
-| 10 | c-github | 0.4260 | 794 | frontend,backend,automation,tools |
-| 11 | skill-idea-miner | 0.4217 | 786 | devops,ai-agents,product,automation |
-| 12 | insight-extractor | 0.4201 | 783 | ai-agents,frontend,automation |
-| 13 | magic-ui-generator | 0.4201 | 783 | ai-agents,frontend,automation |
-| 14 | threat-modeling | 0.4195 | 782 | security,data,frontend,architecture |
-| 15 | salesforce-developer | 0.4179 | 779 | devops,frontend,automation,performance |
-| 16 | wordpress-plugin-development | 0.4158 | 775 | security,backend,architecture,automation |
-| 17 | code-review-ai-ai-review | 0.4093 | 763 | devops,ai-agents,automation,tools |
-| 18 | using-neon | 0.4088 | 762 | cloud,data,frontend |
-| 19 | git-pr-workflows-git-workflow | 0.4083 | 761 | devops,ai-agents,testing,automation |
-| 20 | cs-workspace-admin | 0.4056 | 756 | security,ai-agents,automation |
+| 1 | azure-postgres-ts | 0.4068 | 779 | cloud-infra,data,python |
+| 2 | azure-event-hubs | 0.3822 | 732 | cloud-infra,integrations,data |
+| 3 | azure-eventhub-dotnet | 0.3822 | 732 | cloud-infra,integrations,data |
+| 4 | azure-eventhub-java | 0.3822 | 732 | cloud-infra,integrations,data |
+| 5 | azure-eventhub-py | 0.3822 | 732 | cloud-infra,integrations,data |
+| 6 | mcp-builder | 0.3708 | 710 | cloud-infra,ai-agents,python |
+| 7 | mcp-developer | 0.3708 | 710 | cloud-infra,ai-agents,python |
+| 8 | azure-storage-file-datalake-py | 0.3697 | 708 | cloud-infra,data,ai-agents |
+| 9 | business-analyst | 0.3687 | 706 | data,python,ui-dev |
+| 10 | schema-markup | 0.3661 | 701 | ui-dev,data,integrations |
+| 11 | Secrets Vault Manager | 0.3551 | 680 | security,cloud-infra,integrations |
+| 12 | service-mesh-expert | 0.3551 | 680 | cloud-infra,integrations,security |
+| 13 | dependency-auditor | 0.3546 | 679 | security,data,python |
+| 14 | dependency-management-deps-audit | 0.3546 | 679 | security,data,python |
+| 15 | Senior Fullstack | 0.3535 | 677 | backend,ui-dev,python,devops |
+| 16 | economic-calendar-fetcher | 0.3509 | 672 | data,python,integrations |
+| 17 | codex-review | 0.3473 | 665 | ui-dev,python,integrations |
+| 18 | plaid-fintech | 0.3415 | 654 | integrations,data,security |
+| 19 | data-science-python | 0.3389 | 649 | devops,data,python |
+| 20 | qiskit | 0.3363 | 644 | python,backend,cloud-infra |
 
 ## Bridge Skills (Top 15 by Betweenness Centrality)
 Skills connecting distinct clusters.
 
 | Rank | Skill | Betweenness | Tags |
 |------|-------|-------------|------|
-| 1 | using-neon | 0.0073 | cloud,data,frontend |
-| 2 | Atlassian Admin (Project Management) | 0.0063 | cloud,product,security,tools |
-| 3 | Ms365 Tenant Manager | 0.0058 | automation,cloud,security,tools |
-| 4 | workflow-orchestration-patterns | 0.0057 | frontend,golang,automation |
-| 5 | wiki-ado-convert | 0.0043 | automation,backend,cloud,documentation |
-| 6 | azure-devtest-labs | 0.0042 | cloud,documentation,security,tools |
-| 7 | Atlassian Templates (Project Management) | 0.0040 | frontend,marketing,automation,tools |
-| 8 | business-growth | 0.0038 | ai-agents,devops,python,tools |
-| 9 | mcp-developer | 0.0037 | cloud,devops,ai-agents,automation |
-| 10 | c-github | 0.0036 | frontend,backend,automation,tools |
-| 11 | unity-developer | 0.0036 | cloud,devops,game,performance |
-| 12 | data-engineer | 0.0035 | data,cloud,automation |
-| 13 | Google Workspace Cli | 0.0035 | automation,cloud,tools |
-| 14 | google-workspace | 0.0035 | automation,cloud,tools |
-| 15 | odoo-infrastructure | 0.0034 | cloud,data,devops,performance |
+| 1 | azure-advisor | 0.0065 | cloud-infra,executive,compliance |
+| 2 | azure-microsoft-playwright-testing-ts | 0.0059 | cloud-infra,testing,marketing |
+| 3 | azure-playwright-workspaces | 0.0057 | cloud-infra,ui-dev,testing |
+| 4 | Executive Mentor | 0.0049 | executive,architecture,ui-dev |
+| 5 | azure-maps | 0.0046 | cloud-infra,ui-dev |
+| 6 | azure-maps-search-dotnet | 0.0046 | cloud-infra,ui-dev |
+| 7 | qiskit | 0.0041 | python,backend,cloud-infra |
+| 8 | Stripe Integration Expert | 0.0037 | cloud-infra,integrations,backend |
+| 9 | schema-markup | 0.0036 | ui-dev,data,integrations |
+| 10 | ml-pipeline | 0.0035 | ml,python,data,orchestration |
+| 11 | azure-postgres-ts | 0.0035 | cloud-infra,data,python |
+| 12 | Senior Devops | 0.0034 | devops,orchestration,cloud-infra,monitoring |
+| 13 | mcp-builder | 0.0032 | cloud-infra,ai-agents,python |
+| 14 | mcp-developer | 0.0032 | cloud-infra,ai-agents,python |
+| 15 | Competitive Teardown | 0.0032 | data,python,architecture |
 
 ## Tag Clusters
 | Tag | Total Skills | Top 5 Members |
 |-----|-------------|---------------|
-| automation | 359 | workflow-orchestration-patterns, bash-pro, git-advanced-workflows, linux-troubleshooting, power-automate-pro +354 more |
-| cloud | 303 | 00-andruia-consultant, aws-skills, azure-keyvault-secrets-java, c-files, ai-engineer +298 more |
-| frontend | 285 | workflow-orchestration-patterns, jekyll-affiliate, social-content, frontend-design, web-artifacts-builder +280 more |
-| ai-agents | 235 | maeve-github-devops, avoid-ai-writing, vibe-code-auditor, web-artifacts-builder, mcp-builder +230 more |
-| security | 232 | maeve-github-devops, engineering-craft, seo-content, vibe-code-auditor, schema-markup +227 more |
-| data | 220 | schema-markup, analytics-tracking, pdf, xlsx, alpha-vantage +215 more |
-| devops | 173 | maeve-github-devops, jekyll-affiliate, power-automate-pro, mcp-builder, quant-analyst +168 more |
-| marketing | 161 | programmatic-seo, seo-content, jekyll-affiliate, avoid-ai-writing, schema-markup +156 more |
-| product | 147 | programmatic-seo, bash-pro, jekyll-affiliate, schema-markup, social-content +142 more |
-| architecture | 138 | backend-architect, vibe-code-auditor, ceo-advisor, deep-research, site-architecture +133 more |
-| backend | 135 | fastapi-pro, maeve-github-devops, vibe-code-auditor, auth-implementation-patterns, context7-auto-research +130 more |
-| tools | 130 | beautiful-prose, pdf, skill-creator, quant-analyst, github-automation +125 more |
-| testing | 117 | verification-before-completion, systematic-debugging, backtesting-frameworks, backtest-expert, ab-test-setup +112 more |
-| documentation | 94 | api-documentation, docx, canvas-design, changelog, code-documentation-code-explain +89 more |
-| performance | 94 | linux-troubleshooting, social-content, quant-analyst, data-science-python, email-sequence +89 more |
-| monitoring | 73 | api-testing-observability-api-mock, application-performance-performance-optimization, malware-forensics, claude-monitor, cost-optimization +68 more |
-| python | 71 | python-pro, fastapi-pro, data-science-python, astropy, async-python-patterns +66 more |
-| trading | 71 | quant-analyst, alpha-vantage, technical-analyst, signal-postmortem, position-sizer +66 more |
-| ml | 60 | agent-memory, ai-analyzer, ai-engineer, ai-ml, autoresearch-agent +55 more |
-| mobile | 53 | app-store-optimization, canva-automation, jtbd, pdf-generation, granola +48 more |
-| health | 46 | us-stock-analysis, claude-ally-health, ai-analyzer, Capa Officer, Culture Architect (C Level Advisor) +41 more |
-| typescript | 34 | backend-dev-guidelines, bun-development, calendly-automation, cc-skill-coding-standards, Fp React +29 more |
-| dotnet | 31 | dotnet-backend, dotnet-core-expert, dotnet-architect, dotnet-backend-patterns, mobile-developer +26 more |
-| java | 29 | javascript-expert, bun-development, java-architect, spring-boot-engineer, java-pro +24 more |
-| game | 27 | brand-guidelines-community, Cmo Advisor, game-developer, earllm-build, game-development +22 more |
-| rust | 24 | bevy-ecs-expert, ext-jeffallan-claude-skills-repo, rust-engineer, haskell-pro, lightning-architecture-review +19 more |
-| blockchain | 21 | technical-analyst, blockchain-developer, c4-component, defi-protocol-templates, emblemai-crypto-wallet +16 more |
-| maeve | 11 | maeve-technical-advisor, wiki-management, c-obsidian, daydream, temple-generator +6 more |
-| golang | 4 | workflow-orchestration-patterns, dbos-golang, golang-pro, grpc-golang |
+| cloud-infra | 319 | mcp-builder, aws-skills, azure-keyvault-secrets-java, c-files, auri-core +314 more |
+| data | 281 | programmatic-seo, seo-content, schema-markup, analytics-tracking, pdf +276 more |
+| python | 264 | python-pro, fastapi-pro, avoid-ai-writing, mcp-builder, quant-analyst +259 more |
+| ui-dev | 245 | jekyll-affiliate, schema-markup, frontend-design, pptx, web-artifacts-builder +240 more |
+| integrations | 216 | schema-markup, analytics-tracking, power-automate-pro, email-sequence, ab-test-setup +211 more |
+| security | 203 | vibe-code-auditor, 007, accessibility-compliance-accessibility-audit, active-directory-attacks, auth-implementation-patterns +198 more |
+| ai-agents | 185 | mcp-builder, ai-seo, content-humanizer, deep-research, 00-andruia-consultant +180 more |
+| devops | 171 | verification-before-completion, systematic-debugging, maeve-github-devops, engineering-craft, git-advanced-workflows +166 more |
+| tools | 158 | maeve-github-devops, linux-troubleshooting, docx, pdf, xlsx +153 more |
+| backend | 141 | fastapi-pro, backend-architect, web-artifacts-builder, quant-analyst, 007 +136 more |
+| architecture | 136 | backend-architect, maeve-technical-advisor, frontend-design, customer-research, site-architecture +131 more |
+| product | 104 | skill-creator, launch-strategy, lead-magnets, referral-program, ab-test-setup +99 more |
+| testing | 99 | verification-before-completion, systematic-debugging, vibe-code-auditor, backtesting-frameworks, backtest-expert +94 more |
+| documentation | 94 | api-documentation, jekyll-affiliate, beautiful-prose, avoid-ai-writing, docx +89 more |
+| monitoring | 81 | linux-troubleshooting, signal-postmortem, api-testing-observability-api-mock, odoo-infrastructure, bug-hunter +76 more |
+| ml | 80 | agent-memory, ai-ml, autoresearch-agent, avalonia-viewmodels-zafiro, claude-scientific-skills +75 more |
+| marketing | 76 | programmatic-seo, seo-content, jekyll-affiliate, marketing-psychology, ext-marketingskills-repo +71 more |
+| executive | 73 | maeve-technical-advisor, pricing-strategy, ceo-advisor, claude-win11-speckit-update-skill, c-level-advisor +68 more |
+| scripting | 69 | bash-pro, engineering-craft, git-advanced-workflows, address-github-comments, bash-defensive-patterns +64 more |
+| compliance | 66 | accessibility-compliance-accessibility-audit, advogado-criminal, advogado-especialista, Ceo Advisor, A11Y Audit +61 more |
+| orchestration | 60 | workflow-orchestration-patterns, edge-signal-aggregator, agent-manager-skill, airflow-dag-patterns, agent-orchestration +55 more |
+| performance | 45 | android-jetpack-compose-expert, app-store-optimization, application-performance-performance-optimization, bazel-build-optimization, react-expert +40 more |
+| trading | 28 | alpha-vantage, technical-analyst, position-sizer, us-stock-analysis, carrier-relationship-management +23 more |
+| rust | 27 | bevy-ecs-expert, rust-engineer, makepad-deployment, makepad-dsl, makepad-event-action +22 more |
+| rpa | 26 | power-automate-pro, activecampaign-automation, amplitude-automation, clickup-automation, close-automation +21 more |
+| typescript | 26 | backend-dev-guidelines, bun-development, vue-expert-js, dbos-typescript, fp-algebraic-types +21 more |
+| game | 25 | brand-guidelines-community, game-developer, game-development, godot-4-migration, godot-gdscript-patterns +20 more |
+| health | 19 | claude-ally-health, ai-analyzer, doctorg, wispr-analytics, emergency-card +14 more |
+| dotnet | 19 | azure-keyvault-keys-dotnet, csharp-pro, dotnet-backend, csharp-developer, dotnet-core-expert +14 more |
+| blockchain | 18 | blockchain-developer, defi-protocol-templates, emblemai-crypto-wallet, crypto-bd-agent, leiloeiro-avaliacao +13 more |
+| mobile | 17 | flutter-expert, react-native-expert, swift-expert, ios-developer, mobile-design +12 more |
+| java | 15 | azure-keyvault-secrets-java, azure-keyvault-keys-java, java-architect, java-pro, playwright-java +10 more |
+| maeve | 13 | azure-keyvault-secrets-java, azure-keyvault-keys-dotnet, azure-keyvault-keys-java, Behuman, hugging-face-evaluation +8 more |
+| golang | 5 | dbos-golang, golang-pro, go-concurrency-patterns, grpc-golang, temporal-golang-pro |
 
 ## Isolated Skills (0)
 Skills with no graph connections -- review for tagging gaps.
@@ -91,32 +97,37 @@ Skills with no graph connections -- review for tagging gaps.
 ## Tag Frequency
 | Tag | Count |
 |-----|-------|
-| automation | 383 |
-| cloud | 311 |
-| frontend | 301 |
-| ai-agents | 279 |
-| security | 255 |
-| data | 236 |
-| devops | 191 |
-| marketing | 178 |
-| product | 159 |
-| architecture | 147 |
-| tools | 142 |
-| backend | 140 |
-| testing | 135 |
-| performance | 103 |
-| documentation | 101 |
-| monitoring | 82 |
-| python | 80 |
-| trading | 75 |
-| ml | 68 |
-| mobile | 57 |
-| health | 49 |
-| typescript | 39 |
-| dotnet | 31 |
-| java | 30 |
-| game | 27 |
-| rust | 25 |
-| blockchain | 23 |
-| maeve | 12 |
-| golang | 4 |
+| cloud-infra | 319 |
+| data | 281 |
+| python | 264 |
+| ui-dev | 245 |
+| integrations | 216 |
+| security | 203 |
+| ai-agents | 185 |
+| devops | 171 |
+| tools | 158 |
+| backend | 141 |
+| architecture | 136 |
+| product | 104 |
+| testing | 99 |
+| documentation | 94 |
+| monitoring | 81 |
+| ml | 80 |
+| marketing | 76 |
+| executive | 73 |
+| scripting | 69 |
+| compliance | 66 |
+| orchestration | 60 |
+| performance | 45 |
+| trading | 28 |
+| rust | 27 |
+| rpa | 26 |
+| typescript | 26 |
+| game | 25 |
+| health | 19 |
+| dotnet | 19 |
+| blockchain | 18 |
+| mobile | 17 |
+| java | 15 |
+| maeve | 13 |
+| golang | 5 |
