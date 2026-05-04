@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 """
-graphify_runner.py v2 -- Skills graph analysis for skills-basin.
+graphify_runner.py v2.1 -- Skills graph analysis for skills-basin.
 Fallback chain: Gemma (local) -> llm_client (Gemini/OpenRouter/Groq) -> name-based
+
+Changes v2.1:
+  - run_tagging() and build_graph() now JOIN skill_library to exclude
+    _tier2_pre_loki_snapshot and archived categories (mirrors Phase 3 fix)
 
 Usage:
   python3 graphify_runner.py            # full run
@@ -43,7 +47,7 @@ VOCAB = {
     "python": ["python", "fastapi", "django", "pandas", "numpy", "scikit", "asyncio"],
     "typescript": ["typescript", "javascript", "nodejs", "bun", "deno"],
     "rust": ["rust", "cargo", "bevy", "robius", "makepad", "wasm"],
-    "dotnet": ["dotnet", "csharp", "asp-net", "blazor", "avalonia"],
+    "dotnet": ["dotnet", "csharp", "asp-net", "blazer", "avalonia"],
     "java": ["java", "spring", "kotlin", "gradle", "maven"],
     "golang": ["golang", "go-lang", "grpc", "temporal"],
     "trading": ["trading", "stocks", "market", "canslim", "vcp", "dividend", "backtesting", "quant"],
@@ -195,10 +199,15 @@ def infer_tags_from_name(name):
     return tags if tags else ['tools']
 
 def run_tagging(db):
+    # JOIN skill_library to exclude archived and _tier2_pre_loki_snapshot categories
     rows = db.execute("""
-        SELECT skill_name, compressed_brief FROM skill_registry
-        WHERE compressed_brief IS NOT NULL AND LENGTH(compressed_brief) >= 30
-        ORDER BY skill_name
+        SELECT sr.skill_name, sr.compressed_brief
+        FROM skill_registry sr
+        JOIN skill_library sl ON sr.skill_name = sl.skill_name
+        WHERE sr.compressed_brief IS NOT NULL
+          AND LENGTH(sr.compressed_brief) >= 30
+          AND sl.category NOT IN ('archived', '_tier2_pre_loki_snapshot')
+        ORDER BY sr.skill_name
     """).fetchall()
 
     progress = get_progress(db)
@@ -284,7 +293,15 @@ def build_graph(db):
         subprocess.run(['pip', 'install', 'networkx', '--break-system-packages', '-q'])
         import networkx as nx
 
-    rows = db.execute("SELECT skill_name, topics, tier FROM skill_registry WHERE topics IS NOT NULL AND topics != ''").fetchall()
+    # JOIN skill_library to exclude archived and _tier2_pre_loki_snapshot categories
+    rows = db.execute("""
+        SELECT sr.skill_name, sr.topics, sr.tier
+        FROM skill_registry sr
+        JOIN skill_library sl ON sr.skill_name = sl.skill_name
+        WHERE sr.topics IS NOT NULL
+          AND sr.topics != ''
+          AND sl.category NOT IN ('archived', '_tier2_pre_loki_snapshot')
+    """).fetchall()
 
     G = nx.Graph()
     tag_to_skills = defaultdict(list)
@@ -407,7 +424,7 @@ def inject_keys():
 
 def main():
     inject_keys()
-    log(f"graphify_runner.py v2 starting {'(DRY RUN)' if DRY_RUN else ''}")
+    log(f"graphify_runner.py v2.1 starting {'(DRY RUN)' if DRY_RUN else ''}")
     with open(LOG_PATH, 'a') as f:
         f.write(f"\n{'='*60}\n")
 
