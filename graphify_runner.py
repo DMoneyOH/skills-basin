@@ -1,15 +1,25 @@
 #!/usr/bin/env python3
 """
-graphify_runner.py v2.1 -- Skills graph analysis for skills-basin.
+graphify_runner.py v2.3 -- Skills graph analysis for skills-basin.
 Fallback chain: Gemma (local) -> llm_client (Gemini/OpenRouter/Groq) -> name-based
 
+Changes v2.2:
+  - Vocabulary redesigned based on 4-model AI consensus (Groq/Haiku/Gemini/Gemma)
+  - Retired: automation, cloud, frontend (too broad, catch-all buckets)
+  - Added: rpa, scripting, orchestration (split from automation)
+  - Added: cloud-infra, integrations (split from cloud)
+  - Added: ui-dev, executive (split from frontend)
+  - Added: compliance (split from security)
+  - Updated infer_tags_from_name to match new vocab
+  - Clears existing topics on full run to force clean re-tag
+
 Changes v2.1:
-  - run_tagging() and build_graph() now JOIN skill_library to exclude
-    _tier2_pre_loki_snapshot and archived categories (mirrors Phase 3 fix)
+  - run_tagging() and build_graph() JOIN skill_library to exclude
+    _tier2_pre_loki_snapshot and archived categories
 
 Usage:
-  python3 graphify_runner.py            # full run
-  python3 graphify_runner.py --dry-run  # Stage 1 only, no API calls
+  python3 graphify_runner.py               # full run (clears + re-tags)
+  python3 graphify_runner.py --dry-run     # Stage 1 only, no API calls
   python3 graphify_runner.py --graph-only  # skip tagging, build graph from existing topics
 """
 
@@ -18,7 +28,6 @@ from pathlib import Path
 from datetime import datetime
 from collections import defaultdict, Counter
 
-# llm_client for cloud fallback
 sys.path.insert(0, '/home/derek/vault/utils/core-skills')
 
 DB_PATH      = '/home/derek/vault/maeve_brain.db'
@@ -35,35 +44,91 @@ DRY_RUN    = '--dry-run' in sys.argv
 GRAPH_ONLY = '--graph-only' in sys.argv
 
 VOCAB = {
-    "cloud": ["azure", "aws", "gcp", "cloud", "terraform", "serverless", "hybrid-cloud", "multi-cloud"],
-    "devops": ["devops", "ci-cd", "docker", "kubernetes", "helm", "deployment", "gitops", "pipeline"],
-    "security": ["security", "pentest", "vulnerability", "compliance", "audit", "sast", "threat-modeling", "red-team"],
-    "data": ["data", "sql", "database", "analytics", "etl", "dbt", "spark", "airflow", "postgresql", "nosql"],
-    "ai-agents": ["agent", "llm", "prompt", "rag", "langchain", "langgraph", "crewai", "memory", "orchestration"],
-    "frontend": ["react", "nextjs", "angular", "tailwind", "ui", "css", "shadcn", "svelte", "vue"],
-    "backend": ["api", "fastapi", "django", "nodejs", "graphql", "grpc", "microservices", "rest"],
-    "mobile": ["ios", "android", "flutter", "react-native", "swiftui", "kotlin", "expo"],
-    "testing": ["testing", "tdd", "playwright", "e2e", "unit-test", "qa", "evaluation"],
-    "python": ["python", "fastapi", "django", "pandas", "numpy", "scikit", "asyncio"],
-    "typescript": ["typescript", "javascript", "nodejs", "bun", "deno"],
-    "rust": ["rust", "cargo", "bevy", "robius", "makepad", "wasm"],
-    "dotnet": ["dotnet", "csharp", "asp-net", "blazer", "avalonia"],
-    "java": ["java", "spring", "kotlin", "gradle", "maven"],
-    "golang": ["golang", "go-lang", "grpc", "temporal"],
-    "trading": ["trading", "stocks", "market", "canslim", "vcp", "dividend", "backtesting", "quant"],
-    "marketing": ["marketing", "seo", "content", "email", "social", "cro", "growth"],
-    "product": ["product", "prd", "roadmap", "okr", "sprint", "agile", "user-story"],
-    "architecture": ["architecture", "ddd", "cqrs", "event-sourcing", "saga", "monorepo", "microservices"],
-    "monitoring": ["monitoring", "observability", "logging", "tracing", "datadog", "sentry", "pagerduty"],
-    "automation": ["automation", "rpa", "power-automate", "zapier", "make", "n8n", "workflow"],
-    "blockchain": ["blockchain", "web3", "solidity", "defi", "nft", "crypto", "lightning"],
-    "ml": ["machine-learning", "mlops", "fine-tuning", "embedding", "vector", "huggingface", "pytorch"],
-    "maeve": ["maeve", "brain", "vault", "session", "skill-basin", "graphify", "claude"],
-    "tools": ["github", "jira", "notion", "slack", "linear", "asana", "confluence"],
-    "health": ["health", "medical", "fitness", "nutrition", "mental-health", "analyzer"],
-    "game": ["game", "unity", "unreal", "godot", "gamedev"],
-    "documentation": ["documentation", "readme", "changelog", "wiki", "technical-writing"],
-    "performance": ["performance", "optimization", "profiling", "caching", "cdn"],
+    # --- Infrastructure & Cloud ---
+    "cloud-infra":    ["aws", "azure", "gcp", "terraform", "serverless", "iac", "cloudformation",
+                       "bicep", "kubernetes", "eks", "aks", "gke", "cloud-run", "lambda", "ec2",
+                       "s3", "cloud architect", "multi-cloud", "hybrid-cloud"],
+    "integrations":   ["browserstack", "apify", "google-workspace", "atlassian", "m365", "office365",
+                       "salesforce", "hubspot", "zapier", "make", "n8n", "ifttt", "twilio",
+                       "sendgrid", "stripe", "shopify", "saas", "third-party", "connector"],
+    "devops":         ["devops", "ci-cd", "docker", "helm", "deployment", "gitops", "pipeline",
+                       "github-actions", "jenkins", "argocd", "flux", "release"],
+
+    # --- Automation (split) ---
+    "rpa":            ["power-automate", "power automate", "rpa", "robotic process", "uipath",
+                       "automation anywhere", "blue prism", "workflow automation", "process automation"],
+    "scripting":      ["bash", "shell", "cli", "cron", "git automation", "powershell", "command-line",
+                       "terminal", "script", "task automation", "scheduled"],
+    "orchestration":  ["orchestration", "resume", "loop", "promote", "workflow-control",
+                       "release manager", "experiment", "multi-agent", "coordinator", "dispatcher"],
+
+    # --- Frontend (split) ---
+    "ui-dev":         ["react", "nextjs", "next.js", "angular", "tailwind", "css", "shadcn",
+                       "svelte", "vue", "html", "javascript", "webgl", "three.js", "design system",
+                       "component", "landing page", "ui", "ux", "frontend", "web app"],
+    "executive":      ["ceo", "cfo", "coo", "cmo", "cro", "chief of staff", "board", "investor",
+                       "fundraising", "strategic", "strategy", "startup", "founder", "okr",
+                       "company os", "competitive intel", "executive", "advisor", "leadership"],
+
+    # --- Security (split) ---
+    "security":       ["security", "pentest", "vulnerability", "sast", "threat-modeling", "red-team",
+                       "owasp", "cvss", "exploit", "malware", "forensics", "incident-response",
+                       "zero-trust", "iam", "access-control", "encryption"],
+    "compliance":     ["soc2", "hipaa", "gdpr", "iso27001", "pci", "fda", "regulatory", "audit",
+                       "compliance", "governance", "risk", "framework", "certification",
+                       "policy", "control", "assessment"],
+
+    # --- Data & AI ---
+    "data":           ["data", "sql", "database", "analytics", "etl", "dbt", "spark", "airflow",
+                       "postgresql", "nosql", "bigquery", "snowflake", "redshift", "pipeline",
+                       "warehouse", "lakehouse"],
+    "ml":             ["machine-learning", "mlops", "fine-tuning", "embedding", "vector",
+                       "huggingface", "pytorch", "tensorflow", "sklearn", "model", "training",
+                       "inference", "llmops"],
+    "ai-agents":      ["agent", "llm", "prompt", "rag", "langchain", "langgraph", "crewai",
+                       "autogen", "memory", "tool-use", "multi-agent", "claude", "gpt", "gemini"],
+
+    # --- Languages ---
+    "python":         ["python", "fastapi", "django", "pandas", "numpy", "scikit", "asyncio",
+                       "pydantic", "celery"],
+    "typescript":     ["typescript", "javascript", "nodejs", "bun", "deno", "ts", "js"],
+    "rust":           ["rust", "cargo", "bevy", "robius", "makepad", "wasm"],
+    "dotnet":         ["dotnet", "csharp", "asp-net", "blazor", "avalonia", "c#", ".net"],
+    "java":           ["java", "spring", "kotlin", "gradle", "maven", "jvm"],
+    "golang":         ["golang", "go-lang", "grpc", "temporal", "go "],
+
+    # --- Other domains ---
+    "backend":        ["api", "fastapi", "django", "nodejs", "graphql", "grpc",
+                       "microservices", "rest", "websocket", "server", "endpoint"],
+    "mobile":         ["ios", "android", "flutter", "react-native", "swiftui", "kotlin",
+                       "expo", "swift", "mobile app"],
+    "testing":        ["testing", "tdd", "playwright", "e2e", "unit-test", "qa", "evaluation",
+                       "selenium", "cypress", "jest", "vitest", "pytest"],
+    "architecture":   ["architecture", "ddd", "cqrs", "event-sourcing", "saga", "monorepo",
+                       "microservices", "system design", "domain", "pattern"],
+    "monitoring":     ["monitoring", "observability", "logging", "tracing", "datadog",
+                       "sentry", "pagerduty", "prometheus", "grafana", "alerting"],
+    "marketing":      ["marketing", "seo", "content", "email", "social", "cro", "growth",
+                       "copywriting", "brand", "campaign", "conversion"],
+    "product":        ["product", "prd", "roadmap", "okr", "sprint", "agile", "user-story",
+                       "backlog", "discovery", "customer", "feature"],
+    "trading":        ["trading", "stocks", "market", "canslim", "vcp", "dividend",
+                       "backtesting", "quant", "alpaca", "finviz", "technical analysis"],
+    "blockchain":     ["blockchain", "web3", "solidity", "defi", "nft", "crypto", "lightning",
+                       "smart contract", "ethereum"],
+    "maeve":          ["maeve", "brain", "vault", "session", "skill-basin", "graphify",
+                       "loki", "dispatch", "mcp"],
+    "tools":          ["github", "jira", "notion", "slack", "linear", "asana", "confluence",
+                       "trello", "figma", "postman"],
+    "health":         ["health", "medical", "fitness", "nutrition", "mental-health", "analyzer",
+                       "wellness", "clinical", "patient"],
+    "game":           ["game", "unity", "unreal", "godot", "gamedev", "simulation",
+                       "physics engine"],
+    "documentation":  ["documentation", "readme", "changelog", "wiki", "technical-writing",
+                       "docstring", "api-docs", "runbook"],
+    "performance":    ["performance", "optimization", "profiling", "caching", "cdn",
+                       "latency", "throughput", "benchmark", "load-test"],
+    "blockchain":     ["blockchain", "web3", "solidity", "defi", "nft", "crypto", "lightning"],
 }
 
 def log(msg):
@@ -83,15 +148,21 @@ def save_vocab():
     log(f"Vocabulary: {len(VOCAB)} categories saved to {VOCAB_PATH}")
 
 def get_progress(db):
-    row = db.execute("SELECT value FROM brain_kv WHERE key=?", (PROGRESS_KEY,)).fetchone()
+    row = db.execute("SELECT value FROM junk_drawer WHERE key=?", (PROGRESS_KEY,)).fetchone()
     if row:
         return json.loads(row[0])
     return {"completed_batches": []}
 
 def save_progress(db, progress):
-    db.execute("INSERT OR REPLACE INTO brain_kv (key, value) VALUES (?, ?)",
+    db.execute("INSERT OR REPLACE INTO junk_drawer (key, value) VALUES (?, ?)",
                (PROGRESS_KEY, json.dumps(progress)))
     db.commit()
+
+def clear_existing_topics(db):
+    """Wipe all existing topics so re-tag runs clean against new vocab."""
+    cur = db.execute("UPDATE skill_registry SET topics = NULL")
+    db.commit()
+    log(f"Cleared topics on {cur.rowcount} skills for clean re-tag")
 
 def build_tag_prompt(batch):
     vocab_summary = "\n".join(f"- {cat}: {', '.join(kws[:5])}" for cat, kws in VOCAB.items())
@@ -123,14 +194,13 @@ def extract_json(text):
     return None
 
 def call_gemma(prompt):
-    """Try Gemma local first. Returns dict or None."""
     try:
         resp = requests.post(OLLAMA_URL, json={
             "model": OLLAMA_MODEL,
             "prompt": prompt,
             "stream": False,
             "options": {"temperature": 0.1, "num_predict": 500}
-        }, timeout=60)
+        }, timeout=300)
         if resp.status_code == 200:
             text = resp.json().get('response', '').strip()
             result = extract_json(text)
@@ -141,13 +211,11 @@ def call_gemma(prompt):
     return None, None
 
 def call_cloud(prompt, batch):
-    """Fallback to llm_client cloud chain (Gemini -> OpenRouter -> Groq)."""
     try:
         import llm_client
     except ImportError:
         log("  llm_client not importable -- skipping cloud fallback")
         return None, None
-
     skill_name = batch[0][0] if batch else "batch"
     try:
         response, tokens, provider = llm_client.call_llm(skill_name, prompt)
@@ -160,36 +228,67 @@ def call_cloud(prompt, batch):
         log(f"  Cloud error: {e}")
     return None, None
 
-
 def infer_tags_from_name(name):
     n = name.lower()
     tags = []
     keyword_map = {
-        'azure': 'cloud', 'aws': 'cloud', 'gcp': 'cloud', 'cloud': 'cloud',
-        'terraform': 'devops', 'docker': 'devops', 'kubernetes': 'devops',
-        'security': 'security', 'pentest': 'security', 'audit': 'security',
-        'sql': 'data', 'data': 'data', 'analytics': 'data',
-        'python': 'python', 'agent': 'ai-agents', 'llm': 'ai-agents', 'rag': 'ai-agents',
-        'react': 'frontend', 'next': 'frontend', 'angular': 'frontend', 'tailwind': 'frontend',
-        'api': 'backend', 'fastapi': 'backend', 'django': 'backend',
-        'node': 'typescript', 'typescript': 'typescript',
+        # cloud-infra
+        'aws': 'cloud-infra', 'azure': 'cloud-infra', 'gcp': 'cloud-infra',
+        'terraform': 'cloud-infra', 'serverless': 'cloud-infra', 'lambda': 'cloud-infra',
+        # integrations
+        'workspace': 'integrations', 'atlassian': 'integrations', 'm365': 'integrations',
+        'salesforce': 'integrations', 'apify': 'integrations', 'browserstack': 'integrations',
+        # devops
+        'docker': 'devops', 'kubernetes': 'devops', 'pipeline': 'devops', 'ci': 'devops',
+        'deploy': 'devops', 'helm': 'devops', 'gitops': 'devops',
+        # rpa
+        'power-automate': 'rpa', 'power_automate': 'rpa', 'uipath': 'rpa', 'rpa': 'rpa',
+        # scripting
+        'bash': 'scripting', 'shell': 'scripting', 'cron': 'scripting', 'cli': 'scripting',
+        'powershell': 'scripting', 'script': 'scripting',
+        # orchestration
+        'orchestrat': 'orchestration', 'dispatch': 'orchestration', 'workflow': 'orchestration',
+        # ui-dev
+        'react': 'ui-dev', 'next': 'ui-dev', 'angular': 'ui-dev', 'tailwind': 'ui-dev',
+        'svelte': 'ui-dev', 'vue': 'ui-dev', 'css': 'ui-dev', 'landing': 'ui-dev',
+        # executive
+        'ceo': 'executive', 'cfo': 'executive', 'coo': 'executive', 'board': 'executive',
+        'founder': 'executive', 'investor': 'executive', 'strategy': 'executive',
+        'advisor': 'executive', 'chief': 'executive',
+        # security
+        'pentest': 'security', 'vuln': 'security', 'exploit': 'security',
+        'malware': 'security', 'forensic': 'security', 'threat': 'security',
+        # compliance
+        'soc2': 'compliance', 'hipaa': 'compliance', 'gdpr': 'compliance',
+        'fda': 'compliance', 'audit': 'compliance', 'compliance': 'compliance',
+        'regulatory': 'compliance', 'iso': 'compliance',
+        # data
+        'sql': 'data', 'data': 'data', 'analytic': 'data', 'etl': 'data',
+        'warehouse': 'data', 'bigquery': 'data',
+        # ml
+        'ml': 'ml', 'embedding': 'ml', 'vector': 'ml', 'model': 'ml',
+        'fine-tun': 'ml', 'huggingface': 'ml',
+        # ai-agents
+        'agent': 'ai-agents', 'llm': 'ai-agents', 'rag': 'ai-agents',
+        'langchain': 'ai-agents', 'prompt': 'ai-agents',
+        # languages
+        'python': 'python', 'typescript': 'typescript', 'javascript': 'typescript',
+        'rust': 'rust', 'dotnet': 'dotnet', 'csharp': 'dotnet',
+        'java': 'java', 'golang': 'golang',
+        # other
+        'api': 'backend', 'fastapi': 'backend', 'grpc': 'backend',
         'ios': 'mobile', 'android': 'mobile', 'flutter': 'mobile',
         'test': 'testing', 'playwright': 'testing', 'tdd': 'testing',
         'trade': 'trading', 'market': 'trading', 'stock': 'trading',
-        'canslim': 'trading', 'vcp': 'trading', 'dividend': 'trading',
-        'marketing': 'marketing', 'seo': 'marketing', 'cro': 'marketing',
+        'seo': 'marketing', 'marketing': 'marketing', 'cro': 'marketing',
         'product': 'product', 'roadmap': 'product', 'agile': 'product',
-        'rust': 'rust', 'dotnet': 'dotnet', 'csharp': 'dotnet',
-        'java': 'java', 'golang': 'golang',
         'blockchain': 'blockchain', 'web3': 'blockchain',
-        'ml': 'ml', 'embedding': 'ml', 'vector': 'ml',
-        'maeve': 'maeve', 'brain': 'maeve', 'vault': 'maeve',
-        'github': 'tools', 'slack': 'tools', 'notion': 'tools',
+        'maeve': 'maeve', 'brain': 'maeve', 'vault': 'maeve', 'loki': 'maeve',
+        'github': 'tools', 'slack': 'tools', 'notion': 'tools', 'jira': 'tools',
         'game': 'game', 'unity': 'game', 'unreal': 'game',
-        'health': 'health', 'fitness': 'health',
-        'automation': 'automation', 'rpa': 'automation', 'workflow': 'automation',
-        'monitor': 'monitoring', 'observ': 'monitoring', 'log': 'monitoring',
-        'arch': 'architecture', 'design': 'architecture',
+        'health': 'health', 'medical': 'health', 'fitness': 'health',
+        'monitor': 'monitoring', 'observ': 'monitoring', 'grafana': 'monitoring',
+        'arch': 'architecture', 'pattern': 'architecture',
         'doc': 'documentation', 'readme': 'documentation',
         'perf': 'performance', 'optim': 'performance', 'cache': 'performance',
     }
@@ -199,7 +298,6 @@ def infer_tags_from_name(name):
     return tags if tags else ['tools']
 
 def run_tagging(db):
-    # JOIN skill_library to exclude archived and _tier2_pre_loki_snapshot categories
     rows = db.execute("""
         SELECT sr.skill_name, sr.compressed_brief
         FROM skill_registry sr
@@ -226,10 +324,8 @@ def run_tagging(db):
         log(f"Batch {batch_num+1}/{len(batches)} ({len(batch)} skills)...")
         prompt = build_tag_prompt(batch)
 
-        # Tier 1: Gemma local
         result, provider = call_gemma(prompt)
 
-        # Tier 2: Cloud (Gemini/OpenRouter/Groq via llm_client)
         if result is None:
             log(f"  Gemma failed -- trying cloud fallback...")
             result, provider = call_cloud(prompt, batch)
@@ -259,7 +355,7 @@ def run_tagging(db):
         tagged += updates
         src = provider or 'name-based'
         log(f"  ✓ Tagged {updates} skills via {src}")
-        time.sleep(0.3)
+        time.sleep(2.0)
 
     log(f"Tagging complete: {tagged} tagged | cloud fallbacks: {cloud_used} | name-based: {name_fallback}")
 
@@ -293,7 +389,6 @@ def build_graph(db):
         subprocess.run(['pip', 'install', 'networkx', '--break-system-packages', '-q'])
         import networkx as nx
 
-    # JOIN skill_library to exclude archived and _tier2_pre_loki_snapshot categories
     rows = db.execute("""
         SELECT sr.skill_name, sr.topics, sr.tier
         FROM skill_registry sr
@@ -348,6 +443,7 @@ def write_report(G, degree_cent, between_cent, isolated, clusters, tag_to_skills
         "# GRAPH_REPORT.md",
         f"Generated: {now}",
         f"Corpus: {G.number_of_nodes()} skills | {G.number_of_edges()} edges | {len(isolated)} isolated",
+        f"Vocabulary: v2.2 ({len(VOCAB)} tags -- retired automation/cloud/frontend)",
         "", "---", "",
         "## God Nodes (Top 20 by Degree Centrality)",
         "Skills connected to the most other skills -- foundational hubs.",
@@ -398,9 +494,7 @@ def write_report(G, degree_cent, between_cent, isolated, clusters, tag_to_skills
     REPORT_PATH.write_text('\n'.join(lines))
     log(f"Report written: {REPORT_PATH}")
 
-
 def inject_keys():
-    """Decrypt vault_secrets and inject into environment for llm_client."""
     import os, sqlite3
     try:
         from cryptography.fernet import Fernet
@@ -424,7 +518,7 @@ def inject_keys():
 
 def main():
     inject_keys()
-    log(f"graphify_runner.py v2.1 starting {'(DRY RUN)' if DRY_RUN else ''}")
+    log(f"graphify_runner.py v2.3 starting {'(DRY RUN)' if DRY_RUN else ''}")
     with open(LOG_PATH, 'a') as f:
         f.write(f"\n{'='*60}\n")
 
@@ -436,6 +530,11 @@ def main():
     db = get_db()
 
     if not GRAPH_ONLY:
+        log("--- Stage 1: Clearing existing topics for clean re-tag ---")
+        clear_existing_topics(db)
+        # Clear batch progress so full re-tag runs
+        db.execute("DELETE FROM junk_drawer WHERE key=?", (PROGRESS_KEY,))
+        db.commit()
         log("--- Stage 2: Batch tagging (Gemma -> Cloud -> name-based) ---")
         run_tagging(db)
     else:
@@ -450,7 +549,7 @@ def main():
     log("--- Stage 5: Writing report ---")
     write_report(G, degree_cent, between_cent, isolated, clusters, tag_to_skills, skill_tags, tag_counts)
 
-    db.execute("DELETE FROM brain_kv WHERE key=?", (PROGRESS_KEY,))
+    db.execute("DELETE FROM junk_drawer WHERE key=?", (PROGRESS_KEY,))
     db.commit()
     db.close()
 

@@ -1,33 +1,174 @@
 {
-  "cloud": [
-    "azure",
+  "cloud-infra": [
     "aws",
+    "azure",
     "gcp",
-    "cloud",
     "terraform",
     "serverless",
-    "hybrid-cloud",
-    "multi-cloud"
+    "iac",
+    "cloudformation",
+    "bicep",
+    "kubernetes",
+    "eks",
+    "aks",
+    "gke",
+    "cloud-run",
+    "lambda",
+    "ec2",
+    "s3",
+    "cloud architect",
+    "multi-cloud",
+    "hybrid-cloud"
+  ],
+  "integrations": [
+    "browserstack",
+    "apify",
+    "google-workspace",
+    "atlassian",
+    "m365",
+    "office365",
+    "salesforce",
+    "hubspot",
+    "zapier",
+    "make",
+    "n8n",
+    "ifttt",
+    "twilio",
+    "sendgrid",
+    "stripe",
+    "shopify",
+    "saas",
+    "third-party",
+    "connector"
   ],
   "devops": [
     "devops",
     "ci-cd",
     "docker",
-    "kubernetes",
     "helm",
     "deployment",
     "gitops",
-    "pipeline"
+    "pipeline",
+    "github-actions",
+    "jenkins",
+    "argocd",
+    "flux",
+    "release"
+  ],
+  "rpa": [
+    "power-automate",
+    "power automate",
+    "rpa",
+    "robotic process",
+    "uipath",
+    "automation anywhere",
+    "blue prism",
+    "workflow automation",
+    "process automation"
+  ],
+  "scripting": [
+    "bash",
+    "shell",
+    "cli",
+    "cron",
+    "git automation",
+    "powershell",
+    "command-line",
+    "terminal",
+    "script",
+    "task automation",
+    "scheduled"
+  ],
+  "orchestration": [
+    "orchestration",
+    "resume",
+    "loop",
+    "promote",
+    "workflow-control",
+    "release manager",
+    "experiment",
+    "multi-agent",
+    "coordinator",
+    "dispatcher"
+  ],
+  "ui-dev": [
+    "react",
+    "nextjs",
+    "next.js",
+    "angular",
+    "tailwind",
+    "css",
+    "shadcn",
+    "svelte",
+    "vue",
+    "html",
+    "javascript",
+    "webgl",
+    "three.js",
+    "design system",
+    "component",
+    "landing page",
+    "ui",
+    "ux",
+    "frontend",
+    "web app"
+  ],
+  "executive": [
+    "ceo",
+    "cfo",
+    "coo",
+    "cmo",
+    "cro",
+    "chief of staff",
+    "board",
+    "investor",
+    "fundraising",
+    "strategic",
+    "strategy",
+    "startup",
+    "founder",
+    "okr",
+    "company os",
+    "competitive intel",
+    "executive",
+    "advisor",
+    "leadership"
   ],
   "security": [
     "security",
     "pentest",
     "vulnerability",
-    "compliance",
-    "audit",
     "sast",
     "threat-modeling",
-    "red-team"
+    "red-team",
+    "owasp",
+    "cvss",
+    "exploit",
+    "malware",
+    "forensics",
+    "incident-response",
+    "zero-trust",
+    "iam",
+    "access-control",
+    "encryption"
+  ],
+  "compliance": [
+    "soc2",
+    "hipaa",
+    "gdpr",
+    "iso27001",
+    "pci",
+    "fda",
+    "regulatory",
+    "audit",
+    "compliance",
+    "governance",
+    "risk",
+    "framework",
+    "certification",
+    "policy",
+    "control",
+    "assessment"
   ],
   "data": [
     "data",
@@ -39,7 +180,28 @@
     "spark",
     "airflow",
     "postgresql",
-    "nosql"
+    "nosql",
+    "bigquery",
+    "snowflake",
+    "redshift",
+    "pipeline",
+    "warehouse",
+    "lakehouse"
+  ],
+  "ml": [
+    "machine-learning",
+    "mlops",
+    "fine-tuning",
+    "embedding",
+    "vector",
+    "huggingface",
+    "pytorch",
+    "tensorflow",
+    "sklearn",
+    "model",
+    "training",
+    "inference",
+    "llmops"
   ],
   "ai-agents": [
     "agent",
@@ -49,47 +211,13 @@
     "langchain",
     "langgraph",
     "crewai",
+    "autogen",
     "memory",
-    "orchestration"
-  ],
-  "frontend": [
-    "react",
-    "nextjs",
-    "angular",
-    "tailwind",
-    "ui",
-    "css",
-    "shadcn",
-    "svelte",
-    "vue"
-  ],
-  "backend": [
-    "api",
-    "fastapi",
-    "django",
-    "nodejs",
-    "graphql",
-    "grpc",
-    "microservices",
-    "rest"
-  ],
-  "mobile": [
-    "ios",
-    "android",
-    "flutter",
-    "react-native",
-    "swiftui",
-    "kotlin",
-    "expo"
-  ],
-  "testing": [
-    "testing",
-    "tdd",
-    "playwright",
-    "e2e",
-    "unit-test",
-    "qa",
-    "evaluation"
+    "tool-use",
+    "multi-agent",
+    "claude",
+    "gpt",
+    "gemini"
   ],
   "python": [
     "python",
@@ -98,14 +226,18 @@
     "pandas",
     "numpy",
     "scikit",
-    "asyncio"
+    "asyncio",
+    "pydantic",
+    "celery"
   ],
   "typescript": [
     "typescript",
     "javascript",
     "nodejs",
     "bun",
-    "deno"
+    "deno",
+    "ts",
+    "js"
   ],
   "rust": [
     "rust",
@@ -119,21 +251,113 @@
     "dotnet",
     "csharp",
     "asp-net",
-    "blazer",
-    "avalonia"
+    "blazor",
+    "avalonia",
+    "c#",
+    ".net"
   ],
   "java": [
     "java",
     "spring",
     "kotlin",
     "gradle",
-    "maven"
+    "maven",
+    "jvm"
   ],
   "golang": [
     "golang",
     "go-lang",
     "grpc",
-    "temporal"
+    "temporal",
+    "go "
+  ],
+  "backend": [
+    "api",
+    "fastapi",
+    "django",
+    "nodejs",
+    "graphql",
+    "grpc",
+    "microservices",
+    "rest",
+    "websocket",
+    "server",
+    "endpoint"
+  ],
+  "mobile": [
+    "ios",
+    "android",
+    "flutter",
+    "react-native",
+    "swiftui",
+    "kotlin",
+    "expo",
+    "swift",
+    "mobile app"
+  ],
+  "testing": [
+    "testing",
+    "tdd",
+    "playwright",
+    "e2e",
+    "unit-test",
+    "qa",
+    "evaluation",
+    "selenium",
+    "cypress",
+    "jest",
+    "vitest",
+    "pytest"
+  ],
+  "architecture": [
+    "architecture",
+    "ddd",
+    "cqrs",
+    "event-sourcing",
+    "saga",
+    "monorepo",
+    "microservices",
+    "system design",
+    "domain",
+    "pattern"
+  ],
+  "monitoring": [
+    "monitoring",
+    "observability",
+    "logging",
+    "tracing",
+    "datadog",
+    "sentry",
+    "pagerduty",
+    "prometheus",
+    "grafana",
+    "alerting"
+  ],
+  "marketing": [
+    "marketing",
+    "seo",
+    "content",
+    "email",
+    "social",
+    "cro",
+    "growth",
+    "copywriting",
+    "brand",
+    "campaign",
+    "conversion"
+  ],
+  "product": [
+    "product",
+    "prd",
+    "roadmap",
+    "okr",
+    "sprint",
+    "agile",
+    "user-story",
+    "backlog",
+    "discovery",
+    "customer",
+    "feature"
   ],
   "trading": [
     "trading",
@@ -143,52 +367,10 @@
     "vcp",
     "dividend",
     "backtesting",
-    "quant"
-  ],
-  "marketing": [
-    "marketing",
-    "seo",
-    "content",
-    "email",
-    "social",
-    "cro",
-    "growth"
-  ],
-  "product": [
-    "product",
-    "prd",
-    "roadmap",
-    "okr",
-    "sprint",
-    "agile",
-    "user-story"
-  ],
-  "architecture": [
-    "architecture",
-    "ddd",
-    "cqrs",
-    "event-sourcing",
-    "saga",
-    "monorepo",
-    "microservices"
-  ],
-  "monitoring": [
-    "monitoring",
-    "observability",
-    "logging",
-    "tracing",
-    "datadog",
-    "sentry",
-    "pagerduty"
-  ],
-  "automation": [
-    "automation",
-    "rpa",
-    "power-automate",
-    "zapier",
-    "make",
-    "n8n",
-    "workflow"
+    "quant",
+    "alpaca",
+    "finviz",
+    "technical analysis"
   ],
   "blockchain": [
     "blockchain",
@@ -199,15 +381,6 @@
     "crypto",
     "lightning"
   ],
-  "ml": [
-    "machine-learning",
-    "mlops",
-    "fine-tuning",
-    "embedding",
-    "vector",
-    "huggingface",
-    "pytorch"
-  ],
   "maeve": [
     "maeve",
     "brain",
@@ -215,7 +388,9 @@
     "session",
     "skill-basin",
     "graphify",
-    "claude"
+    "loki",
+    "dispatch",
+    "mcp"
   ],
   "tools": [
     "github",
@@ -224,7 +399,10 @@
     "slack",
     "linear",
     "asana",
-    "confluence"
+    "confluence",
+    "trello",
+    "figma",
+    "postman"
   ],
   "health": [
     "health",
@@ -232,27 +410,39 @@
     "fitness",
     "nutrition",
     "mental-health",
-    "analyzer"
+    "analyzer",
+    "wellness",
+    "clinical",
+    "patient"
   ],
   "game": [
     "game",
     "unity",
     "unreal",
     "godot",
-    "gamedev"
+    "gamedev",
+    "simulation",
+    "physics engine"
   ],
   "documentation": [
     "documentation",
     "readme",
     "changelog",
     "wiki",
-    "technical-writing"
+    "technical-writing",
+    "docstring",
+    "api-docs",
+    "runbook"
   ],
   "performance": [
     "performance",
     "optimization",
     "profiling",
     "caching",
-    "cdn"
+    "cdn",
+    "latency",
+    "throughput",
+    "benchmark",
+    "load-test"
   ]
 }
